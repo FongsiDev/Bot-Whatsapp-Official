@@ -71,13 +71,14 @@ async function startHisoka() {
     const hisoka = hisokaConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
-        browser: ['Hisoka Multi Device','Safari','1.0.0'],
+        browser: ['Fongsi_Develoment','Bot WA','1.0.0'],
         auth: state
     })
 
     store.bind(hisoka.ev)
     
     // anticall auto block
+  /*
     hisoka.ws.on('CB:call', async (json) => {
     const callerId = json.content[0].attrs['call-creator']
     if (json.content[0].tag == 'offer') {
@@ -86,7 +87,7 @@ async function startHisoka() {
     await sleep(8000)
     await hisoka.updateBlockStatus(callerId, "block")
     }
-    })
+    })*/
 
     hisoka.ev.on('messages.upsert', async chatUpdate => {
         //console.log(JSON.stringify(chatUpdate, undefined, 2))
@@ -127,7 +128,7 @@ async function startHisoka() {
      }
     })
 
-    hisoka.ev.on('group-participants.update', async (anu) => {
+    hisoka.ev.on('group-participants.update1', async (anu) => {
         console.log(anu)
         try {
             let metadata = await hisoka.groupMetadata(anu.id)
