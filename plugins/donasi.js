@@ -1,16 +1,18 @@
-let handler =  m => m.reply(`
+let handler = m =>
+  m.reply(
+    `
 ╭─「 Donasi • Pulsa 」
-│ • Indosat Ooredoo [085713964963]
-│ • Telkomsel [081319944687]
+│ • Tri3 [+62 895-0343-3262]
 ╰────
 
 ╭─「 Donasi • Non Pulsa 」
-│ • https://saweria.co/BochilGaming
-│ • Gopay [085713964963]
+│ • https://saweria.co/foughtyew119206
+│ • Gopay [ Tak Ada ]
 ╰────
-`.trim()) // Tambah sendiri kalo mau
-handler.help = ['donasi']
-handler.tags = ['info']
-handler.command = /^dona(te|si)$/i
+`.trim()
+  ); // Tambah sendiri kalo mau
+handler.help = ["donasi"];
+handler.tags = ["info"];
+handler.command = /^dona(te|si)$/i;
 
-export default handler
+export default handler;

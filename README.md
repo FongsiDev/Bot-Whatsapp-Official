@@ -9,23 +9,26 @@
 <a href="https://github.com/BochilGaming/games-wabot/pulls"><img title="Pull Request" src="https://img.shields.io/github/issues-pr/BochilGaming/games-wabot?label=PullRequest&color=success&style=flat-square"></a>
 <a href="https://github.com/BochilGaming/games-wabot/pulls?q=is%3Apr+is%3Aclosed"><img title="Pull Request" src="https://img.shields.io/github/issues-pr-closed/BochilGaming/games-wabot?label=PullRequest&color=red&style=flat-square"></a>
 
-
 ## Join Group Diskusi
-[![Grup WhatsApp](https://img.shields.io/badge/WhatsApp%20Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/GVwpKf83s42D1CnIfDW19G) 
+
+[![Grup WhatsApp](https://img.shields.io/badge/WhatsApp%20Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/GVwpKf83s42D1CnIfDW19G)
 **NO BOT**
 
-
 #### Deploy to Heroku
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/BochilGaming/games-wabot)
 
 #### Heroku Buildpack
-| BuildPack | LINK |
-|--------|--------|
-| **FFMPEG** |[here](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest) |
-| **IMAGEMAGICK** | [here](https://github.com/DuckyTeam/heroku-buildpack-imagemagick) |
+
+| BuildPack       | LINK                                                                  |
+| --------------- | --------------------------------------------------------------------- |
+| **FFMPEG**      | [here](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest) |
+| **IMAGEMAGICK** | [here](https://github.com/DuckyTeam/heroku-buildpack-imagemagick)     |
 
 ### FOR TERMUX USER
-1. Type mentioned below given commands one by one in Termux.
+
+1.  Type mentioned below given commands one by one in Termux.
+
 ```sh
 $ pkg upgrade && pkg update
 $ pkg install git -y
@@ -34,22 +37,27 @@ $ pkg install ffmpeg -y
 $ pkg install imagemagick -y
 $ git clone https://github.com/BochilGaming/games-wabot -b multi-device
 $ cd games-wabot
-$ npm i 
+$ npm i
 ```
+
 If error try using yarn instead of npm, see [here](https://github.com/BochilGaming/games-wabot/tree/multi-device#if-npm-install-failed--try--using-yarn-instead-of-npm)
+
 ```sh
 $ node .
 ```
-2. Wait for bot starting...
-3. Scan QR code from 2nd device. (Go to whatsapp > Linked Devices > Join `Multi Device Beta` > Click on `link device`)
-4. Now your bot is ready to rock n roll.
+
+2.  Wait for bot starting...
+3.  Scan QR code from 2nd device. (Go to whatsapp > Linked Devices > Join `Multi Device Beta` > Click on `link device`)
+4.  Now your bot is ready to rock n roll.
 
 #### If npm install failed, try using yarn instead of npm
+
 ```sh
 $ pkg install yarn -y
 $ yarn install
 ```
----------
+
+---
 
 ## INSTALL ON TERMUX WITH UBUNTU
 
@@ -62,7 +70,8 @@ proot-distro install ubuntu
 echo "proot-distro login ubuntu" > $PREFIX/bin/ubuntu
 ubuntu
 ```
----------
+
+---
 
 [ INSTALLING REQUIRED PACKAGES ]
 
@@ -72,7 +81,7 @@ apt update && apt full-upgrade
 apt install wget curl git ffmpeg imagemagick build-essential libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev dbus-x11 ffmpeg2theora ffmpegfs ffmpegthumbnailer ffmpegthumbnailer-dbg ffmpegthumbs libavcodec-dev libavcodec-extra libavcodec-extra58 libavdevice-dev libavdevice58 libavfilter-dev libavfilter-extra libavfilter-extra7 libavformat-dev libavformat58 libavifile-0.7-bin libavifile-0.7-common libavifile-0.7c2 libavresample-dev libavresample4 libavutil-dev libavutil56 libpostproc-dev libpostproc55 graphicsmagick graphicsmagick-dbg graphicsmagick-imagemagick-compat graphicsmagick-libmagick-dev-compat groff imagemagick-6.q16hdri imagemagick-common libchart-gnuplot-perl libgraphics-magick-perl libgraphicsmagick++-q16-12 libgraphicsmagick++1-dev
 ```
 
----------
+---
 
 [ INSTALLING NODEJS & GAMES-WABOT ]
 
@@ -86,14 +95,14 @@ npm install
 npm update
 ```
 
----------
+---
 
 ## FOR WINDOWS/VPS/RDP USER
 
-* Download And Install Git [`Click Here`](https://git-scm.com/downloads)
-* Download And Install NodeJS [`Click Here`](https://nodejs.org/en/download)
-* Download And Install FFmpeg [`Click Here`](https://ffmpeg.org/download.html) (**Don't Forget Add FFmpeg to PATH enviroment variables**)
-* Download And Install ImageMagick [`Click Here`](https://imagemagick.org/script/download.php)
+- Download And Install Git [`Click Here`](https://git-scm.com/downloads)
+- Download And Install NodeJS [`Click Here`](https://nodejs.org/en/download)
+- Download And Install FFmpeg [`Click Here`](https://ffmpeg.org/download.html) (**Don't Forget Add FFmpeg to PATH enviroment variables**)
+- Download And Install ImageMagick [`Click Here`](https://imagemagick.org/script/download.php)
 
 ```bash
 git clone https://github.com/BochilGaming/games-wabot -b multi-device
@@ -102,7 +111,7 @@ npm install
 npm update
 ```
 
----------
+---
 
 ## Run
 
@@ -110,7 +119,7 @@ npm update
 node .
 ```
 
----------
+---
 
 ## Arguments `node . [--options] [<session name>]`
 
@@ -132,8 +141,8 @@ If that chat not from status, bot will ignore
 
 ### `--prefix <prefixes>`
 
-* `prefixes` are seperated by each character
-Set prefix
+- `prefixes` are seperated by each character
+  Set prefix
 
 ### `--server`
 
@@ -143,7 +152,7 @@ Used for [heroku](https://heroku.com/) or scan through website
 
 Enables restricted plugins (which can lead your number to be **banned** if used too often)
 
-* Group Administration `add, kick`
+- Group Administration `add, kick`
 
 ### `--img`
 
@@ -155,7 +164,7 @@ If enabled, all incoming messages will be marked as read
 
 ### `--autocleartmp`
 
-If enabled, **tmp* folder contain files will be auto delete
+If enabled, \*_tmp_ folder contain files will be auto delete
 
 ### `--nyimak`
 
@@ -169,80 +178,91 @@ No bot, just print received messages and add users to database
 
 pass mongodb url or cloud url to connect to database, by the default it will connect to database.json
 
----------
+---
 
 ## FAQ
+
 - How to send button image?
+
 ```js
 // Syntax
 conn.sendButton(
-      jid, // jid of the user to send the message to
-      text, // text to send
-      foooter, // footer to send
-      buffer, // buffer to send (optional), if you want to send button image, location, etc
-      buttons, // buttons to send, example [['text1', 'id1'], ['text2', 'id2']]
-      quoted, // quoted message to send (optional)
-      options // options to send, example { asLocation: true }
-)
+  jid, // jid of the user to send the message to
+  text, // text to send
+  foooter, // footer to send
+  buffer, // buffer to send (optional), if you want to send button image, location, etc
+  buttons, // buttons to send, example [['text1', 'id1'], ['text2', 'id2']]
+  quoted, // quoted message to send (optional)
+  options // options to send, example { asLocation: true }
+);
 
-// example 
-conn.sendButton(m.chat, 'Hello world!', '@BochilGaming', null, [
-      ['Hello', 'hello'], ['Bye', 'bye']
-])
+// example
+conn.sendButton(m.chat, "Hello world!", "@BochilGaming", null, [
+  ["Hello", "hello"],
+  ["Bye", "bye"]
+]);
 // example button location
-conn.sendButton(m.chat, 'Hello world!', '@BochilGaming', 'https://github.com/BochilGaming', 
-      [['Hello', 'hello'], ['Bye', 'bye']], 
-      null, { asLocation: true }
-)
+conn.sendButton(
+  m.chat,
+  "Hello world!",
+  "@BochilGaming",
+  "https://github.com/BochilGaming",
+  [["Hello", "hello"], ["Bye", "bye"]],
+  null,
+  { asLocation: true }
+);
 ```
 
 - Why my plugins not working in this multi-device?
-      
+
 > Please cek syntax error on your plugins. and maybe your script still using CJS
 > This multi-device script use ESM and CJS [(legacy code)](https://github.com/BochilGaming/games-wabot/tree/main) not support yet. Learn more about [ESM](https://nodejs.org/api/esm.html)
 
 - How to delete session?
 
-> You can delete folder `sessions` or run command ```rm -rf sessions```
+> You can delete folder `sessions` or run command `rm -rf sessions`
 
 - Why i can't scan qr code?
 
-> if your error like this ```(node:7016) UnhandledPromiseRejectionWarning: TypeError [ERR_INVALID_ARG_TYPE]: The "key" argument must be of type string or an instance of Buffer, TypedArray, DataView, or KeyObject. Received undefined``` you can use [multi-device branch](https://github.com/BochilGaming/games-wabot/tree/multi-device)
+> if your error like this `(node:7016) UnhandledPromiseRejectionWarning: TypeError [ERR_INVALID_ARG_TYPE]: The "key" argument must be of type string or an instance of Buffer, TypedArray, DataView, or KeyObject. Received undefined` you can use [multi-device branch](https://github.com/BochilGaming/games-wabot/tree/multi-device)
 
 - How to change owner number?
 
 > You can change in `config.js`, on global.owner. make sure you use correct syntax.
+
 ```js
-global.owner = [
-  ['6281319944687', 'BG', true]
-]
+global.owner = [["6281319944687", "BG", true]];
 ```
+
 > First argument on array is number like `6281319944687`, second argument is name like `BG` (if this argument pass, if using `owner` command, this number will send as owner), third argument is developer like `true` (if this argument pass, if there have plugins error (not syntax error) the error will send to developer)
----------
+
+---
 
 ### want to contribute?
-1. fork this repository
-2. Change/edit/create what you want. for example you can add features, fix bug, etc
-3. **test** before making a pull req!!
-4. make a pull req!
-5. if your pull req is already in **acc/merge**, you can delete your branch or you can create pull req again :)
 
----------
+1.  fork this repository
+2.  Change/edit/create what you want. for example you can add features, fix bug, etc
+3.  **test** before making a pull req!!
+4.  make a pull req!
+5.  if your pull req is already in **acc/merge**, you can delete your branch or you can create pull req again :)
 
+---
 
-### Thanks To 
+### Thanks To
+
 **Allah SWT**,
 
 **Orang Tua**,
 
 **Semua yang selalu mendukung**
 
-
 #### Special Thanks to
+
 [![Nurutomo](https://github.com/Nurutomo.png?size=100)](https://github.com/Nurutomo)
 [![BochilGaming](https://github.com/BochilGaming.png?size=100)](https://github.com/BochilGaming)
 
 #### Contributor
+
 [![Adiixyz](https://github.com/Adiixyz.png?size=100)](https://github.com/Adiixyz)
 [![idhamthoriqbot](https://github.com/idhamthoriqbot.png?size=100)](https://github.com/idhamthoriqbot)
 [![BlueShiYT](https://github.com/BlueShiYT.png?size=100)](https://github.com/BlueShiYT)
