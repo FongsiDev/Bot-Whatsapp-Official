@@ -1,6 +1,6 @@
 import { format } from "util";
 // let path = require('path')
-import { spawn } from "child_process";
+import { spawn, exec } from "child_process";
 
 // Font By MFarelS:V
 let fontPath = "src/font/Zahraaa.ttf";
@@ -63,6 +63,7 @@ let handler = async (m, { conn, args }) => {
         "Hati² ketahuan:v",
         m
       );
+      exec("rm -r ./tmp/*");
     })
     .stdout.on("data", chunk => bufs.push(chunk));
 };

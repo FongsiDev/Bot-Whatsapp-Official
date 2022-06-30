@@ -29,6 +29,8 @@ handler.help = [
   "ganteng",
   "gabut",
   "gila",
+  "cute",
+  "ugly",
   "lesbi",
   "stress",
   "bucin",
@@ -36,6 +38,6 @@ handler.help = [
   "sadboy"
 ].map(v => "how" + v + " siapa?");
 handler.tags = ["kerang", "fun"];
-handler.command = /^how(gay|pintar|cantik|ganteng|gabut|gila|lesbi|stress?|bucin|jones|sadboy)/i;
+handler.command = /^how(gay|pintar|cantik|ganteng|gabut|gila|lesbi|stress?|bucin|jones|sadboy|cute|ugly)/i;
 
 export default handler;

@@ -3,7 +3,8 @@ import chalk from "chalk";
 import { fileURLToPath } from "url";
 
 global.owner = [
-  ["6289503433262", "BOT BLUE CKKN", true]
+  ["6289503433262", "BOT BLUE CKKN", true],
+  ["6281326823296"]
   // [number, dia creator/owner?, dia developer?]
 ]; // Put your number here
 global.mods = []; // Want some help?

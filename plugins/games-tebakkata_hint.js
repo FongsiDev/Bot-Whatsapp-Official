@@ -5,6 +5,7 @@ let handler = async (m, { conn }) => {
   let json = conn.tebakkata[id][1];
   let ans = json.jawaban.trim();
   let clue = ans.replace(/[AIUEO]/gi, "_");
+  console.log(json.jawaban)
   m.reply("```" + clue + "```");
 };
 handler.command = /^teka$/i;

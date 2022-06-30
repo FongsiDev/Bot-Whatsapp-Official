@@ -45,13 +45,13 @@ klik https://wa.me/${this.user.id.split(`:`)[0]}`,
       if (!roof.pilih)
         hisoka.sendText(
           roof.p,
-          `Silahkan pilih \n\nBatu🗿\nKertas📄\nGunting✂️`,
+          `Silahkan pilih \n\nBatu\nKertas\nGunting`,
           m
         );
       if (!roof.pilih2)
         hisoka.sendText(
           roof.p2,
-          `Silahkan pilih \n\nBatu🗿\nKertas📄\nGunting✂️`,
+          `Silahkan pilih \n\nBatu\nKertas\nGunting`,
           m
         );
       roof.waktu_milih = setTimeout(() => {

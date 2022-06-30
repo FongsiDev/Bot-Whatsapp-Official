@@ -27,9 +27,8 @@ const delay = ms =>
  * @this {import('./lib/connection').Socket}
  * @param {import('@adiwajshing/baileys').BaileysEventMap<unknown>['messages.upsert']} chatUpdate
  */
-setInterval(() => {
-  exec("rm -r ./tmp/*");
-}, 30000);
+
+
 export async function handler(chatUpdate) {
   this.msgqueque = this.msgqueque || [];
   if (!chatUpdate) return;
