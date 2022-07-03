@@ -16,7 +16,7 @@ function connect(conn, PORT) {
     if (qr) _qr = qr;
   });
 
-  app.use(async (req, res) => {
+  app.get("/", async (req, res) => {
     res.setHeader("content-type", "image/png");
     res.end(await toBuffer(_qr));
   });

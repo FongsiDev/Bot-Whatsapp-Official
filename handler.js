@@ -10,6 +10,7 @@ import printMessage from "./lib/print.js";
 import Helper from "./lib/helper.js";
 import db, { loadDatabase } from "./lib/database.js";
 import { exec } from "child_process";
+import YT from "youtubeposter.js";
 
 // const { proto } = (await import('@adiwajshing/baileys')).default
 const isNumber = x => typeof x === "number" && !isNaN(x);

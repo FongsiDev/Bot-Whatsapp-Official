@@ -29,7 +29,7 @@ let tags = {
   host: "Host",
   advanced: "Advanced",
   info: "Info",
-  "": "No Category"
+  "": "No Category",
 };
 const defaultMenu = {
   before: `
@@ -40,6 +40,7 @@ const defaultMenu = {
 │ 🦸🏼‍♂️ Role : *%role*
 │ 🔼 Level : *%level (%exp / %maxexp)*
 │ 💫 Total XP : %totalexp ✨
+│ 🚩 Posisi : *%position*
 │ 
 │ 📅 Tanggal: *%week, %date*
 │ 🕰️ Waktu: *%time*
@@ -54,7 +55,7 @@ const defaultMenu = {
   after: `
 *%npmname* | %version
 ${"```%npmdesc```"}
-`
+`,
 };
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
@@ -62,9 +63,16 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
       JSON.parse(
         await promises
           .readFile(join(__dirname, "../package.json"))
-          .catch(_ => ({}))
+          .catch((_) => ({}))
       ) || {};
     let { exp, limit, level, role } = db.data.users[m.sender];
+    let users = Object.entries(db.data.users).map(([key, value]) => {
+      return { ...value, jid: key };
+    });
+    let type = "level"
+    let sortedItem = users.map(toNumber(type)).sort(sort(type));
+    let userItem = sortedItem.map(enumGetKey);
+
     let { min, xp, max } = xpRange(level, global.multiplier);
     let name = await conn.getName(m.sender);
     let d = new Date(new Date() + 3600000);
@@ -80,24 +88,24 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     let date = d.toLocaleDateString(locale, {
       day: "numeric",
       month: "long",
-      year: "numeric"
+      year: "numeric",
     });
     let dateIslamic = Intl.DateTimeFormat(locale + "-TN-u-ca-islamic", {
       day: "numeric",
       month: "long",
-      year: "numeric"
+      year: "numeric",
     }).format(d);
     let time = d.toLocaleTimeString(locale, {
       hour: "numeric",
       minute: "numeric",
-      second: "numeric"
+      second: "numeric",
     });
     let _uptime = process.uptime() * 1000;
     let _muptime;
     if (process.send) {
       process.send("uptime");
       _muptime =
-        (await new Promise(resolve => {
+        (await new Promise((resolve) => {
           process.once("message", resolve);
           setTimeout(resolve, 1000);
         })) * 1000;
@@ -106,18 +114,18 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     let uptime = clockString(_uptime);
     let totalreg = Object.keys(db.data.users).length;
     let rtotalreg = Object.values(db.data.users).filter(
-      user => user.registered == true
+      (user) => user.registered == true
     ).length;
     let help = Object.values(plugins)
-      .filter(plugin => !plugin.disabled)
-      .map(plugin => {
+      .filter((plugin) => !plugin.disabled)
+      .map((plugin) => {
         return {
           help: Array.isArray(plugin.tags) ? plugin.help : [plugin.help],
           tags: Array.isArray(plugin.tags) ? plugin.tags : [plugin.tags],
           prefix: "customPrefix" in plugin,
           limit: plugin.limit,
           premium: plugin.premium,
-          enabled: !plugin.disabled
+          enabled: !plugin.disabled,
         };
       });
     for (let plugin of help)
@@ -136,16 +144,18 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
         defaultMenu.after;
     let _text = [
       before,
-      ...Object.keys(tags).map(tag => {
+      ...Object.keys(tags).map((tag) => {
         return (
           header.replace(/%category/g, tags[tag]) +
           "\n" +
           [
             ...help
-              .filter(menu => menu.tags && menu.tags.includes(tag) && menu.help)
-              .map(menu => {
+              .filter(
+                (menu) => menu.tags && menu.tags.includes(tag) && menu.help
+              )
+              .map((menu) => {
                 return menu.help
-                  .map(help => {
+                  .map((help) => {
                     return body
                       .replace(/%cmd/g, menu.prefix ? help : "%p" + help)
                       .replace(/%islimit/g, menu.limit ? "(Limit)" : "")
@@ -154,18 +164,18 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
                   })
                   .join("\n");
               }),
-            footer
+            footer,
           ].join("\n")
         );
       }),
-      after
+      after,
     ].join("\n");
     let text =
       typeof conn.menu == "string"
         ? conn.menu
         : typeof conn.menu == "object"
-          ? _text
-          : "";
+        ? _text
+        : "";
     let replace = {
       "%": "%",
       p: _p,
@@ -183,6 +193,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
         ? _package.homepage.url || _package.homepage
         : "[unknown github url]",
       level,
+      position: userItem.indexOf(m.sender) + 1,
       limit,
       name,
       weton,
@@ -193,7 +204,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
       totalreg,
       rtotalreg,
       role,
-      readmore: readMore
+      readmore: readMore,
     };
     text = text.replace(
       new RegExp(
@@ -205,7 +216,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     );
     const pp = await conn
       .profilePictureUrl(conn.user.jid)
-      .catch(_ => "./src/avatar_contact.png");
+      .catch((_) => "./src/avatar_contact.png");
     conn.sendHydrated(
       m.chat,
       text.trim(),
@@ -215,7 +226,11 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
       "Github",
       null,
       null,
-      [["Donate", "/donasi"], ["Speed", "/ping"], ["Owner", "/owner"]],
+      [
+        ["Donate", "/donasi"],
+        ["Speed", "/ping"],
+        ["Owner", "/owner"],
+      ],
       m
     );
   } catch (e) {
@@ -238,5 +253,24 @@ function clockString(ms) {
   let h = isNaN(ms) ? "--" : Math.floor(ms / 3600000);
   let m = isNaN(ms) ? "--" : Math.floor(ms / 60000) % 60;
   let s = isNaN(ms) ? "--" : Math.floor(ms / 1000) % 60;
-  return [h, m, s].map(v => v.toString().padStart(2, 0)).join(":");
+  return [h, m, s].map((v) => v.toString().padStart(2, 0)).join(":");
+}
+function toNumber(property, _default = 0) {
+  if (property)
+    return (a, i, b) => {
+      return {
+        ...b[i],
+        [property]: a[property] === undefined ? _default : a[property]
+      };
+    };
+  else return a => (a === undefined ? _default : a);
+}
+function sort(property, ascending = true) {
+  if (property)
+    return (...args) =>
+      args[ascending & 1][property] - args[!ascending & 1][property];
+  else return (...args) => args[ascending & 1] - args[!ascending & 1];
+}
+function enumGetKey(a) {
+  return a.jid;
 }
