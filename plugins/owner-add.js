@@ -10,6 +10,12 @@ let handler = async (m, { conn, text, participants }) => {
   let users = (
     await Promise.all(
       text
+        .split('-')
+        .join('')
+        .split('-')
+        .join('+')
+        .split(' ')
+        .join('')
         .split(",")
         .map((v) => v.replace(/[^0-9]/g, ""))
         .filter(

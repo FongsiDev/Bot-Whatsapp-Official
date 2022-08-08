@@ -806,7 +806,7 @@ export async function participantsUpdate({ id, participants, action }) {
             function _0x1f1f() {
               const _0x437a74 = [
                 "fsizedoc",
-                "sgc",
+                "sweb",
                 "ddocx",
                 "\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20「\x20ᴡ\x20ᴇ\x20ʟ\x20ᴄ\x20ᴏ\x20ᴍ\x20ᴇ\x20」",
                 ".owner",
@@ -841,7 +841,7 @@ export async function participantsUpdate({ id, participants, action }) {
               return _0x1f1f();
             }
             let buttonMessage = {
-              document: { url: sgc },
+              document: { url: sweb },
               mimetype: global[_0x3332b6(0x1d4)],
               fileName:
                 action == _0x3332b6(0x1dc)
@@ -1017,7 +1017,7 @@ global.dfail = (type, m, conn) => {
           mediaUrl: sig,
           title: wm,
           body: titlebot,
-          sourceUrl: sgc,
+          sourceUrl: sweb,
         },
       },
     });
