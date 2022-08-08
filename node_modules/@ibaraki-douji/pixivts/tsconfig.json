@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "declaration": true,
+        "rootDir": "./src",
+        "outDir": "./lib",
+        "noEmitHelpers": false
+    },
+    "include": [
+        "./src/**/*.ts"
+    ],
+    "exclude": [
+        "./lib/"
+    ]
+}

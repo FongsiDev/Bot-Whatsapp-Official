@@ -1,0 +1,55 @@
+let handler = async (m, { conn }) => {
+  let info = `
+*${htki} GET HADIAH ${htka}*
+`;
+  const sections = [
+    {
+      title: `✃ sᴇᴡᴀ`,
+      rows: [
+        { title: "🌸Daily", rowId: ".daily", description: "Hadiah per hari" },
+        {
+          title: "🌸Weekly",
+          rowId: ".weekly",
+          description: "Hadiah per minggu",
+        },
+        {
+          title: "🌸Monthly",
+          rowId: ".monthly",
+          description: "Hadiah per bulan",
+        },
+        {
+          title: "🌸Special",
+          rowId: ".special",
+          description: "Hadiah special",
+        },
+        //{title: "🔖 𝗩𝗜𝗣", rowId: '.order *Paket:* VIP • Sewa', description: '𝗣𝗿𝗶𝗰𝗲: ' + sv + 'k (12 bulan)' },
+      ],
+    },
+    {
+      title: `✃ ᴘʀᴇᴍɪᴜᴍ`,
+      rows: [
+        { title: "💻INFO BOT", rowId: ".info", description: "Info Fangz BOT" },
+        { title: "🗃️MENU", rowId: ".menu", description: "Back to menu" },
+        { title: "👤OWNER", rowId: ".owner", description: "Owner Fangz BOT" },
+        { title: "💰SEWA BOT", rowId: ".sewa", description: "Sewa Fangz BOT" },
+        //{title: "🌟 𝗣𝗘𝗥𝗠𝗔𝗡𝗘𝗡𝗧", rowId: '.order *Paket:* PERMANENT • Premium', description: '𝗣𝗿𝗶𝗰𝗲: ' + ppm + 'k (UNLIMITED)' },
+      ],
+    },
+  ];
+
+  const listMessage = {
+    text: " ",
+    footer: info,
+    title: null,
+    buttonText: "G E T",
+    sections,
+  };
+  await conn.sendMessage(m.chat, listMessage, { quoted: m });
+  //conn.sendHydrated(m.chat, info, wm, null, sgc, "🌎 Group Official", null,null, [['Owner','.owner']], m)
+};
+
+handler.help = ["hadiah", "claim"];
+handler.tags = ["rpg"];
+handler.command = /^(hadiah|claim)$/i;
+
+export default handler;
