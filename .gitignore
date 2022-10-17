@@ -1,0 +1,6 @@
+## Ini Buat Git Push tidak berat/lama 
+## jika ingin push modulenya juga 
+## maka tinggal hapus aja file ini
+
+## Backlist from git push
+node_modules
