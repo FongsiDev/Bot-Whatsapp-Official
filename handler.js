@@ -871,7 +871,7 @@ export async function handler(chatUpdate) {
       if (typeof chat !== "object") global.db.data.chats[m.chat] = {};
       if (chat) {
         if (!("isName" in chat))
-          chat.isName(
+          chat.isName = (
             (m.isGroup
               ? (conn.chats[m.chat] || {}).metadata ||
                 (await this.groupMetadata(m.chat).catch((_) => null))
@@ -879,6 +879,7 @@ export async function handler(chatUpdate) {
           )?.subject;
         if (!("antiDelete" in chat)) chat.antiDelete = false;
         if (!("antiLink" in chat)) chat.antiLink = false;
+        if (!("antiVirtex" in chat)) chat.antiVirtex = false;
         if (!("antiSticker" in chat)) chat.antiSticker = false;
         if (!("antiToxic" in chat)) chat.antiToxic = false;
         if (!("detect" in chat)) chat.detect = false;
@@ -912,6 +913,7 @@ export async function handler(chatUpdate) {
           )?.subject,
           antiDelete: false,
           antiLink: false,
+          antiVirtex: false,
           antiSticker: false,
           antiToxic: false,
           detect: false,
@@ -1108,6 +1110,7 @@ export async function handler(chatUpdate) {
       if (typeof plugin !== "function") continue;
       if ((usedPrefix = (match[0] || "")[0])) {
         let noPrefix = m.text.replace(usedPrefix, "");
+        let args_v2 = m.text.slice(usedPrefix.length).trim().split(/ +/);
         let [command, ...args] = noPrefix.trim().split` `.filter((v) => v);
         args = args || [];
         let _args = noPrefix.trim().split` `.slice(1);
@@ -1223,6 +1226,7 @@ export async function handler(chatUpdate) {
           noPrefix,
           _args,
           args,
+          args_v2,
           command,
           text,
           conn: this,
@@ -1241,7 +1245,7 @@ export async function handler(chatUpdate) {
           __filename,
         };
         try {
-          console.log(plugin);
+          console.log(m.plugin);
           await plugin.call(this, m, extra);
           if (!isPrems) m.limit = m.limit || plugin.limit || false;
         } catch (e) {
@@ -1595,4 +1599,3 @@ watchFile(file, async () => {
   console.log(chalk.redBright("Update 'handler.js'"));
   if (global.reloadHandler) console.log(await global.reloadHandler());
 });
-//FG - JB Made By 𝙁𝘾 么 Glitch Editz#0433

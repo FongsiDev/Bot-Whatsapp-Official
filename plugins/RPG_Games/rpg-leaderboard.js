@@ -64,7 +64,7 @@ ${usedPrefix}${command} legendary`.trim();
   let userItem = sortedItem.map(enumGetKey);
   // let len = args[0] && args[0].length > 0 ? Math.min(100, Math.max(parseInt(args[0]), 5)) : Math.min(5, sortedExp.length)
   let text = `
-🏆 ʀᴀɴᴋ: ${userItem.indexOf(m.sender) + 1} ᴏᴜᴛ ᴏғ ${userItem.length}
+🏆 ʀᴀɴᴋ: ${userItem.indexOf(m.sender) + 1} ᴏᴜᴛ ᴏғ ${NumberF(userItem.length)}
 
                     *• ${rpg.emoticon(type)} ${type} •*
 
@@ -72,7 +72,7 @@ ${sortedItem
   .slice(page * 0, page * 5 + 5)
   .map(
     (user, i) =>
-      `${i + 1}.*﹙${user[type]}﹚*- ${
+      `${i + 1}.*﹙${NumberF(user[type])}﹚*- ${
         participants.some((p) => areJidsSameUser(user.jid, p.id))
           ? `${conn.getName(user.jid)} \nwa.me/`
           : "ғʀᴏᴍ ᴏᴛʜᴇʀ ɢʀᴏᴜᴩ\n @"

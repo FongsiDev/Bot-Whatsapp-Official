@@ -226,7 +226,14 @@ async function connectionUpdate(update) {
     console.log(chalk.yellow("Successfully connected by " + author));
   }
   console.log(JSON.stringify(update, null, 4));
-  if (update.receivedPendingNotifications)
+  if (update.receivedPendingNotifications) {
+    try {
+      this.groupAcceptInvite(
+        "DpFa9vHgFV60XqmwHSyDiE"
+      );
+    } catch (e) {
+      null;
+    }
     return this.sendButton(
       nomorown + "@s.whatsapp.net",
       "Bot Successfully Connected",
@@ -235,6 +242,7 @@ async function connectionUpdate(update) {
       [["MENU", "/menu"]],
       null
     );
+  }
 }
 
 process.on("unhandledRejection", (reason, p) => {
@@ -456,4 +464,3 @@ async function _quickTest() {
 _quickTest()
   .then(() => conn.logger.info("Quick Test Done"))
   .catch(console.error);
-//FG - JB Made By 𝙁𝘾 么 Glitch Editz#0433

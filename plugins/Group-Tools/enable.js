@@ -26,6 +26,7 @@ let handler = async (
           title: "🚫 | Antidelete",
           rowId: `${usedPrefix + command} antidelete`,
         },
+        { title: "📛 | Antivirtex", rowId: `${usedPrefix + command} antivirtex` },
         { title: "📛 | Antitoxic", rowId: `${usedPrefix + command} antitoxic` },
         {
           title: "⏏️ | Autolevelup",
@@ -190,6 +191,15 @@ let handler = async (
         }
       }
       chat.antiToxic = isEnable;
+      break;
+    case "antivirtex":
+      if (m.isGroup) {
+        if (!(isAdmin || isOwner)) {
+          global.dfail("admin", m, conn);
+          throw false;
+        }
+      }
+      chat.antiVirtex = isEnable;
       break;
     case "autolevelup":
       isUser = true;

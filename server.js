@@ -19,7 +19,6 @@ function connect(PORT, conn) {
     res.setHeader("content-type", "image/png");
     res.end(await toBuffer(_qr));
   });
-
   app.get("/nowa", async (req, res) => {
     let q = req.query.number,
       regex = /x/g;

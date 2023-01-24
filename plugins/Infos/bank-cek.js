@@ -5,7 +5,7 @@ let handler = async (m, { conn }) => {
 │ 📛 *Name:* ${user.registered ? user.name : conn.getName(m.sender)}
 │ 💳 *Atm:* ${user.atm > 0 ? "Level " + user.atm : "✖️"}
 │ 🏛️ *Bank:* ${user.bank} 💲 / ${user.fullatm} 💲
-│ 💹 *Money:* ${user.money} 💲
+│ 💹 *Money:* ${NumberF(user.money)} 💲
 │ 🤖 *Robo:* ${user.robo > 0 ? "Level " + user.robo : "✖️"}
 │ 🌟 *Status:* ${user.premiumTime > 0 ? "Premium" : "Free"}
 │ 📑 *Registered:* ${user.registered ? "Yes" : "No"}

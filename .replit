@@ -1,7 +1,7 @@
 run = "npm start"
 
 
-hidden = [".config", ".gitignore"]
+hidden = [".config", ".gitignore", ".prettierrc.json"]
 [env]
 XDG_CONFIG_HOME = "/home/runner/.config"
 PATH = "/home/runner/$REPL_SLUG/.config/npm/node_global/bin:/home/runner/$REPL_SLUG/node_modules/.bin"

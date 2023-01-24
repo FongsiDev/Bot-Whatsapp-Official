@@ -47,11 +47,11 @@ export async function all(m) {
         ╰═┅═━––––––๑
         
         ⫹⫺ PAYMENT:
-        • Pulsa Telkomsel: [082127487538]
-        • Dana: [082127487538]
-        • Gopay: [082127487538]
-        • Ovo: [082127487538]
-        • Link Aja: [082127487538]
+        • Pulsa Telkomsel: []
+        • Dana: []
+        • Gopay: []
+        • Ovo: []
+        • Link Aja: []
         
         Nomor Owner :
         wa.me/6289503433262

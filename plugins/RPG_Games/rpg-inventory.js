@@ -339,9 +339,9 @@ Inventory *🏷️ Nama:* *(${name})* ( @${who.split("@")[0]} )\n
     }*
 🎣FishingRod: ${fishingrod}
 
-💵Uang: *${money}*
+💵Uang: *${NumberF(money)}*
 🔱Level: *${level}*
-✉️Exp: *${exp}*
+✉️Exp: *${NumberF(exp)}*
 
 *Inventory*
 💎Diamond: *${diamond}*
@@ -832,10 +832,10 @@ ${cooldowns}`
 │
 │❤️️ *Health:* ${healt}
 │⚡ *Stamina:* ${stamina}
-│💹 *Money:* $${money}
+│💹 *Money:* $${NumberF(money)}
 │💳 *Bank:* $${atm}
 │📊 *Level:* ${level}
-│✨ *Exp:* ${exp}
+│✨ *Exp:* ${NumberF(exp)}
 │📍 *Role:* ${role}
 │🎫 *Limit:* ${limit}
 │${registered ? "🎨 *Age:* " + age : ""}
@@ -1464,10 +1464,10 @@ Armor: *${
         ? "Netherite Armor"
         : ""
     }*
-Money: *${money}*
+Money: *${NumberF(money)}*
 Limit: *${limit}*
 Level: *${level}*
-Exp: *${exp}*
+Exp: *${NumberF(exp)}*
 Atm: *${bank}*
 Cupon: *${cupon}*
 Expg: *${expg}*

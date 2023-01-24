@@ -147,7 +147,7 @@ let handler = async (m, { conn }) => {
 *▸ ʀᴏʟᴇ:* ${user.role}
 *▸ ʜᴇᴀʟᴛʜ:* ${user.health}
 *▸ ʟɪᴍɪᴛ:* ${user.limit}
-*▸ ᴍᴏɴᴇʏ:* ${user.money}${
+*▸ ᴍᴏɴᴇʏ:* ${NumberF(user.money)}${
     user.atm
       ? `
 *▸ ᴀᴛᴍ:* ʟᴠ.${user.atm}

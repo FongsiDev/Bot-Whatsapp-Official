@@ -1,136 +1,116 @@
+import fetch from "node-fetch";
 import fs from "fs";
+import axios from "axios";
 let { MessageType } = (await import("@adiwajshing/baileys")).default;
 let handler = (m) => m;
 
 handler.all = async function (m, { isBlocked }) {
-  if (isBlocked) return;
+  if (isBlocked || m.fromMe) return;
+  let isCmd = (cmd) => cmd.exec(m.text);
+
+  let pp = await this.profilePictureUrl(m.sender, "image").catch(
+    (_) => "https://telegra.ph/file/24fa902ead26340f3df2c.png"
+  );
 
   /* - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - */
   /* - - - - - - - Ini autoresponder - - - - - - - */
   /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-  let regj = /(.jadibotak)/i;
-  let isJadibot = regj.exec(m.text);
-  let jadbot = ["🤖", "🤖", "🤖"];
-  let jadibot = jadbot[Math.floor(Math.random() * jadbot.length)];
-  if (isJadibot && !m.fromMe) {
+  if (isCmd(/(.jadibotak)/i)) {
     conn.sendMessage(m.chat, {
       react: {
-        text: `${jadibot}`,
+        text: pickRandom(["🤖", "🤖", "🤖"]),
         key: m.key,
       },
     });
-    setTimeout(() => {
-      conn.reply(m.chat, `mau jadibot? Ketik .sewa ${jadibot}`, m);
-    }, 1000);
+    sleep(1000);
+    conn.sendButton(
+      m.chat,
+      `mau jadibot? Ketik .sewa ${pickRandom(["🤖", "🤖", "🤖"])}`,
+      null,
+      null,
+      [["Sewa Bot", "/sewa bot"]],
+      m
+    );
   }
 
-  /* - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - */
-  /* - - - - - - - Ini autoresponder - - - - - - - */
-  /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
-  let regs = /(aku cinta kamu)/i;
-  let isCintaKamu = regs.exec(m.text);
-  let cinmu = ["❤️", "🥰", "😍"];
-  let cintakamuh = cinmu[Math.floor(Math.random() * cinmu.length)];
-  if (isCintaKamu && !m.fromMe) {
+  if (isCmd(/(aku cinta kamu|aku sayang kamu|I love you|love you)/i)) {
     conn.sendMessage(m.chat, {
       react: {
-        text: `${cintakamuh}`,
+        text: pickRandom(["❤️", "🥰", "😍"]),
         key: m.key,
       },
     });
-    setTimeout(() => {
-      conn.reply(m.chat, `Aku juga sayang kamu ${cintakamuh}`, m);
-    }, 1000);
+    sleep(1000);
+    conn.sendButton(
+      m.chat,
+      `Aku juga sayang kamu ${pickRandom(["❤️", "🥰", "😍"])}`,
+      null,
+      null,
+      [["Aku juga >.<", ""]],
+      m
+    );
   }
 
-  /* - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - */
-  /* - - - - - - - Ini autoresponder by arie - - - - - - - */
-  /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
-  let regc = /(aku sayang kamu)/i;
-  let isSayangKamu = regc.exec(m.text);
-  let saymu = ["❤️", "🥰", "😍"];
-  let sayangkamuh = saymu[Math.floor(Math.random() * saymu.length)];
-  if (isSayangKamu && !m.fromMe) {
-    conn.sendMessage(m.chat, {
-      react: {
-        text: `${sayangkamuh}`,
-        key: m.key,
-      },
-    });
-    setTimeout(() => {
-      conn.reply(m.chat, `Aku juga sayang kamu ${sayangkamuh}`, m);
-    }, 1000);
-  }
-
-  /* - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - */
-  /* - - - - - - - Ini autoresponder - - - - - - - */
-  /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
-  let regl = /(I love you|love you)/i;
-  let isLoveYou = regl.exec(m.text);
-  let lovou = ["❤️", "🥰", "😍"];
-  let loveyou = lovou[Math.floor(Math.random() * lovou.length)];
-  if (isLoveYou && !m.fromMe) {
-    let helloaine = fs.readFileSync("./mp3/PTT-20211218-WA0243.opus");
-    conn.sendMessage(m.chat, {
-      react: {
-        text: `${loveyou}`,
-        key: m.key,
-      },
-    });
-    setTimeout(() => {
-      conn.sendFile(m.chat, helloaine, "", "", m, true);
-    }, 1000);
-  }
-
-  /* - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - */
-  /* - - - - - - - Ini autoresponder by wh mods dev - - - - - - - */
-  /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
-  let ass =
-    /(assalamualaikum|assallamualaikum|assalamu\'alaikum|as\'salamualaikum)/i;
-  let isAss = ass.exec(m.text);
-  let assal = ["🥰", "😇", "😅"];
-  let assl = assal[Math.floor(Math.random() * assal.length)];
-  if (isAss && !m.fromMe) {
+  if (
+    isCmd(
+      /(assalamualaikum|assallamualaikum|assalamu\'alaikum|as\'salamualaikum)/i
+    )
+  ) {
     let assalamualaikum = fs.readFileSync("./mp3/waalaikumsalam.ogg");
     conn.sendMessage(m.chat, {
       react: {
-        text: `${assl}`,
+        text: pickRandom(["🥰", "😇", "😅"]),
         key: m.key,
       },
     });
-    setTimeout(() => {
-      conn.sendFile(m.chat, assalamualaikum, "", "", m, true);
-    }, 1000);
+    sleep(1000);
+    conn.sendFile(m.chat, assalamualaikum, null, null, m, true);
   }
 
-  /* - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - */
-  /* - - - - - - - Ini autoresponder by wh mods dev - - - - - - - */
-  /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
-  /* let hiai = /(hi|hii|hiii|hi aine|hii aine|hiii aine|hy|halo|hallo|helo|hello|hy aine|halo aine|hallo aine|helo aine|hello aine)/i
-    let isAih = hiai.exec(m.text)
-    let hiain = [
-'🥰',
-'😇',
-'😅'
-]
-let hiaine = hiain[Math.floor(Math.random() * hiain.length)]
-    if (isAih && !m.fromMe) {
-    let helloaine = fs.readFileSync('./mp3/WhatsApp-Ptt-2021-07-14-at-18.12.33.opus') 
+  if (
+    isCmd(
+      /(h(i|ai|ei|alo|elo|ello|allo) bot)/i
+    )
+  ) {
     conn.sendMessage(m.chat, {
-        react: {
-          text: `${hiaine}`,
-          key: m.key,
-        }})
-    setTimeout(() => {
-    conn.sendFile(m.chat, helloaine, '', '', m, true)
-    }, 1000)
-    }*/
+      react: {
+        text: pickRandom(["🥰", "😇", "😅"]),
+        key: m.key,
+      },
+    });
+    sleep(1000);
+    conn.sendButton(
+      m.chat,
+      pickRandom(["Hello ~", "Hello juga :3", "halo juga >.<", "halooo >w<"]),
+      null,
+      null,
+      [[pickRandom(["OwO", ":D", "UwU"]), ""]],
+      m
+    );
+  }
+  
+  if (
+    isCmd(
+      /(blush|kiwww)/i
+    )
+  ) {
+    conn.sendMessage(m.chat, {
+      react: {
+        text: pickRandom(["🥰", "😇", "😅"]),
+        key: m.key,
+      },
+    });
+    sleep(1000);
+    conn.sendButton(
+      m.chat,
+      pickRandom(["Kiww ~", "Awww >w<"]),
+      null,
+      null,
+      [[pickRandom(["7w7", "7///7", "U////U", "-////-"]), ""]],
+      m
+    );
+  }
 };
 
 handler.limit = false;

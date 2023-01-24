@@ -1343,9 +1343,9 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command }) => {
     throw e;
   }
 };
-handler.help = ["menu", "help", "?"];
+handler.help = ["menu", "help"];
 handler.tags = ["main"];
-handler.command = /^(menu|help|\?)$/i;
+handler.command = /^(menu|help)$/i;
 
 handler.register = false;
 handler.exp = 3;

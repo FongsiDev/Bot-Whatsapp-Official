@@ -14,6 +14,11 @@ Kurang *${max - user.exp}* lagi! ✨
   let before = user.level * 1;
   while (canLevelUp(user.level, user.exp, global.multiplier)) user.level++;
   if (before !== user.level) {
+    let role = (Object.entries(global.roles)
+      .sort((a, b) => b[1] - a[1])
+      .find(([, minLevel]) => user.level > minLevel) ||
+      Object.entries(global.roles)[0])[0];
+    user.role = role;
     let teks = `Selamat ${conn.getName(m.sender)} naik 🧬level\n.             ${
       user.role
     }`;
@@ -22,7 +27,7 @@ Kurang *${max - user.exp}* lagi! ✨
     }
 
 *🎉 C O N G R A T S 🎉*
-*${before}* ➔ *${user.level}* [ *${user.role}* ]
+*${before}* ➔ *${user.level}* [ *${role}* ]
 
 • 🧬Level Sebelumnya : ${before}
 • 🧬Level Baru : ${user.level}

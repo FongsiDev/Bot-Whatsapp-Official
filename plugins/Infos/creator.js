@@ -21,13 +21,14 @@ let handler = async (m, { conn, command, args, usedPrefix, DevMode }) => {
   let ppown = await conn
     .profilePictureUrl(nomorown + "@s.whatsapp.net", "image")
     .catch((_) => hwaifu[1]);
+  const getAge = birthDate => Math.floor((new Date() - new Date(birthDate).getTime()) / 3.15576e+10)
   let teksbio = `${htki} *BIODATA* ${htka}
 ${htjava} *💌 Nama* : BLUECKKN
 ${htjava} *✉️ Nama RL* : HAMBA ALLAH
 ${htjava} *♂️ Gender* : Girls
 ${htjava} *🕋 Agama* : Islam
 ${htjava} *⏰ Tanggal lahir* : Private 🥶
-${htjava} *🎨 Umur* : 11
+${htjava} *🎨 Umur* : ${getAge(global.ageowner)}
 ${htjava} *🧮 Kelas* : 6 sd
 ${htjava} *🧩 Hobby* : Gamer, Main Stumble Guys, dll
 ${htjava} *💬 Sifat* : ASIK DAH KALAU DAH KENAL :D

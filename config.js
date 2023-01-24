@@ -66,12 +66,13 @@ global.povo = "-"; //ovo
 global.pgopay = "-"; //gopay
 global.plinkaja = "-"; //link aja
 global.ppulsa = "6289503433262"; //telkomsel
-global.ppulsa2 = "-"; // kalau ada kartu lain isi aja
+global.ppulsa2 = "6281378163495 ( 20% Bonus )"; // kalau ada kartu lain isi aja
 global.psaweria = "-";
 
 /*============== NOMOR ==============*/
 global.nomorbot = "6282172622047";
 global.nomorown = "6289503433262";
+global.ageowner = "2011-01-13"
 global.namebot = "「 BLUECKKN BOT ⁩㊣ 」";
 global.nameown = "BLUECKKN";
 
@@ -727,48 +728,49 @@ global.roles = {
   /*
     'Role Name': <Minimal Level To Obtain this Role>
     */
-  "Bronze V": 0,
-  "Bronze IV": 5,
+  "Bronze I": 0,
+  "Bronze II": 5,
   "Bronze III": 10,
-  "Bronze II": 15,
-  "Bronze I": 20,
-  "Elite V": 25,
-  "Elite IV": 30,
+  "Bronze IV": 15,
+  "Bronze V": 20,
+  "Elite I": 25,
+  "Elite II": 30,
   "Elite III": 35,
-  "Elite II": 40,
-  "Elite I": 45,
-  "Master V": 50,
-  "Master IV": 55,
+  "Elite IV": 40,
+  "Elite V": 45,
+  "Master I": 50,
+  "Master II": 55,
   "Master III": 60,
-  "Master II": 65,
-  "Master I": 70,
-  "Grand Master V": 75,
-  "Grand Master IV": 80,
+  "Master IV": 65,
+  "Master V": 70,
+  "Grand Master I": 75,
+  "Grand Master II": 80,
   "Grand Master III": 85,
-  "Grand Master II": 90,
-  "Grand Master I": 95,
-  "Epic V": 100,
-  "Epic IV": 105,
+  "Grand Master IV": 90,
+  "Grand Master V": 95,
+  "Epic I": 100,
+  "Epic II": 105,
   "Epic III": 110,
-  "Epic II": 115,
-  "Epic I": 120,
-  "Legend V": 125,
-  "Legend IV": 130,
+  "Epic IV": 115,
+  "Epic V": 120,
+  "Legend I": 125,
+  "Legend II": 130,
   "Legend III": 135,
-  "Legend II": 140,
-  "Legend I": 145,
-  "Mythic V": 150,
-  "Mythic IV": 155,
+  "Legend IV": 140,
+  "Legend V": 145,
+  "Mythic I": 150,
+  "Mythic II": 155,
   "Mythic III": 160,
-  "Mythic II": 165,
-  "Mythic I": 170,
+  "Mythic IV": 165,
+  "Mythic V": 170,
   "Mythic Glory": 175,
-  "EMERALD V": 180,
-  "EMERALD IV": 185,
+  "EMERALD I": 180,
+  "EMERALD II": 185,
   "EMERALD III": 190,
-  "EMERALD II": 195,
-  "EMERALD I": 200,
+  "EMERALD IV": 195,
+  "EMERALD V": 200,
   "THE EMERALD": 205,
+  "HACKER": 500,
   "GOD ( Level Top )": 1000,
 };
 
@@ -855,6 +857,25 @@ watchFile(file, () => {
 });
 
 //------ FUNCTION
+global.pickRandom = pickRandom;
 function pickRandom(list) {
   return list[Math.floor(list.length * Math.random())];
+}
+global.sleep = async (ms) => {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+};
+global.NumberF = abbreviateNumber;
+function abbreviateNumber(number) {
+    const SI_POSTFIXES = ["", "k", "M", "G", "T", "P", "E"];
+    const sign = number < 0 ? '-1' : '';
+    const absNumber = Math.abs(number);
+    const tier = Math.log10(absNumber) / 3 | 0;
+    if(tier == 0) return `${absNumber}`;
+    const postfix = SI_POSTFIXES[tier];
+    const scale = Math.pow(10, tier * 3);
+    const scaled = absNumber / scale;
+    const floored = Math.floor(scaled * 10) / 10;
+    let str = floored.toFixed(1);
+    str = (/\.0$/.test(str)) ? str.substr(0, str.length - 2) : str;
+    return `${sign}${str}${postfix}`;
 }

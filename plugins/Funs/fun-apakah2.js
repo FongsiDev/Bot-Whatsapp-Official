@@ -1,4 +1,4 @@
-let handler = async (m, { command, text }) =>
+let handler = async (m, { command, text }) => {
   m.reply(
     `
 *Pertanyaan:* ${command} ${text}
@@ -18,7 +18,7 @@ let handler = async (m, { command, text }) =>
         }
       : {}
   );
-
+}
 handler.help = ["apakah <teks>?"];
 handler.tags = ["kerang", "fun"];
 handler.command = /^apakah$/i;

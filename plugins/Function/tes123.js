@@ -1,7 +1,7 @@
 import fs from "fs";
 import fetch from "node-fetch";
 let handler = async (m, { conn, usedPrefix: _p }) => {
-  let info = `Bot Disini (>ω<)`;
+  let info = pickRandom([`Bot Disini (>ω<)`, `Bot Disiniiiii (>.<)`, `Bot Disini (><)`]);
 
   let td =
     "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
