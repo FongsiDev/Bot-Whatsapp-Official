@@ -967,7 +967,48 @@ export async function handler(chatUpdate) {
     if (opts["nyimak"]) return;
     if (!m.fromMe && opts["self"]) return;
     if (opts["pconly"] && m.chat.endsWith("g.us")) return;
-    if (opts["gconly"] && !m.chat.endsWith("g.us")) return;
+    if (opts["gconly"] && !m.chat.endsWith("g.us")) {
+      return conn.sendButton(
+        m.chat,
+        `${wm}
+        Mau Pake Bot
+        Atau Masuk in Bot Ke Grub Kalian
+        ╭━━━━「 SEWA 」
+        ┊⫹⫺ Hemat: 5k/grup (1 minggu)
+        ┊⫹⫺ Normal: 15k/grup (1 bulan)
+        ┊⫹⫺ Standar: 30k/grup (2 bulan)
+        ┊⫹⫺ Pro: 35k/grup (4 bulan)                                                      
+        ┊⫹⫺ Vip: = 65k/grup (12 bulan)
+        ╰═┅═━––––––๑
+        
+        ╭━━━━「 PREMIUM 」
+        ┊⫹⫺ Hemat: 5k (1 minggu)
+        ┊⫹⫺ Normal: 20k (1 bulan)
+        ┊⫹⫺ Pro: 40k (4 bulan)
+        ┊⫹⫺ Vip: 50k (8 bulan)                                               
+        ┊⫹⫺ Permanent: = 70k (Unlimited)
+        ╰═┅═━––––––๑
+        
+        ⫹⫺ PAYMENT:
+        • Pulsa Telkomsel: []
+        • Dana: []
+        • Gopay: []
+        • Ovo: []
+        • Link Aja: []
+        
+        Nomor Owner :
+        wa.me/6289503433262
+        
+        ▌│█║▌║▌║║▌║▌║█│▌
+        
+        #blueckkn
+        `.trim(),
+        wm,
+        "Pemilik Bot",
+        ".owner",
+        m
+      );
+    }
     if (opts["swonly"] && m.chat !== "status@broadcast") return;
     if (typeof m.text !== "string") m.text = "";
 
@@ -1139,14 +1180,15 @@ export async function handler(chatUpdate) {
           let chat = global.db.data.chats[m.chat];
           let user = global.db.data.users[m.sender];
           if (
-            name != "owner-unbanchat.js" &&
-            name != "owner-exec.js" &&
-            name != "owner-exec2.js" &&
-            name != "tool-delete.js" &&
+            name != "./plugins/Owners/owner-unbanchat.js" &&
+            name != "./plugins/Owners/owner-exec.js" &&
+            name != "./plugins/Owners/owner-exec2.js" &&
+            name != "./plugins/Owners/tool-delete.js" &&
             chat?.isBanned
           )
             return; // Except this
-          if (name != "owner-unbanuser.js" && user?.banned) return;
+          if (name != "./plugins/Owners/owner-unbanuser.js" && user?.banned)
+            return;
         }
         if (plugin.rowner && plugin.owner && !(isROwner || isOwner)) {
           // Both Owner
@@ -1205,17 +1247,26 @@ export async function handler(chatUpdate) {
           plugin.limit &&
           global.db.data.users[m.sender].limit < plugin.limit * 1
         ) {
-          this.reply(
+          this.sendButton(
             m.chat,
-            `[❗] Limit harian kamu telah habis, silahkan beli melalui *${usedPrefix}buy limit*`,
+            `[❗] *Limit Anda Habis, Beberapa Command Tidak Bisa Di Akses*`,
+            author,
+            null,
+            [
+              ["Buy Limit", "/buy limit"],
+              ["Menu", "/menu"],
+            ],
             m
           );
           continue; // Limit habis
         }
         if (plugin.level > _user.level) {
-          this.reply(
+          this.sendButton(
             m.chat,
-            `[💬] Diperlukan level ${plugin.level} untuk menggunakan perintah ini\n*Level mu:* ${_user.level} 📊`,
+            `[💬] Diperlukan level *${plugin.level}* untuk menggunakan perintah ini. Level kamu *${_user.level}🎋*\n*${plugin.level}* level is required to use this command. Your level is *${_user.level}🎋*`,
+            author,
+            null,
+            [["Ok", "ok"]],
             m
           );
           continue; // If the level has not been reached
@@ -1339,6 +1390,7 @@ export async function handler(chatUpdate) {
     } catch (e) {
       console.log(m, m.quoted, e);
     }
+    if (opts["autoread"]) await this.readMessages([m.key]).catch(() => {});
   }
 }
 /**

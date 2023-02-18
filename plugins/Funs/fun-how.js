@@ -16,9 +16,11 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
     m.chat,
     `
   ${command} *${text}*
-  *${text}* is *${isOwner || isOwner_ ? [100, 80, 90, 84, 79, 59, 70, 59].getRandom() : (101).getRandom()}*% ${command
-      .replace("how", "")
-      .toUpperCase()}
+  *${text}* is *${
+      isOwner || isOwner_
+        ? [100, 80, 90, 84, 79, 59, 70, 59].getRandom()
+        : (101).getRandom()
+    }*% ${command.replace("how", "").toUpperCase()}
   `.trim(),
     m,
     m.mentionedJid

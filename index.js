@@ -1,6 +1,5 @@
 console.clear();
 console.log("🐾 Starting...");
-
 import yargs from "yargs";
 import cfonts from "cfonts";
 import { fileURLToPath } from "url";
@@ -16,6 +15,7 @@ const rl = createInterface(process.stdin, process.stdout);
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const require = createRequire(__dirname); // Bring in the ability to create the 'require' method
 const { name, author } = require(join(__dirname, "./package.json")); // https://www.stefanjudis.com/snippets/how-to-import-json-files-in-es-modules-node-js/
+//import "./logger.js";
 
 say("Lightweight\nWhatsApp Bot", {
   font: "chrome",

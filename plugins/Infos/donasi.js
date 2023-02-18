@@ -43,7 +43,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 │ • *Gopay:* [${global.pgopay}]
 │ • *Ovo:* [${global.povo}]
 │ • *Link Aja:* [${global.plinkaja}]
-❏────`)
+❏────`);
 };
 
 handler.help = ["donasi"];

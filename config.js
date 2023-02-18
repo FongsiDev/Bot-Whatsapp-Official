@@ -72,7 +72,7 @@ global.psaweria = "-";
 /*============== NOMOR ==============*/
 global.nomorbot = "6282172622047";
 global.nomorown = "6289503433262";
-global.ageowner = "2011-01-13"
+global.ageowner = "2011-01-13";
 global.namebot = "「 BLUECKKN BOT ⁩㊣ 」";
 global.nameown = "BLUECKKN";
 
@@ -103,6 +103,7 @@ global.APIs = {
   zahir: "https://zahirr-web.herokuapp.com",
   lol: "https://api.lolhuman.xyz",
   dhnjing: "https://dhnjing.xyz",
+  ApiFgsi: "https://api-fgsi.sytes.net",
   neoxr: "https://neoxr-api.herokuapp.com",
   zeks: "https://api.zeks.me",
   pencarikode: "https://pencarikode.xyz",
@@ -132,6 +133,7 @@ global.APIKeys = {
   "https://hardianto.xyz": "hardianto",
   "https://violetics.pw": "beta",
   "https://ziy.herokuapp.com": "xZiyy",
+  "https://api-fgsi.sytes.net": "c05252c3",
 };
 // Kata APIKEY itu isi dengan apikey lu sendiri, dengan beli ke website itu
 
@@ -151,11 +153,11 @@ global.fpagedoc = "1".repeat(10);
 global.thumbdoc = "https://telegra.ph/file/6e45318d7c76f57e4a8bd.jpg";
 
 /*============== LOGO ==============*/
-global.thumb = "https://upload.blueckkn.repl.co/L4CyqphbX.jpg"; //Main Thumbnail
-global.imagebot = "https://upload.blueckkn.repl.co/L4CyqphbX.jpg";
+global.thumb = "https://telegra.ph/file/e72de2cbba03f58eba7d1.jpg"; //Main Thumbnail
+global.imagebot = "https://telegra.ph/file/e72de2cbba03f58eba7d1.jpg";
 global.giflogo = "https://telegra.ph/file/a46ab7fa39338b1f54d5a.mp4";
-global.thumbs = ["https://upload.blueckkn.repl.co/L4CyqphbX.jpg"];
-global.fla = "https://upload.blueckkn.repl.co/L4CyqphbX.jpg";
+global.thumbs = ["https://telegra.ph/file/e72de2cbba03f58eba7d1.jpg"];
+global.fla = "https://telegra.ph/file/e72de2cbba03f58eba7d1.jpg";
 global.thumbnailUrl = [
   "https://telegra.ph/file/81260a8b9e8cff26d2b48.jpg",
   "https://telegra.ph/file/ac4928f0824a2a0492737.jpg",
@@ -688,7 +690,7 @@ global.dxlsx =
 global.dpdf = "application/pdf";
 global.drtf = "text/rtf";
 
-global.thumbdoc = "https://upload.blueckkn.repl.co/ZrSrUebc7.jpg";
+global.thumbdoc = "https://telegra.ph/file/6e45318d7c76f57e4a8bd.jpg";
 
 /*=========== FAKE SIZE ===========*/
 global.fsizedoc = "99999999999999"; // default 10TB
@@ -770,7 +772,7 @@ global.roles = {
   "EMERALD IV": 195,
   "EMERALD V": 200,
   "THE EMERALD": 205,
-  "HACKER": 500,
+  HACKER: 500,
   "GOD ( Level Top )": 1000,
 };
 
@@ -866,16 +868,16 @@ global.sleep = async (ms) => {
 };
 global.NumberF = abbreviateNumber;
 function abbreviateNumber(number) {
-    const SI_POSTFIXES = ["", "k", "M", "G", "T", "P", "E"];
-    const sign = number < 0 ? '-1' : '';
-    const absNumber = Math.abs(number);
-    const tier = Math.log10(absNumber) / 3 | 0;
-    if(tier == 0) return `${absNumber}`;
-    const postfix = SI_POSTFIXES[tier];
-    const scale = Math.pow(10, tier * 3);
-    const scaled = absNumber / scale;
-    const floored = Math.floor(scaled * 10) / 10;
-    let str = floored.toFixed(1);
-    str = (/\.0$/.test(str)) ? str.substr(0, str.length - 2) : str;
-    return `${sign}${str}${postfix}`;
+  const SI_POSTFIXES = ["", "k", "M", "G", "T", "P", "E"];
+  const sign = number < 0 ? "-1" : "";
+  const absNumber = Math.abs(number);
+  const tier = (Math.log10(absNumber) / 3) | 0;
+  if (tier == 0) return `${absNumber}`;
+  const postfix = SI_POSTFIXES[tier];
+  const scale = Math.pow(10, tier * 3);
+  const scaled = absNumber / scale;
+  const floored = Math.floor(scaled * 10) / 10;
+  let str = floored.toFixed(1);
+  str = /\.0$/.test(str) ? str.substr(0, str.length - 2) : str;
+  return `${sign}${str}${postfix}`;
 }

@@ -449,97 +449,97 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command }) => {
         rows: [
           {
             title: `💬 ${pmenus} All`,
-            rowId: ".? all",
+            rowId: ".menu all",
             description: "Menampilkan Semua command BOT",
           },
           {
             title: `🌱 ${pmenus} Rpg`,
-            rowId: ".? rpg",
+            rowId: ".menu rpg",
             description: "Game Epic Rpg!",
           },
           {
             title: `✨ ${pmenus} Exp`,
-            rowId: ".? xp",
+            rowId: ".menu xp",
             description: "Ayo tingkatkan pangkat mu!",
           },
           {
             title: `🎮 ${pmenus} Game`,
-            rowId: ".? game",
+            rowId: ".menu game",
             description: "Gamenya seru seru lho >-<",
           },
           {
             title: `🧩 ${pmenus} Fun`,
-            rowId: ".? fun",
+            rowId: ".menu fun",
             description: "Fitur yang aman untuk keluarga",
           },
           {
             title: `🐚 ${pmenus} Kerang`,
-            rowId: ".? kerangajaib",
+            rowId: ".menu kerangajaib",
             description: "Tanyakan pada ketua club",
           },
           {
             title: `📑 ${pmenus} Quotes`,
-            rowId: ".? quotes",
+            rowId: ".menu quotes",
             description: "Random Inspirasi",
           },
           {
             title: `⛩️ ${pmenus} Anime`,
-            rowId: ".? anime",
+            rowId: ".menu anime",
             description: "Kamu wibu ya bang?",
           },
           {
             title: `🔞 ${pmenus} Nsfw`,
-            rowId: ".? nsfw",
+            rowId: ".menu nsfw",
             description: "Tch, dasar sagne",
           },
           {
             title: `🌟 ${pmenus} Premium`,
-            rowId: ".? premium",
+            rowId: ".menu premium",
             description: "Only premium Users",
           },
           {
             title: `🎭 ${pmenus} Anonymous Chats`,
-            rowId: ".? anonymous",
+            rowId: ".menu anonymous",
             description: "Bicara dengan orang tidak dikenal",
           },
           {
             title: `📖 ${pmenus} Al-Quran`,
-            rowId: ".? quran",
+            rowId: ".menu quran",
             description: "Tobat yuk kak",
           },
           {
             title: `🌎 ${pmenus} Internet`,
-            rowId: ".? internet",
+            rowId: ".menu internet",
             description: "Cari sesuatu diBOT",
           },
           {
             title: `🌎 ${pmenus} Berita`,
-            rowId: ".? berita",
+            rowId: ".menu berita",
             description: "Cari berita terupdate",
           },
           {
             title: `📩 ${pmenus} Downloaders`,
-            rowId: ".? downloader",
+            rowId: ".menu downloader",
             description: "Download sesuatu diBOT",
           },
           {
             title: `🎨 ${pmenus} Stikers`,
-            rowId: ".? stiker",
+            rowId: ".menu stiker",
             description: "Buat Sticker diBOT",
           },
           {
             title: `🎨 ${pmenus} Logo`,
-            rowId: ".? logo",
+            rowId: ".menu logo",
             description: "Buat Logo Kamu diBOT",
           },
           {
             title: `✏️ ${pmenus} Nulis`,
-            rowId: ".? nulis",
+            rowId: ".menu nulis",
             description: "Nulis kok males kak?",
           },
           {
             title: `🎧 ${pmenus} Audio`,
-            rowId: ".? audio",
+            rowId: ".menu audio",
             description: "Ubah Audio dengan Filter",
           },
           {
@@ -554,37 +554,37 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command }) => {
           },
           {
             title: `🏢 ${pmenus} Group`,
-            rowId: ".? group",
+            rowId: ".menu group",
             description: "Only Groups",
           },
           {
             title: `👑 ${pmenus} Admin`,
-            rowId: ".? admin",
+            rowId: ".menu admin",
             description: "Only Admin Group",
           },
           {
             title: `🗂️ ${pmenus} Database`,
-            rowId: ".? database",
+            rowId: ".menu database",
             description: "Simpan sesuatu diBOT",
           },
           {
             title: `🛠️ ${pmenus} Tools`,
-            rowId: ".? tools",
+            rowId: ".menu tools",
             description: "Mungkin tools ini bisa membantu?",
           },
           {
             title: `ℹ️ ${pmenus} Info`,
-            rowId: ".? info",
+            rowId: ".menu info",
             description: "Info info BOT",
           },
           {
             title: `👩‍💻 ${pmenus} Owner`,
-            rowId: ".? owner",
+            rowId: ".menu owner",
             description: "Owner Only!",
           },
           {
             title: `❓ ${pmenus} No Category`,
-            rowId: ".? nocategory",
+            rowId: ".menu nocategory",
             description: "Fitur tanpa kategory!",
           },
         ],
@@ -644,7 +644,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command }) => {
 │
 ├━━━━━━━━━━━━━━━━┈─⋆
 │
-│ ▸ *YouTube :* BlueCkkn
+│ ▸ *YouTube :* ${nameown}
 │ ▸ *ᴀᴜᴛʜᴏʀ :* ${nameown}
 ┴ ▸ *ᴏᴡɴᴇʀ :* ${nameown}
 ✧
@@ -1291,7 +1291,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command }) => {
     })(b, 0xd441d),
       conn["send3ButtonVid"](
         m[q(-0x181, "#U1q")],
-        q(-"0x190", "TrSb"),
+        "https://telegra.ph/file/a46ab7fa39338b1f54d5a.mp4",
         "┅────┅─❏\x20*𝐃𝐀𝐒𝐇𝐁𝐎𝐀𝐑𝐃*\x20❏─┅────┅",
         text[l(-"0x24a", -0x24e)]() +
           (q(-"0x189", "bGCh") + nameown + "\x0a") +

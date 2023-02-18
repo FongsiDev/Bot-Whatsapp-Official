@@ -21,24 +21,14 @@ function connect(PORT, conn) {
   });
   app.get("/nowa", async (req, res) => {
     let q = req.query.number,
+      msg = req.query.msg,
       regex = /x/g;
     if (!q) return res.send("Input Parameter Number Parameter");
-    if (!q.match(regex))
-      return res.send('Parameter Number Must Fill With One Letter "x"');
-    let random = q.match(regex).length,
-      total = Math.pow(10, random),
-      array = [];
-    for (let i = 0; i < total; i++) {
-      let list = [...i.toString().padStart(random, "0")];
-      let result = q.replace(regex, () => list.shift()) + "@s.whatsapp.net";
-      if (await conn.onWhatsApp(result).then((v) => (v[0] || {}).exists)) {
-        let info = await conn.fetchStatus(result).catch((_) => {});
-        array.push({ jid: result, exists: true, ...info });
-      } else {
-        array.push({ jid: result, exists: false });
-      }
-    }
-    res.json({ result: array });
+    if (!msg) return res.send("Input Parameter Message");
+    conn.sendMessage(q.replace(/[^0-9]/g, "") + "@s.whatsapp.net", {
+      text: msg,
+    });
+    res.json({ status: 200 });
   });
 
   server.listen(PORT, () => {

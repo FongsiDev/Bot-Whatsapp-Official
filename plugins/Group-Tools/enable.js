@@ -26,7 +26,10 @@ let handler = async (
           title: "🚫 | Antidelete",
           rowId: `${usedPrefix + command} antidelete`,
         },
-        { title: "📛 | Antivirtex", rowId: `${usedPrefix + command} antivirtex` },
+        {
+          title: "📛 | Antivirtex",
+          rowId: `${usedPrefix + command} antivirtex`,
+        },
         { title: "📛 | Antitoxic", rowId: `${usedPrefix + command} antitoxic` },
         {
           title: "⏏️ | Autolevelup",

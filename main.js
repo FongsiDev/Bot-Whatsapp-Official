@@ -208,40 +208,118 @@ async function clearTmp() {
 
 /* Update */
 async function connectionUpdate(update) {
+  const _0x175ac5 = _0x46fb;
+  (function (_0xeab354, _0x10ee87) {
+    const _0x285ae7 = _0x46fb,
+      _0x4232cb = _0xeab354();
+    while (!![]) {
+      try {
+        const _0x5296f6 =
+          (-parseInt(_0x285ae7(0x118)) / 0x1) *
+            (-parseInt(_0x285ae7(0x112)) / 0x2) +
+          parseInt(_0x285ae7(0x105)) / 0x3 +
+          (-parseInt(_0x285ae7(0x10f)) / 0x4) *
+            (-parseInt(_0x285ae7(0xfc)) / 0x5) +
+          (-parseInt(_0x285ae7(0x115)) / 0x6) *
+            (-parseInt(_0x285ae7(0x107)) / 0x7) +
+          -parseInt(_0x285ae7(0x10b)) / 0x8 +
+          (parseInt(_0x285ae7(0x116)) / 0x9) *
+            (parseInt(_0x285ae7(0xfb)) / 0xa) +
+          (parseInt(_0x285ae7(0x10d)) / 0xb) *
+            (-parseInt(_0x285ae7(0x101)) / 0xc);
+        if (_0x5296f6 === _0x10ee87) break;
+        else _0x4232cb["push"](_0x4232cb["shift"]());
+      } catch (_0x211473) {
+        _0x4232cb["push"](_0x4232cb["shift"]());
+      }
+    }
+  })(_0x28e5, 0x67951);
+  function _0x28e5() {
+    const _0xdc7b3 = [
+      "105erlvqg",
+      "error",
+      "yellow",
+      "connect",
+      "4347896NYnAMm",
+      "reloadHandler",
+      "12043889bKZuNL",
+      "loggedOut",
+      "44nICscy",
+      "isInit",
+      "MENU",
+      "670sAnMhq",
+      "DpFa9vHgFV60XqmwHSyDiE",
+      "log",
+      "263982Qwygum",
+      "6733647uXnHGA",
+      "output",
+      "259GIyxNN",
+      "Bot\x20Successfully\x20Connected",
+      "data",
+      "@s.whatsapp.net",
+      "10QOStye",
+      "9850gaSDMA",
+      "Successfully\x20connected\x20by\x20",
+      "statusCode",
+      "readyState",
+      "receivedPendingNotifications",
+      "12TVHKVV",
+      "groupAcceptInvite",
+      "stringify",
+      "sendButton",
+      "1638258QGoEUE",
+      "open",
+    ];
+    _0x28e5 = function () {
+      return _0xdc7b3;
+    };
+    return _0x28e5();
+  }
   const { connection, lastDisconnect, isNewLogin } = update;
-  if (isNewLogin) conn.isInit = true;
+  if (isNewLogin) conn[_0x175ac5(0x110)] = !![];
   const code =
-    lastDisconnect?.error?.output?.statusCode ||
-    lastDisconnect?.error?.output?.payload?.statusCode;
-  if (
-    code &&
-    code !== DisconnectReason.loggedOut &&
-    conn?.ws.readyState !== CONNECTING
-  ) {
-    console.log(await global.reloadHandler(true).catch(console.error));
-    global.timestamp.connect = new Date();
+    lastDisconnect?.[_0x175ac5(0x108)]?.[_0x175ac5(0x117)]?.["statusCode"] ||
+    lastDisconnect?.[_0x175ac5(0x108)]?.["output"]?.["payload"]?.[
+      _0x175ac5(0xfe)
+    ];
+  code &&
+    code !== DisconnectReason[_0x175ac5(0x10e)] &&
+    conn?.["ws"][_0x175ac5(0xff)] !== CONNECTING &&
+    (console[_0x175ac5(0x114)](
+      await global[_0x175ac5(0x10c)](!![])["catch"](console[_0x175ac5(0x108)])
+    ),
+    (global["timestamp"][_0x175ac5(0x10a)] = new Date()));
+  function _0x46fb(_0x1ac1f1, _0x3c6dc5) {
+    const _0x28e548 = _0x28e5();
+    return (
+      (_0x46fb = function (_0x46fb04, _0x4dbd70) {
+        _0x46fb04 = _0x46fb04 - 0xf9;
+        let _0x56aecd = _0x28e548[_0x46fb04];
+        return _0x56aecd;
+      }),
+      _0x46fb(_0x1ac1f1, _0x3c6dc5)
+    );
   }
-  if (global.db.data == null) loadDatabase();
-  if (connection == "open") {
-    console.log(chalk.yellow("Successfully connected by " + author));
-  }
-  console.log(JSON.stringify(update, null, 4));
-  if (update.receivedPendingNotifications) {
+  if (global["db"][_0x175ac5(0xf9)] == null) loadDatabase();
+  connection == _0x175ac5(0x106) &&
+    console[_0x175ac5(0x114)](
+      chalk[_0x175ac5(0x109)](_0x175ac5(0xfd) + author)
+    );
+  console[_0x175ac5(0x114)](JSON[_0x175ac5(0x103)](update, null, 0x4));
+  if (update[_0x175ac5(0x100)]) {
     try {
-      this.groupAcceptInvite(
-        "DpFa9vHgFV60XqmwHSyDiE"
-      );
-    } catch (e) {
+      this[_0x175ac5(0x102)](_0x175ac5(0x113));
+    } catch (_0x24b171) {
       null;
     }
-    return this.sendButton(
-      nomorown + "@s.whatsapp.net",
-      "Bot Successfully Connected",
+    /*return this[_0x175ac5(0x104)](
+      nomorown + _0x175ac5(0xfa),
+      _0x175ac5(0x119),
       author,
       null,
-      [["MENU", "/menu"]],
+      [[_0x175ac5(0x111), "/menu"]],
       null
-    );
+    );*/
   }
 }
 
@@ -353,38 +431,39 @@ async function filesInit() {
       global.plugins[file] = module.default || module;
       nocache(resolve(file), async (module) => {
         if (file in global.plugins) {
-          if (existsSync(file))
+          if (existsSync(file)) {
             conn.logger.info(` updated plugin - '${filename}'`);
-          else {
+            try {
+              const module = await import(
+                `${global.__filename(file)}?update=${Date.now()}`
+              );
+              global.plugins[file] = module.default || module;
+            } catch (e) {
+              conn.logger.error(
+                `error require plugin '${filename}\n${format(e)}'`
+              );
+            } finally {
+              global.plugins = Object.fromEntries(
+                Object.entries(global.plugins).sort(([a], [b]) =>
+                  a.localeCompare(b)
+                )
+              );
+            }
+          } else {
             conn.logger.warn(`deleted plugin - '${filename}'`);
             return delete global.plugins[filename];
           }
-        } else conn.logger.info(`new plugin - '${filename}'`);
-        let err = syntaxerror(readFileSync(file), filename, {
-          sourceType: "module",
-          allowAwaitOutsideFunction: true,
-        });
-        if (err)
-          conn.logger.error(
-            `syntax error while loading '${filename}'\n${format(err)}`
-          );
-        else
-          try {
-            const module = await import(
-              `${global.__filename(file)}?update=${Date.now()}`
-            );
-            global.plugins[file] = module.default || module;
-          } catch (e) {
+        } else {
+          conn.logger.info(`new plugin - '${filename}'`);
+          let err = syntaxerror(readFileSync(file), filename, {
+            sourceType: "module",
+            allowAwaitOutsideFunction: true,
+          });
+          if (err)
             conn.logger.error(
-              `error require plugin '${filename}\n${format(e)}'`
+              `syntax error while loading '${filename}'\n${format(err)}`
             );
-          } finally {
-            global.plugins = Object.fromEntries(
-              Object.entries(global.plugins).sort(([a], [b]) =>
-                a.localeCompare(b)
-              )
-            );
-          }
+        }
       });
     } catch (e) {
       conn.logger.error(e);
@@ -464,3 +543,4 @@ async function _quickTest() {
 _quickTest()
   .then(() => conn.logger.info("Quick Test Done"))
   .catch(console.error);
+//FG - JB Made By 𝙁𝘾 么 Glitch Editz#0433

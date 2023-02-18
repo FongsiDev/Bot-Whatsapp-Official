@@ -5,8 +5,14 @@ handler.before = async function (m) {
   if (user.premium && new Date() - user.premiumTime > 0) {
     user.premiumTime = 0;
     user.premium = false;
-    m.reply(`Premium anda telah habis, silakan ketik .sewa untuk membeli premium lagi`);
-    this.reply(m.sender, `Premium anda telah habis, silakan ketik .sewa untuk membeli premium lagi`, m);
+    m.reply(
+      `Premium anda telah habis, silakan ketik .sewa untuk membeli premium lagi`
+    );
+    this.reply(
+      m.sender,
+      `Premium anda telah habis, silakan ketik .sewa untuk membeli premium lagi`,
+      m
+    );
   }
 };
 
