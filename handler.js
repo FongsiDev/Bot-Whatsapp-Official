@@ -964,54 +964,7 @@ export async function handler(chatUpdate) {
     } catch (e) {
       console.error(e);
     }
-    if (opts["nyimak"]) return;
-    if (!m.fromMe && opts["self"]) return;
-    if (opts["pconly"] && m.chat.endsWith("g.us")) return;
-    if (opts["gconly"] && !m.chat.endsWith("g.us")) {
-      return conn.sendButton(
-        m.chat,
-        `${wm}
-        Mau Pake Bot
-        Atau Masuk in Bot Ke Grub Kalian
-        ╭━━━━「 SEWA 」
-        ┊⫹⫺ Hemat: 5k/grup (1 minggu)
-        ┊⫹⫺ Normal: 15k/grup (1 bulan)
-        ┊⫹⫺ Standar: 30k/grup (2 bulan)
-        ┊⫹⫺ Pro: 35k/grup (4 bulan)                                                      
-        ┊⫹⫺ Vip: = 65k/grup (12 bulan)
-        ╰═┅═━––––––๑
-        
-        ╭━━━━「 PREMIUM 」
-        ┊⫹⫺ Hemat: 5k (1 minggu)
-        ┊⫹⫺ Normal: 20k (1 bulan)
-        ┊⫹⫺ Pro: 40k (4 bulan)
-        ┊⫹⫺ Vip: 50k (8 bulan)                                               
-        ┊⫹⫺ Permanent: = 70k (Unlimited)
-        ╰═┅═━––––––๑
-        
-        ⫹⫺ PAYMENT:
-        • Pulsa Telkomsel: []
-        • Dana: []
-        • Gopay: []
-        • Ovo: []
-        • Link Aja: []
-        
-        Nomor Owner :
-        wa.me/6289503433262
-        
-        ▌│█║▌║▌║║▌║▌║█│▌
-        
-        #blueckkn
-        `.trim(),
-        wm,
-        "Pemilik Bot",
-        ".owner",
-        m
-      );
-    }
-    if (opts["swonly"] && m.chat !== "status@broadcast") return;
     if (typeof m.text !== "string") m.text = "";
-
     const isROwner = [
       conn.decodeJid(global.conn.user.id),
       ...global.owner.map(([number]) => number),
@@ -1297,6 +1250,70 @@ export async function handler(chatUpdate) {
         };
         try {
           console.log(m.plugin);
+          if (opts["nyimak"]) return;
+          if (!m.fromMe && opts["self"]) return;
+          if (
+            opts["pconly"] &&
+            !m.fromMe &&
+            m.isCommand &&
+            m.chat.endsWith("g.us")
+          )
+            return;
+          if (
+            opts["gconly"] &&
+            !m.fromMe &&
+            m.isCommand &&
+            !m.chat.endsWith("g.us")
+          ) {
+            return conn.sendButton(
+              m.chat,
+              `${wm}
+        Mau Pake Bot
+        Atau Masuk in Bot Ke Grub Kalian
+        ╭━━━━「 SEWA 」
+        ┊⫹⫺ Hemat: 5k/grup (1 minggu)
+        ┊⫹⫺ Normal: 15k/grup (1 bulan)
+        ┊⫹⫺ Standar: 30k/grup (2 bulan)
+        ┊⫹⫺ Pro: 35k/grup (4 bulan)
+        ┊⫹⫺ Vip: = 65k/grup (12 bulan)
+        ╰═┅═━––––––๑
+        
+        ╭━━━━「 PREMIUM 」
+        ┊⫹⫺ Hemat: 5k (1 minggu)
+        ┊⫹⫺ Normal: 20k (1 bulan)
+        ┊⫹⫺ Pro: 40k (4 bulan)
+        ┊⫹⫺ Vip: 50k (8 bulan)                                               
+        ┊⫹⫺ Permanent: = 70k (Unlimited)
+        ╰═┅═━––––––๑
+        
+        ⫹⫺ PAYMENT:
+        • Pulsa Telkomsel: []
+        • Dana: []
+        • Gopay: []
+        • Ovo: []
+        • Link Aja: []
+        
+        Nomor Owner :
+        wa.me/6289503433262
+        
+        ▌│█║▌║▌║║▌║▌║█│▌
+        
+        #blueckkn
+        `.trim(),
+              wm,
+              "Pemilik Bot",
+              ".owner",
+              m
+            );
+          }
+          if (
+            opts["swonly"] &&
+            !m.fromMe &&
+            m.isCommand &&
+            m.chat !== "status@broadcast"
+          )
+            return;
+
           await plugin.call(this, m, extra);
           if (!isPrems) m.limit = m.limit || plugin.limit || false;
         } catch (e) {

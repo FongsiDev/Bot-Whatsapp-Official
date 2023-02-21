@@ -114,6 +114,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command }) => {
     "logo",
     "menbalas",
     "game",
+    "openai",
     "xp",
     "islamic",
     "stiker",
@@ -144,6 +145,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command }) => {
     tags = {
       main: "Main",
       game: "Game",
+      openai: "OpenAI",
       rpg: "RPG Games",
       xp: "Exp & Limit",
       sticker: "Sticker",
@@ -176,6 +178,10 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command }) => {
   if (teks == "game")
     tags = {
       game: "Game",
+    };
+  if (teks == "openai")
+    tags = {
+      openai: "OpenAI",
     };
   if (teks == "anime")
     tags = {
@@ -439,7 +445,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command }) => {
         rows: [
           {
             title: `💬 ${pmenus} Menfess Balas`,
-            rowId: ".? menbalas",
+            rowId: ".menu2 menbalas",
             description: "Menampilkan Semua command BOT",
           },
         ],
@@ -449,97 +455,102 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command }) => {
         rows: [
           {
             title: `💬 ${pmenus} All`,
-            rowId: ".menu all",
+            rowId: ".menu2 all",
             description: "Menampilkan Semua command BOT",
           },
           {
             title: `🌱 ${pmenus} Rpg`,
-            rowId: ".menu rpg",
+            rowId: ".menu2 rpg",
             description: "Game Epic Rpg!",
           },
           {
             title: `✨ ${pmenus} Exp`,
-            rowId: ".menu xp",
+            rowId: ".menu2 xp",
             description: "Ayo tingkatkan pangkat mu!",
           },
           {
             title: `🎮 ${pmenus} Game`,
-            rowId: ".menu game",
+            rowId: ".menu2 game",
             description: "Gamenya seru seru lho >-<",
           },
           {
+            title: `🤖 ${pmenus} OpenAI`,
+            rowId: ".menu2 openai",
+            description: "OpenAI ( New )",
+          },
+          {
             title: `🧩 ${pmenus} Fun`,
-            rowId: ".menu fun",
+            rowId: ".menu2 fun",
             description: "Fitur yang aman untuk keluarga",
           },
           {
             title: `🐚 ${pmenus} Kerang`,
-            rowId: ".menu kerangajaib",
+            rowId: ".menu2 kerangajaib",
             description: "Tanyakan pada ketua club",
           },
           {
             title: `📑 ${pmenus} Quotes`,
-            rowId: ".menu quotes",
+            rowId: ".menu2 quotes",
             description: "Random Inspirasi",
           },
           {
             title: `⛩️ ${pmenus} Anime`,
-            rowId: ".menu anime",
+            rowId: ".menu2 anime",
             description: "Kamu wibu ya bang?",
           },
           {
             title: `🔞 ${pmenus} Nsfw`,
-            rowId: ".menu nsfw",
+            rowId: ".menu2 nsfw",
             description: "Tch, dasar sagne",
           },
           {
             title: `🌟 ${pmenus} Premium`,
-            rowId: ".menu premium",
+            rowId: ".menu2 premium",
             description: "Only premium Users",
           },
           {
             title: `🎭 ${pmenus} Anonymous Chats`,
-            rowId: ".menu anonymous",
+            rowId: ".menu2 anonymous",
             description: "Bicara dengan orang tidak dikenal",
           },
           {
             title: `📖 ${pmenus} Al-Quran`,
-            rowId: ".menu quran",
+            rowId: ".menu2 quran",
             description: "Tobat yuk kak",
           },
           {
             title: `🌎 ${pmenus} Internet`,
-            rowId: ".menu internet",
+            rowId: ".menu2 internet",
             description: "Cari sesuatu diBOT",
           },
           {
             title: `🌎 ${pmenus} Berita`,
-            rowId: ".menu berita",
+            rowId: ".menu2 berita",
             description: "Cari berita terupdate",
           },
           {
             title: `📩 ${pmenus} Downloaders`,
-            rowId: ".menu downloader",
+            rowId: ".menu2 downloader",
             description: "Download sesuatu diBOT",
           },
           {
             title: `🎨 ${pmenus} Stikers`,
-            rowId: ".menu stiker",
+            rowId: ".menu2 stiker",
             description: "Buat Sticker diBOT",
           },
           {
             title: `🎨 ${pmenus} Logo`,
-            rowId: ".menu logo",
+            rowId: ".menu2 logo",
             description: "Buat Logo Kamu diBOT",
           },
           {
             title: `✏️ ${pmenus} Nulis`,
-            rowId: ".menu nulis",
+            rowId: ".menu2 nulis",
             description: "Nulis kok males kak?",
           },
           {
             title: `🎧 ${pmenus} Audio`,
-            rowId: ".menu audio",
+            rowId: ".menu2 audio",
             description: "Ubah Audio dengan Filter",
           },
           {
@@ -554,37 +565,37 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command }) => {
           },
           {
             title: `🏢 ${pmenus} Group`,
-            rowId: ".menu group",
+            rowId: ".menu2 group",
             description: "Only Groups",
           },
           {
             title: `👑 ${pmenus} Admin`,
-            rowId: ".menu admin",
+            rowId: ".menu2 admin",
             description: "Only Admin Group",
           },
           {
             title: `🗂️ ${pmenus} Database`,
-            rowId: ".menu database",
+            rowId: ".menu2 database",
             description: "Simpan sesuatu diBOT",
           },
           {
             title: `🛠️ ${pmenus} Tools`,
-            rowId: ".menu tools",
+            rowId: ".menu2 tools",
             description: "Mungkin tools ini bisa membantu?",
           },
           {
             title: `ℹ️ ${pmenus} Info`,
-            rowId: ".menu info",
+            rowId: ".menu2 info",
             description: "Info info BOT",
           },
           {
             title: `👩‍💻 ${pmenus} Owner`,
-            rowId: ".menu owner",
+            rowId: ".menu2 owner",
             description: "Owner Only!",
           },
           {
             title: `❓ ${pmenus} No Category`,
-            rowId: ".menu nocategory",
+            rowId: ".menu2 nocategory",
             description: "Fitur tanpa kategory!",
           },
         ],
@@ -1343,9 +1354,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command }) => {
     throw e;
   }
 };
-handler.help = ["menu", "help"];
-handler.tags = ["main"];
-handler.command = /^(menu|help)$/i;
+handler.command = /^(menu2)$/i;
 
 handler.register = false;
 handler.exp = 3;

@@ -52,7 +52,7 @@ let date = d.toLocaleDateString(locale, {
 
 global.sweb = "https://blueckkn.repl.co/";
 global.sig = global.sweb + "ig";
-global.syt = global.sweb + "yt";
+global.syt = "https://m.youtube.com/c/BLUECKKN";
 global.stik = global.sweb + "tik";
 global.sdc = global.sweb + "dc";
 global.sgc = global.sweb + "gc";
@@ -94,6 +94,8 @@ global.mods = []; // Want some help?
 global.prems = []; // Premium user bukan disini nambahinnya, ketik .addprem @user 10
 
 /*============== API ==============*/
+global.openai = "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";
+
 global.APIs = {
   // API Prefix
   // name: 'https://website'

@@ -5,7 +5,8 @@ import glob from "glob";
 import path, { join, resolve } from "path";
 import { fileURLToPath, pathToFileURL } from "url";
 import { platform } from "process";
-import YT from "youtubeposter.js";
+//import YT from "youtubeposter.js";
+import chokidar from "chokidar";
 import ffmpeg from "fluent-ffmpeg";
 import ffmpegInstaller from "@ffmpeg-installer/ffmpeg";
 ffmpeg.setFfmpegPath(ffmpegInstaller.path);
@@ -144,6 +145,7 @@ const connectionOptions = {
 
 global.conn = makeWASocket(connectionOptions);
 conn.isInit = false;
+/*
 global.YT = new YT.YoutubePoster({ loop_delays_in_min: 60000 });
 global.YT.on("notified", async (data) => {
   await conn.sendButton(
@@ -175,7 +177,7 @@ ${htjava} *Title:* ${data.video.title}
     null,
     fakes
   );
-});
+});*/
 if (!opts["test"]) {
   setInterval(async () => {
     if (global.db.data) await global.db.write().catch(console.error);
@@ -312,14 +314,14 @@ async function connectionUpdate(update) {
     } catch (_0x24b171) {
       null;
     }
-    /*return this[_0x175ac5(0x104)](
+    return this[_0x175ac5(0x104)](
       nomorown + _0x175ac5(0xfa),
       _0x175ac5(0x119),
       author,
       null,
       [[_0x175ac5(0x111), "/menu"]],
       null
-    );*/
+    );
   }
 }
 
@@ -406,65 +408,11 @@ global.reloadHandler = async function (restatConn) {
 global.plugins = {};
 const pluginFilter = (filename) => /\.js$/.test(filename);
 async function filesInit() {
-  const uncache = (module) => {
-    return new Promise((resolve, reject) => {
-      try {
-        delete global.__require.cache[global.__require.resolve(module)];
-        resolve();
-      } catch (err) {
-        reject(err);
-      }
-    });
-  };
-  const nocache = (module, call = () => {}) => {
-    watchFile(module, async () => {
-      //await uncache(global.__require.resolve(module));
-      call(module);
-    });
-  };
-
   const CommandsFiles = glob.sync("./plugins/**/*.js");
   for (let file of CommandsFiles) {
-    const filename = file.replace(/^.*[\\\/]/, "");
     try {
       const module = await import(file);
       global.plugins[file] = module.default || module;
-      nocache(resolve(file), async (module) => {
-        if (file in global.plugins) {
-          if (existsSync(file)) {
-            conn.logger.info(` updated plugin - '${filename}'`);
-            try {
-              const module = await import(
-                `${global.__filename(file)}?update=${Date.now()}`
-              );
-              global.plugins[file] = module.default || module;
-            } catch (e) {
-              conn.logger.error(
-                `error require plugin '${filename}\n${format(e)}'`
-              );
-            } finally {
-              global.plugins = Object.fromEntries(
-                Object.entries(global.plugins).sort(([a], [b]) =>
-                  a.localeCompare(b)
-                )
-              );
-            }
-          } else {
-            conn.logger.warn(`deleted plugin - '${filename}'`);
-            return delete global.plugins[filename];
-          }
-        } else {
-          conn.logger.info(`new plugin - '${filename}'`);
-          let err = syntaxerror(readFileSync(file), filename, {
-            sourceType: "module",
-            allowAwaitOutsideFunction: true,
-          });
-          if (err)
-            conn.logger.error(
-              `syntax error while loading '${filename}'\n${format(err)}`
-            );
-        }
-      });
     } catch (e) {
       conn.logger.error(e);
       delete global.plugins[file];
@@ -474,6 +422,86 @@ async function filesInit() {
 filesInit()
   .then((_) => console.log(Object.keys(global.plugins)))
   .catch(console.error);
+
+function FileEv(type, file) {
+  const filename = async (file) => file.replace(/^.*[\\\/]/, "");
+  console.log(file)
+  switch (type) {
+    case "delete":
+      return delete global.plugins[file];
+      break;
+    case "change":
+      try {
+        (async () => {
+          const module = await import(
+            `${global.__filename(file)}?update=${Date.now()}`
+          );
+          global.plugins[file] = module.default || module;
+        })();
+      } catch (e) {
+        conn.logger.error(
+          `error require plugin '${filename(file)}\n${format(e)}'`
+        );
+      } finally {
+        global.plugins = Object.fromEntries(
+          Object.entries(global.plugins).sort(([a], [b]) => a.localeCompare(b))
+        );
+      }
+      break;
+    case "add":
+      let err = syntaxerror(readFileSync(path.dirname(file)), filename(file), {
+        sourceType: "module",
+        allowAwaitOutsideFunction: true,
+      });
+      if (err)
+        conn.logger.error(
+          `syntax error while loading '${filename}'\n${format(err)}`
+        );
+      else
+        try {
+          (async () => {
+            const module = await import(
+              `${global.__filename(file)}?update=${Date.now()}`
+            );
+            global.plugins[file] = module.default || module;
+          })();
+        } catch (e) {
+          conn.logger.error(
+            `error require plugin '${filename(file)}\n${format(e)}'`
+          );
+        } finally {
+          global.plugins = Object.fromEntries(
+            Object.entries(global.plugins).sort(([a], [b]) =>
+              a.localeCompare(b)
+            )
+          );
+        }
+      break;
+  }
+}
+function watchFiles() {
+  let watcher = chokidar.watch("plugins/**/*.js", {
+    ignored: /(^|[\/\\])\../,
+    persistent: true,
+    ignoreInitial: true,
+    alwaysState: true,
+  });
+  const pluginFilter = (filename) => /\.js$/.test(filename);
+  watcher
+    .on("add", (path) => {
+      conn.logger.info(`new plugin - '${file}'`);
+      return FileEv("add", `./${path}`);
+    })
+    .on("change", (path) => {
+      conn.logger.info(`updated plugin - '${path}'`);
+      return FileEv("change", `./${path}`);
+    })
+    .on("unlink", (path) => {
+      conn.logger.warn(`deleted plugin - '${path}'`);
+      return FileEv("delete", `./${path}`);
+    });
+}
+watchFiles();
 
 await global.reloadHandler();
 /* QuickTest */
