@@ -1,7 +1,7 @@
 {
-  "name": "botwa-simpan-dulu",
-  "version": "1.0.0",
-  "description": "Bot BOT SC ORI HW MODS DEV RECODE ZENS",
+  "name": "botwa",
+  "version": "6.6.1",
+  "description": "Bot WhatsApp",
   "main": "index.js",
   "type": "module",
   "directories": {
