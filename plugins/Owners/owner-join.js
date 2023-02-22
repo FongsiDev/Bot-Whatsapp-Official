@@ -4,12 +4,15 @@ let handler = async (m, { conn, text, isOwner }) => {
   let [_, code, expired] = text.match(linkRegex) || [];
   if (!code) throw "Link invalid";
   let res = await conn.groupAcceptInvite(code);
-  expired = Math.floor(
-    Math.min(
-      999,
-      Math.max(1, isOwner ? (isNumber(expired) ? parseInt(expired) : 0) : 3)
-    )
-  );
+  if (isOwner) {
+    if (expired) {
+      expired = Math.floor(
+        Math.min(999, Math.max(1, isNumber(expired) ? parseInt(expired) : 0))
+      );
+    } else {
+      expired = false;
+    }
+  }
   m.reply(
     `Berhasil join grup ${res}${expired ? ` selama ${expired} hari` : ""}`
   );
@@ -21,7 +24,7 @@ handler.help = ["join <chat.whatsapp.com>"];
 handler.tags = ["owner"];
 
 handler.command = /^join$/i;
-handler.rowner = true;
+handler.owner = true;
 
 export default handler;
 

@@ -53,7 +53,7 @@ export async function all(m) {
       m
     );
     await this.reply(
-      nomorown + "@s.whatsapp.net",
+      global.logs.anticulik,
       `Ada Yang Mau Nyulik nih :v \n\ndari: @${
         m.sender.split("@")[0]
       } \n\npesan: ${m.text}`,

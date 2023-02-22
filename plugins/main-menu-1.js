@@ -159,4 +159,4 @@ function wish() {
     wishloc = "Night Rider";
   }
   return wishloc;
-};
+}

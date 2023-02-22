@@ -93,8 +93,15 @@ global.owner = [
 global.mods = []; // Want some help?
 global.prems = []; // Premium user bukan disini nambahinnya, ketik .addprem @user 10
 
+/*============== LOGS ==============*/
+global.logs = {
+  error: "120363038596890250@g.us",
+  anticulik: "120363038596890250@g.us",
+  stats: "120363038596890250@g.us",
+};
+
 /*============== API ==============*/
-global.openai = "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";
+global.openai = process.env.openai;
 
 global.APIs = {
   // API Prefix

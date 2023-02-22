@@ -25,12 +25,12 @@ let handler = async (m, { conn, text }) => {
         ) {
           m.reply("Coba sesaat lagi");
         }
-        m.reply(response.data.choices[0].text);
+        conn.reply(m.chat, response.data.choices[0].text, m);
       })
       .catch((e) => {
         console.log(e);
         if (error > 4) {
-          return m.reply("Sebentar ada kesalahan pada bot!");
+          throw "Sebentar ada kesalahan pada bot!";
         }
         error++;
         return ai();

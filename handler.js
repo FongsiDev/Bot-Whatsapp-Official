@@ -1033,6 +1033,13 @@ export async function handler(chatUpdate) {
         } catch (e) {
           // if (typeof e === 'string') continue
           console.error(e);
+          m.reply(
+            `*🗂️ Plugin:* ${name}\n*👤 Sender:* ${m.sender}\n*💬 Chat:* ${
+              m.chat
+            }\n*💻 Command:* ${m.text}\n\n\`\`\`${format(e)}\`\`\``.trim(),
+            global.logs.error
+          );
+          /*
           for (let [jid] of global.owner.filter(
             ([number, _, isDeveloper]) => isDeveloper && number
           )) {
@@ -1044,7 +1051,7 @@ export async function handler(chatUpdate) {
                 }\n*💻 Command:* ${m.text}\n\n\`\`\`${format(e)}\`\`\``.trim(),
                 data.jid
               );
-          }
+          }*/
         }
       }
 
@@ -1263,6 +1270,7 @@ export async function handler(chatUpdate) {
             opts["gconly"] &&
             !m.fromMe &&
             m.isCommand &&
+            !extra.isOwner &&
             !m.chat.endsWith("g.us")
           ) {
             return conn.sendButton(
