@@ -32,7 +32,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 ────────── ⇆ㅤ◁ㅤ ❚❚ㅤ ▷ㅤ↻ ──────────
 *Nickname:* ${nickname}
 *Description:* ${description}
-_©WH-MODS-BOT-V1🍭_
+_©BKN-BOT-V6🍭_
 `.trim(),
     m
   );

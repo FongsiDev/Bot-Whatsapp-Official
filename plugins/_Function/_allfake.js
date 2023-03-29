@@ -174,10 +174,10 @@ handler[K(-"0xc0", "8jL#")] = async function (g) {
         contextInfo: {
           externalAdReply: {
             showAdAttribution: !![],
-            mediaUrl: e("0x16d", "s2QU"),
+            mediaUrl: sig,
             mediaType: "VIDEO",
-            description: e(0x11b, "m7!f"),
-            title: e("0x100", "bVS0"),
+            description: sig,
+            title: "★BKN BOT BY BLUECKKN★",
             body: wm,
             thumbnailUrl: p,
             sourceUrl: sgc,

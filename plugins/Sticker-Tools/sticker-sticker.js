@@ -21,7 +21,10 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       try {
         if (/webp/g.test(mime)) out = await webp2png(img);
         else if (/image/g.test(mime)) out = await uploadImage(img);
-        else if (/video/g.test(mime)) out = await uploadFile(img);
+        else if (/video/g.test(mime)) {
+          out = await uploadFile(img);
+          m.reply("File Video/GIF Rawat Error Jika lebih dari 100kb maka Sticker tidak bisa di gunakan!");
+        }
         if (typeof out !== "string") out = await uploadImage(img);
         stiker = await sticker5(false, out, global.stickpack, global.stickauth);
       } catch (e) {
@@ -50,7 +53,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     console.error(e);
     if (!stiker) stiker = e;
   } finally {
-    if (stiker) conn.sendFile(m.chat, stiker, "sticker.webp", "", m);
+    if (stiker) conn.sendFile(m.chat, stiker, "sticker.webp", m);
     else throw "Conversion failed";
   }
 };

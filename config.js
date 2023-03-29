@@ -51,7 +51,7 @@ let date = d.toLocaleDateString(locale, {
 // kalo ga punya ketik "-" atau biarin aja biar ada creditsnya :v
 
 global.sweb = "https://blueckkn.repl.co/";
-global.sig = global.sweb + "ig";
+global.sig = "https://www.instagram.com/blueckkn/";
 global.syt = "https://m.youtube.com/c/BLUECKKN";
 global.stik = global.sweb + "tik";
 global.sdc = global.sweb + "dc";
@@ -95,9 +95,9 @@ global.prems = []; // Premium user bukan disini nambahinnya, ketik .addprem @use
 
 /*============== LOGS ==============*/
 global.logs = {
-  error: "120363038596890250@g.us",
-  anticulik: "120363038596890250@g.us",
-  stats: "120363038596890250@g.us",
+  error: "6289503433262@s.whatsapp.net",
+  anticulik: "6289503433262@s.whatsapp.net",
+  stats: "6289503433262@s.whatsapp.net",
 };
 
 /*============== API ==============*/
@@ -142,7 +142,7 @@ global.APIKeys = {
   "https://hardianto.xyz": "hardianto",
   "https://violetics.pw": "beta",
   "https://ziy.herokuapp.com": "xZiyy",
-  "https://api-fgsi.sytes.net": "c05252c3",
+  "https://api-fgsi.sytes.net": process.env.apifgsi,
 };
 // Kata APIKEY itu isi dengan apikey lu sendiri, dengan beli ke website itu
 

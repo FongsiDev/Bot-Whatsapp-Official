@@ -42,6 +42,7 @@ import yargs from "yargs";
 import { spawn } from "child_process";
 import lodash from "lodash";
 import chalk from "chalk";
+import pino from "pino";
 import syntaxerror from "syntax-error";
 import { tmpdir } from "os";
 import { format } from "util";
@@ -138,9 +139,25 @@ loadDatabase();
 global.authFile = `${opts._[0] || "session"}.data.json`;
 const { state, saveState } = store.useSingleFileAuthState(global.authFile);
 
+const logger = pino({
+  transport: {
+    target: "pino-pretty",
+    options: {
+      colorize: true,
+      levelFirst: true,
+      ignore: "hostname",
+      translateTime: true,
+    },
+  },
+}).child({ class: "baileys" });
+
 const connectionOptions = {
+  version: [2, 2208, 14],
   printQRInTerminal: true,
   auth: state,
+  // logger: pino({ prettyPrint: { levelFirst: true, ignore: 'hostname', translateTime: true },  prettifier: require('pino-pretty') }),
+  logger: pino({ level: "silent" }),
+  // logger: P({ level: 'trace' })
 };
 
 global.conn = makeWASocket(connectionOptions);
@@ -409,7 +426,7 @@ function watchFiles() {
   const pluginFilter = (filename) => /\.js$/.test(filename);
   watcher
     .on("add", (path) => {
-      conn.logger.info(`new plugin - '${file}'`);
+      conn.logger.info(`new plugin - '${path}'`);
       return FileEv("add", `./${path}`);
     })
     .on("change", (path) => {

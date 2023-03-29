@@ -3,9 +3,7 @@ export function before(m) {
   if (user.afk > -1) {
     conn.sendButtonDoc(
       m.chat,
-      `
-  Kamu berhenti AFK${user.afkReason ? " setelah " + user.afkReason : ""}
-  Selama ${(new Date() - user.afk).toTimeString()}
+      `Kamu berhenti AFK!\nAlasan: ${user.afkReason ? user.afkReason : "No Reason"}\nSelama ${(new Date() - user.afk).toTimeString()} Yang Lalu
   `,
       wm,
       "Hai Kak",
@@ -30,10 +28,7 @@ export function before(m) {
     let reason = user.afkReason || "";
     conn.sendButtonDoc(
       m.chat,
-      `
-  Jangan tag dia!
-  Dia sedang AFK ${reason ? "dengan alasan " + reason : "tanpa alasan"}
-  Selama ${(new Date() - afkTime).toTimeString()}
+      `Jangan tag dia!\nDia sedang AFK.\nAlasan: ${reason ? reason : "No Reason"}\nSelama ${(new Date() - afkTime).toTimeString()} Yang Lalu
   `,
       wm,
       "Maaf Kak",

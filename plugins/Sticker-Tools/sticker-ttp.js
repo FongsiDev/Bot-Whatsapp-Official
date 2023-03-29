@@ -4,7 +4,7 @@ let handler = async (m, { conn, text }) => {
   let teks = text ? text : m.quoted && m.quoted.text ? m.quoted.text : m.text;
   let stiker = await sticker(
     null,
-    global.API("xteam", "/ttp", { file: "", text: teks }),
+    global.API("ApiFgsi", "/api/maker/ttp", { file: "", text: teks }, "apikey"),
     global.stickpack,
     global.stickauth
   );
