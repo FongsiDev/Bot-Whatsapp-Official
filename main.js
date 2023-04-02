@@ -5,7 +5,7 @@ import glob from "glob";
 import path, { join, resolve } from "path";
 import { fileURLToPath, pathToFileURL } from "url";
 import { platform } from "process";
-//import YT from "youtubeposter.js";
+import YT from "youtubeposter.js";
 import chokidar from "chokidar";
 import ffmpeg from "fluent-ffmpeg";
 import ffmpegInstaller from "@ffmpeg-installer/ffmpeg";
@@ -162,7 +162,7 @@ const connectionOptions = {
 
 global.conn = makeWASocket(connectionOptions);
 conn.isInit = false;
-/*
+
 global.YT = new YT.YoutubePoster({ loop_delays_in_min: 60000 });
 global.YT.on("notified", async (data) => {
   await conn.sendButton(
@@ -194,7 +194,7 @@ ${htjava} *Title:* ${data.video.title}
     null,
     fakes
   );
-});*/
+});
 if (!opts["test"]) {
   setInterval(async () => {
     if (global.db.data) await global.db.write().catch(console.error);

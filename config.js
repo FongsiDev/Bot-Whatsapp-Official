@@ -74,6 +74,7 @@ global.nomorbot = "6282172622047";
 global.nomorown = "6289503433262";
 global.ageowner = "2011-01-13";
 global.namebot = "「 BLUECKKN BOT ⁩㊣ 」";
+global.namebot_1 = "BKN-MD";
 global.nameown = "BLUECKKN";
 
 /*============== Github Thanks To ==============*/
@@ -730,7 +731,7 @@ global.hsquere = ["⛶", "❏", "⫹⫺"];
 
 /*============== STICKER WM ==============*/
 global.stickpack = "🍀";
-global.stickauth = `📮 • Yt :\n⤷ BLUECKKN`;
+global.stickauth = `📮 • Yt :\n⤷ BLUECKKN\n⤷ ${syt}`;
 
 global.multiplier = 38; // The higher, The harder levelup
 

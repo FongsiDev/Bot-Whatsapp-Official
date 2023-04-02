@@ -418,6 +418,11 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command }) => {
             rowId: ".sc",
             description: `Source Code ${namebot}`,
           },
+          {
+            title: `📜 ${pmenus} RULES BOT`,
+            rowId: ".rules",
+            description: `𝙼𝚎𝚗𝚊𝚖𝚙𝚒𝚕𝚔𝚊𝚗 rules Bot`,
+          },
         ],
       },
       {

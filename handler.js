@@ -32,8 +32,8 @@ export async function handler(chatUpdate) {
   this.pushMessage(chatUpdate.messages).catch(console.error);
   let m = chatUpdate.messages[chatUpdate.messages.length - 1];
   if (!m) return;
-  if (global.db.data == null) await global.loadDatabase();
-  try {
+  if (global.db.data == null) await global.loadDatabase(); 
+	try {
     m = smsg(this, m) || m;
     if (!m) return;
     m.exp = 0;
@@ -1413,7 +1413,7 @@ export async function handler(chatUpdate) {
         await (await import(`./lib/print.js`)).default(m, this);
       }
     } catch (e) {
-      console.log(m, m.quoted, e);
+      console.log("Print", m, m.quoted, e);
     }
     if (opts["autoread"]) await this.readMessages([m.key]).catch(() => {});
   }
@@ -1423,7 +1423,7 @@ export async function handler(chatUpdate) {
  * @param {import('@adiwajshing/baileys').BaileysEventMap<unknown>['group-participants.update']} groupsUpdate
  */
 export async function participantsUpdate({ id, participants, action }) {
-  if (opts["self"]) return;
+	if (opts["self"]) return;
   // if (id in conn.chats) return // First login will spam
   if (this.isInit) return;
   if (global.db.data == null) await loadDatabase();
