@@ -1,13 +1,13 @@
 import fs from "fs";
 let handler = async (m, { conn, text }) => {
   m.reply("Tunggu Sebentar, Sedang mengambil file sesi mu");
-  let sesi = await fs.readFileSync("./session.data.json");
+  let sesi = await fs.readFileSync(`./${authFile}`);
   return await conn.sendMessage(
     m.chat,
     {
       document: sesi,
       mimetype: "application/json",
-      fileName: "session.data.json",
+      fileName: authFile,
     },
     { quoted: m }
   );

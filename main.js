@@ -256,7 +256,10 @@ async function connectionUpdate(update) {
       "Bot Successfully Connected",
       author,
       null,
-      [["MENU", "/menu"]],
+      [
+        ["MENU", "/menu"],
+        ["Get Session Bot", "/getsessi"],
+      ],
       null
     );
   }
