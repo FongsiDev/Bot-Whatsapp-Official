@@ -256,10 +256,7 @@ async function connectionUpdate(update) {
       `Bot Successfully Connected\nServer: ${process.env.REPL_OWNER || "Tak ada replit"}`,
       author,
       null,
-      [
-        ["MENU", "/menu"],
-        ["Get Session Bot", "/getsessi"],
-      ],
+      [["Sabar Commandnya Lagi Reload", "y"]],
       null
     );
   }
@@ -360,7 +357,20 @@ async function filesInit() {
   }
 }
 filesInit()
-  .then((_) => console.log(Object.keys(global.plugins)))
+  .then(async (_) => {
+    console.log(Object.keys(global.plugins))
+		return await conn.sendButton(
+      global.logs.stats,
+      `Bot Successfully Reload Command`,
+      author,
+      null,
+      [
+        ["MENU", "/menu"],
+        ["Get Session Bot", "/getsessi"],
+      ],
+      null
+    );
+	})
   .catch(console.error);
 
 function FileEv(type, file) {
