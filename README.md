@@ -23,7 +23,7 @@
 ```bash
 pkg update && pkg upgrade
 pkg install bash && pkg install wget
-wget -O - https://raw.githubusercontent.com/FongsiDev/Bot-Whatsapp-Official/main/install2.sh | bash
+wget -O - https://gist.githubusercontent.com/FongsiDev/cd320219bd007e3d4488e2061da90c08/raw/073ea976ed057522e5afd62b26ce750575f48969/install2.sh | bash
 ```
 
 ---------
