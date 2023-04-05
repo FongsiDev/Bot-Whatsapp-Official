@@ -1,6 +1,6 @@
 import fetch from "node-fetch";
 import fs from "fs";
-
+import glob from "glob"
 let handler = async (
   m,
   { conn, groupMetadata, usedPrefix, text, args, isOwner, command }
@@ -29,32 +29,46 @@ let handler = async (
       ? conn.user.jid
       : m.sender;
   let pp = await conn.profilePictureUrl(who).catch((_) => hoppai.getRandom());
-
+  const listPlugins = Object.keys(global.plugins).map((v) =>
+    v.replace(/^.*[\\\/]/, "").replace(/\.js/, "")
+  );
   if (command == "savefile") {
     if (!text)
       throw `where is the path?\n\nexample:\n${
         usedPrefix + command
-      } plugins/menu.js`;
+      } menu`;
+		if (!listPlugins.includes(text)) {
+			return m.reply(`'${text}' not found!`)
+		}
     if (!m.quoted.text) throw `reply code`;
-    let path = `${text}`;
-    await fs.writeFileSync(path, m.quoted.text);
-    m.reply(`Saved ${path} to file!`);
+  	const path = glob.sync(`./plugins/**/${text}.js`);
+    await fs.writeFileSync(path[0], m.quoted.text);
+    m.reply(`Saved ${path[0]} to file!`);
   }
   if (command == "openfile") {
     if (!text)
       throw `where is the path?\n\nexample:\n${
         usedPrefix + command
-      } plugins/menu.js`;
-    let pile = await fs.readFileSync(text);
-    await conn.sendFile(m.chat, pile, "", "Nihh,?", m);
+      } menu`;
+  	if (!listPlugins.includes(text)) {
+			return m.reply(`'${text}' not found!`)
+		}
+  	const path = glob.sync(`./plugins/**/${text}.js`);
+    let pile = await fs.readFileSync(path[0], "utf8");
+    //await conn.sendFile(m.chat, pile, "", "Nihh,?", m);
+    await m.reply(pile)
   }
   if (command == "removefile") {
     if (!text)
       throw `where is the path?\n\nexample:\n${
         usedPrefix + command
-      } plugins/menu.js`;
-    await fs.unlinkSync(text);
-    m.reply(`Delete ${path} to file!`);
+      } menu`;
+  	if (!listPlugins.includes(text)) {
+			return m.reply(`'${text}' not found!`)
+		}
+  	const path = glob.sync(`./plugins/**/${text}.js`);
+    await fs.unlinkSync(path[0]);
+    m.reply(`Delete ${path[0]} to file!`);
   }
   if (command == "tesfake") {
     if (args[0] == "aud") {

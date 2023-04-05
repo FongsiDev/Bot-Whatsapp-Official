@@ -1,26 +1,24 @@
+import glob from "glob";
 import fs from "fs";
-import path from "path";
 let handler = async (m, { usedPrefix, command, text }) => {
   if (!text)
     throw `where is the text?\n\nexempel: ${usedPrefix + command} menu`;
-  const filename = path.join(
-    __dirname,
-    `./${text}${!/\.js$/i.test(text) ? ".js" : ""}`
+  const listPlugins = Object.keys(global.plugins).map((v) =>
+    v.replace(/^.*[\\\/]/, "").replace(/\.js/, "")
   );
-  const listPlugins = fs
-    .readdirSync(path.join(__dirname))
-    .map((v) => v.replace(/\.js/, ""));
-  if (!fs.existsSync(filename))
+  if (!listPlugins.includes(text)) {
     return m.reply(
       `
-'${filename}' not found!
+'${text}' not found!
 ${listPlugins
   .map((v) => v)
-  .join("\n")
+  .join(", ")
   .trim()}
 `.trim()
     );
-  m.reply(fs.readFileSync(filename, "utf8"));
+  }
+  const filename = glob.sync(`./plugins/**/${text}.js`);
+  m.reply(fs.readFileSync(filename[0], "utf8"));
 };
 handler.help = ["getplugin"].map((v) => v + " [filename]");
 handler.tags = ["owner"];
