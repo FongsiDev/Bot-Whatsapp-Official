@@ -251,9 +251,12 @@ async function connectionUpdate(update) {
     } catch (e) {
       null;
     }
+		let url = `https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.repl.co`;
+    if (/(\/\/|\.)undefined\./.test(url)) url = '';
+  
     return this.sendButton(
       global.logs.stats,
-      "Bot Successfully Connected",
+      `Bot Successfully Connected\nServer: ${url}`,
       author,
       null,
       [
