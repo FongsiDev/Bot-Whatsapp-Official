@@ -5,3 +5,4 @@
 ## Backlist from git push
 node_modules
 session.data.json
+tmp/*

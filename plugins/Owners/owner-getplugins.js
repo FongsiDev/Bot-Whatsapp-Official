@@ -9,10 +9,10 @@ let handler = async (m, { usedPrefix, command, text }) => {
   if (!listPlugins.includes(text)) {
     return m.reply(
       `
-'${text}' not found!
+'${text}' not found!\n
 ${listPlugins
   .map((v) => v)
-  .join(", ")
+  .join("\n")
   .trim()}
 `.trim()
     );
