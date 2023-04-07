@@ -41,7 +41,7 @@ function keepAlive() {
   let url = `https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.repl.co`;
   if (/(\/\/|\.)undefined\./.test(url)) return;
   setInterval(() => {
-    fetch(url).catch(console.log);
+    fetch(url).catch(() => { return; });
   }, 5 * 1000 * 60);
 }
 

@@ -56,7 +56,7 @@
   },
   "homepage": "https://github.com/FongsiDev/Bot-Whatsapp-Official#readme",
   "dependencies": {
-    "@adiwajshing/baileys": "^4.4.0",
+    "@adiwajshing/baileys": "^5.0.0",
     "@bochilteam/scraper": "^4.0.22-alpha.0",
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "@ibaraki-douji/pixivts": "^2.4.1",

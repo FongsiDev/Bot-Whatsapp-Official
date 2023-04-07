@@ -156,7 +156,7 @@ const connectionOptions = {
   printQRInTerminal: true,
   auth: state,
   // logger: pino({ prettyPrint: { levelFirst: true, ignore: 'hostname', translateTime: true },  prettifier: require('pino-pretty') }),
-  logger: pino({ level: "silent" }),
+  logger//: pino({ level: "silent" }),
   // logger: P({ level: 'trace' })
 };
 
