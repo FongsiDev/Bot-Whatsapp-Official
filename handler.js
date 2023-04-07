@@ -32,8 +32,8 @@ export async function handler(chatUpdate) {
   this.pushMessage(chatUpdate.messages).catch(console.error);
   let m = chatUpdate.messages[chatUpdate.messages.length - 1];
   if (!m) return;
-  if (global.db.data == null) await global.loadDatabase(); 
-	try {
+  if (global.db.data == null) await global.loadDatabase();
+  try {
     m = smsg(this, m) || m;
     if (!m) return;
     m.exp = 0;
@@ -957,6 +957,7 @@ export async function handler(chatUpdate) {
           jadibot: false,
           autorestart: false,
           anticall: true,
+          isBotMute: false,
           restartDB: 0,
           restrict: false,
           status: 0,
@@ -1018,13 +1019,14 @@ export async function handler(chatUpdate) {
       path.dirname(fileURLToPath(import.meta.url)),
       "./plugins"
     );
+
     for (let name in global.plugins) {
       let plugin = global.plugins[name];
       if (!plugin) continue;
       if (plugin.disabled) continue;
       const __filename = join(___dirname, name);
       if (typeof plugin.all === "function") {
-        try {
+	      try {
           await plugin.all.call(this, m, {
             chatUpdate,
             __dirname: ___dirname,
@@ -1087,7 +1089,7 @@ export async function handler(chatUpdate) {
           : [[[], new RegExp()]]
       ).find((p) => p[1]);
       if (typeof plugin.before === "function") {
-        if (
+		    if (
           await plugin.before.call(this, m, {
             match,
             conn: this,
@@ -1149,6 +1151,8 @@ export async function handler(chatUpdate) {
             return; // Except this
           if (name != "./plugins/Owners/owner-unbanuser.js" && user?.banned)
             return;
+					if (name !="./plugins/Owners/owner-mutebot.js" && global.db.data.settings[conn.user.jid]?.isBotMute) 
+						return;
         }
         if (plugin.rowner && plugin.owner && !(isROwner || isOwner)) {
           // Both Owner
@@ -1321,7 +1325,6 @@ export async function handler(chatUpdate) {
             m.chat !== "status@broadcast"
           )
             return;
-
           await plugin.call(this, m, extra);
           if (!isPrems) m.limit = m.limit || plugin.limit || false;
         } catch (e) {
@@ -1423,7 +1426,7 @@ export async function handler(chatUpdate) {
  * @param {import('@adiwajshing/baileys').BaileysEventMap<unknown>['group-participants.update']} groupsUpdate
  */
 export async function participantsUpdate({ id, participants, action }) {
-	if (opts["self"]) return;
+  if (opts["self"]) return;
   // if (id in conn.chats) return // First login will spam
   if (this.isInit) return;
   if (global.db.data == null) await loadDatabase();

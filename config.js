@@ -89,6 +89,7 @@ global.lolkey = "e54205a4ca2caa368cc067bb"; // PUNYA WAHID  8e66d0934cf741bfd218
 global.owner = [
   ["6285280808438", "🗿", true],
   ["6289503433262", "BLUE CKKN", true],
+	["6282216850223", "Carissa", true]
 ];
 
 global.mods = []; // Want some help?
@@ -102,8 +103,8 @@ global.logs = {
 };
 
 /*============== API ==============*/
-global.openai = process.env.openai;
-
+global.openai = process.env.openai; //https://platform.openai.com/account/api-keys
+global.tenor_api = process.env.tenor_api; //https://tenor.com/developer/dashboard
 global.APIs = {
   // API Prefix
   // name: 'https://website'

@@ -109,7 +109,7 @@
     "wa-sticker-formatter": "^4.4.4",
     "xmldom": "^0.6.0",
     "yargs": "^17.7.0",
-    "youtubeposter.js": "^3.1.18",
+    "youtubeposter.js": "^3.1.19",
     "zs-extract": "^1.4.1"
   }
 }
