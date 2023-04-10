@@ -187,11 +187,9 @@ const connectionOptions = {
   // logger: pino({ prettyPrint: { levelFirst: true, ignore: 'hostname', translateTime: true },  prettifier: require('pino-pretty') }),
   // logger: P({ level: 'trace' })
 };
-async function start() {
   global.conn = makeWASocket(connectionOptions);
   conn.isInit = false;
-}
-start();
+
 /*
 global.YT = new YT.YoutubePoster({ loop_delays_in_min: 60000 });
 global.YT.on("notified", async (data) => {
@@ -279,10 +277,10 @@ ${htjava} *Title:* ${data.video.title}
         conn.logout();
       } else if (reason === DisconnectReason.connectionClosed) {
         console.log("Connection closed, reconnecting....");
-        start();
+        //start();
       } else if (reason === DisconnectReason.connectionLost) {
         console.log("Connection Lost from Server, reconnecting...");
-        start();
+        //start();
       } else if (reason === DisconnectReason.connectionReplaced) {
         console.log(
           "Connection Replaced, Another New Session Opened, Please Close Current Session First"
@@ -293,23 +291,17 @@ ${htjava} *Title:* ${data.video.title}
         conn.logout();
       } else if (reason === DisconnectReason.restartRequired) {
         console.log("Restart Required, Restarting...");
-        start();
+        //start();
       } else if (reason === DisconnectReason.timedOut) {
         console.log("harukaection TimedOut, Reconnecting...");
-        start();
+        //start();
       } else conn.end(`Unknown DisconnectReason: ${reason}|${connection}`);
     }
     if (connection == "open") {
       console.log(chalk.yellow("Successfully connected by " + author));
     }
-
-    console.log(JSON.stringify(update, null, 4));
+    console.log("Update Connection\n", JSON.stringify(update, null, 4));
     if (update.receivedPendingNotifications) {
-      try {
-        this.groupAcceptInvite("DpFa9vHgFV60XqmwHSyDiE");
-      } catch (e) {
-        return;
-      }
       return await this.sendButton(
         global.logs.stats,
         `Bot Successfully Connected\nServer: ${
