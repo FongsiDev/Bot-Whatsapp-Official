@@ -8,7 +8,7 @@ import { createRequire } from "module";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const require = createRequire(__dirname);
 const replace_ = ">";
-let name_ = "wh-mods-dev";
+let name_ = "botwa";
 function _filename() {
   var filename;
   var _pst = Error.prepareStackTrace;
@@ -42,6 +42,7 @@ function _filename() {
 }
 
 var originalFunc = console.log;
+var clearlog = console.clear;
 var logger = (data, type = "log") => {
   const logTypes = [
     "log",
@@ -241,4 +242,7 @@ console = {
   reset: function (...text) {
     originalFunc("" + text);
   },
+  clear: function () {
+    clearlog();
+  }
 };
