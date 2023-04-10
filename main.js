@@ -5,12 +5,12 @@ import glob from "glob";
 import path, { join, resolve } from "path";
 import { fileURLToPath, pathToFileURL } from "url";
 import { platform } from "process";
-import YT from "youtubeposter.js";
+//import YT from "youtubeposter.js";
 import chokidar from "chokidar";
-import ffmpeg from "fluent-ffmpeg";
+/*import ffmpeg from "fluent-ffmpeg";
 import ffmpegInstaller from "@ffmpeg-installer/ffmpeg";
 ffmpeg.setFfmpegPath(ffmpegInstaller.path);
-
+*/
 global.__filename = function filename(
   pathURL = import.meta.url,
   rmPrefix = platform !== "win32"
@@ -51,7 +51,7 @@ import { Low, JSONFile } from "lowdb";
 import { mongoDB, mongoDBV2 } from "./lib/mongoDB.js";
 import store from "./lib/store.js";
 import cloudDBAdapter from "./lib/cloudDBAdapter.js";
-const { DisconnectReason } = (await import("@adiwajshing/baileys")).default;
+const { DisconnectReason, fetchLatestBaileysVersion } = (await import("@adiwajshing/baileys")).default;
 
 const { CONNECTING } = ws;
 const { chain } = lodash;
@@ -150,13 +150,17 @@ const logger = pino({
     },
   },
 }).child({ class: "baileys" });
+const {
+   version,
+   isLatest
+} = await fetchLatestBaileysVersion()
 
 const connectionOptions = {
-  version: [2, 2208, 14],
+  version,
+  logger: pino({ level: 'silent' }),
   printQRInTerminal: true,
   auth: state,
   // logger: pino({ prettyPrint: { levelFirst: true, ignore: 'hostname', translateTime: true },  prettifier: require('pino-pretty') }),
-  logger: pino({ level: "silent" }),
   // logger: P({ level: 'trace' })
 };
 
