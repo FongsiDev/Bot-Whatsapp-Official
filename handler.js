@@ -1151,8 +1151,8 @@ export async function handler(chatUpdate) {
             return; // Except this
           if (name != "./plugins/Owners/owner-unbanuser.js" && user?.banned)
             return;
-					if (name !="./plugins/Owners/owner-mutebot.js" && global.db.data.settings[conn.user.jid]?.isBotMute) 
-						return;
+	  if (name !="./plugins/Owners/owner-mutebot.js" && global.db.data.settings[conn.user.jid]?.isBotMute) 
+	    return;
         }
         if (plugin.rowner && plugin.owner && !(isROwner || isOwner)) {
           // Both Owner
@@ -1333,8 +1333,9 @@ export async function handler(chatUpdate) {
           console.error(e);
           if (e) {
             let text = format(e);
-            for (let key of Object.values(global.APIKeys))
-              text = text.replace(new RegExp(key, "g"), "#HIDDEN#");
+            for (let key of Object.values(global.APIKeys)) {
+              if(key?.length) text = text.replace(new RegExp(key, "g"), "#HIDDEN#");
+            }
             if (e.name)
               for (let [jid] of global.owner.filter(
                 ([number, _, isDeveloper]) => isDeveloper && number
@@ -1352,6 +1353,7 @@ export async function handler(chatUpdate) {
                     data.jid
                   );
               }
+            //console.log("Error", text);
             m.reply(text);
           }
         } finally {

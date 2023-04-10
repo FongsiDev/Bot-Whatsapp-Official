@@ -1,7 +1,6 @@
 import fs from "fs";
 import fetch from "node-fetch";
 import moment from "moment-timezone";
-import knights from "knights-canvas";
 export async function all(m) {
   if (m.isBlocked) return;
   // ketika ada yang invite/kirim link grup di chat pribadi
