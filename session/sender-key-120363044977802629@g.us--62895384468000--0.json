@@ -1,12 +1,1 @@
-[
-  {
-    "senderKeyId": 686716705,
-    "senderChainKey": {
-      "iteration": 1,
-      "seed": "LJmF2PfYQ9YuaM5coQ93OxTkPqUrtgeQyDG9RMR7EtM="
-    },
-    "senderSigningKey": {
-      "public": "BZqGp8TlYnmCnJnoexT859qkhMhLOhS0KUMprpHzyp0d"
-    }
-  }
-]
+[{"senderKeyId":686716705,"senderChainKey":{"iteration":15,"seed":"LmfB53ubtVDazDlN5S5AM40Jjg8cVRvbyCkIqocFoNU="},"senderSigningKey":{"public":"BZqGp8TlYnmCnJnoexT859qkhMhLOhS0KUMprpHzyp0d"},"senderMessageKeys":[]}]
