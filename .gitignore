@@ -3,7 +3,7 @@
 ## maka tinggal hapus aja file ini
 
 ## Backlist from git push
-node_modules
+ynode_modules
 session.data.json
 tmp/*
 .env
