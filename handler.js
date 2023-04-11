@@ -1026,7 +1026,7 @@ export async function handler(chatUpdate) {
       if (plugin.disabled) continue;
       const __filename = join(___dirname, name);
       if (typeof plugin.all === "function") {
-	      try {
+        try {
           await plugin.all.call(this, m, {
             chatUpdate,
             __dirname: ___dirname,
@@ -1089,7 +1089,7 @@ export async function handler(chatUpdate) {
           : [[[], new RegExp()]]
       ).find((p) => p[1]);
       if (typeof plugin.before === "function") {
-		    if (
+        if (
           await plugin.before.call(this, m, {
             match,
             conn: this,
@@ -1151,8 +1151,11 @@ export async function handler(chatUpdate) {
             return; // Except this
           if (name != "./plugins/Owners/owner-unbanuser.js" && user?.banned)
             return;
-	  if (name !="./plugins/Owners/owner-mutebot.js" && global.db.data.settings[conn.user.jid]?.isBotMute) 
-	    return;
+          if (
+            name != "./plugins/Owners/owner-mutebot.js" &&
+            global.db.data.settings[conn.user.jid]?.isBotMute
+          )
+            return;
         }
         if (plugin.rowner && plugin.owner && !(isROwner || isOwner)) {
           // Both Owner
@@ -1334,7 +1337,8 @@ export async function handler(chatUpdate) {
           if (e) {
             let text = format(e);
             for (let key of Object.values(global.APIKeys)) {
-              if(key?.length) text = text.replace(new RegExp(key, "g"), "#HIDDEN#");
+              if (key?.length)
+                text = text.replace(new RegExp(key, "g"), "#HIDDEN#");
             }
             if (e.name)
               for (let [jid] of global.owner.filter(

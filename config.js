@@ -88,7 +88,7 @@ global.lolkey = "e54205a4ca2caa368cc067bb"; // PUNYA WAHID  8e66d0934cf741bfd218
 /*============== STAFF ==============*/
 global.owner = [
   ["6285280808438", "🗿", true],
-  ["6289503433262", "BLUE CKKN", true]
+  ["6289503433262", "BLUE CKKN", true],
 ];
 
 global.mods = []; // Want some help?

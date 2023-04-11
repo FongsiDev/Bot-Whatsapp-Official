@@ -6,15 +6,22 @@ let handler = async (m, { conn, text }) => {
   });
   const openai = new OpenAIApi(configuration);
   let error = 0;
+  m.reply("Looking for a data source....");
   function ai() {
+    let conversationLog = [
+      { role: "system", content: "You are a friendly chatbot." },
+    ];
+    conversationLog.push({
+      role: "user",
+      content: text,
+    });
     openai
-      .createImage({
-        prompt: text,
-        n: 1,
-        //    size: "1024x1024"
+      .createChatCompletion({
+        model: "gpt-3.5-turbo",
+        messages: conversationLog,
       })
       .then((response) => {
-        return conn.sendFile(m.chat, response.data.data[0].url, "", ``, m);
+        conn.reply(m.chat, response.data.choices[0].message?.content, m);
       })
       .catch((e) => {
         console.log(e);
@@ -28,7 +35,7 @@ let handler = async (m, { conn, text }) => {
   }
   return ai();
 };
-handler.help = ["ai-image", "openai-image"];
+handler.help = ["ai-new", "openai-new"];
 handler.tags = ["openai", "fun"];
-handler.command = /^(ai-image|openai-image)$/i;
+handler.command = /^(ai-new|openai-new)$/i;
 export default handler;

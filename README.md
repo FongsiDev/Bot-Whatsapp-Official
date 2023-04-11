@@ -9,24 +9,26 @@
 <a href="https://github.com/FongsiDev/Bot-Whatsapp-Official/pulls"><img title="Pull Request" src="https://img.shields.io/github/issues-pr/FongsiDev/Bot-Whatsapp-Official?label=PullRequest&color=success&style=flat-square"></a>
 <a href="https://github.com/FongsiDev/Bot-Whatsapp-Official/pulls?q=is%3Apr+is%3Aclosed"><img title="Pull Request" src="https://img.shields.io/github/issues-pr-closed/FongsiDev/Bot-Whatsapp-Official?label=PullRequest&color=red&style=flat-square"></a>
 
-
 #### Deploy to Heroku
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/FongsiDev/Bot-Whatsapp-Official)
 
 #### Heroku Buildpack
-| BuildPack | LINK |
-|--------|--------|
-| **FFMPEG** |[here](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest) |
-| **IMAGEMAGICK** | [here](https://github.com/DuckyTeam/heroku-buildpack-imagemagick) |
+
+| BuildPack       | LINK                                                                  |
+| --------------- | --------------------------------------------------------------------- |
+| **FFMPEG**      | [here](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest) |
+| **IMAGEMAGICK** | [here](https://github.com/DuckyTeam/heroku-buildpack-imagemagick)     |
 
 ### FOR TERMUX USER
+
 ```bash
 pkg update && pkg upgrade
 pkg install bash && pkg install wget
 wget -O - https://gist.githubusercontent.com/FongsiDev/cd320219bd007e3d4488e2061da90c08/raw/073ea976ed057522e5afd62b26ce750575f48969/install2.sh | bash
 ```
 
----------
+---
 
 ## INSTALL ON TERMUX WITH UBUNTU
 
@@ -39,7 +41,8 @@ proot-distro install ubuntu
 echo "proot-distro login ubuntu" > $PREFIX/bin/ubuntu
 ubuntu
 ```
----------
+
+---
 
 [ INSTALLING REQUIRED PACKAGES ]
 
@@ -49,7 +52,7 @@ apt update && apt full-upgrade
 apt install wget curl git ffmpeg imagemagick build-essential libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev dbus-x11 ffmpeg2theora ffmpegfs ffmpegthumbnailer ffmpegthumbnailer-dbg ffmpegthumbs libavcodec-dev libavcodec-extra libavcodec-extra58 libavdevice-dev libavdevice58 libavfilter-dev libavfilter-extra libavfilter-extra7 libavformat-dev libavformat58 libavifile-0.7-bin libavifile-0.7-common libavifile-0.7c2 libavresample-dev libavresample4 libavutil-dev libavutil56 libpostproc-dev libpostproc55 graphicsmagick graphicsmagick-dbg graphicsmagick-imagemagick-compat graphicsmagick-libmagick-dev-compat groff imagemagick-6.q16hdri imagemagick-common libchart-gnuplot-perl libgraphics-magick-perl libgraphicsmagick++-q16-12 libgraphicsmagick++1-dev
 ```
 
----------
+---
 
 [ INSTALLING NODEJS & GAMES-WABOT ]
 
@@ -63,14 +66,14 @@ npm install
 npm update
 ```
 
----------
+---
 
 ## FOR WINDOWS/VPS/RDP USER
 
-* Download And Install Git [`Click Here`](https://git-scm.com/downloads)
-* Download And Install NodeJS [`Click Here`](https://nodejs.org/en/download)
-* Download And Install FFmpeg [`Click Here`](https://ffmpeg.org/download.html) (**Don't Forget Add FFmpeg to PATH enviroment variables**)
-* Download And Install ImageMagick [`Click Here`](https://imagemagick.org/script/download.php)
+- Download And Install Git [`Click Here`](https://git-scm.com/downloads)
+- Download And Install NodeJS [`Click Here`](https://nodejs.org/en/download)
+- Download And Install FFmpeg [`Click Here`](https://ffmpeg.org/download.html) (**Don't Forget Add FFmpeg to PATH enviroment variables**)
+- Download And Install ImageMagick [`Click Here`](https://imagemagick.org/script/download.php)
 
 ```bash
 git clone https://github.com/FongsiDev/Bot-Whatsapp-Official
@@ -80,22 +83,27 @@ npm update
 ```
 
 #### Installing the FFmpeg
-* Download one of the FFmpeg versions [here](https://ffmpeg.org/download.html).
-* Extract file to `C:\` path.
-* Rename the extracted folder to `ffmpeg`.
-* Run Command Prompt as Administrator.
-* Run the following command:
+
+- Download one of the FFmpeg versions [here](https://ffmpeg.org/download.html).
+- Extract file to `C:\` path.
+- Rename the extracted folder to `ffmpeg`.
+- Run Command Prompt as Administrator.
+- Run the following command:
+
 ```cmd
 > setx /m PATH "C:\ffmpeg\bin;%PATH%"
 ```
+
 If successful, it will give you a message like:
 `SUCCESS: specified value was saved`.
 
-* Now that you have FFmpeg installed, verify that it worked by running this command to see the version:
+- Now that you have FFmpeg installed, verify that it worked by running this command to see the version:
+
 ```cmd
 > ffmpeg -version
 ```
----------
+
+---
 
 ## Run
 
@@ -103,7 +111,7 @@ If successful, it will give you a message like:
 node .
 ```
 
----------
+---
 
 ## Arguments `node . [--options] [<session name>]`
 
@@ -125,8 +133,8 @@ If that chat not from status, bot will ignore
 
 ### `--prefix <prefixes>`
 
-* `prefixes` are seperated by each character
-Set prefix
+- `prefixes` are seperated by each character
+  Set prefix
 
 ### `--server`
 
@@ -140,7 +148,7 @@ If small qr unicode doesn't support
 
 Enables restricted plugins (which can lead your number to be **banned** if used too often)
 
-* Group Administration `add, kick`
+- Group Administration `add, kick`
 
 ### `--img`
 
@@ -161,13 +169,13 @@ No bot, just print received messages and add users to database
 ### `--trace`
 
 ```js
-conn.logger.level = 'trace'
+conn.logger.level = "trace";
 ```
 
 ### `--debug`
 
 ```js
-conn.logger.level = 'debug'
+conn.logger.level = "debug";
 ```
 
 ### `--presence <Presence>`
@@ -176,25 +184,28 @@ when the bot executes the command, the bot will type, record, etc.
 
 Presence avaible: available, composing, recording, paused
 
----------
+---
 
 ### want to contribute?
+
 1. fork this repository
 2. Change/edit/create what you want. for example you can add features, fix bug, etc
 3. **test** before making a pull req!!
 4. make a pull req!
 5. if your pull req is already in **acc/merge**, you can delete your branch or you can create pull req again :)
 
----------
+---
 
 ### want to use multi-device (md)?
+
 now BKN-BOT already support MD, but of course there are still many **bugs** and there are still many that have not been **implemented**,
 
 use this [branch](https://github.com/FongsiDev/Bot-Whatsapp-Official/tree/multi-device) if you want to use MD!
 
----------
+---
 
-### Thanks To 
+### Thanks To
+
 **Allah SWT**,
 
 **Orang Tua**,
@@ -206,6 +217,7 @@ use this [branch](https://github.com/FongsiDev/Bot-Whatsapp-Official/tree/multi-
 [![BochilGaming](https://github.com/BochilGaming.png?size=100)](https://github.com/BochilGaming)
 
 #### Contributor
+
 [![idhamthoriqbot](https://github.com/idhamthoriqbot.png?size=100)](https://github.com/idhamthoriqbot)
 [![Adiixyz](https://github.com/Adiixyz.png?size=100)](https://github.com/Adiixyz)
 <a href="https://github.com/zatu22"><img src="https://github.com/zatu22.png" width="100" height="100" alt="zatu22"/></a>

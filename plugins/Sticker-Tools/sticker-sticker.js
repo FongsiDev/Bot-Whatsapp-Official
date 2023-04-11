@@ -23,7 +23,9 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
         else if (/image/g.test(mime)) out = await uploadImage(img);
         else if (/video/g.test(mime)) {
           out = await uploadFile(img);
-          m.reply("File Video/GIF Rawat Error Jika lebih dari 100kb maka Sticker tidak bisa di gunakan!");
+          m.reply(
+            "File Video/GIF Rawat Error Jika lebih dari 100kb maka Sticker tidak bisa di gunakan!"
+          );
         }
         if (typeof out !== "string") out = await uploadImage(img);
         stiker = await sticker(false, out, global.stickpack, global.stickauth);

@@ -1,1 +1,9 @@
-{"keyData":"Jid1g9J/rjd2GBtABbfBi7f0PJ2ALIw/3TWHtd8XsoA=","fingerprint":{"rawId":1570459791,"currentIndex":1,"deviceIndexes":[0,1]},"timestamp":"1680831550677"}
+{
+  "keyData": "Jid1g9J/rjd2GBtABbfBi7f0PJ2ALIw/3TWHtd8XsoA=",
+  "fingerprint": {
+    "rawId": 1570459791,
+    "currentIndex": 1,
+    "deviceIndexes": [0, 1]
+  },
+  "timestamp": "1680831550677"
+}

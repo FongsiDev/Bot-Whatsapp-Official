@@ -1,1 +1,66 @@
-[{"senderKeyId":2033935220,"senderChainKey":{"iteration":167,"seed":"BfB44o4CoMoQZ6hip+636HCluCML7tong3ZaDZKWQxE="},"senderSigningKey":{"public":"BZCy/wpAo/+u2HG/RsZ5feGgh3osej7aouF5UN2yLbkI"},"senderMessageKeys":[{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}]}]
+[
+  {
+    "senderKeyId": 2033935220,
+    "senderChainKey": {
+      "iteration": 167,
+      "seed": "BfB44o4CoMoQZ6hip+636HCluCML7tong3ZaDZKWQxE="
+    },
+    "senderSigningKey": {
+      "public": "BZCy/wpAo/+u2HG/RsZ5feGgh3osej7aouF5UN2yLbkI"
+    },
+    "senderMessageKeys": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {}
+    ]
+  }
+]

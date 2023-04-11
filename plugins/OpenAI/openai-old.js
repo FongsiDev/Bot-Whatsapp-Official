@@ -25,7 +25,7 @@ let handler = async (m, { conn, text }) => {
         console.log(e);
         if (error > 4) {
           throw "Sebentar ada kesalahan pada bot!";
-					return !0;
+          return !0;
         }
         error++;
         return ai();

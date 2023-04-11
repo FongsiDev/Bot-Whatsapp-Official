@@ -244,5 +244,5 @@ console = {
   },
   clear: function () {
     clearlog();
-  }
+  },
 };

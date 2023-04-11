@@ -1,1 +1,73 @@
-{"_sessions":{"BfnCNB859Tt5eqP/n0OPZI4wy3pAoqwRzapXWo0tUI4c":{"registrationId":9885,"currentRatchet":{"ephemeralKeyPair":{"pubKey":"BTHZG/yaf+0vh5IaDMBRS46K0cFNadaFIOh7r9DowtIr","privKey":"IPsMSGID6D+aEJjQUhGpRqSvIbZU1ABDHzYJ9U1X6mY="},"lastRemoteEphemeralKey":"BWwwT6tLEEzaPu7RnTvDF3775WydeeIVBcydGm/6SWAm","previousCounter":0,"rootKey":"nB32uKnNgF2hS76+kh5ramfsyE1tbvFt+T1uilAyIv0="},"indexInfo":{"baseKey":"BfnCNB859Tt5eqP/n0OPZI4wy3pAoqwRzapXWo0tUI4c","baseKeyType":1,"closed":1681146055938,"used":1681146051204,"created":1681146051204,"remoteIdentityKey":"BV+TQXh5Xtszy/S1p9e5Eu9yNZToPlOXvUAMO1KiSoBT"},"_chains":{"BTHZG/yaf+0vh5IaDMBRS46K0cFNadaFIOh7r9DowtIr":{"chainKey":{"counter":0,"key":"c51RDVm35TbrZ/r4u9uilpwA6bSlI60JhuJyMifBns0="},"chainType":1,"messageKeys":{}}},"pendingPreKey":{"signedKeyId":1,"baseKey":"BfnCNB859Tt5eqP/n0OPZI4wy3pAoqwRzapXWo0tUI4c"}},"BVi/HgzhHyKme7XFogfZhRdyxi7JSF9pbopqnMe378Uj":{"registrationId":9885,"currentRatchet":{"ephemeralKeyPair":{"pubKey":"Bc8v63QrkJklsulbxnis13OtPK0bKbDHQ79Lv7tf6Hdk","privKey":"mFnB40lKhiMG3wEbBlTtAdELCVTw/KhsabsCAmU9pl4="},"lastRemoteEphemeralKey":"BWwwT6tLEEzaPu7RnTvDF3775WydeeIVBcydGm/6SWAm","previousCounter":0,"rootKey":"pRV58OU3dZq093FMU8kPey99WVL9AqzZS9C7+YoyGOI="},"indexInfo":{"baseKey":"BVi/HgzhHyKme7XFogfZhRdyxi7JSF9pbopqnMe378Uj","baseKeyType":1,"closed":-1,"used":1681146054732,"created":1681146054732,"remoteIdentityKey":"BV+TQXh5Xtszy/S1p9e5Eu9yNZToPlOXvUAMO1KiSoBT"},"_chains":{"Bc8v63QrkJklsulbxnis13OtPK0bKbDHQ79Lv7tf6Hdk":{"chainKey":{"counter":10,"key":"ddGHGwzSk6jH3Uv+yuoWq8KRUBzTafC76VOS8nEp1KA="},"chainType":1,"messageKeys":{}}},"pendingPreKey":{"signedKeyId":1,"baseKey":"BVi/HgzhHyKme7XFogfZhRdyxi7JSF9pbopqnMe378Uj"}}},"version":"v1"}
+{
+  "_sessions": {
+    "BfnCNB859Tt5eqP/n0OPZI4wy3pAoqwRzapXWo0tUI4c": {
+      "registrationId": 9885,
+      "currentRatchet": {
+        "ephemeralKeyPair": {
+          "pubKey": "BTHZG/yaf+0vh5IaDMBRS46K0cFNadaFIOh7r9DowtIr",
+          "privKey": "IPsMSGID6D+aEJjQUhGpRqSvIbZU1ABDHzYJ9U1X6mY="
+        },
+        "lastRemoteEphemeralKey": "BWwwT6tLEEzaPu7RnTvDF3775WydeeIVBcydGm/6SWAm",
+        "previousCounter": 0,
+        "rootKey": "nB32uKnNgF2hS76+kh5ramfsyE1tbvFt+T1uilAyIv0="
+      },
+      "indexInfo": {
+        "baseKey": "BfnCNB859Tt5eqP/n0OPZI4wy3pAoqwRzapXWo0tUI4c",
+        "baseKeyType": 1,
+        "closed": 1681146055938,
+        "used": 1681146051204,
+        "created": 1681146051204,
+        "remoteIdentityKey": "BV+TQXh5Xtszy/S1p9e5Eu9yNZToPlOXvUAMO1KiSoBT"
+      },
+      "_chains": {
+        "BTHZG/yaf+0vh5IaDMBRS46K0cFNadaFIOh7r9DowtIr": {
+          "chainKey": {
+            "counter": 0,
+            "key": "c51RDVm35TbrZ/r4u9uilpwA6bSlI60JhuJyMifBns0="
+          },
+          "chainType": 1,
+          "messageKeys": {}
+        }
+      },
+      "pendingPreKey": {
+        "signedKeyId": 1,
+        "baseKey": "BfnCNB859Tt5eqP/n0OPZI4wy3pAoqwRzapXWo0tUI4c"
+      }
+    },
+    "BVi/HgzhHyKme7XFogfZhRdyxi7JSF9pbopqnMe378Uj": {
+      "registrationId": 9885,
+      "currentRatchet": {
+        "ephemeralKeyPair": {
+          "pubKey": "Bc8v63QrkJklsulbxnis13OtPK0bKbDHQ79Lv7tf6Hdk",
+          "privKey": "mFnB40lKhiMG3wEbBlTtAdELCVTw/KhsabsCAmU9pl4="
+        },
+        "lastRemoteEphemeralKey": "BWwwT6tLEEzaPu7RnTvDF3775WydeeIVBcydGm/6SWAm",
+        "previousCounter": 0,
+        "rootKey": "pRV58OU3dZq093FMU8kPey99WVL9AqzZS9C7+YoyGOI="
+      },
+      "indexInfo": {
+        "baseKey": "BVi/HgzhHyKme7XFogfZhRdyxi7JSF9pbopqnMe378Uj",
+        "baseKeyType": 1,
+        "closed": -1,
+        "used": 1681146054732,
+        "created": 1681146054732,
+        "remoteIdentityKey": "BV+TQXh5Xtszy/S1p9e5Eu9yNZToPlOXvUAMO1KiSoBT"
+      },
+      "_chains": {
+        "Bc8v63QrkJklsulbxnis13OtPK0bKbDHQ79Lv7tf6Hdk": {
+          "chainKey": {
+            "counter": 10,
+            "key": "ddGHGwzSk6jH3Uv+yuoWq8KRUBzTafC76VOS8nEp1KA="
+          },
+          "chainType": 1,
+          "messageKeys": {}
+        }
+      },
+      "pendingPreKey": {
+        "signedKeyId": 1,
+        "baseKey": "BVi/HgzhHyKme7XFogfZhRdyxi7JSF9pbopqnMe378Uj"
+      }
+    }
+  },
+  "version": "v1"
+}

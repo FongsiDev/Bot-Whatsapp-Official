@@ -1,1 +1,40 @@
-{"_sessions":{"BSR3txCjyne/Y93HNOYL08noLGFopZy4qOKwNK2NznBu":{"registrationId":248,"currentRatchet":{"ephemeralKeyPair":{"pubKey":"BRY0DsNrPqaT1gjSdWXmfsl86EpfkjjpFffovUO3YzR0","privKey":"SPyLZhdiDSPahMiSuN/N08RySavKs/cxcS/8t/tQU0k="},"lastRemoteEphemeralKey":"BbDoHx5MF8Vn/FuAXJsOSIBdxuv1cOcXs+0l1dOn8SUZ","previousCounter":0,"rootKey":"xFA02Eec69+3l68LWQ+ReRy3HDoTd4fOOXKZLf6cIVw="},"indexInfo":{"baseKey":"BSR3txCjyne/Y93HNOYL08noLGFopZy4qOKwNK2NznBu","baseKeyType":1,"closed":-1,"used":1681145662664,"created":1681145662664,"remoteIdentityKey":"BZRDQpCJfiWQtc5AIofuq3UnHCu8YVy3Wmm94EXJ40Y9"},"_chains":{"BRY0DsNrPqaT1gjSdWXmfsl86EpfkjjpFffovUO3YzR0":{"chainKey":{"counter":1,"key":"FhMAyetnrmjk3z0AqHtBFszv+Q07FN/IUUus9oPsUSY="},"chainType":1,"messageKeys":{}}},"pendingPreKey":{"signedKeyId":1,"baseKey":"BSR3txCjyne/Y93HNOYL08noLGFopZy4qOKwNK2NznBu","preKeyId":24}}},"version":"v1"}
+{
+  "_sessions": {
+    "BSR3txCjyne/Y93HNOYL08noLGFopZy4qOKwNK2NznBu": {
+      "registrationId": 248,
+      "currentRatchet": {
+        "ephemeralKeyPair": {
+          "pubKey": "BRY0DsNrPqaT1gjSdWXmfsl86EpfkjjpFffovUO3YzR0",
+          "privKey": "SPyLZhdiDSPahMiSuN/N08RySavKs/cxcS/8t/tQU0k="
+        },
+        "lastRemoteEphemeralKey": "BbDoHx5MF8Vn/FuAXJsOSIBdxuv1cOcXs+0l1dOn8SUZ",
+        "previousCounter": 0,
+        "rootKey": "xFA02Eec69+3l68LWQ+ReRy3HDoTd4fOOXKZLf6cIVw="
+      },
+      "indexInfo": {
+        "baseKey": "BSR3txCjyne/Y93HNOYL08noLGFopZy4qOKwNK2NznBu",
+        "baseKeyType": 1,
+        "closed": -1,
+        "used": 1681145662664,
+        "created": 1681145662664,
+        "remoteIdentityKey": "BZRDQpCJfiWQtc5AIofuq3UnHCu8YVy3Wmm94EXJ40Y9"
+      },
+      "_chains": {
+        "BRY0DsNrPqaT1gjSdWXmfsl86EpfkjjpFffovUO3YzR0": {
+          "chainKey": {
+            "counter": 1,
+            "key": "FhMAyetnrmjk3z0AqHtBFszv+Q07FN/IUUus9oPsUSY="
+          },
+          "chainType": 1,
+          "messageKeys": {}
+        }
+      },
+      "pendingPreKey": {
+        "signedKeyId": 1,
+        "baseKey": "BSR3txCjyne/Y93HNOYL08noLGFopZy4qOKwNK2NznBu",
+        "preKeyId": 24
+      }
+    }
+  },
+  "version": "v1"
+}
