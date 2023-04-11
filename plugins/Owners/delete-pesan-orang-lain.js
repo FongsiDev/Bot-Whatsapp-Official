@@ -4,10 +4,10 @@ let handler = function (m) {
   if (!fromMe) throw true;
   conn.sendMessage(chat, { delete: m.quoted.vM.key });
 };
-handler.help = ["deletemsg"];
+handler.help = ["deletemsg", "del"];
 handler.tags = ["owner"];
 handler.owner = true;
 
-handler.command = /^(deletemsg)/i;
+handler.command = /^(deletemsg|del)/i;
 
 export default handler;

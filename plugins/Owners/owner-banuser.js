@@ -7,8 +7,9 @@ let handler = async (m, { conn, text }) => {
       : text.replace(/[^0-9]/g, "") + "@s.whatsapp.net";
   else who = m.chat;
   if (!who) throw "Tag??";
-  let users = global.db.data.users;
-  users[who].banned = true;
+  let users = global.db.data.users[who];
+  if(!users) users = global.db.data.users[who] = {};
+  users.banned = true;
   conn.reply(m.chat, `User: ${who} sukses di banned!!`, m);
 };
 handler.help = ["ban"];
