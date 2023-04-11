@@ -102,7 +102,7 @@ global.logs = {
 };
 
 /*============== API ==============*/
-global.openai = "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" || process.env.openai; //https://platform.openai.com/account/api-keys
+global.openai = process.env.openai; //https://platform.openai.com/account/api-keys
 global.tenor_api = process.env.tenor_api; //https://tenor.com/developer/dashboard
 global.APIs = {
   // API Prefix

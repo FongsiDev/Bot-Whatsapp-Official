@@ -7,3 +7,4 @@ ynode_modules
 session.data.json
 tmp/*
 .env
+env.js
