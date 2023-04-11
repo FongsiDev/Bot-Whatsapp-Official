@@ -1,10 +1,11 @@
 import { sticker } from "../../lib/sticker.js";
-
+import { ttp } from "../../lib/ttp.js";
 let handler = async (m, { conn, text }) => {
   let teks = text ? text : m.quoted && m.quoted.text ? m.quoted.text : m.text;
+  let res = await ttp(text);
   let stiker = await sticker(
     null,
-    global.API("ApiFgsi", "/api/maker/ttp", { file: "", text: teks }, "apikey"),
+    res.result,
     global.stickpack,
     global.stickauth
   );
