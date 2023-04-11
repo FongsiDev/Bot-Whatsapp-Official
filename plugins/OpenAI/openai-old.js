@@ -6,6 +6,7 @@ let handler = async (m, { conn, text }) => {
   });
   const openai = new OpenAIApi(configuration);
   let error = 0;
+  m.reply("Looking for a data source....");
   function ai() {
     openai
       .createCompletion({
@@ -18,14 +19,7 @@ let handler = async (m, { conn, text }) => {
         presence_penalty: 0,
       })
       .then((response) => {
-        if (
-          response.data.choices[0].text.includes(
-            "Error: Request failed with status code"
-          )
-        ) {
-          m.reply("Coba sesaat lagi");
-        }
-        conn.reply(m.chat, response.data.choices[0].message, m);
+        conn.reply(m.chat, response.data.choices[0].text, m);
       })
       .catch((e) => {
         console.log(e);

@@ -6,6 +6,7 @@ let handler = async (m, { conn, text }) => {
   });
   const openai = new OpenAIApi(configuration);
   let error = 0;
+  m.reply("Looking for a data source....");
   function ai() {
     let conversationLog = [
       { role: "system", content: "You are a friendly chatbot." },
@@ -14,7 +15,6 @@ let handler = async (m, { conn, text }) => {
       role: "user",
       content: text,
     });
-    m.reply("Looking for a data source....");
     openai
       .createChatCompletion({
         model: "gpt-3.5-turbo",
