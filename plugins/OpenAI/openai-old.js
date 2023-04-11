@@ -7,27 +7,31 @@ let handler = async (m, { conn, text }) => {
   const openai = new OpenAIApi(configuration);
   let error = 0;
   function ai() {
-    let conversationLog = [
-      { role: "system", content: "You are a friendly chatbot." },
-    ];
-    conversationLog.push({
-      role: "user",
-      content: text,
-    });
-    m.reply("Looking for a data source....");
     openai
-      .createChatCompletion({
-        model: "gpt-3.5-turbo",
-        messages: conversationLog,
+      .createCompletion({
+        model: "text-davinci-003",
+        prompt: text,
+        temperature: 0,
+        max_tokens: 3000,
+        top_p: 1,
+        frequency_penalty: 0.5,
+        presence_penalty: 0,
       })
       .then((response) => {
-        conn.reply(m.chat, response.data.choices[0].message?.content, m);
+        if (
+          response.data.choices[0].text.includes(
+            "Error: Request failed with status code"
+          )
+        ) {
+          m.reply("Coba sesaat lagi");
+        }
+        conn.reply(m.chat, response.data.choices[0].message, m);
       })
       .catch((e) => {
         console.log(e);
         if (error > 4) {
           throw "Sebentar ada kesalahan pada bot!";
-          return !0;
+					return !0;
         }
         error++;
         return ai();
@@ -35,7 +39,7 @@ let handler = async (m, { conn, text }) => {
   }
   return ai();
 };
-handler.help = ["ai", "openai"];
+handler.help = ["ai-old", "openai-old"];
 handler.tags = ["openai", "fun"];
-handler.command = /^(ai|openai)$/i;
+handler.command = /^(ai-old|openai-old)$/i;
 export default handler;
