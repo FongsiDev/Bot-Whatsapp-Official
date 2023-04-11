@@ -1120,221 +1120,33 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command }) => {
     // MAU YANG NO ENC MENFESS BALAS NAMBAH 5K :), TOTAL HARGA 15K EXPIRED SAMPAI TANGGAL 20 OKTOBER 2022
 
     // KALAU UDAH LEWAT TANGGAL 20 OKTOBER 2022 HARGA TOTAL AKAN MENJADI 25K
-    function q(U, r) {
-      return t(U - -0x2b4, r);
-    }
-    function l(U, r) {
-      return D(r - -0x374, U);
-    }
-    function b() {
-      var S = [
-        "tcyNFX7cSwhdH3KecG",
-        "aSk7WRHzW5lcJmo4W6JdQJtcPSodFmke",
-        "rM9SBg93ieXHAcbd4BsCYO8Hise",
-        "mtqZmZDevgLgrvO",
-        "aSk5WP97zCoLnq",
-        "W53dMc8VW5RcNmokW7ldOflcGIvqfSo+t8oLW5WiW5K9W4TeWOSiW7DOW7pdOmkvcbuVWQ/cMtBdOIKfW4zBb8oFW6upkmodg2G",
-        "nZe3mtu1wMvqrhbd",
-        "DhjPBq",
-        "mJaWmdH1s0PsEhK",
-        "yNvMzMvY",
-        "mJa4nZqWnJjkvuzKr0e",
-        "ntaYnJiZmxj1qufKEG",
-        "WQFHTRdHTOhHTPRHTz9n4BAnYPxHTlNlPxpINjZcGSUOYyqq",
-        "q3jLzgL0",
-        "mty1ntiWohffExvpzG",
-        "twvUDq",
-        "BSoiySkumIicgSkNW65aWRvn",
-        "nZyYtK9svM1H",
-        "W4NcHCo6Cbz+W6FcSSkYWROb",
-        "lM1LBNu",
-        "ASoEDL0",
-        "mMHNC21ftW",
-        "ntC0ndCXu1jsv0P0",
-        "t3DUzxi",
-        "ndj1v1b3sKO",
-        "nZCZmg10u1vTwG",
-      ];
-      b = function () {
-        return S;
-      };
-      return b();
-    }
-    function t(D, U) {
-      var r = b();
-      return (
-        (t = function (I, V) {
-          I = I - 0x121;
-          var a = r[I];
-          if (t["goQqfE"] === undefined) {
-            var K = function (A) {
-              var P =
-                "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=";
-              var z = "",
-                e = "";
-              for (
-                var W = 0x0, v, O, R = 0x0;
-                (O = A["charAt"](R++));
-                ~O && ((v = W % 0x4 ? v * 0x40 + O : O), W++ % 0x4)
-                  ? (z += String["fromCharCode"](
-                      0xff & (v >> ((-0x2 * W) & 0x6))
-                    ))
-                  : 0x0
-              ) {
-                O = P["indexOf"](O);
-              }
-              for (var X = 0x0, d = z["length"]; X < d; X++) {
-                e +=
-                  "%" +
-                  ("00" + z["charCodeAt"](X)["toString"](0x10))["slice"](-0x2);
-              }
-              return decodeURIComponent(e);
-            };
-            var S = function (A, P) {
-              var z = [],
-                e = 0x0,
-                W,
-                v = "";
-              A = K(A);
-              var O;
-              for (O = 0x0; O < 0x100; O++) {
-                z[O] = O;
-              }
-              for (O = 0x0; O < 0x100; O++) {
-                (e = (e + z[O] + P["charCodeAt"](O % P["length"])) % 0x100),
-                  (W = z[O]),
-                  (z[O] = z[e]),
-                  (z[e] = W);
-              }
-              (O = 0x0), (e = 0x0);
-              for (var R = 0x0; R < A["length"]; R++) {
-                (O = (O + 0x1) % 0x100),
-                  (e = (e + z[O]) % 0x100),
-                  (W = z[O]),
-                  (z[O] = z[e]),
-                  (z[e] = W),
-                  (v += String["fromCharCode"](
-                    A["charCodeAt"](R) ^ z[(z[O] + z[e]) % 0x100]
-                  ));
-              }
-              return v;
-            };
-            (t["jBeLBz"] = S), (D = arguments), (t["goQqfE"] = !![]);
-          }
-          var i = r[0x0],
-            q = I + i,
-            l = D[q];
-          return (
-            !l
-              ? (t["xygeqv"] === undefined && (t["xygeqv"] = !![]),
-                (a = t["jBeLBz"](a, V)),
-                (D[q] = a))
-              : (a = l),
-            a
-          );
-        }),
-        t(D, U)
-      );
-    }
-    function D(t, U) {
-      var r = b();
-      return (
-        (D = function (I, V) {
-          I = I - 0x121;
-          var a = r[I];
-          if (D["cuUkbF"] === undefined) {
-            var K = function (S) {
-              var A =
-                "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=";
-              var P = "",
-                z = "";
-              for (
-                var e = 0x0, W, v, O = 0x0;
-                (v = S["charAt"](O++));
-                ~v && ((W = e % 0x4 ? W * 0x40 + v : v), e++ % 0x4)
-                  ? (P += String["fromCharCode"](
-                      0xff & (W >> ((-0x2 * e) & 0x6))
-                    ))
-                  : 0x0
-              ) {
-                v = A["indexOf"](v);
-              }
-              for (var R = 0x0, X = P["length"]; R < X; R++) {
-                z +=
-                  "%" +
-                  ("00" + P["charCodeAt"](R)["toString"](0x10))["slice"](-0x2);
-              }
-              return decodeURIComponent(z);
-            };
-            (D["vLFksv"] = K), (t = arguments), (D["cuUkbF"] = !![]);
-          }
-          var i = r[0x0],
-            q = I + i,
-            l = t[q];
-          return !l ? ((a = D["vLFksv"](a)), (t[q] = a)) : (a = l), a;
-        }),
-        D(t, U)
-      );
-    }
-    (function (U, r) {
-      function i(U, r) {
-        return t(U - -"0x64", r);
-      }
-      var I = U();
-      function K(U, r) {
-        return D(r - -"0x161", U);
-      }
-      while (!![]) {
-        try {
-          var V =
-            (-parseInt(K(-0x38, -0x2c)) / 0x1) *
-              (parseInt(K(-0x29, -"0x2d")) / 0x2) +
-            (-parseInt(K(-"0x29", -0x31)) / 0x3) *
-              (-parseInt(K(-0x41, -0x3a)) / 0x4) +
-            (-parseInt(K(-"0x35", -0x3c)) / 0x5) *
-              (parseInt(K(-"0x25", -0x2a)) / 0x6) +
-            parseInt(K(-"0x2f", -0x37)) / 0x7 +
-            -parseInt(K(-0x3b, -"0x34")) / 0x8 +
-            (-parseInt(K(-0x43, -"0x3f")) / 0x9) *
-              (parseInt(K(-"0x22", -"0x29")) / 0xa) +
-            parseInt(i(0xd6, "9d#S")) / 0xb;
-          if (V === r) break;
-          else I["push"](I["shift"]());
-        } catch (a) {
-          I["push"](I["shift"]());
-        }
-      }
-    })(b, 0xd441d),
-      conn["send3ButtonVid"](
-        m[q(-0x181, "#U1q")],
-        "https://telegra.ph/file/a46ab7fa39338b1f54d5a.mp4",
-        "┅────┅─❏\x20*𝐃𝐀𝐒𝐇𝐁𝐎𝐀𝐑𝐃*\x20❏─┅────┅",
-        text[l(-"0x24a", -0x24e)]() +
-          (q(-"0x189", "bGCh") + nameown + "\x0a") +
-          botdate,
-        l(-0x252, -"0x246"),
-        l(-"0x244", -0x242),
-        l(-0x247, -0x23e),
-        ".owner",
-        l(-"0x243", -0x248),
-        q(-"0x191", "q2Ib"),
-        m,
-        {
-          contextInfo: {
-            externalAdReply: {
-              showAdAttribution: !![],
-              mediaUrl: sig,
-              mediaType: 0x2,
-              description: sgc,
-              title: l(-"0x25e", -0x253),
-              body: wm,
-              thumbnail: await (await fetch(bot))[l(-0x257, -"0x24c")](),
-              sourceUrl: sig,
-            },
+    conn.send3ButtonVid(
+      m.chat,
+      "https://telegra.ph/file/a46ab7fa39338b1f54d5a.mp4",
+      "┅────┅─❏ *𝐃𝐀𝐒𝐇𝐁𝐎𝐀𝐑𝐃* ❏─┅────┅",
+      text.trim() + ("\nᴍᴀᴅᴇ ᴡɪᴛʜ \u2764 ʙʏ " + nameown + "\n") + botdate,
+      "Menu",
+      ".menu",
+      "Owner",
+      ".owner",
+      "Credit",
+      ".credit",
+      m,
+      {
+        contextInfo: {
+          externalAdReply: {
+            showAdAttribution: true,
+            mediaUrl: sig,
+            mediaType: 2,
+            description: sgc,
+            title: "Follow Lah Cᴜʏ!!!",
+            body: wm,
+            thumbnail: await (await fetch(bot)).buffer(),
+            sourceUrl: sig,
           },
-        }
-      );
-
+        },
+      }
+    );
     //------------------- PAYMENT MENU
     /*await conn.relayMessage(m.chat,  {
     requestPaymentMessage: {
