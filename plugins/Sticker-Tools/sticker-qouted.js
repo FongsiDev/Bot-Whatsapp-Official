@@ -18,7 +18,7 @@ let handler = async (m, { conn, text }) => {
     if (stiker) return conn.sendFile(m.chat, stiker, "sticker.webp", "", m);
     throw stiker.toString();
   } catch (e) {
-    return throw Error(e);
+    throw new Error(e);
   }
 };
 handler.help = ["qc <teks>"];
