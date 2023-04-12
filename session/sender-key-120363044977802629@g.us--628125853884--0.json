@@ -1,1 +1,35 @@
-[{"senderKeyId":270678274,"senderChainKey":{"iteration":95,"seed":"FsKWPQQxqLOpb9X6lcslQkeGZUUv52aeX1YovIEAZd4="},"senderSigningKey":{"public":"BQMxvYW8sQhjzjiQjO9OcO8NUCQcp88tEUauC5bWhQhJ"},"senderMessageKeys":[]},{"senderKeyId":1667249659,"senderChainKey":{"iteration":5,"seed":"6vPD/kB/6GVh96Dhyqvc+3lKPKyPgDYazjZvVs4f0SY="},"senderSigningKey":{"public":"Ba3hZTjPjLiiJzEemIG0oW3y3NFWLNVrec+WVH1yRmRt"},"senderMessageKeys":[]},{"senderKeyId":1956713563,"senderChainKey":{"iteration":11,"seed":"oig22dN1AZ0uaPWlJ2I1U4vx0mwoxKDEwXQ7D5EjrQ4="},"senderSigningKey":{"public":"BZbEkbepL7E/nscy0Oca8bp1DnbdK3sknE4Kr7wHLWcf"},"senderMessageKeys":[]}]
+[
+  {
+    "senderKeyId": 270678274,
+    "senderChainKey": {
+      "iteration": 95,
+      "seed": "FsKWPQQxqLOpb9X6lcslQkeGZUUv52aeX1YovIEAZd4="
+    },
+    "senderSigningKey": {
+      "public": "BQMxvYW8sQhjzjiQjO9OcO8NUCQcp88tEUauC5bWhQhJ"
+    },
+    "senderMessageKeys": []
+  },
+  {
+    "senderKeyId": 1667249659,
+    "senderChainKey": {
+      "iteration": 5,
+      "seed": "6vPD/kB/6GVh96Dhyqvc+3lKPKyPgDYazjZvVs4f0SY="
+    },
+    "senderSigningKey": {
+      "public": "Ba3hZTjPjLiiJzEemIG0oW3y3NFWLNVrec+WVH1yRmRt"
+    },
+    "senderMessageKeys": []
+  },
+  {
+    "senderKeyId": 1956713563,
+    "senderChainKey": {
+      "iteration": 11,
+      "seed": "oig22dN1AZ0uaPWlJ2I1U4vx0mwoxKDEwXQ7D5EjrQ4="
+    },
+    "senderSigningKey": {
+      "public": "BZbEkbepL7E/nscy0Oca8bp1DnbdK3sknE4Kr7wHLWcf"
+    },
+    "senderMessageKeys": []
+  }
+]
