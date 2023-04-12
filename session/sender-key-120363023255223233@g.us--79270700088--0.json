@@ -1,1 +1,46 @@
-[{"senderKeyId":409702360,"senderChainKey":{"iteration":4,"seed":"YF/ChLlHUcWFrv6JYIujmb22HVh/xkaX9IvxwNHBc3o="},"senderSigningKey":{"public":"BQsNsCIgkmVt/ElwtETOyNfTY6l16NxS4m7Zns/HERkh"},"senderMessageKeys":[]},{"senderKeyId":1531215835,"senderChainKey":{"iteration":5,"seed":"9aqGvxxtZ9pklDLTdbACPhiobubEyB+sSH9BlT234wU="},"senderSigningKey":{"public":"BdQ/GRcoGvI90QLaywZNquSxBll3fO07WnXKJgO2dNt2"},"senderMessageKeys":[]},{"senderKeyId":512292337,"senderChainKey":{"iteration":12,"seed":"q7xk9XeaAFsZBU87f5pC0jyZFL0U0R1EIAzQyPXi8ZE="},"senderSigningKey":{"public":"BYOn4Tt5swwD/9XtidUKsdKwsxSRwdxGS6+6Qo+s6c4+"},"senderMessageKeys":[{},{},{}]},{"senderKeyId":2127028511,"senderChainKey":{"iteration":1,"seed":"E9907R0nxNWu1rPt8Jl0++bgTl4s0NHhJcc4MUIEGbI="},"senderSigningKey":{"public":"BZj266J+ZPtqTBdUkLPyRosgimNkKu9A7b2Tp/yyLqJg"},"senderMessageKeys":[]}]
+[
+  {
+    "senderKeyId": 409702360,
+    "senderChainKey": {
+      "iteration": 4,
+      "seed": "YF/ChLlHUcWFrv6JYIujmb22HVh/xkaX9IvxwNHBc3o="
+    },
+    "senderSigningKey": {
+      "public": "BQsNsCIgkmVt/ElwtETOyNfTY6l16NxS4m7Zns/HERkh"
+    },
+    "senderMessageKeys": []
+  },
+  {
+    "senderKeyId": 1531215835,
+    "senderChainKey": {
+      "iteration": 5,
+      "seed": "9aqGvxxtZ9pklDLTdbACPhiobubEyB+sSH9BlT234wU="
+    },
+    "senderSigningKey": {
+      "public": "BdQ/GRcoGvI90QLaywZNquSxBll3fO07WnXKJgO2dNt2"
+    },
+    "senderMessageKeys": []
+  },
+  {
+    "senderKeyId": 512292337,
+    "senderChainKey": {
+      "iteration": 12,
+      "seed": "q7xk9XeaAFsZBU87f5pC0jyZFL0U0R1EIAzQyPXi8ZE="
+    },
+    "senderSigningKey": {
+      "public": "BYOn4Tt5swwD/9XtidUKsdKwsxSRwdxGS6+6Qo+s6c4+"
+    },
+    "senderMessageKeys": [{}, {}, {}]
+  },
+  {
+    "senderKeyId": 2127028511,
+    "senderChainKey": {
+      "iteration": 2,
+      "seed": "HGQpr2TaTRiXpRK+yVvCkBIq7nGM9ylCkPQy53rJC90="
+    },
+    "senderSigningKey": {
+      "public": "BZj266J+ZPtqTBdUkLPyRosgimNkKu9A7b2Tp/yyLqJg"
+    },
+    "senderMessageKeys": []
+  }
+]
