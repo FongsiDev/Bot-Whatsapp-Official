@@ -4,18 +4,18 @@
       "registrationId": 477001936,
       "currentRatchet": {
         "ephemeralKeyPair": {
-          "pubKey": "BRd7hOWoGcAcB0nLvvSzsZ2EDi614REiC452Od/PV7gg",
-          "privKey": "8Gq+ZqRJAdx322u5oDgo8jPhYMhZ9ba5UTZEh0m/Lm0="
+          "pubKey": "Bbk7Tyb2MqEja0s8JiLgQDndAo/tB9mgaLgFSq75qDl+",
+          "privKey": "cL36MMhbGHyx+PR4CnqRiTPUi2WdxvNNruQkEiA3OUM="
         },
-        "lastRemoteEphemeralKey": "BVGth49ZB9QPKDEjIOQxeter+xpZMD7TLX7qC+xv/IpR",
-        "previousCounter": 0,
-        "rootKey": "zrORs4ImZDZ0CgdZu35GzUMTxx+aEKIdJM981hDxDQ4="
+        "lastRemoteEphemeralKey": "BdyXQE6aCevlqIdxSRaU7YNsxNj7Xs0PvGmlVJqgCU1f",
+        "previousCounter": 5,
+        "rootKey": "4Pn75Be73tDEZ6hJyWIDzVYYgfau40VeSgUpMM+qthg="
       },
       "indexInfo": {
         "baseKey": "BeKAmHjS2hTp0wQlWtNvLkG2Ur2Nx95NUcg717qBLksc",
         "baseKeyType": 1,
         "closed": -1,
-        "used": 1681267684999,
+        "used": 1681280320484,
         "created": 1681145662814,
         "remoteIdentityKey": "BZTVH0+c4tR0e4qCmChbmWaQVhpz6qbQAJQNbkZnXqkj"
       },
@@ -36,17 +36,22 @@
           "messageKeys": {}
         },
         "BVGth49ZB9QPKDEjIOQxeter+xpZMD7TLX7qC+xv/IpR": {
+          "chainKey": { "counter": 0 },
+          "chainType": 2,
+          "messageKeys": {}
+        },
+        "BdyXQE6aCevlqIdxSRaU7YNsxNj7Xs0PvGmlVJqgCU1f": {
           "chainKey": {
             "counter": 0,
-            "key": "wr2wzbO3pr1HglPW8ke3/8AglAN/ArhGAKxLkRC/vRA="
+            "key": "dpVLspSFWNLRrI7mUWW6WXGRiytwCbwB1PDBNCTJGsA="
           },
           "chainType": 2,
           "messageKeys": {}
         },
-        "BRd7hOWoGcAcB0nLvvSzsZ2EDi614REiC452Od/PV7gg": {
+        "Bbk7Tyb2MqEja0s8JiLgQDndAo/tB9mgaLgFSq75qDl+": {
           "chainKey": {
-            "counter": 5,
-            "key": "PFXW3N6+p3eb6un9PzChUrkPMmQERVuWG3ssJ64awUA="
+            "counter": -1,
+            "key": "+1m+t0+U9mG2Anh0vy+kudwjdxp6bjlRcV6e560MXvA="
           },
           "chainType": 1,
           "messageKeys": {}

@@ -100,5 +100,16 @@
       "public": "BVM8eHSiQ1tNaqHWd5snjx/MT+1m7ijB/50YyW7aInAP"
     },
     "senderMessageKeys": []
+  },
+  {
+    "senderKeyId": 424078842,
+    "senderChainKey": {
+      "iteration": 8,
+      "seed": "kSB5cOfLgUdvkisbYaYqKjFGYG1Wm7NCh7HjW4CRn3c="
+    },
+    "senderSigningKey": {
+      "public": "Be/ykRAfRCaNgwB1/BQ1BpcCLLyETUQROOfPuT5kKH4o"
+    },
+    "senderMessageKeys": []
   }
 ]

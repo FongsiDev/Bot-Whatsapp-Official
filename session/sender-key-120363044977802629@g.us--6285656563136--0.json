@@ -46,12 +46,12 @@
   {
     "senderKeyId": 1339524501,
     "senderChainKey": {
-      "iteration": 7,
-      "seed": "yQIKELybdwF2Qs0PcH/glBSCy+DeEH0200BoBp32m4U="
+      "iteration": 14,
+      "seed": "iUW6c/PMR1A+2tOFdbLX3zeF1/hS9Pwz0Sk4rsc5+aY="
     },
     "senderSigningKey": {
       "public": "BdvClKos/N/DlftrhZo7L2dxlOpi71DZF4RpCeeYtFNs"
     },
-    "senderMessageKeys": []
+    "senderMessageKeys": [{}]
   }
 ]

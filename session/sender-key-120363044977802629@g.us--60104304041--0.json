@@ -2,13 +2,13 @@
   {
     "senderKeyId": 1297255944,
     "senderChainKey": {
-      "iteration": 2,
-      "seed": "a/3PkuLjDTdxgXRN8ZN/Z+yYX1aYYD3nsEZeAD8Rzkc="
+      "iteration": 6,
+      "seed": "efdv45z43uULvNsC+EoXw3Ux/BgU6JmEopJptI2Z2QQ="
     },
     "senderSigningKey": {
       "public": "BTUTa50jbZ/fmxa2oX833+Di8+PN9EhuH6T1e0IKhj9m"
     },
-    "senderMessageKeys": []
+    "senderMessageKeys": [{}, {}, {}]
   },
   {
     "senderKeyId": 1297255944,
