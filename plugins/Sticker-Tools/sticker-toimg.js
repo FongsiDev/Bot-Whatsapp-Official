@@ -7,9 +7,9 @@ let handler = async (m, { conn, usedPrefix, command }) => {
   const q = m.quoted || m;
   let mime = q.mediaType || "";
   if (!/sticker/.test(mime)) throw notStickerMessage;
-  let media = await q.download();
+  let media = await q.download(true);
   let out = (await webp2png(media).catch((_) => null)) || Buffer.alloc(0);
-  await conn.sendFile(m.chat, out, "out.png", "*DONE (≧ω≦)ゞ*", m);
+  await conn.sendFile(m.chat, out.result, "out.png", "*DONE (≧ω≦)ゞ*", m);
 };
 handler.help = ["toimg (reply)"];
 handler.tags = ["sticker"];

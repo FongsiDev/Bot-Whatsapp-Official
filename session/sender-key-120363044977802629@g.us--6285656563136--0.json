@@ -53,5 +53,15 @@
       "public": "BdvClKos/N/DlftrhZo7L2dxlOpi71DZF4RpCeeYtFNs"
     },
     "senderMessageKeys": [{}]
+  },
+  {
+    "senderKeyId": 387221550,
+    "senderChainKey": {
+      "iteration": 1,
+      "seed": "w2vkO3+QxAHdmzu8Y0dTy3rIXjZOCjd2bkVG5u7rqHE="
+    },
+    "senderSigningKey": {
+      "public": "BVpKNorcyNQgePFYPPujfxZvMmh9rx7GG6MDOvozINRh"
+    }
   }
 ]

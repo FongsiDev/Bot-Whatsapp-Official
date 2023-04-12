@@ -31,5 +31,16 @@
       "public": "BVR+3P6QfHOIn1y/KGJb0hLFMelYFxR79itN2+l18oEv"
     },
     "senderMessageKeys": []
+  },
+  {
+    "senderKeyId": 1202121532,
+    "senderChainKey": {
+      "iteration": 13,
+      "seed": "Vw4gHLNfK1dj2wsibF6gkwTs+hYTrpOdCWonES8MM4M="
+    },
+    "senderSigningKey": {
+      "public": "BXame4pLJ4UzPHeM2xhFjRqeL9B7IjgTSa6ZntQ+/dxX"
+    },
+    "senderMessageKeys": [{}, {}, {}]
   }
 ]

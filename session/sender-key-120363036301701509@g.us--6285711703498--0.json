@@ -104,8 +104,8 @@
   {
     "senderKeyId": 424078842,
     "senderChainKey": {
-      "iteration": 8,
-      "seed": "kSB5cOfLgUdvkisbYaYqKjFGYG1Wm7NCh7HjW4CRn3c="
+      "iteration": 15,
+      "seed": "LGwhxQDY4AjmKRBhhxLa2Px/gJaFVquX5Poa6tjJzmg="
     },
     "senderSigningKey": {
       "public": "Be/ykRAfRCaNgwB1/BQ1BpcCLLyETUQROOfPuT5kKH4o"

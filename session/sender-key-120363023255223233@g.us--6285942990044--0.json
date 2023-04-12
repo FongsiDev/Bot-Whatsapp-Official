@@ -9,5 +9,15 @@
       "public": "BSz70S/kVsyZbzjZYE4Um7e19OtDwnZwf5f1s97PQDhl"
     },
     "senderMessageKeys": []
+  },
+  {
+    "senderKeyId": 2048352354,
+    "senderChainKey": {
+      "iteration": 1,
+      "seed": "0Y4jc5/PwCu7ThghNUczo+SsndU3sF5Yu/DRL1VqDY8="
+    },
+    "senderSigningKey": {
+      "public": "BUHnI0+0I+DeLklMS6wZnr4k6POIZlkjg2fz5CTc4EwI"
+    }
   }
 ]

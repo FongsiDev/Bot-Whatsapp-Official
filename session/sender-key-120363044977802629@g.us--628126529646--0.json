@@ -53,5 +53,16 @@
       "public": "BThYEdFuyaUXJmUcu8+c4p8lMRgZVtdjicGFss/W1n5J"
     },
     "senderMessageKeys": []
+  },
+  {
+    "senderKeyId": 1840290719,
+    "senderChainKey": {
+      "iteration": 2,
+      "seed": "f+4h8FyzOrQqez5Ctwv2vfGbQXgRDf/1XEqDBPnWb40="
+    },
+    "senderSigningKey": {
+      "public": "BVVboN59c0petv8v2aZPsi5QC+LHXOrA42QHsCPdnrcD"
+    },
+    "senderMessageKeys": []
   }
 ]

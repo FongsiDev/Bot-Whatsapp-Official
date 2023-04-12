@@ -20,5 +20,16 @@
       "public": "Bc92bZXr+sXjAFTnsqgOafkHRnG0mRowQK/dNdZxUvwt"
     },
     "senderMessageKeys": []
+  },
+  {
+    "senderKeyId": 1517737713,
+    "senderChainKey": {
+      "iteration": 6,
+      "seed": "R6bqLosMuEiFFKuKyDBJeFDXTh/FNj4tjqBrN0AEg/0="
+    },
+    "senderSigningKey": {
+      "public": "BdSRKS5e+JWUWfm4tKbQxlbW/EncZc01tZZX9zy4+uov"
+    },
+    "senderMessageKeys": [{}]
   }
 ]

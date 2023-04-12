@@ -86,5 +86,16 @@
       "public": "BZDHG8BE0Vo+YFLtdTLDlfXGqCduMCtayseNVCq1/L8u"
     },
     "senderMessageKeys": [{}]
+  },
+  {
+    "senderKeyId": 1528086511,
+    "senderChainKey": {
+      "iteration": 14,
+      "seed": "Xo41PQo00ZygdeuRLQLb8yfJVJzJs3mfKUGSH/DDxho="
+    },
+    "senderSigningKey": {
+      "public": "BXn4xqueg+Gl8iyo9srlt2hWDSZzl1EGaFCDoWwiIQJv"
+    },
+    "senderMessageKeys": []
   }
 ]

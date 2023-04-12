@@ -42,5 +42,15 @@
       "public": "BeKI1/KNE60DsbDhXqLTrRDuBwtEVMShV1tUs+c6LtR+"
     },
     "senderMessageKeys": []
+  },
+  {
+    "senderKeyId": 1177876914,
+    "senderChainKey": {
+      "iteration": 1,
+      "seed": "mBBxmWKC+oW+XDqeEw/x9wHO75s/KeN2JBHZlyWTReM="
+    },
+    "senderSigningKey": {
+      "public": "BXEcKZuMZqEBTszkgo1WvHtIsS6ZKkp4m621ZeJR005d"
+    }
   }
 ]
