@@ -90,8 +90,8 @@
   {
     "senderKeyId": 1073363917,
     "senderChainKey": {
-      "iteration": 11,
-      "seed": "ut7teaKG3aRoLRHicnopf9gkFbGNvVUXXvZHCHkkKO4="
+      "iteration": 21,
+      "seed": "72pp+u/kdpK3zpGfF4ylVIdiNdYF9IRXeW2cAz7yA98="
     },
     "senderSigningKey": {
       "public": "BRcmVbMYp4bfBVzYoYXWetKEQtFDY5DvOS3Y2B9dohtc"

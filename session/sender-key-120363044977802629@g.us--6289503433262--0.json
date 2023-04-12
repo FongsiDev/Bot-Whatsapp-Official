@@ -68,12 +68,23 @@
   {
     "senderKeyId": 1030167488,
     "senderChainKey": {
+      "iteration": 20,
+      "seed": "2eqHlR8qYxvcLWxhirAqE1VySqEuN48YkqHAxpGYrZ8="
+    },
+    "senderSigningKey": {
+      "public": "BWwnOFL3CGJAq1CglhUzTdHIo+dqzUXpZKLDzB5ERnZp"
+    },
+    "senderMessageKeys": [{}]
+  },
+  {
+    "senderKeyId": 1030167488,
+    "senderChainKey": {
       "iteration": 16,
       "seed": "gSYAFijSvG14fXpAHZi9rRr0tPvatokTeq3R8Z6jJWU="
     },
     "senderSigningKey": {
       "public": "BWwnOFL3CGJAq1CglhUzTdHIo+dqzUXpZKLDzB5ERnZp"
     },
-    "senderMessageKeys": [{}]
+    "senderMessageKeys": []
   }
 ]

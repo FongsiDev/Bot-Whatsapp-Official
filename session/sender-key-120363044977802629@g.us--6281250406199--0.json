@@ -79,12 +79,12 @@
   {
     "senderKeyId": 767519047,
     "senderChainKey": {
-      "iteration": 10,
-      "seed": "VfjDgyHENU5W/bCMsp1Zn+MgWoUx8JXOmlUDU+9J3sk="
+      "iteration": 12,
+      "seed": "tLKs0fG3uFu7o8ZYBVXzyqw4sS2vH+hHonxcF1WRaJg="
     },
     "senderSigningKey": {
       "public": "BSi7wY3forn+vnvnjHf2dntxf1MtbADZ+7vaP0ySdgpX"
     },
-    "senderMessageKeys": []
+    "senderMessageKeys": [{}]
   }
 ]

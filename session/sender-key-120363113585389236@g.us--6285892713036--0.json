@@ -2,11 +2,12 @@
   {
     "senderKeyId": 420717976,
     "senderChainKey": {
-      "iteration": 4,
-      "seed": "gRwPAiStNnK2R7v9iO+rQGQEXqC6SI8xW67gRc/kvqE="
+      "iteration": 37,
+      "seed": "e7OVRBwnFoSMe8MljrUMPlS9ymHzFE3bfEfHkrbIrm4="
     },
     "senderSigningKey": {
       "public": "Bc/XZL0VqOOLAEeBCmKp56szulFHXui+YzWmszW1Xo08"
-    }
+    },
+    "senderMessageKeys": [{}, {}, {}, {}, {}, {}, {}]
   }
 ]

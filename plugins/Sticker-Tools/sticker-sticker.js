@@ -11,7 +11,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     if (/webp|image|video/g.test(mime)) {
       if (/video/g.test(mime))
         if ((q.msg || q).seconds > 11) return m.reply("Maksimal 10 detik!");
-      let img = await q.download?.();
+      let img = await q.download?.(true);
       if (!img)
         throw `balas gambar/video/stiker dengan perintah ${
           usedPrefix + command

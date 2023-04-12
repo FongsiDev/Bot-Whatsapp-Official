@@ -192,7 +192,7 @@
       "indexInfo": {
         "baseKey": "BWS5239bpxIYnGREpVNGp6f9lPEATTZqML1dWO2c7WAu",
         "baseKeyType": 1,
-        "closed": -1,
+        "closed": 1681284343671,
         "used": 1681278816213,
         "created": 1681278816213,
         "remoteIdentityKey": "BdtqFr3Zi/nREcF0ZuVSKSfzZY1TDbNgm9Lhr7gtmhso"
@@ -210,6 +210,109 @@
       "pendingPreKey": {
         "signedKeyId": 1,
         "baseKey": "BWS5239bpxIYnGREpVNGp6f9lPEATTZqML1dWO2c7WAu"
+      }
+    },
+    "Be75DM06oB9bnSmF1NUnJ2hSxTuP7fwBh6FRVfQUYj5P": {
+      "registrationId": 245,
+      "currentRatchet": {
+        "ephemeralKeyPair": {
+          "pubKey": "BUhKCtLFVlUxxddtqhHTcjiYFFUvcg7vKi08A/GlY8gT",
+          "privKey": "KOGrllWp+/u4NeChGVR9w8CNdFKMQloyVN1VXxdlQVU="
+        },
+        "lastRemoteEphemeralKey": "BTPtQwDR9Sm2h9grBkKIdvp0Ad1gvLSB0UuhGKhfvK4R",
+        "previousCounter": 0,
+        "rootKey": "GIGvStvbfVzwveBweCPTKPa2H3iFcqbKrvtNh1Ogcok="
+      },
+      "indexInfo": {
+        "baseKey": "Be75DM06oB9bnSmF1NUnJ2hSxTuP7fwBh6FRVfQUYj5P",
+        "baseKeyType": 1,
+        "closed": 1681284694925,
+        "used": 1681284343669,
+        "created": 1681284343669,
+        "remoteIdentityKey": "BdtqFr3Zi/nREcF0ZuVSKSfzZY1TDbNgm9Lhr7gtmhso"
+      },
+      "_chains": {
+        "BUhKCtLFVlUxxddtqhHTcjiYFFUvcg7vKi08A/GlY8gT": {
+          "chainKey": {
+            "counter": 0,
+            "key": "YoDUwKmOgK/nJunff+/ZVs4JYaaG7JoxEF95+qWUY48="
+          },
+          "chainType": 1,
+          "messageKeys": {}
+        }
+      },
+      "pendingPreKey": {
+        "signedKeyId": 1,
+        "baseKey": "Be75DM06oB9bnSmF1NUnJ2hSxTuP7fwBh6FRVfQUYj5P"
+      }
+    },
+    "BUAUS8qebRoDacyXvTpFz3wcIqkorLuegf8uLvz5w/8U": {
+      "registrationId": 245,
+      "currentRatchet": {
+        "ephemeralKeyPair": {
+          "pubKey": "Bd31tJhj3VWRxw6ThYkf+8/7JLmXAMBtOA6atGoatX9V",
+          "privKey": "qJpwm+eh566MpwOXO88EbaROeLGwME2US6mDIOOkh0w="
+        },
+        "lastRemoteEphemeralKey": "BTPtQwDR9Sm2h9grBkKIdvp0Ad1gvLSB0UuhGKhfvK4R",
+        "previousCounter": 0,
+        "rootKey": "dw4yNZ40Dgm89/fZ7HabwEHnq8Oq2wOA3l2XZi9pvBA="
+      },
+      "indexInfo": {
+        "baseKey": "BUAUS8qebRoDacyXvTpFz3wcIqkorLuegf8uLvz5w/8U",
+        "baseKeyType": 1,
+        "closed": 1681286665425,
+        "used": 1681284694923,
+        "created": 1681284694923,
+        "remoteIdentityKey": "BdtqFr3Zi/nREcF0ZuVSKSfzZY1TDbNgm9Lhr7gtmhso"
+      },
+      "_chains": {
+        "Bd31tJhj3VWRxw6ThYkf+8/7JLmXAMBtOA6atGoatX9V": {
+          "chainKey": {
+            "counter": 0,
+            "key": "HEGCJRrTJb8AJHg8i/soIbchLxhRF4fgaWkm6vcINJo="
+          },
+          "chainType": 1,
+          "messageKeys": {}
+        }
+      },
+      "pendingPreKey": {
+        "signedKeyId": 1,
+        "baseKey": "BUAUS8qebRoDacyXvTpFz3wcIqkorLuegf8uLvz5w/8U"
+      }
+    },
+    "BQn/m1fBGQxjh9mbkEah54S8BjEHLmbz0AbBAh4RHnQV": {
+      "registrationId": 245,
+      "currentRatchet": {
+        "ephemeralKeyPair": {
+          "pubKey": "BdFAdf74KpOEZvz0fP79BgDMcyHiDK5a5pvZ+hvXJ6Aq",
+          "privKey": "yPONeuYwm5TQPR9hdzoyfij47Fp11JE0eXwyozCscX4="
+        },
+        "lastRemoteEphemeralKey": "BTPtQwDR9Sm2h9grBkKIdvp0Ad1gvLSB0UuhGKhfvK4R",
+        "previousCounter": 0,
+        "rootKey": "Pl5AsSYrSkifnGNgxvT9POFtx0VXKt536iRdBsxoeVQ="
+      },
+      "indexInfo": {
+        "baseKey": "BQn/m1fBGQxjh9mbkEah54S8BjEHLmbz0AbBAh4RHnQV",
+        "baseKeyType": 1,
+        "closed": -1,
+        "used": 1681286665423,
+        "created": 1681286665423,
+        "remoteIdentityKey": "BdtqFr3Zi/nREcF0ZuVSKSfzZY1TDbNgm9Lhr7gtmhso"
+      },
+      "_chains": {
+        "BdFAdf74KpOEZvz0fP79BgDMcyHiDK5a5pvZ+hvXJ6Aq": {
+          "chainKey": {
+            "counter": 0,
+            "key": "COYVjZf8nwPJL9q/BHXKlQy+U7+mkhaQb75vDN+HTTI="
+          },
+          "chainType": 1,
+          "messageKeys": {}
+        }
+      },
+      "pendingPreKey": {
+        "signedKeyId": 1,
+        "baseKey": "BQn/m1fBGQxjh9mbkEah54S8BjEHLmbz0AbBAh4RHnQV",
+        "preKeyId": 94
       }
     }
   },

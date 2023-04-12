@@ -39,18 +39,18 @@
       "registrationId": 1468525789,
       "currentRatchet": {
         "ephemeralKeyPair": {
-          "pubKey": "BYNi01CzHfVHzqQ4bsEfT9ECFpBy6D7YPmav8wsdaxtr",
-          "privKey": "cO7MocTyxVhlJ5vSmFVR5oNiR/tOzQpgF8KjFkZRG2A="
+          "pubKey": "Bdl8azfo88nhydD9+ANKS/0fFIelTOSUEENiH95fTTgL",
+          "privKey": "0BwIuFzuCG/Il1w8nim0C4uBPgJczM3LEL49PHHE3l8="
         },
-        "lastRemoteEphemeralKey": "BQr0x44xqvjcTKDBm5J8Sb7iklLHqXjtlsO6EcAQ/Fsf",
-        "previousCounter": 1,
-        "rootKey": "3CLVM9BnDnb6pfKfNXB9wQLE4NLaBERRYdW9HtEJM2U="
+        "lastRemoteEphemeralKey": "BXeiYoKi4f1rcRK+71XkNUiQOnEecLJxbBKSs018DuhH",
+        "previousCounter": 0,
+        "rootKey": "YzPdWEYZASRDuVC5+cSB5St7qmXGktOdP8reqx2bCck="
       },
       "indexInfo": {
         "baseKey": "Bb7aeYxOMbbDnJLZtYNeKpKBrX1yVRnaqzKWudanOog3",
         "baseKeyType": 1,
         "closed": -1,
-        "used": 1681211276265,
+        "used": 1681286630406,
         "created": 1681146055232,
         "remoteIdentityKey": "BbIxyZ+KVjo4BRC12DURBuLr1sYfexkHIW/FbRmCUH5g"
       },
@@ -61,20 +61,25 @@
           "messageKeys": { "0": "PlirsaBPnQ7ngHV6KM9wvGEa9Gi4G8yZvnQog+Ux8co=" }
         },
         "BQr0x44xqvjcTKDBm5J8Sb7iklLHqXjtlsO6EcAQ/Fsf": {
-          "chainKey": {
-            "counter": 2,
-            "key": "dsJ+WMKEwpbYGsgDA7cKDSbGhChRAaLKP11MjTKgCjI="
-          },
+          "chainKey": { "counter": 2 },
           "chainType": 2,
           "messageKeys": {
             "0": "hdABrTa3FYprYwE+7UDv8rqPagxY+ddYQ32RjrTWy4g=",
             "1": "aQYrzUrqSCkIppRi9xfE8PdwW+xwM68ewPq9/RMimP8="
           }
         },
-        "BYNi01CzHfVHzqQ4bsEfT9ECFpBy6D7YPmav8wsdaxtr": {
+        "BXeiYoKi4f1rcRK+71XkNUiQOnEecLJxbBKSs018DuhH": {
           "chainKey": {
-            "counter": 0,
-            "key": "ZsT3fIjWyU8s15EaQ8DG9pI6T/UyatTLiwTROcuM01A="
+            "counter": 1,
+            "key": "n1zoyg0PgQxgwkL3SV9+FTjDjBxXiVg3y5Pl2jHq4TM="
+          },
+          "chainType": 2,
+          "messageKeys": { "0": "jd0F7NeAXiS0p/lBvQ3uXYjRPyh+yC7rsOCHDFOSWqk=" }
+        },
+        "Bdl8azfo88nhydD9+ANKS/0fFIelTOSUEENiH95fTTgL": {
+          "chainKey": {
+            "counter": -1,
+            "key": "WNS0yCQAdOJRPFY8B7QHYIhLK+MxdVubccnwjkw77a0="
           },
           "chainType": 1,
           "messageKeys": {}

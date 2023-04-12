@@ -9,5 +9,16 @@
       "public": "Be/HUoD/BAZ7zEwxNp0YbG/Sj1M6iOd/PxxoL8ZvLG9c"
     },
     "senderMessageKeys": []
+  },
+  {
+    "senderKeyId": 416702842,
+    "senderChainKey": {
+      "iteration": 5,
+      "seed": "xhpRk7XphPDBkD6f0/x/jOVHtTHm9NfoVr5Brh33tN8="
+    },
+    "senderSigningKey": {
+      "public": "BUCnwbc5JjQN6znlMdczoaf5SdIFZ7CBXSgjFi8HABxW"
+    },
+    "senderMessageKeys": []
   }
 ]

@@ -148,12 +148,23 @@
   {
     "senderKeyId": 471333842,
     "senderChainKey": {
+      "iteration": 114,
+      "seed": "PWK1spkROBqjX3OfFHeBaKeAjrDsmkTvM0/LFse3FJ8="
+    },
+    "senderSigningKey": {
+      "public": "BRmjQvtFV1OLD0120IB2ZEi+96ZV/GklqKYcfWFpkHIS"
+    },
+    "senderMessageKeys": [{}, {}, {}]
+  },
+  {
+    "senderKeyId": 471333842,
+    "senderChainKey": {
       "iteration": 31,
       "seed": "Y8MPxZ4ITJoHQzhrkqoE4hhUssa6zglfwkzA5Ssu+zU="
     },
     "senderSigningKey": {
       "public": "BRmjQvtFV1OLD0120IB2ZEi+96ZV/GklqKYcfWFpkHIS"
     },
-    "senderMessageKeys": [{}, {}, {}]
+    "senderMessageKeys": []
   }
 ]

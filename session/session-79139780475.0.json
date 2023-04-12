@@ -39,35 +39,38 @@
       "registrationId": 615649012,
       "currentRatchet": {
         "ephemeralKeyPair": {
-          "pubKey": "BUZtnIMec/wQsSI2r6+t2GbxcLWZ4mARF18zz4mRoD09",
-          "privKey": "UFCtlk6JVO6M15YTTmBAXGhGDz/sPH045cBi6CskSFk="
+          "pubKey": "BZCCSRB7S6UZwgDDiGJFh1kaGSV+XtprSMp5lOlrCkxt",
+          "privKey": "uOoDCy8nbkiCVtxI3y3QkDGUkJU7g+0hoS1zfkpJlWo="
         },
-        "lastRemoteEphemeralKey": "Be7kIOfzYOD91s7LKH809c9TYhWy8gAJ9yx7E8yEQa44",
-        "previousCounter": 0,
-        "rootKey": "8lHGMRKjTBsoWdkaOYwkdbjyI/0IS0OnQiuTDsWFb64="
+        "lastRemoteEphemeralKey": "BZUajiXvwvI9vKIcdnOu1F+MM3NgrESBxKlXkPsEQFU9",
+        "previousCounter": 10,
+        "rootKey": "BHrxmeOFNUHQZlJ33+o1/Wj7rcdux8ohgT2kyiOlH5Q="
       },
       "indexInfo": {
         "baseKey": "BYsao8BcKjkpKSsriXnIGq04nsqcav96q9MP601Qf50e",
         "baseKeyType": 1,
         "closed": -1,
-        "used": 1681146055872,
+        "used": 1681282522019,
         "created": 1681146055872,
         "remoteIdentityKey": "BfdykShFDr2b5xPBe1hvH93cnVIWuRuX3zxe59uqpCk2"
       },
       "_chains": {
-        "BUZtnIMec/wQsSI2r6+t2GbxcLWZ4mARF18zz4mRoD09": {
+        "BZUajiXvwvI9vKIcdnOu1F+MM3NgrESBxKlXkPsEQFU9": {
           "chainKey": {
-            "counter": 10,
-            "key": "yLvgFj2FP5cdpcXWvkyq8XzzMHpLvN2kMHfs8/Q9PsM="
+            "counter": 1,
+            "key": "FliMll6XJ3EjQsTwdwwTj384iSjqa3ViR5tkAY+Q3Xg="
+          },
+          "chainType": 2,
+          "messageKeys": { "0": "+O4ODsCoCc07aO3fm6YfMlxLFL77BSz6zlXNrvLFThs=" }
+        },
+        "BZCCSRB7S6UZwgDDiGJFh1kaGSV+XtprSMp5lOlrCkxt": {
+          "chainKey": {
+            "counter": -1,
+            "key": "lUGtljWh7lqaCoF5G5Ett+umDM3KekK0t3QoS2qLWFE="
           },
           "chainType": 1,
           "messageKeys": {}
         }
-      },
-      "pendingPreKey": {
-        "signedKeyId": 0,
-        "baseKey": "BYsao8BcKjkpKSsriXnIGq04nsqcav96q9MP601Qf50e",
-        "preKeyId": 13972137
       }
     }
   },

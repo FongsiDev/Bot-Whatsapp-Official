@@ -104,5 +104,16 @@
       "public": "BaBsgz8eZ5yrUhoIbLp0oVItzxTIx0KPdWEbnweO4FhN"
     },
     "senderMessageKeys": []
+  },
+  {
+    "senderKeyId": 1609103227,
+    "senderChainKey": {
+      "iteration": 9,
+      "seed": "IZtczqPXR8yaAIRwI6eMR2V+7jPnnSBm+rK2LXno9co="
+    },
+    "senderSigningKey": {
+      "public": "BQUMXec0e4PkIRgjF5AAyGDOIgrZ2E7QCtLa2xwCJnpK"
+    },
+    "senderMessageKeys": []
   }
 ]

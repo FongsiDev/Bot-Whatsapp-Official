@@ -50,15 +50,15 @@
         "baseKey": "Beyeeekaze/5A1tE76DyXpjWQSZ+Ah6YPqvnePbYyTJ8",
         "baseKeyType": 1,
         "closed": -1,
-        "used": 1681223192676,
+        "used": 1681286888010,
         "created": 1681146055038,
         "remoteIdentityKey": "BVs0zZIzTDwxN2XY5lTuqpfzPYU7I7TWXZmBnJgNBI0M"
       },
       "_chains": {
         "Bd5+2croHuJnfcwkzrLpXfX5KN08Bdb91jXOHosmPRdt": {
           "chainKey": {
-            "counter": 0,
-            "key": "Rnc5xduyn8yBEbdCDqTqxiDN8IxP42tWwBfOygBT97A="
+            "counter": 1,
+            "key": "gZ5xReMjA9BhYp5z9bOyDPe03HKTeH0aV4Sgr1xetXs="
           },
           "chainType": 2,
           "messageKeys": {}
