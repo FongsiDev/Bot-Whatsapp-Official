@@ -167,13 +167,17 @@
   {
     "senderKeyId": 1802939169,
     "senderChainKey": {
-      "iteration": 504,
-      "seed": "oS1ACxIv6D7PJuMECGwZxMTxJXIFrONJ0cBQi2BJHTE="
+      "iteration": 698,
+      "seed": "FLCEKuWR4uUTkyw9PWuIgizVOyQECsxP4pv73cQHBmU="
     },
     "senderSigningKey": {
       "public": "BcdmxNXrB2ARUy7bMrLOOTSFIK8/VWB2H+rmZN5wrjNR"
     },
     "senderMessageKeys": [
+      {},
+      {},
+      {},
+      {},
       {},
       {},
       {},

@@ -68,13 +68,16 @@
   {
     "senderKeyId": 1414507015,
     "senderChainKey": {
-      "iteration": 704,
-      "seed": "j6iUvT9ER1ViyAXPLR5g2G5cqnrUp/Pt2EjkKvmDiFk="
+      "iteration": 844,
+      "seed": "YZ9dxPziTjFF8ZNR2g021YFhfPYFFmHxc6zgQwO9xd4="
     },
     "senderSigningKey": {
       "public": "Be8ry7Yg4vAf+PdGsh7qRfdVAgi3fm2Ix6lBKVhZpXMN"
     },
     "senderMessageKeys": [
+      {},
+      {},
+      {},
       {},
       {},
       {},

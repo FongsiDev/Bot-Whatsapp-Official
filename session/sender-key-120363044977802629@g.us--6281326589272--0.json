@@ -68,12 +68,12 @@
   {
     "senderKeyId": 36745811,
     "senderChainKey": {
-      "iteration": 12,
-      "seed": "jGvAh04zbp7TZfkKLNofApC01rpKkuPhUmd3LT8GnJE="
+      "iteration": 18,
+      "seed": "7OEPz9gzCNvRpg7p6I0WzP9MPV9aDlPhqul7tWmHW7E="
     },
     "senderSigningKey": {
       "public": "Bag9PF9imiyodqUTf9D4k8TO94Kq32Qde0Jz+ZyJhutg"
     },
-    "senderMessageKeys": [{}, {}, {}, {}]
+    "senderMessageKeys": [{}, {}, {}, {}, {}]
   }
 ]

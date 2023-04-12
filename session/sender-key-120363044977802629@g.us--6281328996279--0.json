@@ -68,12 +68,12 @@
   {
     "senderKeyId": 2031486309,
     "senderChainKey": {
-      "iteration": 5,
-      "seed": "oFiNxzr7oxs8QU8ik5lrQmQNzlw3r1WpmM3xeH4pS+Q="
+      "iteration": 11,
+      "seed": "X/etJq6uY5sx/o75s7lhuxViDlaW+j2WUj6BhOOoDqc="
     },
     "senderSigningKey": {
       "public": "BQWWNiu29bCKahz1WNomiHPKHMJr0stNkcpFEtOESq4C"
     },
-    "senderMessageKeys": [{}]
+    "senderMessageKeys": [{}, {}, {}, {}, {}, {}]
   }
 ]

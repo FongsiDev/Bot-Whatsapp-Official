@@ -13,8 +13,8 @@
   {
     "senderKeyId": 703974910,
     "senderChainKey": {
-      "iteration": 3,
-      "seed": "BUEGNOAR+rH+UALv4wvyULEivAxEcbclIEBEprsJNSY="
+      "iteration": 40,
+      "seed": "k48vDDXfsE4rk1DkyC0r99AKnWP+kymSw7sR8/QJGOI="
     },
     "senderSigningKey": {
       "public": "BS8p3YzhrkFD9DdWRVr2kVrqZD+O1TTjjn//yKU5u7Me"

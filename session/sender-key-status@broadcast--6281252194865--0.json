@@ -43,12 +43,12 @@
   {
     "senderKeyId": 591777009,
     "senderChainKey": {
-      "iteration": 65,
-      "seed": "yOHk9LTc3iMxznkj7l4gtdzcj1GEhQyQIGzhkAPIwYI="
+      "iteration": 71,
+      "seed": "d6dIxNAaA8xk0LD7GeTScL5un0ZSt21Xo++nufHCqQ4="
     },
     "senderSigningKey": {
       "public": "BZqVSQS9jp3tMu4IqcHYkFpCS3gWOal0j9hvZiAFFL9n"
     },
-    "senderMessageKeys": [{}, {}]
+    "senderMessageKeys": [{}, {}, {}, {}, {}]
   }
 ]

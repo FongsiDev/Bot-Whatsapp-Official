@@ -90,8 +90,8 @@
   {
     "senderKeyId": 1528086511,
     "senderChainKey": {
-      "iteration": 15,
-      "seed": "S8L9ovHoLisZvTqIReXN+BZLp6DIaZehx6b1lm2SFg0="
+      "iteration": 19,
+      "seed": "FO0mIiWfb1v/TndIF5WEeAJYei7ESepnHKFwEdHz+CE="
     },
     "senderSigningKey": {
       "public": "BXn4xqueg+Gl8iyo9srlt2hWDSZzl1EGaFCDoWwiIQJv"

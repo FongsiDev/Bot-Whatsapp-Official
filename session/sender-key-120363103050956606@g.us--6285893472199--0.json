@@ -100,8 +100,8 @@
   {
     "senderKeyId": 472978418,
     "senderChainKey": {
-      "iteration": 112,
-      "seed": "6TsRfZWkTs0A0H1BiOngOx+m4Qe+7aP3Hx+1YjS1ZxE="
+      "iteration": 120,
+      "seed": "9lEUrGuejhQsCbjFEGrUodb9ZLdBv/PYIEqZgwo6GEo="
     },
     "senderSigningKey": {
       "public": "BVkbPx0ddUZPKmZZoGVcMTQEbPIqL05VPRkg/oKxQH9d"

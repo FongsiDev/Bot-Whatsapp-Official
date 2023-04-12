@@ -20,5 +20,16 @@
       "public": "BTUTa50jbZ/fmxa2oX833+Di8+PN9EhuH6T1e0IKhj9m"
     },
     "senderMessageKeys": []
+  },
+  {
+    "senderKeyId": 1070044035,
+    "senderChainKey": {
+      "iteration": 2,
+      "seed": "iVJkSJTihK29AFgmWPLtpk4LQ5Npwu8DJFKql2vm00A="
+    },
+    "senderSigningKey": {
+      "public": "BW/j4639QdbpIH4x5d6rIHY1+brPGvAw2EduTudY8/c1"
+    },
+    "senderMessageKeys": []
   }
 ]

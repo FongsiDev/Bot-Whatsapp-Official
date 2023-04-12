@@ -21,7 +21,15 @@ let handler = async (m, { conn, text }) => {
         messages: conversationLog,
       })
       .then((response) => {
-        conn.reply(m.chat, response.data.choices[0].message?.content, m);
+        let res = response.data.choices[0].message?.content;
+        conn.sendButton(
+          m.chat,
+          res,
+          author,
+          null,
+          [["Get Voice Bot", `/tts id ${res}`]],
+          m
+        );
       })
       .catch((e) => {
         console.log(e);

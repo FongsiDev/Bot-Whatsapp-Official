@@ -50,7 +50,7 @@
         "baseKey": "BY9ZJQ2zFXg7T09GSkAOQrbpcB5Qcnm37OEHTVCgEkcC",
         "baseKeyType": 1,
         "closed": -1,
-        "used": 1681294867231,
+        "used": 1681303924844,
         "created": 1681146055027,
         "remoteIdentityKey": "BZ5Rllue3VrUtgP3EY0HMPUSWAIwQIrQULZEP1dYGxZt"
       },
@@ -92,8 +92,8 @@
         },
         "Be5Lov/fjELZ+z0Nd/Zzzkv0sHic4zmJTIfc2ewcbBlr": {
           "chainKey": {
-            "counter": 1,
-            "key": "x23ySWQjmFsp/A9VnqiehHuShgdh8BnMdzKr1rxazX8="
+            "counter": 2,
+            "key": "jU42RXOIYyRA+xSZaSAUGKtTvM6CaEpg3XIhSvZH7sw="
           },
           "chainType": 2,
           "messageKeys": {}

@@ -13,8 +13,8 @@
   {
     "senderKeyId": 32379956,
     "senderChainKey": {
-      "iteration": 3,
-      "seed": "yD9TqQrfby1zMpiyL3M0Bn0hWa4VZSxtJW2LpzsgbMw="
+      "iteration": 32,
+      "seed": "ITuCrfu5+6kt56j+Qbd8r3/XAtEUYT/0ePi3ZvojBeg="
     },
     "senderSigningKey": {
       "public": "BUTiYcodeaDS+rf87D1JiXf8s5yQCIYGe0wxGlD6MJZN"
