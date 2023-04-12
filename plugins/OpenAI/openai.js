@@ -19,7 +19,8 @@ contoh; tanda ( ) adalah respon AI nya
     [
       ["AI OLD", `!ai-old ${text}`],
       ["AI NEW", `!ai-new ${text}`],
-      ["AI IMG", `!ai-image ${text}`][("AI INFORMATION", `!ai-info ${text}`)],
+      ["AI IMG", `!ai-image ${text}`],
+      ["AI INFORMATION", `!ai-info ${text}`],
     ],
     m
   );
