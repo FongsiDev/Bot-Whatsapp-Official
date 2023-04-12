@@ -36,4 +36,5 @@ let handler = async (m, { conn, text }) => {
 handler.help = ["ai-old", "openai-old"];
 handler.tags = ["openai", "fun"];
 handler.command = /^(ai-old|openai-old)$/i;
+handler.limit = true;
 export default handler;
