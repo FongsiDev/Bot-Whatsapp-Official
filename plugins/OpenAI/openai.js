@@ -1,7 +1,7 @@
 import fs from "fs";
 import moment from "moment-timezone";
 import fetch from "node-fetch";
-
+let voice_ai = fs.readFileSync("./mp3/ai-voice.ogg");
 let handler = async (m, { conn, usedPrefix, __dirname, text, command }) => {
   if (!text) throw "[!] Masukkan teks.";
   let tag = `@${m.sender.replace(/@.+/, "")}`;
@@ -74,6 +74,7 @@ ${global.botdate}`;
       },
     }
   );
+  conn.sendFile(m.chat, voice_ai, null, null, m, true);
 };
 handler.help = ["ai", "openai"];
 handler.tags = ["openai", "info"];
