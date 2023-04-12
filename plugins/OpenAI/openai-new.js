@@ -30,6 +30,19 @@ let handler = async (m, { conn, text }) => {
           [["Get Voice Bot", `/tts id ${res}`]],
           m
         );
+        /*conn.send3ButtonDoc(
+          m.chat,
+          " ",
+          await res,  
+          "Tanya ke AI-NEW",
+          `/ai-new ${text}`,
+          "Get Voice Bot",
+          `/tts id ${res}`,
+          "\nAku Tak paham 🗿",
+          "bilek",
+          m
+        );
+        */
       })
       .catch((e) => {
         console.log(e);

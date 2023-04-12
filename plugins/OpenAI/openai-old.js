@@ -18,8 +18,8 @@ let handler = async (m, { conn, text }) => {
         frequency_penalty: 0.5,
         presence_penalty: 0,
       })
-      .then((response) => {
-        let res = response.data.choices[0].message?.content;
+      .then(async (response) => {
+        let res = await response.data.choices[0].text;
         conn.sendButton(
           m.chat,
           res,
@@ -28,6 +28,19 @@ let handler = async (m, { conn, text }) => {
           [["Get Voice Bot", `/tts id ${res}`]],
           m
         );
+        /*conn.send3ButtonDoc(
+          m.chat,
+          " ",
+          await res,  
+          "Tanya ke AI-NEW",
+          `/ai-new ${text}`,
+          "Get Voice Bot",
+          `/tts id ${res}`,
+          "\nAku Tak paham 🗿",
+          "bilek",
+          m
+        );
+        */
       })
       .catch((e) => {
         console.log(e);
