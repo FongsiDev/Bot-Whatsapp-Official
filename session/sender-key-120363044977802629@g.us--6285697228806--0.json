@@ -35,6 +35,17 @@
   {
     "senderKeyId": 140194636,
     "senderChainKey": {
+      "iteration": 12,
+      "seed": "pEXXxgqVlz8CJOTCSblsFFY1XtNlYF2FWT2CkkkHnHQ="
+    },
+    "senderSigningKey": {
+      "public": "BRQynC23dcBobMz/OquMuZq9948HPlibpdLcHM3u6ccs"
+    },
+    "senderMessageKeys": []
+  },
+  {
+    "senderKeyId": 140194636,
+    "senderChainKey": {
       "iteration": 1,
       "seed": "+n6eVmKuFPMgCNdVvk/GHLj3VdRsyG20urA7thj+2Kg="
     },

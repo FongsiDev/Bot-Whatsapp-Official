@@ -89,12 +89,12 @@
   {
     "senderKeyId": 1198908997,
     "senderChainKey": {
-      "iteration": 43,
-      "seed": "2w5B9di9wCWuY+xcnILYiwRLbCXqvsu/lglFs54cHdc="
+      "iteration": 195,
+      "seed": "47E1bFq+Gd71MNi3M67TVAlgwS8/O3jMIzSFDpX8cqQ="
     },
     "senderSigningKey": {
       "public": "BcEYmbhygNHXSYTd2UJWJmwhLwZK5P1R+jDmXqz98EUF"
     },
-    "senderMessageKeys": [{}]
+    "senderMessageKeys": [{}, {}]
   }
 ]

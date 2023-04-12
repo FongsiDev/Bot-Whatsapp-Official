@@ -4,18 +4,18 @@
       "registrationId": 73290374,
       "currentRatchet": {
         "ephemeralKeyPair": {
-          "pubKey": "BS0ZXG/d28OZmjYCgMEW70f4B4QHOcts7+3Y97kVLzMn",
-          "privKey": "4Mbrbuo66gUR6TTV98ZRl3NNZFsYcBSomfUB0SEk0kU="
+          "pubKey": "BQhIsGBHZZmEtWAwhvhkcHlyicZT4+T4uX6zmtqj3iVt",
+          "privKey": "aIAncm/fRehH/w5N0Kf7jdeHLkyAVSeSyn8Svz4U9VM="
         },
-        "lastRemoteEphemeralKey": "BYtH6oe18JdvlRcvQp4dRxNcf/XNv4LoYuQJLwnhBkh5",
-        "previousCounter": 0,
-        "rootKey": "x64AuJwVLVVaSO5ZESYGLx2SZ/dg1LWAj7+pO2hFsEs="
+        "lastRemoteEphemeralKey": "BYx9oNb058rWZeW5pQSX6UnppG7edVGG3sy1AixGwFp0",
+        "previousCounter": 1,
+        "rootKey": "HkLzJSctFCmL0EYWQl28AEfnTIzApibjzJnl07yY6HA="
       },
       "indexInfo": {
         "baseKey": "BczSG9EeCGk16JglKDNMwhVh+t7p7t32ioQXJgVDHDZN",
         "baseKeyType": 1,
         "closed": -1,
-        "used": 1681179150421,
+        "used": 1681272371782,
         "created": 1681161631878,
         "remoteIdentityKey": "BV9AACQsJ0PYNrL+vbjMQgUeYEiLBvz0lSMNlOXuwm9r"
       },
@@ -26,17 +26,22 @@
           "messageKeys": {}
         },
         "BYtH6oe18JdvlRcvQp4dRxNcf/XNv4LoYuQJLwnhBkh5": {
+          "chainKey": { "counter": 0 },
+          "chainType": 2,
+          "messageKeys": {}
+        },
+        "BYx9oNb058rWZeW5pQSX6UnppG7edVGG3sy1AixGwFp0": {
           "chainKey": {
             "counter": 0,
-            "key": "NiV4ANXXV6/1A26x7uSs1YgTOZ9DbM3B6l3+PZLI+Pg="
+            "key": "XlHr+WCBBEp1JbZxvs6us9slDe+BXlW8lXPqP8Q9Y+o="
           },
           "chainType": 2,
           "messageKeys": {}
         },
-        "BS0ZXG/d28OZmjYCgMEW70f4B4QHOcts7+3Y97kVLzMn": {
+        "BQhIsGBHZZmEtWAwhvhkcHlyicZT4+T4uX6zmtqj3iVt": {
           "chainKey": {
-            "counter": 1,
-            "key": "CnYEZmclh/x4mECHcpPdGu9GS9IInvtHQOvRilLXWN0="
+            "counter": -1,
+            "key": "MAnoShXkJ3ab7iIHS50VYj5ONVQ4cL5anRYuuiVlwkU="
           },
           "chainType": 1,
           "messageKeys": {}

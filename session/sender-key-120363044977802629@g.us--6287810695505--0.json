@@ -53,5 +53,16 @@
       "public": "BdwNNcMjjZ6/sV0mypesRpxddGlrZI/M9Zh//hg5HyZ7"
     },
     "senderMessageKeys": []
+  },
+  {
+    "senderKeyId": 1087780886,
+    "senderChainKey": {
+      "iteration": 3,
+      "seed": "kirW3GshR0MRTAtvDpIJBiBBZQJJ4J1lf6IYdKhkp+s="
+    },
+    "senderSigningKey": {
+      "public": "BWbqdCzvVbbuIKI0aV3r0OW1Xlb4nVMZb6FTyqDaVuRz"
+    },
+    "senderMessageKeys": []
   }
 ]

@@ -42,5 +42,16 @@
       "public": "BeGKu5ginJe3Of28xWX3u0TkHXWmKK77WXTLyW7LBLNx"
     },
     "senderMessageKeys": []
+  },
+  {
+    "senderKeyId": 1339524501,
+    "senderChainKey": {
+      "iteration": 7,
+      "seed": "yQIKELybdwF2Qs0PcH/glBSCy+DeEH0200BoBp32m4U="
+    },
+    "senderSigningKey": {
+      "public": "BdvClKos/N/DlftrhZo7L2dxlOpi71DZF4RpCeeYtFNs"
+    },
+    "senderMessageKeys": []
   }
 ]

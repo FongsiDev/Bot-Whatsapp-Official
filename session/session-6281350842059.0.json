@@ -100,11 +100,14 @@
       "_chains": {
         "BYcMR2ksRYeK/Qa7zHuRqcGbbwDfT3w9JXxLa3Vvg81Y": {
           "chainKey": {
-            "counter": 2,
-            "key": "YoMcjU/BZUsPMughbV/8lKwznMvG7bMfVh+g2zn/Mtk="
+            "counter": 4,
+            "key": "wZS8P6YM2qPFfCMR3bhJv1/KVHtOsECItLhbbAq/Xw0="
           },
           "chainType": 2,
-          "messageKeys": { "1": "UI+rDMnIL0cdVH8dhLu24R4L8edQnUc2hbioYGj1zZE=" }
+          "messageKeys": {
+            "1": "UI+rDMnIL0cdVH8dhLu24R4L8edQnUc2hbioYGj1zZE=",
+            "3": "r+YBJ5xqcIqUexF4pc+zwdhEfk1SBLHjsPTcPd5YZHc="
+          }
         },
         "BTIxPLdkNsmyDaKLJFYMhCtVh/KI2GS0ZAFrdbMLX6cK": {
           "chainKey": {

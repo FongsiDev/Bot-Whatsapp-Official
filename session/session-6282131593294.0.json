@@ -39,35 +39,45 @@
       "registrationId": 1490051656,
       "currentRatchet": {
         "ephemeralKeyPair": {
-          "pubKey": "BSLbYMlCbHPwNx+3vCXpJARJypinhHI5JSdnQ4gTC5Fy",
-          "privKey": "sAZ6+GZC6dMRuyJko0pXc5EMko69z06dreg1dlUtQV8="
+          "pubKey": "BdQb0ZvpXkONSBkM5x8S+2ZOsl3vZuQ7LVJxBkdVsk8e",
+          "privKey": "oO59QabZzbVdvF3Wou+tO9BBnr/cTj/cxrcBKqAOsXw="
         },
-        "lastRemoteEphemeralKey": "BdGC8HaYtxdxePSd76KqKqXQFEYZUe+Dt6pNGNviiEQE",
-        "previousCounter": 0,
-        "rootKey": "vem+rnjDs2OCaps/FjiBC+5QfHaz1wpN39UxQjO0K6k="
+        "lastRemoteEphemeralKey": "BS7sJQmI+Nstheh0pJHjvBY3evlfp9yihKAryq66tpFI",
+        "previousCounter": 10,
+        "rootKey": "pvc/+YnfV1BuNeDqp0HGJtOUhPCN52pDrCFo5m7ZN5c="
       },
       "indexInfo": {
         "baseKey": "BeHdeLrLSUigfyI1bmLO/jAvKpLtvXppctpMa1FhhQhN",
         "baseKeyType": 1,
         "closed": -1,
-        "used": 1681146055273,
+        "used": 1681273979107,
         "created": 1681146055273,
         "remoteIdentityKey": "BRJgShFrytysufltsBmXd+VaZJsgEmNwLktbs57yX5Mp"
       },
       "_chains": {
-        "BSLbYMlCbHPwNx+3vCXpJARJypinhHI5JSdnQ4gTC5Fy": {
+        "BS7sJQmI+Nstheh0pJHjvBY3evlfp9yihKAryq66tpFI": {
           "chainKey": {
-            "counter": 10,
-            "key": "wgEWE+IeG/9JHZD9nBIowkhpvdN6FBkPypNt3vuPVZ4="
+            "counter": 6,
+            "key": "T1OCDhpcrGy2xU96+NQHo+P8ccxZf9zTqSs/yEH5j7U="
+          },
+          "chainType": 2,
+          "messageKeys": {
+            "0": "JypHDdgkjss0vxxhFe2a36TiLdXZ3qtt3W2gbyuYTYg=",
+            "1": "RcxXbhFSgVUM2NJRIHnf6NaCMXU//8q1jt44pBTMUzw=",
+            "2": "MdSsiKDHlm8hF67sxfWXcXvmYZwHiCcPO38A39BcWos=",
+            "3": "ckMP1jWRD4W/CGG3awBFko5dciVobnaduTkTW1qXu9M=",
+            "4": "4q08ORV+Ooaiq+ZVhhoCUFDOJkIh28b5j5G8QT39WFQ=",
+            "5": "Ee1UcXUN+k9R/JkNYEtrtgZxcKiOK2JyGOAoJ63gDyM="
+          }
+        },
+        "BdQb0ZvpXkONSBkM5x8S+2ZOsl3vZuQ7LVJxBkdVsk8e": {
+          "chainKey": {
+            "counter": -1,
+            "key": "VIUrZeL1pNZuDnzEhiiaBN+GbXglhO8BrntQztY7bf4="
           },
           "chainType": 1,
           "messageKeys": {}
         }
-      },
-      "pendingPreKey": {
-        "signedKeyId": 18,
-        "baseKey": "BeHdeLrLSUigfyI1bmLO/jAvKpLtvXppctpMa1FhhQhN",
-        "preKeyId": 13701567
       }
     }
   },
