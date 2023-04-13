@@ -1,15 +1,14 @@
 let handler = async (m, { conn, text, usedPrefix, command, args }) => {
-  let who;
-  if (m.isGroup)
-    who = m.mentionedJid[0]
+  let who = m.mentionedJid[0]
       ? m.mentionedJid[0]
       : m.quoted
       ? m.quoted.sender
-      : text.replace(/[^0-9]/g, "") + "@s.whatsapp.net";
-  else who = m.chat;
+      : args[0].replace(/[^0-9]/g, "") + "@s.whatsapp.net";
+  if(!who) who = m.chat;
   let user = db.data.users[who];
+  if(!user) user = db.data.users[who] = {};
   if (!who) throw `tag or mention someone!`;
-  let txt = args[0];
+  let txt = args[1];
   if (!txt) throw `where the number of days?`;
   if (isNaN(txt))
     return m.reply(
@@ -21,7 +20,7 @@ let handler = async (m, { conn, text, usedPrefix, command, args }) => {
   else user.premiumTime = now + jumlahHari;
   user.premium = true;
   m.reply(`✔️ Success
-📛 Name: ${user.name}
+📛 Name: ${user.name || conn.getName(who)}
 📆 Days: ${txt} days
 📉 Countdown: ${user.premiumTime - now}`);
 };
