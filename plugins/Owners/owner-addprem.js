@@ -1,4 +1,4 @@
-let handler = async (m, { conn, text, usedPrefix, command }) => {
+let handler = async (m, { conn, text, usedPrefix, command, args }) => {
   let who;
   if (m.isGroup)
     who = m.mentionedJid[0]
@@ -9,13 +9,11 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
   else who = m.chat;
   let user = db.data.users[who];
   if (!who) throw `tag or mention someone!`;
-  let txt = text.replace("@" + who.split`@`[0], "").trim();
+  let txt = args[0];
   if (!txt) throw `where the number of days?`;
   if (isNaN(txt))
     return m.reply(
-      `only number!\n\nexample:\n${usedPrefix + command} @${
-        m.sender.split`@`[0]
-      } 7`
+      `only number!\n\nexample:\n${usedPrefix + command} [user] <days>`
     );
   var jumlahHari = 86400000 * txt;
   var now = new Date() * 1;
@@ -27,7 +25,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 📆 Days: ${txt} days
 📉 Countdown: ${user.premiumTime - now}`);
 };
-handler.help = ["addprem [@user] <days>"];
+handler.help = ["addprem [user] <days>"];
 handler.tags = ["owner"];
 handler.command = /^(add|tambah|\+)p(rem)?$/i;
 handler.rowner = true;
