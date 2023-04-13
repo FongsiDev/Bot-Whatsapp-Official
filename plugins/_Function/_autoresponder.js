@@ -117,6 +117,11 @@ _📚 Baca yang dibawah ya!_
       m
     );
   }
+  /*if(isCmd(/hug|peluk/i)) {
+     let res = await fetch(global.API("https://api.waifu.pics", "/sfw/hug"));
+    let json = await res.json();
+    conn.sendFile(m.chat, json.url, null, null, m)
+  }*/
 };
 
 handler.limit = false;
