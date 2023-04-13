@@ -5,7 +5,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
       ? m.mentionedJid[0]
       : m.quoted
       ? m.quoted.sender
-      : false;
+      : text.replace(/[^0-9]/g, "") + "@s.whatsapp.net";
   else who = m.chat;
   let user = db.data.users[who];
   if (!who) throw `tag or mention someone!`;
@@ -30,8 +30,6 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 handler.help = ["addprem [@user] <days>"];
 handler.tags = ["owner"];
 handler.command = /^(add|tambah|\+)p(rem)?$/i;
-
-handler.group = true;
 handler.rowner = true;
 
 export default handler;
