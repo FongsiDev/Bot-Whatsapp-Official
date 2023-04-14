@@ -13,8 +13,8 @@
   {
     "senderKeyId": 441699711,
     "senderChainKey": {
-      "iteration": 1,
-      "seed": "TZdwnKvKnOm9xIamSo/N8fwHPh6TxUX+JTUyiOF+ZkQ="
+      "iteration": 3,
+      "seed": "5AdBa6VCyjYd/MTg3QBjPk9KL2JSRGFPjMyZoLaxdpA="
     },
     "senderSigningKey": {
       "public": "Bd+gsXe+Mv2xWRq7Id5Zx+YyGqo/y0CklpzJEVgl1CNW"

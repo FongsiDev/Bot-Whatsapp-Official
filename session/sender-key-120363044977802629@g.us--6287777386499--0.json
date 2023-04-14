@@ -13,12 +13,12 @@
   {
     "senderKeyId": 1177138095,
     "senderChainKey": {
-      "iteration": 15,
-      "seed": "QqYrEtuECEK+mOumDfeb+mpqJYFxRg5s2W62YZ8qfho="
+      "iteration": 23,
+      "seed": "veHxsYnTDpfVKpsXF3bSa/kg1/TIpeV/NAl177niN9s="
     },
     "senderSigningKey": {
       "public": "BdIeiKyUC/Abnh3/BOs4gsTv3E/qXEVuszhtdSj5zeJI"
     },
-    "senderMessageKeys": []
+    "senderMessageKeys": [{}]
   }
 ]

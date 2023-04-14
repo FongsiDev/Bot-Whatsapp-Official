@@ -4,37 +4,42 @@
       "registrationId": 1507785488,
       "currentRatchet": {
         "ephemeralKeyPair": {
-          "pubKey": "BYeF1M05tfg+JQHkYlYkzEL+goZiif8z5MoBLvdOhSZB",
-          "privKey": "sHVvrtphaHdcOIvHpjH9cDBFQ5at66w6qbpRORd6Alw="
+          "pubKey": "BSz94QnnAVLG58JBBsVu41PAc6GNz6Xyhj5Zz6F7GcpH",
+          "privKey": "uP6daicArNcSSUIz/LT5/LM7vC1WheJkat9te1GMhn4="
         },
-        "lastRemoteEphemeralKey": "BQ8QhBE2/zWuH0uyQzFqRABZ3c6hVqIqY98NBqkflPxD",
+        "lastRemoteEphemeralKey": "BTQ3EfHv3IZYAYA+v01B3aDtIDu1oOnez/iqq5yJPhgC",
         "previousCounter": 0,
-        "rootKey": "oYBIRV6ls5Nq46OkUAdz0plB/A8Df2p7UqSbxM4R3n0="
+        "rootKey": "ptVXrrGL/TdCqozIp9Su+/YZ5u7DfqD1IiWYpNt+YmI="
       },
       "indexInfo": {
         "baseKey": "BRB64uJ1Z0Cs1bvPdcbMVjb02UulS8jKjzEgTxnZQMVr",
         "baseKeyType": 2,
         "closed": -1,
-        "used": 1681482420062,
+        "used": 1681501156763,
         "created": 1681482420062,
         "remoteIdentityKey": "BeYrlSUdwpbregSRtYI3oXBGT87u8i8HaHb9vEXIqYAF"
       },
       "_chains": {
         "BQ8QhBE2/zWuH0uyQzFqRABZ3c6hVqIqY98NBqkflPxD": {
-          "chainKey": {
-            "counter": 2,
-            "key": "BA4B9may3QNvrvfMubksEXCwl/+lNMi1PRWdraYUH1Y="
-          },
+          "chainKey": { "counter": 2 },
           "chainType": 2,
           "messageKeys": {
             "0": "6101MFF9AWqTlLrMgkrf+5wvqdL7binyCdvrljnUdvs=",
             "1": "00NAax1c0V9lonVGzX6YViPPUfWs+UWQGQunR4deZPI="
           }
         },
-        "BYeF1M05tfg+JQHkYlYkzEL+goZiif8z5MoBLvdOhSZB": {
+        "BTQ3EfHv3IZYAYA+v01B3aDtIDu1oOnez/iqq5yJPhgC": {
           "chainKey": {
             "counter": 0,
-            "key": "lcTi0jAVLewkX35GYT+bok4I2HIoZIJQnZvI175HeYQ="
+            "key": "W+ryN7gCrKbvP3meglslusWg2L8/ZS8amC0d4wIbicU="
+          },
+          "chainType": 2,
+          "messageKeys": {}
+        },
+        "BSz94QnnAVLG58JBBsVu41PAc6GNz6Xyhj5Zz6F7GcpH": {
+          "chainKey": {
+            "counter": 0,
+            "key": "lMyAZEUyAEK5x3IoPLb3Px3GmGN6cmciVkFp4lmRIZQ="
           },
           "chainType": 1,
           "messageKeys": {}
