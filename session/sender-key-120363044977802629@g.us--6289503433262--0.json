@@ -20,5 +20,16 @@
       "public": "BdhwgTN5s7Xz7TYiDiUeTqb1iaYtmlAbRzUcQzHsXwUD"
     },
     "senderMessageKeys": []
+  },
+  {
+    "senderKeyId": 776757421,
+    "senderChainKey": {
+      "iteration": 2,
+      "seed": "UX+ZBn6XkXbAcInrREWnwDEXSDAAhz/mGLqea+MqhDU="
+    },
+    "senderSigningKey": {
+      "public": "BdbJz2+rIXEigZpbVtLv2OcXkrC5V+lchemA9RqUEHoJ"
+    },
+    "senderMessageKeys": []
   }
 ]

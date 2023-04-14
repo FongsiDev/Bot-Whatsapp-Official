@@ -1,0 +1,13 @@
+[
+  {
+    "senderKeyId": 1293482927,
+    "senderChainKey": {
+      "iteration": 1,
+      "seed": "O+qhC6mHiLRt0meMoMUox6PwyxU2hAlkCfRs0nMYgrI="
+    },
+    "senderSigningKey": {
+      "public": "Bef8Y2tZjn8B0FqORq8PHKmi/4bc8xseo+Ogcor61xlE"
+    },
+    "senderMessageKeys": []
+  }
+]

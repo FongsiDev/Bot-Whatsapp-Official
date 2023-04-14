@@ -9,5 +9,16 @@
       "public": "Bbk6TWpHXNLsFk0JfjMPqvnEzQmeIgHx1wXh7exT56UL"
     },
     "senderMessageKeys": []
+  },
+  {
+    "senderKeyId": 367487199,
+    "senderChainKey": {
+      "iteration": 8,
+      "seed": "quyesaVdVdcZh09OlSh8j0Ih7Rb2AmY2Wovw6VT3OXw="
+    },
+    "senderSigningKey": {
+      "public": "BcuRECcX49BVCvbSKu2zoR44WRS8oeoJtQU4FA3p16wB"
+    },
+    "senderMessageKeys": []
   }
 ]

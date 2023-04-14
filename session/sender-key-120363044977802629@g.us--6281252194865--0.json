@@ -20,5 +20,16 @@
       "public": "BcYHwaiZ8MNDPyctBN7/H+dh3IJ63TzU2nBNJa3GaiQg"
     },
     "senderMessageKeys": [{}, {}]
+  },
+  {
+    "senderKeyId": 812671522,
+    "senderChainKey": {
+      "iteration": 3,
+      "seed": "D602PAjfg0BFymNnnLLG3LzQk0/4U36xDgm+EEMQpUI="
+    },
+    "senderSigningKey": {
+      "public": "BXV+3vf80sDTEseoaEMoG99Lgswxvv3T8Hqw2DnD2Ixk"
+    },
+    "senderMessageKeys": []
   }
 ]

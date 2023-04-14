@@ -1,5 +1,7 @@
 import fetch from "node-fetch";
 import fs from "fs";
+import fs_ from "fs/promises";
+import path_ from "path";
 import glob from "glob";
 let handler = async (
   m,
@@ -63,6 +65,32 @@ let handler = async (
     const path = glob.sync(`./plugins/**/${text}.js`);
     await fs.unlinkSync(path[0]);
     m.reply(`Delete ${path[0]} to file!`);
+  }
+  if (command == "openfileroot") {
+    if (!text)
+      throw `where is the path?\n\nexample:\n${usedPrefix + command} menu`;
+    const path = glob.sync(`./${text}`);
+    let pile = await fs.readFileSync(path[0], "utf8");
+    //await conn.sendFile(m.chat, pile, "", "Nihh,?", m);
+    await m.reply(pile);
+  }
+  if (command == "removefileroot") {
+    if (!text)
+      throw `where is the path?\n\nexample:\n${
+        usedPrefix + command
+      } tmp/index.js`;
+    const path = glob.sync(`./${text}`);
+    await fs.unlinkSync(path[0]);
+    m.reply(`Delete ${path[0]} to file!`);
+  }
+  if (command == "savefileroot") {
+    if (!text)
+      throw `where do you want to save it?\n\nexample:\n${
+        usedPrefix + command
+      } tmp/index.js`;
+    if (!m.quoted.text) throw `reply code`;
+    writeFile(text, m.quoted.text);
+    m.reply(`Create ${text} to file!`);
   }
   if (command == "tesfake") {
     if (args[0] == "aud") {
@@ -258,8 +286,34 @@ handler.command = handler.help = [
   "tesfake",
   "openfile",
   "removefile",
+  "removefileroot",
+  "savefileroot",
+  "openfileroot",
 ];
 handler.tags = ["owner"];
 handler.owner = true;
 
 export default handler;
+
+async function isExists(path) {
+  try {
+    await fs_.access(path);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+async function writeFile(filePath, data) {
+  try {
+    const dirname = path_.dirname(filePath);
+    const exist = await isExists(dirname);
+    if (!exist) {
+      await fs_.mkdir(dirname, { recursive: true });
+    }
+
+    await fs_.writeFile(filePath, data, "utf8");
+  } catch (err) {
+    throw new Error(err);
+  }
+}

@@ -20,5 +20,16 @@
       "public": "BfSy7XWVOMErvLq7qvfo1lJWnAei67fhiKe41HPh19My"
     },
     "senderMessageKeys": []
+  },
+  {
+    "senderKeyId": 2097798614,
+    "senderChainKey": {
+      "iteration": 1,
+      "seed": "t2IS/6p2P0es6Q5g3iEZJ5dDo+BNJ3GRKAAtLH2MP0Y="
+    },
+    "senderSigningKey": {
+      "public": "BSoIZSV6K0miPU2lv9fWjVxN2dHBRQkO93Z9hn78vJtp"
+    },
+    "senderMessageKeys": []
   }
 ]

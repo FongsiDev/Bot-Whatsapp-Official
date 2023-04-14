@@ -2,8 +2,8 @@
   {
     "senderKeyId": 591777009,
     "senderChainKey": {
-      "iteration": 120,
-      "seed": "ECMfW/gVMROFdjeeNtKB4QX/6JZ5NoW7DobmMi97TQ8="
+      "iteration": 123,
+      "seed": "pzAsHRpZoABapkGAZWq4BW9ymWyXZ/oYWkUoxKwWQdY="
     },
     "senderSigningKey": {
       "public": "BZqVSQS9jp3tMu4IqcHYkFpCS3gWOal0j9hvZiAFFL9n"
