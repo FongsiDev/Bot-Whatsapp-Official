@@ -1648,6 +1648,9 @@ export async function presenceUpdate(x) {
   let status = x.presences[nouser]?.lastKnownPresence;
   let user = global.db.data.users[nouser[0]];
   let mentionUser = [nouser[0]];
+  let pp = await conn
+    .profilePictureUrl(nouser[0], "image")
+    .catch((_) => "https://telegra.ph/file/24fa902ead26340f3df2c.png");
   if (status == "composing" && user.afk > -1) {
     await console.log("AFK - TICK");
     user.afk = -1;
@@ -1656,7 +1659,22 @@ export async function presenceUpdate(x) {
       id,
       `\n${conn.getName(nouser[0])} berhenti afk, dia sedang mengetik\n`,
       null,
-      fakeig
+      {
+        contextInfo: {
+          externalAdReply: {
+            showAdAttribution: true,
+            mediaUrl: sig,
+            mediaType: 2,
+            description: sgc,
+            title: `Hallo ${conn.getName(
+              nouser[0]
+            )}, Welcome back from your afk`,
+            body: wm,
+            thumbnail: await (await fetch(pp)).buffer(),
+            sourceUrl: sig,
+          },
+        },
+      }
     );
   }
   await conn.sendPresenceUpdate("available");
