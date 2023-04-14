@@ -47,8 +47,7 @@ let handler = async (m, { conn, text }) => {
       .catch((e) => {
         console.log(e);
         if (error > 4) {
-          throw "Sebentar ada kesalahan pada bot!";
-          return !0;
+          return throw "Sebentar ada kesalahan pada bot!";
         }
         error++;
         return ai();

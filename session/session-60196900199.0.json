@@ -4,35 +4,38 @@
       "registrationId": 382674814,
       "currentRatchet": {
         "ephemeralKeyPair": {
-          "pubKey": "Bci48yKQna2N+ss7Go1b5BP9whjwK4fQVvbgDyHLws41",
-          "privKey": "yNvgQ7may3Oj0w4bRcp3weeqrtvF95k+45LiwYoU+2M="
+          "pubKey": "Bbe37JEgovXQ1DAgnxkfnr6+4Fxr3IoRWtwxdsBFwfYD",
+          "privKey": "kEObL028HoiX+YxOLMTYCb47GYqcD9tzqCyOZ9G9Rlo="
         },
-        "lastRemoteEphemeralKey": "BcK9aX26omYNxVy84pwFxnJ2H8wpMBfb2zblY2W+ivk9",
+        "lastRemoteEphemeralKey": "Bf3etQKWvJywnA2l9jlGu8rr1dWbpyn4iQD+olVpcFFo",
         "previousCounter": 0,
-        "rootKey": "uONHmVer7fAJFZA7y9yayzx3jk7E39L+E5ybOjj+4BE="
+        "rootKey": "eiPaFtqtNe6wfy4q3h+msbCljb0wCt6XMA61Bb947kQ="
       },
       "indexInfo": {
         "baseKey": "Bbt4qSU2cIKBMw5YuXmUv1eHuz3vUIVJzQfu9U9LNYpx",
         "baseKeyType": 1,
         "closed": -1,
-        "used": 1681455390462,
+        "used": 1681457489361,
         "created": 1681455390462,
         "remoteIdentityKey": "BS7gXvx1BQ7L4XuiXFlYMfpth2JirfuSZ7v1motrDbcI"
       },
       "_chains": {
-        "Bci48yKQna2N+ss7Go1b5BP9whjwK4fQVvbgDyHLws41": {
+        "Bf3etQKWvJywnA2l9jlGu8rr1dWbpyn4iQD+olVpcFFo": {
           "chainKey": {
             "counter": 0,
-            "key": "NXUkd1idjhh89nNo/kjaOvV69CanttVIqN8LhHvAeXg="
+            "key": "tXGi50gDjgNXfAfageSF0Fj2jA1ZVVx/P2onr4lK6iE="
+          },
+          "chainType": 2,
+          "messageKeys": {}
+        },
+        "Bbe37JEgovXQ1DAgnxkfnr6+4Fxr3IoRWtwxdsBFwfYD": {
+          "chainKey": {
+            "counter": -1,
+            "key": "hbN/hL5uT601P/E+RWmOMax4iKEWXO2LBUEKrDvlVdM="
           },
           "chainType": 1,
           "messageKeys": {}
         }
-      },
-      "pendingPreKey": {
-        "signedKeyId": 1,
-        "baseKey": "Bbt4qSU2cIKBMw5YuXmUv1eHuz3vUIVJzQfu9U9LNYpx",
-        "preKeyId": 1243670
       }
     }
   },

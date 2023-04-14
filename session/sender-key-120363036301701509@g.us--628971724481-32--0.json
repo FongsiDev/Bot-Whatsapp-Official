@@ -1,1 +1,24 @@
-[{"senderKeyId":91413569,"senderChainKey":{"iteration":16,"seed":"0sF3P0OxIDA+Na4w4Ozkk1Bp+jk7RVHJGvgitGYpj1k="},"senderSigningKey":{"public":"BRX3+muBWoxNtZB7Kn3clybdyHIS7pwU8oBoETDcQ1dY"},"senderMessageKeys":[]},{"senderKeyId":91413569,"senderChainKey":{"iteration":1,"seed":"sgqriiGtP/a0tU8I5iNBdPEAzDHb70ZEWkGYpAv9+TE="},"senderSigningKey":{"public":"BRX3+muBWoxNtZB7Kn3clybdyHIS7pwU8oBoETDcQ1dY"},"senderMessageKeys":[]}]
+[
+  {
+    "senderKeyId": 91413569,
+    "senderChainKey": {
+      "iteration": 16,
+      "seed": "0sF3P0OxIDA+Na4w4Ozkk1Bp+jk7RVHJGvgitGYpj1k="
+    },
+    "senderSigningKey": {
+      "public": "BRX3+muBWoxNtZB7Kn3clybdyHIS7pwU8oBoETDcQ1dY"
+    },
+    "senderMessageKeys": []
+  },
+  {
+    "senderKeyId": 91413569,
+    "senderChainKey": {
+      "iteration": 1,
+      "seed": "sgqriiGtP/a0tU8I5iNBdPEAzDHb70ZEWkGYpAv9+TE="
+    },
+    "senderSigningKey": {
+      "public": "BRX3+muBWoxNtZB7Kn3clybdyHIS7pwU8oBoETDcQ1dY"
+    },
+    "senderMessageKeys": []
+  }
+]

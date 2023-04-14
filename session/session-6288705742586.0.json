@@ -4,35 +4,38 @@
       "registrationId": 116270611,
       "currentRatchet": {
         "ephemeralKeyPair": {
-          "pubKey": "BbfdCV9mS31028CLI2A9JyrSRasUJEKA66ymxRoO9Y55",
-          "privKey": "6IDYH/DaSIV5QKFtJ+zHbzulVwouItDs8LcJ5L5qX10="
+          "pubKey": "BWPTA+IQxF4GEYkNapwr8n7Zs0kwKMLTptmerodHQ6M5",
+          "privKey": "aD0FBoqGHaKPm7Zjp4Gw8EZ/O6+C5Wc9a4It2If0kmg="
         },
-        "lastRemoteEphemeralKey": "BQetQMNF803N3FDHKe4HzbuyRHwgNoOUFcYUkRXVkSst",
+        "lastRemoteEphemeralKey": "BbUukdTrZsYNh4r1AuyVVzwQ07IwB8mqmYzLwkzxx11R",
         "previousCounter": 0,
-        "rootKey": "eyVouSahjSfiHdH8VC+xe13LenFQ7P7JGj52cVmCm3Q="
+        "rootKey": "fIVShdwxEhBqtz/lNU3SiLp8sMKDbV6Kffwy5mxbMd0="
       },
       "indexInfo": {
         "baseKey": "BWrRhfEs2sx+Ur6KKo/FpyFl9s0peNDLwVG5+gjKyRFm",
         "baseKeyType": 1,
         "closed": -1,
-        "used": 1681455390889,
+        "used": 1681457479549,
         "created": 1681455390889,
         "remoteIdentityKey": "BXFlXEXUISnqjWn/6V7201A+Y9ewAgYxuX5klYm+XSYv"
       },
       "_chains": {
-        "BbfdCV9mS31028CLI2A9JyrSRasUJEKA66ymxRoO9Y55": {
+        "BbUukdTrZsYNh4r1AuyVVzwQ07IwB8mqmYzLwkzxx11R": {
           "chainKey": {
             "counter": 0,
-            "key": "1m3tLkj68SNGS2xKTJ8siyEjS7LOmP1XfpK8tpUXaUo="
+            "key": "5hy2cgEu0T5QX8JrGg1WMbwYk3uWx1IKV5vpaSUkh4Q="
+          },
+          "chainType": 2,
+          "messageKeys": {}
+        },
+        "BWPTA+IQxF4GEYkNapwr8n7Zs0kwKMLTptmerodHQ6M5": {
+          "chainKey": {
+            "counter": -1,
+            "key": "hR3dNp9Wd420eL3MqQ3pIGDIb2m73pBKXKxdk4w4r8o="
           },
           "chainType": 1,
           "messageKeys": {}
         }
-      },
-      "pendingPreKey": {
-        "signedKeyId": 1,
-        "baseKey": "BWrRhfEs2sx+Ur6KKo/FpyFl9s0peNDLwVG5+gjKyRFm",
-        "preKeyId": 14337549
       }
     }
   },

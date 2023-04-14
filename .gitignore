@@ -5,6 +5,4 @@
 ## Backlist from git push
 ynode_modules
 session.data.json
-tmp/*
 .env
-env.js
