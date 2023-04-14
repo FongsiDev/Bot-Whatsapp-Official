@@ -21,9 +21,9 @@ let handler = async (m, { conn, text }) => {
     throw new Error(e);
   }
 };
-handler.help = ["qc <teks>"];
+handler.help = ["sticker-qc <teks>"];
 handler.tags = ["sticker"];
 
-handler.command = /^qc$/i;
+handler.command = /^sticker-qc$/i;
 
 export default handler;

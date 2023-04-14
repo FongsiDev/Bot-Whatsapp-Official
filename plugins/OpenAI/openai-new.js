@@ -47,7 +47,7 @@ let handler = async (m, { conn, text }) => {
       .catch((e) => {
         console.log(e);
         if (error > 4) {
-          return throw "Sebentar ada kesalahan pada bot!";
+          throw "Sebentar ada kesalahan pada bot!";
         }
         error++;
         return ai();
@@ -58,5 +58,5 @@ let handler = async (m, { conn, text }) => {
 handler.help = ["ai-new", "openai-new"];
 handler.tags = ["openai", "fun"];
 handler.command = /^(ai-new|openai-new)$/i;
-handler.isPrems = true;
+handler.premium = true;
 export default handler;
