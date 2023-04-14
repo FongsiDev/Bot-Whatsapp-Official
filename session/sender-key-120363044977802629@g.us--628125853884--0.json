@@ -1,13 +1,1 @@
-[
-  {
-    "senderKeyId": 600970252,
-    "senderChainKey": {
-      "iteration": 140,
-      "seed": "3g5aOYgmYRRgcKr6vuzjTLbkv5oc2qgZ9G58gjELSEU="
-    },
-    "senderSigningKey": {
-      "public": "BWZaEvolTqxbCNrgwv1GaH0NCJLTHUY6rRA7zOVmWZto"
-    },
-    "senderMessageKeys": []
-  }
-]
+[{"senderKeyId":600970252,"senderChainKey":{"iteration":150,"seed":"eJR8wkZAHftyyaryyM4AxNunMJpj2SG3Ow0ot9ZZPCc="},"senderSigningKey":{"public":"BWZaEvolTqxbCNrgwv1GaH0NCJLTHUY6rRA7zOVmWZto"},"senderMessageKeys":[]}]

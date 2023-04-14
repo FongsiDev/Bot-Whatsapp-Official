@@ -1,27 +1,30 @@
 'use strict';
 
+const requestLib = require('request');
+const throttled = require('throttled-request')(requestLib);
 const debug = require('debug')('google-play-scraper');
-const requestLib = require('got');
-const throttled = require('./throttle.js');
 
 function doRequest (opts, limit) {
-  let req;
+  let req = requestLib;
   if (limit) {
-    req = throttled(
-      requestLib, {
-        interval: 1000,
-        limit: limit
-      }
-    );
-  } else {
-    req = requestLib;
+    throttled.configure({
+      requests: limit,
+      milliseconds: 1000
+    });
+    req = throttled;
   }
 
-  return new Promise((resolve, reject) => {
-    req(opts)
-      .then((response) => resolve(response.body))
-      .catch((error) => reject(error));
-  });
+  return new Promise((resolve, reject) => req(opts, function (error, response, body) {
+    if (error) {
+      return reject(error);
+    }
+    if (response.statusCode >= 400) {
+      const reason = new Error();
+      reason.response = response;
+      return reject(reason);
+    }
+    resolve(body);
+  }));
 }
 
 function request (opts, limit) {
