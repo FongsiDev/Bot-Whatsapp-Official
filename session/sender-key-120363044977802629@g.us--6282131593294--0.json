@@ -1,1 +1,35 @@
-[{"senderKeyId":551319451,"senderChainKey":{"iteration":16,"seed":"l/mCQN65i0L1Ol4b3GBDNtRMpZDLtJ6aqi9DFjyer8s="},"senderSigningKey":{"public":"BYpZG38M3AUSwjnN3lSmxL+WugDGb7s7aJ4qduu76zM3"},"senderMessageKeys":[]}]
+[
+  {
+    "senderKeyId": 551319451,
+    "senderChainKey": {
+      "iteration": 16,
+      "seed": "l/mCQN65i0L1Ol4b3GBDNtRMpZDLtJ6aqi9DFjyer8s="
+    },
+    "senderSigningKey": {
+      "public": "BYpZG38M3AUSwjnN3lSmxL+WugDGb7s7aJ4qduu76zM3"
+    },
+    "senderMessageKeys": []
+  },
+  {
+    "senderKeyId": 517728872,
+    "senderChainKey": {
+      "iteration": 9,
+      "seed": "aUjdoWAKoWLgTO2vHlfRL5xC2HckYQgyif6WtDE9bB8="
+    },
+    "senderSigningKey": {
+      "public": "BdnupLYsr5eaDFSkfQzcxijmbyPEdBUJnIlja23sKYxg"
+    },
+    "senderMessageKeys": []
+  },
+  {
+    "senderKeyId": 767725214,
+    "senderChainKey": {
+      "iteration": 4,
+      "seed": "fBqgvX3oRfgIe/AXg2j1oD8JfLBhjYqpPCfmkRPFNsA="
+    },
+    "senderSigningKey": {
+      "public": "BVLVg9KR735BN0LMWdVcuWrRgx6Okfumu+mIWOiMmP1U"
+    },
+    "senderMessageKeys": []
+  }
+]

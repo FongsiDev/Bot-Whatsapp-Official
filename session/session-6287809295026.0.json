@@ -1,1 +1,43 @@
-{"_sessions":{"BcdMGRgY5XZks1U18uiWByCpxucEGPG6WQSXYn3ly7UM":{"registrationId":1547078223,"currentRatchet":{"ephemeralKeyPair":{"pubKey":"BX+E48vdwQ8v4ncvgPMEp2GYNiQkYZDX5I6AwbMlk9Y5","privKey":"IA4kgB/WEnHdnyfTIYhTimKtrOXdGE0Dh+2ddR8oml4="},"lastRemoteEphemeralKey":"BTa3p3WLpBlIWAclVzGQzvNUXQg8vnCx6hzsIFDt4xsE","previousCounter":0,"rootKey":"8FINKHxr/+GiZtNOFMnb6/sXCMxaRcAhYDeKvQztuEc="},"indexInfo":{"baseKey":"BcdMGRgY5XZks1U18uiWByCpxucEGPG6WQSXYn3ly7UM","baseKeyType":1,"closed":-1,"used":1681460367571,"created":1681455390839,"remoteIdentityKey":"BQd7s9/mjmZxZ1Sh5Vs0Kf3LaGhXJij/lriIfSnBA4ZY"},"_chains":{"BTa3p3WLpBlIWAclVzGQzvNUXQg8vnCx6hzsIFDt4xsE":{"chainKey":{"counter":0,"key":"CsfW8dagMXyCWPyfgC7vlKf3kld7NEloCgbQ/CY4Wc8="},"chainType":2,"messageKeys":{}},"BX+E48vdwQ8v4ncvgPMEp2GYNiQkYZDX5I6AwbMlk9Y5":{"chainKey":{"counter":-1,"key":"KmEDA53TGFCCnCZIY/tAkYkZKw3KZsHmpFA+CczbBGE="},"chainType":1,"messageKeys":{}}}}},"version":"v1"}
+{
+  "_sessions": {
+    "BcdMGRgY5XZks1U18uiWByCpxucEGPG6WQSXYn3ly7UM": {
+      "registrationId": 1547078223,
+      "currentRatchet": {
+        "ephemeralKeyPair": {
+          "pubKey": "BX+E48vdwQ8v4ncvgPMEp2GYNiQkYZDX5I6AwbMlk9Y5",
+          "privKey": "IA4kgB/WEnHdnyfTIYhTimKtrOXdGE0Dh+2ddR8oml4="
+        },
+        "lastRemoteEphemeralKey": "BTa3p3WLpBlIWAclVzGQzvNUXQg8vnCx6hzsIFDt4xsE",
+        "previousCounter": 0,
+        "rootKey": "8FINKHxr/+GiZtNOFMnb6/sXCMxaRcAhYDeKvQztuEc="
+      },
+      "indexInfo": {
+        "baseKey": "BcdMGRgY5XZks1U18uiWByCpxucEGPG6WQSXYn3ly7UM",
+        "baseKeyType": 1,
+        "closed": -1,
+        "used": 1681460367571,
+        "created": 1681455390839,
+        "remoteIdentityKey": "BQd7s9/mjmZxZ1Sh5Vs0Kf3LaGhXJij/lriIfSnBA4ZY"
+      },
+      "_chains": {
+        "BTa3p3WLpBlIWAclVzGQzvNUXQg8vnCx6hzsIFDt4xsE": {
+          "chainKey": {
+            "counter": 0,
+            "key": "CsfW8dagMXyCWPyfgC7vlKf3kld7NEloCgbQ/CY4Wc8="
+          },
+          "chainType": 2,
+          "messageKeys": {}
+        },
+        "BX+E48vdwQ8v4ncvgPMEp2GYNiQkYZDX5I6AwbMlk9Y5": {
+          "chainKey": {
+            "counter": -1,
+            "key": "KmEDA53TGFCCnCZIY/tAkYkZKw3KZsHmpFA+CczbBGE="
+          },
+          "chainType": 1,
+          "messageKeys": {}
+        }
+      }
+    }
+  },
+  "version": "v1"
+}

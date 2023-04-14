@@ -4,10 +4,10 @@ let handler = async (m, { conn, command, args }) => {
   if (!args[0]) return conn.reply(m.chat, "Masukkan Linknya Kak", m);
 
   await m.reply("_𝚃𝚞𝚗𝚐𝚐𝚞 𝚂𝚎𝚋𝚎𝚗𝚝𝚊𝚛⏲️_");
-
+  const site = /^(https?:\/\/)/i.test(args[0]) ? args[0] : `http://${args[0]}`;
   let img = await (
     await fetch(
-      `https://shot.screenshotapi.net/screenshot?url=${args[0]}&full_page=true&fresh=true&output=image&file_type=png&wait_for_event=load`
+      `https://image.thum.io/get/width/1920/crop/675/noanimate/${site}`
     )
   ).buffer();
 

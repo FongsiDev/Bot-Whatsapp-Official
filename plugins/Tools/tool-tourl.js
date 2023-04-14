@@ -8,7 +8,7 @@ let handler = async (m) => {
   let media = await q.download(true);
   let isTele = /image\/(png|jpe?g|gif)|video\/mp4/.test(mime);
   async function ap() {
-    let link = await(isTele ? uploadImage : uploadFile)(media);
+    let link = await (isTele ? uploadImage : uploadFile)(media);
     if (typeof link !== "string") return ap();
     m.reply(`📮 *L I N K :*
 ${link}

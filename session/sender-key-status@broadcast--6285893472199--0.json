@@ -1,0 +1,13 @@
+[
+  {
+    "senderKeyId": 978346621,
+    "senderChainKey": {
+      "iteration": 11,
+      "seed": "SN8z8kzxX789Gp+H5FOxfB20QBnmbFtAAbGPPlYw+Mo="
+    },
+    "senderSigningKey": {
+      "public": "BVzUw1vPFJuJbSlF59xgwIyfY8EazaVXkSPCnyrtcXwT"
+    },
+    "senderMessageKeys": []
+  }
+]
