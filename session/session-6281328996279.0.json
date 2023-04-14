@@ -1,1 +1,40 @@
-{"_sessions":{"BV62e5oRafrsxFomyBHDmNMZt7wTi/++nUsRiUfA3k5q":{"registrationId":1764351106,"currentRatchet":{"ephemeralKeyPair":{"pubKey":"BfAece0SRTFdIafT00zpIBZ5ohv3Lr1P3RlM5GAF3zBa","privKey":"yK+3C6lZQ7Chh1oIj7iYx16QbsTBxBpg+pDe1o54hmY="},"lastRemoteEphemeralKey":"BYH0h7uiM/hUmhq6M36rMFKBGv6Yhxq93oHAue6QDD5V","previousCounter":0,"rootKey":"EGeKC76r8peoKvepn3V5V43cjilK5ozNonIZXNJp2U4="},"indexInfo":{"baseKey":"BV62e5oRafrsxFomyBHDmNMZt7wTi/++nUsRiUfA3k5q","baseKeyType":1,"closed":-1,"used":1681455390535,"created":1681455390535,"remoteIdentityKey":"BWq9ZW55VQ1vkpqcbXMoE0CDQOSIo7EGq0ulrM9Xq2ke"},"_chains":{"BfAece0SRTFdIafT00zpIBZ5ohv3Lr1P3RlM5GAF3zBa":{"chainKey":{"counter":0,"key":"HqBfZlIdACHB15kqUXTM+o8G+h+RYI1F/R5GZi4kj60="},"chainType":1,"messageKeys":{}}},"pendingPreKey":{"signedKeyId":38,"baseKey":"BV62e5oRafrsxFomyBHDmNMZt7wTi/++nUsRiUfA3k5q","preKeyId":282650}}},"version":"v1"}
+{
+  "_sessions": {
+    "BV62e5oRafrsxFomyBHDmNMZt7wTi/++nUsRiUfA3k5q": {
+      "registrationId": 1764351106,
+      "currentRatchet": {
+        "ephemeralKeyPair": {
+          "pubKey": "BfAece0SRTFdIafT00zpIBZ5ohv3Lr1P3RlM5GAF3zBa",
+          "privKey": "yK+3C6lZQ7Chh1oIj7iYx16QbsTBxBpg+pDe1o54hmY="
+        },
+        "lastRemoteEphemeralKey": "BYH0h7uiM/hUmhq6M36rMFKBGv6Yhxq93oHAue6QDD5V",
+        "previousCounter": 0,
+        "rootKey": "EGeKC76r8peoKvepn3V5V43cjilK5ozNonIZXNJp2U4="
+      },
+      "indexInfo": {
+        "baseKey": "BV62e5oRafrsxFomyBHDmNMZt7wTi/++nUsRiUfA3k5q",
+        "baseKeyType": 1,
+        "closed": -1,
+        "used": 1681455390535,
+        "created": 1681455390535,
+        "remoteIdentityKey": "BWq9ZW55VQ1vkpqcbXMoE0CDQOSIo7EGq0ulrM9Xq2ke"
+      },
+      "_chains": {
+        "BfAece0SRTFdIafT00zpIBZ5ohv3Lr1P3RlM5GAF3zBa": {
+          "chainKey": {
+            "counter": 0,
+            "key": "HqBfZlIdACHB15kqUXTM+o8G+h+RYI1F/R5GZi4kj60="
+          },
+          "chainType": 1,
+          "messageKeys": {}
+        }
+      },
+      "pendingPreKey": {
+        "signedKeyId": 38,
+        "baseKey": "BV62e5oRafrsxFomyBHDmNMZt7wTi/++nUsRiUfA3k5q",
+        "preKeyId": 282650
+      }
+    }
+  },
+  "version": "v1"
+}

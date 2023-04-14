@@ -1,1 +1,39 @@
-{"_sessions":{"BQsZDFZjV0OUaTLmJOPmGA0dgZNx4oj7/oIlPw3ZUlxa":{"registrationId":790388623,"currentRatchet":{"ephemeralKeyPair":{"pubKey":"BcH77k8DBroRjMlSfP0ArZhZ7/F9b7Zw9tlmdmAEoYwv","privKey":"2Nl0fq4O/0oB5AKw2EkTTyYP1nFNsljABWfZsypBQHA="},"lastRemoteEphemeralKey":"BQ37FLkh/QncbJWvpgAOVaSWieCX8bqQzk5DEa2JbEds","previousCounter":0,"rootKey":"vuA5XxBPRj+Iuj3/xZKOp4Jv6OFAjHaNjCJl6WTmvRg="},"indexInfo":{"baseKey":"BQsZDFZjV0OUaTLmJOPmGA0dgZNx4oj7/oIlPw3ZUlxa","baseKeyType":1,"closed":-1,"used":1681455390655,"created":1681455390655,"remoteIdentityKey":"BfcfPqi/iWUoeHQcP+skiTXR1sOKLhoP8mMZbSjH3zsC"},"_chains":{"BcH77k8DBroRjMlSfP0ArZhZ7/F9b7Zw9tlmdmAEoYwv":{"chainKey":{"counter":0,"key":"JcdpOppObxKL3b9igod/iZXXbeL9EK534XuV2fuWF2g="},"chainType":1,"messageKeys":{}}},"pendingPreKey":{"signedKeyId":0,"baseKey":"BQsZDFZjV0OUaTLmJOPmGA0dgZNx4oj7/oIlPw3ZUlxa"}}},"version":"v1"}
+{
+  "_sessions": {
+    "BQsZDFZjV0OUaTLmJOPmGA0dgZNx4oj7/oIlPw3ZUlxa": {
+      "registrationId": 790388623,
+      "currentRatchet": {
+        "ephemeralKeyPair": {
+          "pubKey": "BcH77k8DBroRjMlSfP0ArZhZ7/F9b7Zw9tlmdmAEoYwv",
+          "privKey": "2Nl0fq4O/0oB5AKw2EkTTyYP1nFNsljABWfZsypBQHA="
+        },
+        "lastRemoteEphemeralKey": "BQ37FLkh/QncbJWvpgAOVaSWieCX8bqQzk5DEa2JbEds",
+        "previousCounter": 0,
+        "rootKey": "vuA5XxBPRj+Iuj3/xZKOp4Jv6OFAjHaNjCJl6WTmvRg="
+      },
+      "indexInfo": {
+        "baseKey": "BQsZDFZjV0OUaTLmJOPmGA0dgZNx4oj7/oIlPw3ZUlxa",
+        "baseKeyType": 1,
+        "closed": -1,
+        "used": 1681455390655,
+        "created": 1681455390655,
+        "remoteIdentityKey": "BfcfPqi/iWUoeHQcP+skiTXR1sOKLhoP8mMZbSjH3zsC"
+      },
+      "_chains": {
+        "BcH77k8DBroRjMlSfP0ArZhZ7/F9b7Zw9tlmdmAEoYwv": {
+          "chainKey": {
+            "counter": 0,
+            "key": "JcdpOppObxKL3b9igod/iZXXbeL9EK534XuV2fuWF2g="
+          },
+          "chainType": 1,
+          "messageKeys": {}
+        }
+      },
+      "pendingPreKey": {
+        "signedKeyId": 0,
+        "baseKey": "BQsZDFZjV0OUaTLmJOPmGA0dgZNx4oj7/oIlPw3ZUlxa"
+      }
+    }
+  },
+  "version": "v1"
+}

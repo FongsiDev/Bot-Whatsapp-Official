@@ -1,1 +1,43 @@
-{"_sessions":{"BZWmhViuNQ59UJVZJMDxHelPmMzSCvtHLHON4G/2rQhs":{"registrationId":615649012,"currentRatchet":{"ephemeralKeyPair":{"pubKey":"BSia2TPso0LBarNBDGMwgJxEKz6mpakFNNFg6V6VIAo2","privKey":"ECpzvgD95QWH14fxCQtZECqJrU1hEtK0mdQ3y8/qMEc="},"lastRemoteEphemeralKey":"Be7kIOfzYOD91s7LKH809c9TYhWy8gAJ9yx7E8yEQa44","previousCounter":0,"rootKey":"Um4gsXTuUkCAERvfjVC+3qDO1oH7TPpupyOqjFf2/i4="},"indexInfo":{"baseKey":"BZWmhViuNQ59UJVZJMDxHelPmMzSCvtHLHON4G/2rQhs","baseKeyType":1,"closed":-1,"used":1681455390992,"created":1681455390992,"remoteIdentityKey":"BfdykShFDr2b5xPBe1hvH93cnVIWuRuX3zxe59uqpCk2"},"_chains":{"BSia2TPso0LBarNBDGMwgJxEKz6mpakFNNFg6V6VIAo2":{"chainKey":{"counter":0,"key":"9dAz2NKc+KLAsvyAVMxcSFafKaaXbLQzPATCtbz6nU0="},"chainType":1,"messageKeys":{}}},"pendingPreKey":{"signedKeyId":0,"baseKey":"BZWmhViuNQ59UJVZJMDxHelPmMzSCvtHLHON4G/2rQhs","preKeyId":13971426}}},"version":"v1"}
+{
+  "_sessions": {
+    "BZWmhViuNQ59UJVZJMDxHelPmMzSCvtHLHON4G/2rQhs": {
+      "registrationId": 615649012,
+      "currentRatchet": {
+        "ephemeralKeyPair": {
+          "pubKey": "BXMZBjhtAnVc1YSbef6Bte32wrsZZwwaugdSv/sOf5hJ",
+          "privKey": "YNzwYF2UWITYlml+zKkit3qwk/QTcFoZeO8uMOp7MWA="
+        },
+        "lastRemoteEphemeralKey": "BbsK5WgmEtMjVIvX8h/d2cO8DThKpQ4Bser9zzhyHN8i",
+        "previousCounter": 0,
+        "rootKey": "rIHLSbcd5YjXpVRW/Rkd3OqAMsXPZlc6Ju1qJUF4M3Q="
+      },
+      "indexInfo": {
+        "baseKey": "BZWmhViuNQ59UJVZJMDxHelPmMzSCvtHLHON4G/2rQhs",
+        "baseKeyType": 1,
+        "closed": -1,
+        "used": 1681456281411,
+        "created": 1681455390992,
+        "remoteIdentityKey": "BfdykShFDr2b5xPBe1hvH93cnVIWuRuX3zxe59uqpCk2"
+      },
+      "_chains": {
+        "BbsK5WgmEtMjVIvX8h/d2cO8DThKpQ4Bser9zzhyHN8i": {
+          "chainKey": {
+            "counter": 0,
+            "key": "UJYO6RETeUB5YAVFjqVl+D1cs0BufUlBBUmQBD7K8ko="
+          },
+          "chainType": 2,
+          "messageKeys": {}
+        },
+        "BXMZBjhtAnVc1YSbef6Bte32wrsZZwwaugdSv/sOf5hJ": {
+          "chainKey": {
+            "counter": -1,
+            "key": "rmBVNwGcn3+QL2z/m3/UjynfvleN5WePZLhfpLYs1FE="
+          },
+          "chainType": 1,
+          "messageKeys": {}
+        }
+      }
+    }
+  },
+  "version": "v1"
+}

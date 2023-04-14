@@ -38,7 +38,33 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, text, command }) => {
 
   //==============> Menu nya
   let intro = `*BOT* *BKN* _Adalah Progam komputer yang dijalankan di WhatsApp yang khusus dibuat untuk melakukan pekerjaan-pekerjaan otomatis, Bot WhatsApp dirancang sedemikian rupa sehingga dapat di gunakan dengan nyaman dan kemungkinan memiliki sedikit bug, Ada fitur dari bot WhatsApp ini tentu akan membantu anda untuk bersenang senang, DLL_`;
-  conn.send3ButtonDoc(
+  await conn.relayMessage(
+    m.chat,
+    {
+      requestPaymentMessage: {
+        currencyCodeIso4217: "USD",
+        amount1000: fsizedoc,
+        requestFrom: m.sender,
+        noteMessage: {
+          extendedTextMessage: {
+            text:
+              intro +
+              "\n\n" +
+              "Ketik *.allmenu* untuk melihat semua command bot\n\n" +
+              wm,
+            contextInfo: {
+              mentionedJid: [m.sender],
+              externalAdReply: {
+                showAdAttribution: true,
+              },
+            },
+          },
+        },
+      },
+    },
+    {}
+  );
+  /*  conn.send3ButtonDoc(
     m.chat,
     `\n\n     *『 INTROCADUTION 』*\n\n`,
     intro + `\n\n${tag}\n\n`,
@@ -52,24 +78,10 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, text, command }) => {
     {
       contextInfo: {
         forwardingScore: fsizedoc,
-        externalAdReply: {
-          body: "Subscribe Channel Saya :v",
-          containsAutoReply: true,
-          mediaType: 1,
-          mediaUrl: fla + "Menu",
-          renderLargerThumbnail: true,
-          showAdAttribution: true,
-          sourceId: "Subscribe Channel Saya",
-          sourceType: "PDF",
-          previewType: "PDF",
-          sourceUrl: syt,
-          thumbnail: await (await fetch(thumb)).buffer(),
-          thumbnailUrl: syt,
-          title: "INTROCADUTION",
-        },
+        externalAdReply: ,
       },
     }
-  );
+  );*/
 };
 
 handler.help = ["menu"];

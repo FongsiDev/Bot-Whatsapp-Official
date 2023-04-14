@@ -1,1 +1,43 @@
-{"_sessions":{"BYBzVcRatMUDPa9HQav660A+NWy64N0gx3gdbu/KGREb":{"registrationId":263529703,"currentRatchet":{"ephemeralKeyPair":{"pubKey":"BfQolKLQY5T86KmeMKAPXKk2mGtjsdPy5tsQLEdN1uQd","privKey":"MM+2Ly5h5VPAKtGnOb/3R3TU03e6c8xCV9+AoSgOLGE="},"lastRemoteEphemeralKey":"BYhE1Fmw1K483G+tchXEfFbuk8NgwSreUSq97fngmpp5","previousCounter":0,"rootKey":"Tb6JZE44GBq3/XEvoQTaUMjbzLhostvB7Nop/7584h4="},"indexInfo":{"baseKey":"BYBzVcRatMUDPa9HQav660A+NWy64N0gx3gdbu/KGREb","baseKeyType":1,"closed":-1,"used":1681455390882,"created":1681455390882,"remoteIdentityKey":"Beq0ilq3faQlIkqi67izc7EFrJ/kpe94AX4/mWj0W01O"},"_chains":{"BfQolKLQY5T86KmeMKAPXKk2mGtjsdPy5tsQLEdN1uQd":{"chainKey":{"counter":0,"key":"sDFs0hhkRoJfCGypdGoWLHwXtoCA5RitwtXk6ymj1Xk="},"chainType":1,"messageKeys":{}}},"pendingPreKey":{"signedKeyId":4,"baseKey":"BYBzVcRatMUDPa9HQav660A+NWy64N0gx3gdbu/KGREb","preKeyId":7101891}}},"version":"v1"}
+{
+  "_sessions": {
+    "BYBzVcRatMUDPa9HQav660A+NWy64N0gx3gdbu/KGREb": {
+      "registrationId": 263529703,
+      "currentRatchet": {
+        "ephemeralKeyPair": {
+          "pubKey": "BbRCWgcU6CfCxwNm2srVF9UGpa5RdlKiffZ4FfH5UV92",
+          "privKey": "sBnadjN5gTl2Ne9RKYs1wKEgRPdkU2jWPv3Zlxze/FU="
+        },
+        "lastRemoteEphemeralKey": "BRJuCsHdq1jcqfivouKEyzXzq3RqXB7TIcjn119PwWVH",
+        "previousCounter": 0,
+        "rootKey": "U/ucWfQM4/qWvWOXbKRur9oimbm/oU4IT8DItoYB2Tw="
+      },
+      "indexInfo": {
+        "baseKey": "BYBzVcRatMUDPa9HQav660A+NWy64N0gx3gdbu/KGREb",
+        "baseKeyType": 1,
+        "closed": -1,
+        "used": 1681456408911,
+        "created": 1681455390882,
+        "remoteIdentityKey": "Beq0ilq3faQlIkqi67izc7EFrJ/kpe94AX4/mWj0W01O"
+      },
+      "_chains": {
+        "BRJuCsHdq1jcqfivouKEyzXzq3RqXB7TIcjn119PwWVH": {
+          "chainKey": {
+            "counter": 0,
+            "key": "JJVnIxPmFygUwbFk2p5OzNNJB3IvfDBsfnKjQGLthPc="
+          },
+          "chainType": 2,
+          "messageKeys": {}
+        },
+        "BbRCWgcU6CfCxwNm2srVF9UGpa5RdlKiffZ4FfH5UV92": {
+          "chainKey": {
+            "counter": -1,
+            "key": "OS9J2ECWgxS1XkVTOBoa91zycodL4xkIZDEbWPyJHec="
+          },
+          "chainType": 1,
+          "messageKeys": {}
+        }
+      }
+    }
+  },
+  "version": "v1"
+}

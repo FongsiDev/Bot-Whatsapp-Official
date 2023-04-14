@@ -1,12 +1,12 @@
 let handler = async (m, { conn, text, usedPrefix, command, args }) => {
   let who = m.mentionedJid[0]
-      ? m.mentionedJid[0]
-      : m.quoted
-      ? m.quoted.sender
-      : args[0].replace(/[^0-9]/g, "") + "@s.whatsapp.net";
-  if(!who) who = m.chat;
+    ? m.mentionedJid[0]
+    : m.quoted
+    ? m.quoted.sender
+    : args[0].replace(/[^0-9]/g, "") + "@s.whatsapp.net";
+  if (!who) who = m.chat;
   let user = db.data.users[who];
-  if(!user) user = db.data.users[who] = {};
+  if (!user) user = db.data.users[who] = {};
   if (!who) throw `tag or mention someone!`;
   let txt = args[1];
   if (!txt) throw `where the number of days?`;

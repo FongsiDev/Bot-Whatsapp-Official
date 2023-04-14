@@ -140,7 +140,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command }) => {
     "owner",
     "nocategory",
   ];
-  if (!arrayMenu.includes(teks)) teks = "404";
+  if (!arrayMenu.includes(teks)) teks = "all";
   if (teks == "all")
     tags = {
       main: "Main",
@@ -394,7 +394,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command }) => {
 
     let usrs = db.data.users[m.sender];
 
-    const sections = [
+    /*const sections = [
       {
         title: `${htki} MAIN ${htka}`,
         rows: [
@@ -605,7 +605,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command }) => {
           },
         ],
       },
-    ];
+    ];*/
 
     let tek = `✧────···[ Dashboard ]···────✧
 *${ucapan()} ${conn.getName(m.sender)}*
@@ -676,7 +676,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command }) => {
         : ""
     }
 ╰━━━━━━━━━━━━━━━━┈─◂`;
-    const listMessage = {
+    /*const listMessage = {
       text: tek,
       footer: `📮 *Note:* Jika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada Owner\n\nᴍᴀᴅᴇ ᴡɪᴛʜ ❤ ʙʏ ${nameown}\n\n${botdate}\n\n${wm2}`,
       mentions: await conn.parseMention(tek),
@@ -685,12 +685,14 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command }) => {
       sections,
     };
     if (teks == "404") {
+      
       return conn.sendMessage(m.chat, listMessage, {
         quoted: fakes,
         mentions: await conn.parseMention(tek),
         contextInfo: { forwardingScore: 99999, isForwarded: true },
       });
-    }
+      m.reply(tek)
+    }*/
 
     /**************************** TIME *********************/
     let wib = moment.tz("Asia/Jakarta").format("HH:mm:ss");
@@ -1120,6 +1122,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command }) => {
     // MAU YANG NO ENC MENFESS BALAS NAMBAH 5K :), TOTAL HARGA 15K EXPIRED SAMPAI TANGGAL 20 OKTOBER 2022
 
     // KALAU UDAH LEWAT TANGGAL 20 OKTOBER 2022 HARGA TOTAL AKAN MENJADI 25K
+    /*
     conn.send3ButtonVid(
       m.chat,
       "https://telegra.ph/file/a46ab7fa39338b1f54d5a.mp4",
@@ -1146,20 +1149,30 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command }) => {
           },
         },
       }
-    );
+    );*/
     //------------------- PAYMENT MENU
-    /*await conn.relayMessage(m.chat,  {
-    requestPaymentMessage: {
-      currencyCodeIso4217: 'USD',
-      amount1000: 10000000,
-      requestFrom: m.sender,
-      noteMessage: {
-      extendedTextMessage: {
-      text: text.trim(),
-      contextInfo: {
-      externalAdReply: {
-      showAdAttribution: true
-      }}}}}}, {})*/
+    await conn.relayMessage(
+      m.chat,
+      {
+        requestPaymentMessage: {
+          currencyCodeIso4217: "USD",
+          amount1000: 10000000,
+          requestFrom: m.sender,
+          noteMessage: {
+            extendedTextMessage: {
+              text: text.trim(),
+              contextInfo: {
+                mentionedJid: [m.sender],
+                externalAdReply: {
+                  showAdAttribution: true,
+                },
+              },
+            },
+          },
+        },
+      },
+      {}
+    );
 
     //------------------- 2BUTTON LOCATION
     /*conn.sendButton(m.chat, `${ucapan()}﹗`, text.trim(), `${timeimg()}`, [
@@ -1171,7 +1184,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command }) => {
     throw e;
   }
 };
-handler.command = /^(menu2)$/i;
+handler.command = /^(menu2|allmenu|menuall)$/i;
 
 handler.register = false;
 handler.exp = 3;

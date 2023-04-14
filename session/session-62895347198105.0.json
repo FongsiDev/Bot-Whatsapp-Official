@@ -1,1 +1,43 @@
-{"_sessions":{"Bfl4NR8xQXUrkQcdgqoByAqCadGWZXGcddGOOsemAdxU":{"registrationId":665188062,"currentRatchet":{"ephemeralKeyPair":{"pubKey":"BQ3JqUYVayJvy5ezNkQ7TMt+IdBwIi96NXjdueO3KrAG","privKey":"iFpx0rY4C3zVtDTh0CnknzNftLRy8x3VusiNq5Js7lg="},"lastRemoteEphemeralKey":"BTDc1XwUitqdg+abEfIyYr1HlX2WXzRiEc9uDPyqbKU1","previousCounter":0,"rootKey":"O+R+sQt/cbjrQ4Jt7TpMvMWFZ80T/Or2lcgjy+uTh6E="},"indexInfo":{"baseKey":"Bfl4NR8xQXUrkQcdgqoByAqCadGWZXGcddGOOsemAdxU","baseKeyType":1,"closed":-1,"used":1681455373781,"created":1681455373781,"remoteIdentityKey":"BSFg7x/YDBHxkEuyrbsCEJCEqfcSsIijOjTRd+nTO/sC"},"_chains":{"BQ3JqUYVayJvy5ezNkQ7TMt+IdBwIi96NXjdueO3KrAG":{"chainKey":{"counter":0,"key":"j5fdTDpldOvTN+IJC6w+oSlcRkzDSUcPxQNgKQVSdOk="},"chainType":1,"messageKeys":{}}},"pendingPreKey":{"signedKeyId":0,"baseKey":"Bfl4NR8xQXUrkQcdgqoByAqCadGWZXGcddGOOsemAdxU","preKeyId":1185102}}},"version":"v1"}
+{
+  "_sessions": {
+    "Bfl4NR8xQXUrkQcdgqoByAqCadGWZXGcddGOOsemAdxU": {
+      "registrationId": 665188062,
+      "currentRatchet": {
+        "ephemeralKeyPair": {
+          "pubKey": "BSVoFyp/ZcBlw92sjzwS1y/Fa5oCrTeZ8Vuczou3IV15",
+          "privKey": "4NRfxeKIfX1HR3aNIFuEIW/jEpwTn+JOnKqY7GcTzFU="
+        },
+        "lastRemoteEphemeralKey": "BdJmOvEul35cHm4ktQp6g3spVCPffSrf2M/ddja4piIB",
+        "previousCounter": 0,
+        "rootKey": "lzpiJnQfrIxhPBoNCH/lsOCKdepNYaGSh8h3yM3bQ9E="
+      },
+      "indexInfo": {
+        "baseKey": "Bfl4NR8xQXUrkQcdgqoByAqCadGWZXGcddGOOsemAdxU",
+        "baseKeyType": 1,
+        "closed": -1,
+        "used": 1681455619795,
+        "created": 1681455373781,
+        "remoteIdentityKey": "BSFg7x/YDBHxkEuyrbsCEJCEqfcSsIijOjTRd+nTO/sC"
+      },
+      "_chains": {
+        "BdJmOvEul35cHm4ktQp6g3spVCPffSrf2M/ddja4piIB": {
+          "chainKey": {
+            "counter": 0,
+            "key": "c2dcq8CxhLWAGQ+etpsguu/t8vNHame03VW4lKH9lao="
+          },
+          "chainType": 2,
+          "messageKeys": {}
+        },
+        "BSVoFyp/ZcBlw92sjzwS1y/Fa5oCrTeZ8Vuczou3IV15": {
+          "chainKey": {
+            "counter": 0,
+            "key": "NBlXJwnO9Nkvh7QU4LJh9HX6EPYvXZ2nONXy/G0Z3rw="
+          },
+          "chainType": 1,
+          "messageKeys": {}
+        }
+      }
+    }
+  },
+  "version": "v1"
+}

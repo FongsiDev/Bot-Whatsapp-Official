@@ -1,1 +1,40 @@
-{"_sessions":{"BTEgDTETw9i+4HyAZ8KnJGv0oYJZ2y1Cp2boDRi1Ns0A":{"registrationId":908565201,"currentRatchet":{"ephemeralKeyPair":{"pubKey":"BdiVjgjz1byHUSrvi1A6L+b9ZhlP+Jks1FbVP3qMOC0L","privKey":"2Ck33PUnO3UndGkAcCxpf8TXMug5Zu+pp3vgJJ2MI0M="},"lastRemoteEphemeralKey":"Bc2+nJwNbWzOgP51SqRXfrfGPQOObA7sHibu0ysak2Jd","previousCounter":0,"rootKey":"XAVQNvuLi03kj6gmAlcIRJ5pA840dTzy/yxR7D1v7Ic="},"indexInfo":{"baseKey":"BTEgDTETw9i+4HyAZ8KnJGv0oYJZ2y1Cp2boDRi1Ns0A","baseKeyType":1,"closed":-1,"used":1681455390688,"created":1681455390688,"remoteIdentityKey":"BR+OT9ZGAMUluqIDHIjx/TA+3MSimuk2KEhBzOqkLv8W"},"_chains":{"BdiVjgjz1byHUSrvi1A6L+b9ZhlP+Jks1FbVP3qMOC0L":{"chainKey":{"counter":0,"key":"Ut0kemYtSMUTB0pmbh4Q6+oy/d1s/48dXVs0iXRR8P8="},"chainType":1,"messageKeys":{}}},"pendingPreKey":{"signedKeyId":78,"baseKey":"BTEgDTETw9i+4HyAZ8KnJGv0oYJZ2y1Cp2boDRi1Ns0A","preKeyId":7603232}}},"version":"v1"}
+{
+  "_sessions": {
+    "BTEgDTETw9i+4HyAZ8KnJGv0oYJZ2y1Cp2boDRi1Ns0A": {
+      "registrationId": 908565201,
+      "currentRatchet": {
+        "ephemeralKeyPair": {
+          "pubKey": "BdiVjgjz1byHUSrvi1A6L+b9ZhlP+Jks1FbVP3qMOC0L",
+          "privKey": "2Ck33PUnO3UndGkAcCxpf8TXMug5Zu+pp3vgJJ2MI0M="
+        },
+        "lastRemoteEphemeralKey": "Bc2+nJwNbWzOgP51SqRXfrfGPQOObA7sHibu0ysak2Jd",
+        "previousCounter": 0,
+        "rootKey": "XAVQNvuLi03kj6gmAlcIRJ5pA840dTzy/yxR7D1v7Ic="
+      },
+      "indexInfo": {
+        "baseKey": "BTEgDTETw9i+4HyAZ8KnJGv0oYJZ2y1Cp2boDRi1Ns0A",
+        "baseKeyType": 1,
+        "closed": -1,
+        "used": 1681455390688,
+        "created": 1681455390688,
+        "remoteIdentityKey": "BR+OT9ZGAMUluqIDHIjx/TA+3MSimuk2KEhBzOqkLv8W"
+      },
+      "_chains": {
+        "BdiVjgjz1byHUSrvi1A6L+b9ZhlP+Jks1FbVP3qMOC0L": {
+          "chainKey": {
+            "counter": 0,
+            "key": "Ut0kemYtSMUTB0pmbh4Q6+oy/d1s/48dXVs0iXRR8P8="
+          },
+          "chainType": 1,
+          "messageKeys": {}
+        }
+      },
+      "pendingPreKey": {
+        "signedKeyId": 78,
+        "baseKey": "BTEgDTETw9i+4HyAZ8KnJGv0oYJZ2y1Cp2boDRi1Ns0A",
+        "preKeyId": 7603232
+      }
+    }
+  },
+  "version": "v1"
+}
