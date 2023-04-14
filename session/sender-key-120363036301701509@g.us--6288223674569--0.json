@@ -24,8 +24,8 @@
   {
     "senderKeyId": 9643825,
     "senderChainKey": {
-      "iteration": 13,
-      "seed": "kYVc9JhroR5n+TLfyqweh0qFOmKM3HOUNfN91qkPM30="
+      "iteration": 15,
+      "seed": "E2KNMevzzaGvrtKC0XLkQeDzAA7uvexbf8n9PP8dnxU="
     },
     "senderSigningKey": {
       "public": "BbcMZ0iXVOK8Ri6Kq5t8G3amcCtKjPq8BbXOFXDxtodi"
@@ -161,6 +161,7 @@
     },
     "senderSigningKey": {
       "public": "BbcMZ0iXVOK8Ri6Kq5t8G3amcCtKjPq8BbXOFXDxtodi"
-    }
+    },
+    "senderMessageKeys": []
   }
 ]

@@ -20,5 +20,16 @@
       "public": "BSYBuorJ5qtLHxUJpHdlTWf7xBwxbOmiVf+iGGlsH1hc"
     },
     "senderMessageKeys": []
+  },
+  {
+    "senderKeyId": 1776051293,
+    "senderChainKey": {
+      "iteration": 3,
+      "seed": "xV01xw6ihvdHG5CUHTQ8BgmW3fl18TCBKvXRyB9bexU="
+    },
+    "senderSigningKey": {
+      "public": "BYtkwJpuiqhpf7tI0x3a+g11KGSoyBqaRuqmC739EZhH"
+    },
+    "senderMessageKeys": []
   }
 ]

@@ -462,33 +462,22 @@ function FileEv(type, file) {
       }
       break;
     case "add":
-      let err = syntaxerror(readFileSync(path.dirname(file)), filename(file), {
-        sourceType: "module",
-        allowAwaitOutsideFunction: true,
-      });
-      if (err)
+      try {
+        (async () => {
+          const module = await import(
+            `${global.__filename(file)}?update=${Date.now()}`
+          );
+          global.plugins[file] = module.default || module;
+        })();
+      } catch (e) {
         conn.logger.error(
-          `syntax error while loading '${filename}'\n${format(err)}`
+          `error require plugin '${filename(file)}\n${format(e)}'`
         );
-      else
-        try {
-          (async () => {
-            const module = await import(
-              `${global.__filename(file)}?update=${Date.now()}`
-            );
-            global.plugins[file] = module.default || module;
-          })();
-        } catch (e) {
-          conn.logger.error(
-            `error require plugin '${filename(file)}\n${format(e)}'`
-          );
-        } finally {
-          global.plugins = Object.fromEntries(
-            Object.entries(global.plugins).sort(([a], [b]) =>
-              a.localeCompare(b)
-            )
-          );
-        }
+      } finally {
+        global.plugins = Object.fromEntries(
+          Object.entries(global.plugins).sort(([a], [b]) => a.localeCompare(b))
+        );
+      }
       break;
   }
 }
