@@ -40,7 +40,7 @@ let handler = async (
     if (!listPlugins.includes(text)) {
       return m.reply(`'${text}' not found!`);
     }
-    if (!m.quoted.text) throw `reply code`;
+    if (!m.quoted?.text) throw `reply code`;
     const path = glob.sync(`./plugins/**/${text}.js`);
     await fs.writeFileSync(path[0], m.quoted.text);
     m.reply(`Saved ${path[0]} to file!`);
@@ -88,7 +88,7 @@ let handler = async (
       throw `where do you want to save it?\n\nexample:\n${
         usedPrefix + command
       } tmp/index.js`;
-    if (!m.quoted.text) throw `reply code`;
+    if (!m.quoted?.text) throw `reply code`;
     writeFile(text, m.quoted.text);
     m.reply(`Create ${text} to file!`);
   }
