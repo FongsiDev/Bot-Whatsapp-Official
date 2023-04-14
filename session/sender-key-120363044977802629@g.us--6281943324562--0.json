@@ -20,5 +20,16 @@
       "public": "BW25y83xocJDY9ZhRgYn6e7hUmAJ3Yw/yX266sFJtt81"
     },
     "senderMessageKeys": []
+  },
+  {
+    "senderKeyId": 632042810,
+    "senderChainKey": {
+      "iteration": 1,
+      "seed": "dlMR4rVZuvmKyqIGGURk4gFcoRzXXVEtXqxmw97T1HA="
+    },
+    "senderSigningKey": {
+      "public": "BTWkpvRO3ECl0XEcL272eR8UxMxb3zuBDU3QxaXpVgAK"
+    },
+    "senderMessageKeys": []
   }
 ]

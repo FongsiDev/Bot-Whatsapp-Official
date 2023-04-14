@@ -2,8 +2,8 @@
   {
     "senderKeyId": 804568573,
     "senderChainKey": {
-      "iteration": 2,
-      "seed": "lpJzXY+eNQ7TOIpRgZPgkodg4XVsgvPTC7GaQgDLoeg="
+      "iteration": 4,
+      "seed": "Q5Ha2GUK669VUZQrE0nDaTzX4N+4DwKMMQlXDPqF0wU="
     },
     "senderSigningKey": {
       "public": "BRDsZPZIwchODzCbiQYryG5AgdRcePcP7rsdLrAaQp1v"

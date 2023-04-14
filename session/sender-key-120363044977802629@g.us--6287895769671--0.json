@@ -24,8 +24,8 @@
   {
     "senderKeyId": 2097798614,
     "senderChainKey": {
-      "iteration": 1,
-      "seed": "t2IS/6p2P0es6Q5g3iEZJ5dDo+BNJ3GRKAAtLH2MP0Y="
+      "iteration": 41,
+      "seed": "kyiHJwzc31i6cGOLrpZQVS60qrjdWf6n+6rUmMtr/8U="
     },
     "senderSigningKey": {
       "public": "BSoIZSV6K0miPU2lv9fWjVxN2dHBRQkO93Z9hn78vJtp"
