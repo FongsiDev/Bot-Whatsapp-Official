@@ -11,7 +11,7 @@ export function before(m) {
       "Hai Kak",
       "Ya",
       m,
-      fakeig
+      global?.fakeig
     );
     user.afk = -1;
     user.afkReason = "";
@@ -38,7 +38,7 @@ export function before(m) {
       "Maaf Kak",
       "Ya",
       m,
-      fakeig
+      global?.fakeig
     );
   }
   return true;

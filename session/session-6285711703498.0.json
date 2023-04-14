@@ -4,34 +4,39 @@
       "registrationId": 477001936,
       "currentRatchet": {
         "ephemeralKeyPair": {
-          "pubKey": "BfvND5sHAcp0lKjZzp5gVVrOdOnlHc8GFsyiqj3k5gRn",
-          "privKey": "IIZmCKj4e8V7NZcXpwi6AEEeWBdllG/0h2w2MatEvWE="
+          "pubKey": "BfDsauQ7UKyPp0ly21zVpbFy48w7pSliwrWzHlcxxJJB",
+          "privKey": "yJQUOCI6oNCr/uvnnNl3OQJDKxSBqOBIesjdIgV/VGg="
         },
-        "lastRemoteEphemeralKey": "BUrBorRlhMrpIS1hi9vRO39/0RGDU3WW5tdq1YjPQNo7",
-        "previousCounter": 0,
-        "rootKey": "og9kIz+oRTuriR4M6STf/xVwY17Zzrb+6preRSh9K/U="
+        "lastRemoteEphemeralKey": "BSyDdexyGWjX98yiZsEMJg69GmvtI1skWvIYfsSFeV4u",
+        "previousCounter": 7,
+        "rootKey": "abZciqiAmOxBZ0Vtd9VTELtHTJoq84mhD3d/mdN9kns="
       },
       "indexInfo": {
         "baseKey": "BUZ0AxC8RSUe192cUdUaJVn/aIvPmAlZnnHnI+Bh3/I/",
         "baseKeyType": 2,
         "closed": -1,
-        "used": 1681455368519,
+        "used": 1681483014422,
         "created": 1681455368519,
         "remoteIdentityKey": "BZTVH0+c4tR0e4qCmChbmWaQVhpz6qbQAJQNbkZnXqkj"
       },
       "_chains": {
         "BUrBorRlhMrpIS1hi9vRO39/0RGDU3WW5tdq1YjPQNo7": {
+          "chainKey": { "counter": 0 },
+          "chainType": 2,
+          "messageKeys": {}
+        },
+        "BSyDdexyGWjX98yiZsEMJg69GmvtI1skWvIYfsSFeV4u": {
           "chainKey": {
             "counter": 0,
-            "key": "C65WfGANxf7n1KvjJq78wsfxCDsnyM/m17hY+xanJ8M="
+            "key": "zR4i6F88ut8UoXIssEJxJ4eFyRbjm9vUg5T/ZgKYrCA="
           },
           "chainType": 2,
           "messageKeys": {}
         },
-        "BfvND5sHAcp0lKjZzp5gVVrOdOnlHc8GFsyiqj3k5gRn": {
+        "BfDsauQ7UKyPp0ly21zVpbFy48w7pSliwrWzHlcxxJJB": {
           "chainKey": {
-            "counter": 7,
-            "key": "v03vRn6pG9T5LuFP8mpHmQNfQgJrazxjmSIWzimqxiQ="
+            "counter": -1,
+            "key": "5NOszh+Lw4qd607wtFsbaWG9ItH7/EOGyCdDNU/ftHg="
           },
           "chainType": 1,
           "messageKeys": {}

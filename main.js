@@ -357,6 +357,7 @@ global.reloadHandler = async function (restatConn) {
     conn.ev.off("group-participants.update", conn.participantsUpdate);
     conn.ev.off("groups.update", conn.groupsUpdate);
     conn.ev.off("message.delete", conn.onDelete);
+    conn.ev.off("presence.update", conn.presenceUpdate);
     conn.ev.off("connection.update", conn.connectionUpdate);
     conn.ev.off("creds.update", conn.credsUpdate);
   }
@@ -381,6 +382,7 @@ global.reloadHandler = async function (restatConn) {
   conn.participantsUpdate = handler.participantsUpdate.bind(global.conn);
   conn.groupsUpdate = handler.groupsUpdate.bind(global.conn);
   conn.onDelete = handler.deleteUpdate.bind(global.conn);
+  conn.presenceUpdate = handler.presenceUpdate.bind(global.conn);
   conn.connectionUpdate = connectionUpdate.bind(global.conn);
   //conn.credsUpdate = saveState.bind(global.conn, true);
 
@@ -389,14 +391,11 @@ global.reloadHandler = async function (restatConn) {
   conn.ev.on("groups.update", conn.groupsUpdate);
   conn.ev.on("message.delete", conn.onDelete);
   conn.ev.on("connection.update", conn.connectionUpdate);
+  conn.ev.on("presence.update", conn.presenceUpdate);
   //conn.ev.on("creds.update", conn.credsUpdate);
   conn.ev.on("creds.update", async () => {
     await saveCreds();
   });
-  conn.ev.on("presence.update", async () => {
-    await conn.sendPresenceUpdate("available");
-  });
-
   isInit = false;
   return true;
 };

@@ -1639,6 +1639,28 @@ Untuk menghapus pesan yang dikirim BOT, reply pesan dengan perintah
     console.error(e);
   }
 }
+/*
+ Presence Update 
+*/
+export async function presenceUpdate(x) {
+  let id = x.id;
+  let nouser = Object.keys(x.presences);
+  let status = x.presences[nouser]?.lastKnownPresence;
+  let user = global.db.data.users[nouser[0]];
+  let mentionUser = [nouser[0]];
+  if (status == "composing" && user.afk > -1) {
+    await console.log("AFK - TICK");
+    user.afk = -1;
+    user.afkReason = "";
+    return await conn.sendFile(
+      id,
+      `\n${conn.getName(nouser[0])} berhenti afk, dia sedang mengetik\n`,
+      null,
+      fakeig
+    );
+  }
+  await conn.sendPresenceUpdate("available");
+}
 
 global.dfail = (type, m, conn) => {
   let msg = {

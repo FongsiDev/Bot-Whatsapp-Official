@@ -20,5 +20,16 @@
       "public": "BcJsmOWxdA0hzfggTiyqeKZRx/fk+hE8tkUpoyqMZiBn"
     },
     "senderMessageKeys": []
+  },
+  {
+    "senderKeyId": 1582943454,
+    "senderChainKey": {
+      "iteration": 10,
+      "seed": "miTLURgHzQEq56lqDpA3qbeFQaTV4zX6v5o7bDWBM74="
+    },
+    "senderSigningKey": {
+      "public": "BXnXxDmK8MEr0oRfR6jHcQ7okZptiy9NNKmcRLcZjfMI"
+    },
+    "senderMessageKeys": []
   }
 ]
