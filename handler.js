@@ -1652,7 +1652,7 @@ export async function presenceUpdate(x) {
     await console.log("AFK - TICK");
     user.afk = -1;
     user.afkReason = "";
-    return await conn.sendFile(
+    return await conn.reply(
       id,
       `\n${conn.getName(nouser[0])} berhenti afk, dia sedang mengetik\n`,
       null,
