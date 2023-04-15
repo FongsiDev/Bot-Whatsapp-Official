@@ -31,5 +31,16 @@
       "public": "BeA2osD0t8rqvJGwSl6xIWF3ZGLAknHfI81tCBn+uttk"
     },
     "senderMessageKeys": []
+  },
+  {
+    "senderKeyId": 2114872874,
+    "senderChainKey": {
+      "iteration": 1,
+      "seed": "JcaZCBRafAoR7h88KzdLjSyf03OAwPxY6GJAHl9MmoI="
+    },
+    "senderSigningKey": {
+      "public": "BYsvrN9w4+9Z9FHVsg6SjxQeCzqOHFlNJYGRpwl2LMYZ"
+    },
+    "senderMessageKeys": []
   }
 ]
