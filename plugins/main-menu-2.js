@@ -1184,7 +1184,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command }) => {
     throw e;
   }
 };
-handler.command = /^(menu2|allmenu|menuall)$/i;
+handler.command = /^(menu2|allmenu|menuall|listmenu|menulist)$/i;
 
 handler.register = false;
 handler.exp = 3;
