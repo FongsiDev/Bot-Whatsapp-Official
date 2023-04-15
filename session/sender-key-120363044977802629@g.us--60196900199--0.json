@@ -24,8 +24,19 @@
   {
     "senderKeyId": 1582943454,
     "senderChainKey": {
-      "iteration": 40,
-      "seed": "yZ5JpMh2e6ao0zkL+v9HF5N94ITuw7tI9NiiDB3vpLc="
+      "iteration": 46,
+      "seed": "acmMrzdLbh6w5W/5bL3lqcjLLuOLc0hxoi9GwYe3zlI="
+    },
+    "senderSigningKey": {
+      "public": "BXnXxDmK8MEr0oRfR6jHcQ7okZptiy9NNKmcRLcZjfMI"
+    },
+    "senderMessageKeys": []
+  },
+  {
+    "senderKeyId": 1582943454,
+    "senderChainKey": {
+      "iteration": 45,
+      "seed": "JBd7mDrOkTNYzdiDK5TCQLC2ecgoSiENkSVxfAQ6FVk="
     },
     "senderSigningKey": {
       "public": "BXnXxDmK8MEr0oRfR6jHcQ7okZptiy9NNKmcRLcZjfMI"

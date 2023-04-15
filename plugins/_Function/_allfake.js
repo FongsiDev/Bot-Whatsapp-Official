@@ -125,6 +125,26 @@ END:VCARD`.trim(),
         },
       },
     };
+    global.fimage = {
+      key: {
+        fromMe: false,
+        participant: "0@s.whatsapp.net",
+        ...(g.chat ? { remoteJid: "status@broadcast" } : {}),
+      },
+      message: {
+        imageMessage: {
+          title: wm,
+          h: wm,
+          seconds: "359996400",
+          caption: wm,
+          jpegThumbnail: await conn.resize(
+            l.readFileSync("./thumbnail.jpg"),
+            150,
+            150
+          ),
+        },
+      },
+    };
     global.ftextt = {
       key: {
         fromMe: false,
@@ -281,6 +301,7 @@ END:VCARD`.trim(),
       global.fkontak,
       global.fpayment,
       global.fvn,
+      global.fimage,
       global.ftextt,
       global.fliveLoc,
       global.fliveLoc2,
