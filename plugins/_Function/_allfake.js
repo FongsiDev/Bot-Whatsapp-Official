@@ -155,7 +155,11 @@ END:VCARD`.trim(),
         extendedTextMessage: {
           text: wm,
           title: wm,
-          jpegThumbnail: l.readFileSync("./thumbnail.jpg"),
+          jpegThumbnail: await conn.resize(
+            l.readFileSync("./thumbnail.jpg"),
+            150,
+            150
+          ),
         },
       },
     };
@@ -169,7 +173,11 @@ END:VCARD`.trim(),
         liveLocationMessage: {
           caption: "BY BLUECKKN",
           h: "" + wm,
-          jpegThumbnail: l.readFileSync("./thumbnail.jpg"),
+          jpegThumbnail: await conn.resize(
+            l.readFileSync("./thumbnail.jpg"),
+            150,
+            150
+          ),
         },
       },
     };
@@ -183,7 +191,11 @@ END:VCARD`.trim(),
         liveLocationMessage: {
           title: "BY BLUECKKN",
           h: wm,
-          jpegThumbnail: l.readFileSync("./thumbnail.jpg"),
+          jpegThumbnail: await conn.resize(
+            l.readFileSync("./thumbnail.jpg"),
+            150,
+            150
+          ),
         },
       },
     };
@@ -216,7 +228,11 @@ END:VCARD`.trim(),
       message: {
         documentMessage: {
           title: wm,
-          jpegThumbnail: l.readFileSync("./thumbnail.jpg"),
+          jpegThumbnail: await conn.resize(
+            l.readFileSync("./thumbnail.jpg"),
+            150,
+            150
+          ),
         },
       },
     };
@@ -232,7 +248,11 @@ END:VCARD`.trim(),
           inviteCode: "null",
           groupName: "BLUECKKN",
           caption: wm,
-          jpegThumbnail: l.readFileSync("./thumbnail.jpg"),
+          jpegThumbnail: await conn.resize(
+            l.readFileSync("./thumbnail.jpg"),
+            150,
+            150
+          ),
         },
       },
     };
@@ -249,7 +269,11 @@ END:VCARD`.trim(),
           seconds: "999999999",
           gifPlayback: "true",
           caption: wm,
-          jpegThumbnail: l.readFileSync("./thumbnail.jpg"),
+          jpegThumbnail: await conn.resize(
+            l.readFileSync("./thumbnail.jpg"),
+            150,
+            150
+          ),
         },
       },
     };
@@ -261,7 +285,11 @@ END:VCARD`.trim(),
           h: "Hmm",
           seconds: 999999999999,
           caption: "👋 " + W.getRandom() + " Kak :> " + t,
-          jpegThumbnail: l.readFileSync("./thumbnail.jpg"),
+          jpegThumbnail: await conn.resize(
+            l.readFileSync("./thumbnail.jpg"),
+            150,
+            150
+          ),
         },
       },
     };
