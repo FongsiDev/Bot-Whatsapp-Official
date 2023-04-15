@@ -302,7 +302,7 @@
       "indexInfo": {
         "baseKey": "BYg8HbarhyZIdmsZfNoZMWDFJhCfZnB17WQiRLXpussy",
         "baseKeyType": 1,
-        "closed": -1,
+        "closed": 1681522262899,
         "used": 1681478547794,
         "created": 1681478547794,
         "remoteIdentityKey": "BYXwpa65ghoy0UVyLFHqmclkcOW8UOt/uJ+0ec/76J88"
@@ -321,6 +321,76 @@
         "signedKeyId": 1,
         "baseKey": "BYg8HbarhyZIdmsZfNoZMWDFJhCfZnB17WQiRLXpussy",
         "preKeyId": 76
+      }
+    },
+    "BZoIpDfEy9BMBn8qNCY7+NpvlDXn2JDvbZ7NAPDns4I1": {
+      "registrationId": 179,
+      "currentRatchet": {
+        "ephemeralKeyPair": {
+          "pubKey": "BU2YSQ5qKp+GT7gMzdcnVTbZiG306KOismFJmTbFbkdd",
+          "privKey": "sLBk6Jo0+D/hhe3UF8UhcxkPIIiYAs+NxvIALE9sOlY="
+        },
+        "lastRemoteEphemeralKey": "BXVTjiaeelLqPwqZYAkBMtkH4OYpc52g3eu0+18gLilj",
+        "previousCounter": 0,
+        "rootKey": "1T1RUwI/Bwkixjy+4NR2zxp8h8AopMZ10F0lUBvwrw4="
+      },
+      "indexInfo": {
+        "baseKey": "BZoIpDfEy9BMBn8qNCY7+NpvlDXn2JDvbZ7NAPDns4I1",
+        "baseKeyType": 1,
+        "closed": 1681522403975,
+        "used": 1681522262891,
+        "created": 1681522262891,
+        "remoteIdentityKey": "BYXwpa65ghoy0UVyLFHqmclkcOW8UOt/uJ+0ec/76J88"
+      },
+      "_chains": {
+        "BU2YSQ5qKp+GT7gMzdcnVTbZiG306KOismFJmTbFbkdd": {
+          "chainKey": {
+            "counter": 0,
+            "key": "MFEF0F8B1LC4sGRSEGXZLMqtClApZrI1oMSwYYxi5rU="
+          },
+          "chainType": 1,
+          "messageKeys": {}
+        }
+      },
+      "pendingPreKey": {
+        "signedKeyId": 1,
+        "baseKey": "BZoIpDfEy9BMBn8qNCY7+NpvlDXn2JDvbZ7NAPDns4I1",
+        "preKeyId": 111
+      }
+    },
+    "BYEwjalYay527F17yR8wZN19N7FLHc2jXHlTAM0NF3AB": {
+      "registrationId": 179,
+      "currentRatchet": {
+        "ephemeralKeyPair": {
+          "pubKey": "BS+gKocl9Dy/RjTNbjztYEVZXna0l0B6b01ADqiBAOdD",
+          "privKey": "aGkWU5C5X62mEE5BzNsLqSC1bt4YWmsACmOeE/b0m2M="
+        },
+        "lastRemoteEphemeralKey": "BXVTjiaeelLqPwqZYAkBMtkH4OYpc52g3eu0+18gLilj",
+        "previousCounter": 0,
+        "rootKey": "Pd4Y9fZhfLg5jGThtQO6BMpc6foemXMSexoN1MnlHT0="
+      },
+      "indexInfo": {
+        "baseKey": "BYEwjalYay527F17yR8wZN19N7FLHc2jXHlTAM0NF3AB",
+        "baseKeyType": 1,
+        "closed": -1,
+        "used": 1681522403967,
+        "created": 1681522403967,
+        "remoteIdentityKey": "BYXwpa65ghoy0UVyLFHqmclkcOW8UOt/uJ+0ec/76J88"
+      },
+      "_chains": {
+        "BS+gKocl9Dy/RjTNbjztYEVZXna0l0B6b01ADqiBAOdD": {
+          "chainKey": {
+            "counter": 0,
+            "key": "z3XO4EoGyhrQY25J0dUQGm6j5XE4FA6+VsQk39dsxBI="
+          },
+          "chainType": 1,
+          "messageKeys": {}
+        }
+      },
+      "pendingPreKey": {
+        "signedKeyId": 1,
+        "baseKey": "BYEwjalYay527F17yR8wZN19N7FLHc2jXHlTAM0NF3AB",
+        "preKeyId": 120
       }
     }
   },

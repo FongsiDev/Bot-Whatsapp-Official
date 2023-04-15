@@ -18,6 +18,18 @@
     },
     "senderSigningKey": {
       "public": "BTJnFeTvmNV9JMIVpWjys8G9wmdzfBbPDt/RXxeRfqYa"
-    }
+    },
+    "senderMessageKeys": []
+  },
+  {
+    "senderKeyId": 646822139,
+    "senderChainKey": {
+      "iteration": 4,
+      "seed": "SpCwYfXntMQBJ4rb/XPsexXUGyoakhLs3R0ZAEE/3d8="
+    },
+    "senderSigningKey": {
+      "public": "BUl3cwvzUaSQFV5WABDJ/aBeYQg5FDp4pvXpmSW1Xuoy"
+    },
+    "senderMessageKeys": []
   }
 ]

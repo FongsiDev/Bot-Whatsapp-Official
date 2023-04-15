@@ -24,11 +24,22 @@
   {
     "senderKeyId": 138167575,
     "senderChainKey": {
-      "iteration": 24,
-      "seed": "6VSRCYaAyNYLoA42TRCFueyWL8ol3bMvP07e4uu+Fd4="
+      "iteration": 78,
+      "seed": "zU06HpdOGz9tFJeVGcQ+IzyMwWSyMAsrhKjWhwj3aM8="
     },
     "senderSigningKey": {
       "public": "BbfF/Kkgw5OuTyVBY1KJ/peBWt/IpkyXync08f0/xoZg"
+    },
+    "senderMessageKeys": []
+  },
+  {
+    "senderKeyId": 1117698209,
+    "senderChainKey": {
+      "iteration": 25,
+      "seed": "rhgrXP0BtoGupzFlw2FshOuEkp1N2fJLGTl/7y6SU1o="
+    },
+    "senderSigningKey": {
+      "public": "BdBCsHJtHBeApy4Vre5xhl8TKn9bPV/wpuELk9VCEmEx"
     },
     "senderMessageKeys": []
   }

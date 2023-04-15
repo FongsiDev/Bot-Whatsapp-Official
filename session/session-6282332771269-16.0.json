@@ -22,8 +22,8 @@
       "_chains": {
         "BTcA19WPRyrmXC1J1KlNtwkPPrA1FGWyIg4dxUJC7roB": {
           "chainKey": {
-            "counter": 0,
-            "key": "gi8HVmPCE7aF9DfEA7HaT7wfncKzzB3+Qg1krmNRmeI="
+            "counter": 1,
+            "key": "E8fEWFz7yBBbBmg/fgfT16L2tPaM8CqSKbt96tz9mGw="
           },
           "chainType": 1,
           "messageKeys": {}

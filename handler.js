@@ -1653,14 +1653,17 @@ export async function presenceUpdate(x) {
     .catch((_) => "https://telegra.ph/file/24fa902ead26340f3df2c.png");
   if (status == "composing" && user.afk > -1) {
     await console.log("AFK - TICK");
-    user.afk = -1;
-    user.afkReason = "";
-    return await conn.reply(
+    await conn.reply(
       id,
-      `\n${conn.getName(nouser[0])} berhenti afk, dia sedang mengetik\n`,
+      `\n${conn.getTag(
+        nouser[0]
+      )} berhenti afk, dia sedang mengetik\n\nAlasan: ${
+        user.afkReason ? user.afkReason : "No Reason"
+      }\nSelama ${(new Date() - user.afk).toTimeString()} Yang Lalu\n`,
       null,
       {
         contextInfo: {
+          mentionedJid: mentionUser,
           externalAdReply: {
             showAdAttribution: true,
             mediaUrl: sig,
@@ -1676,6 +1679,8 @@ export async function presenceUpdate(x) {
         },
       }
     );
+    user.afk = -1;
+    user.afkReason = "";
   }
   await conn.sendPresenceUpdate("available");
 }

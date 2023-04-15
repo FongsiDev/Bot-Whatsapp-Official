@@ -30,8 +30,8 @@
         },
         "Bcm5tET+GFnOZ6t+b8HMf4fNycnbLmQ3qzxUkCygCvdx": {
           "chainKey": {
-            "counter": -1,
-            "key": "0ZJNysVvi3tU2LSte0p76X9O8KqKVI8dnVqVN0T5elM="
+            "counter": 0,
+            "key": "v7VvV2jvTa+ynZ3LrPoMGqkyhSTYhAGYLfEVCaxa1XQ="
           },
           "chainType": 1,
           "messageKeys": {}
