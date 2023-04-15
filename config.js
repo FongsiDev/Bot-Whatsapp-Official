@@ -89,7 +89,6 @@ global.lolkey = "e54205a4ca2caa368cc067bb"; // PUNYA WAHID  8e66d0934cf741bfd218
 global.owner = [
   ["6285280808438", "🗿", true],
   ["6289503433262", "BLUE CKKN", true],
-	["6282216850223", "Carissa", true]
 ];
 
 global.mods = []; // Want some help?
@@ -161,13 +160,13 @@ global.packname = "BLUE CKKN BOT WhatsApp";
 /*Fake*/
 global.fsizedoc = "1".repeat(10);
 global.fpagedoc = "1".repeat(10);
-global.thumbdoc = "https://telegra.ph/file/6e45318d7c76f57e4a8bd.jpg";
+global.thumbdoc = "https://telegra.ph/file/39402e2e337bdb89e39ac.jpg";
 
 /*============== LOGO ==============*/
-global.thumb = "https://telegra.ph/file/e72de2cbba03f58eba7d1.jpg"; //Main Thumbnail
-global.imagebot = "https://telegra.ph/file/e72de2cbba03f58eba7d1.jpg";
+global.thumb = "https://telegra.ph/file/39402e2e337bdb89e39ac.jpg"; //Main Thumbnail
+global.imagebot = "https://telegra.ph/file/39402e2e337bdb89e39ac.jpg";
 global.giflogo = "https://telegra.ph/file/a46ab7fa39338b1f54d5a.mp4";
-global.thumbs = ["https://telegra.ph/file/e72de2cbba03f58eba7d1.jpg"];
+global.thumbs = ["https://telegra.ph/file/39402e2e337bdb89e39ac.jpg"];
 global.fla = "https://telegra.ph/file/e72de2cbba03f58eba7d1.jpg";
 global.thumbnailUrl = [
   "https://telegra.ph/file/81260a8b9e8cff26d2b48.jpg",

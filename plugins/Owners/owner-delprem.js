@@ -24,7 +24,6 @@ handler.help = ["delprem [@user]"];
 handler.tags = ["owner"];
 handler.command = /^(-|del)p(rem)?$/i;
 
-handler.group = true;
 handler.rowner = true;
 
 export default handler;

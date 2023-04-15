@@ -11,7 +11,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     if (/webp|image|video/g.test(mime)) {
       if (/video/g.test(mime))
         if ((q.msg || q).seconds > 11) return m.reply("Maksimal 10 detik!");
-      let img = await q.download?.();
+      let img = await q.download?.(true);
       if (!img)
         throw `balas gambar/video/stiker dengan perintah ${
           usedPrefix + command
@@ -23,7 +23,9 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
         else if (/image/g.test(mime)) out = await uploadImage(img);
         else if (/video/g.test(mime)) {
           out = await uploadFile(img);
-          m.reply("File Video/GIF Rawat Error Jika lebih dari 100kb maka Sticker tidak bisa di gunakan!");
+          m.reply(
+            "File Video/GIF Rawat Error Jika lebih dari 100kb maka Sticker tidak bisa di gunakan!"
+          );
         }
         if (typeof out !== "string") out = await uploadImage(img);
         stiker = await sticker(false, out, global.stickpack, global.stickauth);

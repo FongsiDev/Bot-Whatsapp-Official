@@ -5,7 +5,7 @@ let handler = async (m, { conn, text }) => {
       ? m.mentionedJid[0]
       : m.quoted
       ? m.quoted.sender
-      : text;
+      : text.replace(/[^0-9]/g, "") + "@s.whatsapp.net";
   else who = m.chat;
   if (!who) throw `tag orangnya!`;
   if (global.owner.includes(who.split`@`[0])) throw "dia udah menjadi owner !";

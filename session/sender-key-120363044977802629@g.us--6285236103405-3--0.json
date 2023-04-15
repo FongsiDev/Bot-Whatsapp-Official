@@ -1,0 +1,46 @@
+[
+  {
+    "senderKeyId": 54797361,
+    "senderChainKey": {
+      "iteration": 1,
+      "seed": "Ur8UI2avxxI457uSwRJ6dQ2ab0W46Dblz1+UDsCBphg="
+    },
+    "senderSigningKey": {
+      "public": "BbGm705iSYwHh3VU+LzIPvHFDps7GwUd2z6vnqbBTVZW"
+    },
+    "senderMessageKeys": []
+  },
+  {
+    "senderKeyId": 202680156,
+    "senderChainKey": {
+      "iteration": 1,
+      "seed": "RAj8RX6YI/GesSABdYsNA8oaqWIyYOuFubJLfnt8SC0="
+    },
+    "senderSigningKey": {
+      "public": "BSjUfPd8pngKVyazowyGDuD/flrZYEy1AQQnY2IMw2sq"
+    },
+    "senderMessageKeys": []
+  },
+  {
+    "senderKeyId": 31013491,
+    "senderChainKey": {
+      "iteration": 2,
+      "seed": "n9P7wR491YeGBHb/Kt5q0rdwna5tRYbniWnGUFtnYOU="
+    },
+    "senderSigningKey": {
+      "public": "BXJnzUAX/gDgabRRZ6ztH6sOLE1REiCplOKEPWnWYUI0"
+    },
+    "senderMessageKeys": []
+  },
+  {
+    "senderKeyId": 459838683,
+    "senderChainKey": {
+      "iteration": 4,
+      "seed": "G8QmUzsOrElfOpXBta06qD2osQugoeqyYiBdbYZNrgc="
+    },
+    "senderSigningKey": {
+      "public": "BSWFuSNT2TyO8Ek+eIIqN/pMdUzBRD6QJb2MPOQTiyYw"
+    },
+    "senderMessageKeys": []
+  }
+]

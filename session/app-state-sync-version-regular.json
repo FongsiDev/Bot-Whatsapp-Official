@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "hash": {
+    "type": "Buffer",
+    "data": "FeVEFG4vGcP/TyOWkRn1Veuav03beEUYLXkD9Hqr/uM/hlj3CqS4pHLKSvky4T2F8bLDOFNcNlceuWM7d6KR38tfYVCXUJy8UYvVkPSrCSPANv/zaHRfwxNRCeqkhv5+WnalSwZHoKOWIEbqtu3aGyNLguUqWnUYiQ2C0Pusu/8="
+  },
+  "indexValueMap": {
+    "SDHjcyBT7UTiq7iCur0ErwzUq51KNfFZNyvhzaatUGg=": {
+      "valueMac": {
+        "type": "Buffer",
+        "data": "DoVmhyFIjGaGnuHN53fumJiRKXtdHPyAYEOIs6Xw9B0="
+      }
+    }
+  }
+}

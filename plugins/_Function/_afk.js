@@ -1,15 +1,14 @@
 export function before(m) {
   let user = global.db.data.users[m.sender];
   if (user.afk > -1) {
-    conn.sendButtonDoc(
+    conn.reply(
       m.chat,
-      `Kamu berhenti AFK!\nAlasan: ${user.afkReason ? user.afkReason : "No Reason"}\nSelama ${(new Date() - user.afk).toTimeString()} Yang Lalu
+      `Kamu berhenti AFK!\nAlasan: ${
+        user.afkReason ? user.afkReason : "No Reason"
+      }\nSelama ${(new Date() - user.afk).toTimeString()} Yang Lalu
   `,
-      wm,
-      "Hai Kak",
-      "Ya",
       m,
-      fakeig
+      global?.fakeig
     );
     user.afk = -1;
     user.afkReason = "";
@@ -26,15 +25,14 @@ export function before(m) {
     let afkTime = user.afk;
     if (!afkTime || afkTime < 0) continue;
     let reason = user.afkReason || "";
-    conn.sendButtonDoc(
+    conn.reply(
       m.chat,
-      `Jangan tag dia!\nDia sedang AFK.\nAlasan: ${reason ? reason : "No Reason"}\nSelama ${(new Date() - afkTime).toTimeString()} Yang Lalu
+      `Jangan tag dia!\nDia sedang AFK.\nAlasan: ${
+        reason ? reason : "No Reason"
+      }\nSelama ${(new Date() - afkTime).toTimeString()} Yang Lalu
   `,
-      wm,
-      "Maaf Kak",
-      "Ya",
       m,
-      fakeig
+      global?.fakeig
     );
   }
   return true;

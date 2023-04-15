@@ -37,7 +37,7 @@ function tts(text, lang = "id") {
       let tts = gtts(lang);
       let filePath = join(
         global.__dirname(import.meta.url),
-        "../tmp",
+        "../../tmp",
         1 * new Date() + ".wav"
       );
       tts.save(filePath, text, () => {

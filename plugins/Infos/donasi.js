@@ -1,5 +1,5 @@
 let handler = async (m, { conn, usedPrefix }) => {
-  /*conn.relayMessage(
+  conn.relayMessage(
     m.chat,
     {
       requestPaymentMessage: {
@@ -30,7 +30,8 @@ let handler = async (m, { conn, usedPrefix }) => {
       },
     },
     {}
-  );*/
+  );
+  /*
   m.reply(`${global.wm}
 
 ┌─「 Donasi • Pulsa 」
@@ -43,7 +44,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 │ • *Gopay:* [${global.pgopay}]
 │ • *Ovo:* [${global.povo}]
 │ • *Link Aja:* [${global.plinkaja}]
-❏────`);
+❏────`);*/
 };
 
 handler.help = ["donasi"];

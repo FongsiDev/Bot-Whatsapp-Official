@@ -1,4 +1,6 @@
 process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = "0";
+import * as dotenv from "dotenv"; // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with->
+dotenv.config();
 import "./config.js";
 import { createRequire } from "module"; // Bring in the ability to create the 'require' method
 import glob from "glob";
@@ -7,10 +9,11 @@ import { fileURLToPath, pathToFileURL } from "url";
 import { platform } from "process";
 //import YT from "youtubeposter.js";
 import chokidar from "chokidar";
-/*import ffmpeg from "fluent-ffmpeg";
-import ffmpegInstaller from "@ffmpeg-installer/ffmpeg";
+import ffmpeg from "fluent-ffmpeg";
+/*import ffmpegInstaller from "@ffmpeg-installer/ffmpeg";
 ffmpeg.setFfmpegPath(ffmpegInstaller.path);
 */
+import { Boom } from "@hapi/boom";
 global.__filename = function filename(
   pathURL = import.meta.url,
   rmPrefix = platform !== "win32"
@@ -27,7 +30,6 @@ global.__dirname = function dirname(pathURL) {
 global.__require = function require(dir = import.meta.url) {
   return createRequire(dir);
 };
-
 import * as ws from "ws";
 import {
   readdirSync,
@@ -51,7 +53,9 @@ import { Low, JSONFile } from "lowdb";
 import { mongoDB, mongoDBV2 } from "./lib/mongoDB.js";
 import store from "./lib/store.js";
 import cloudDBAdapter from "./lib/cloudDBAdapter.js";
-const { DisconnectReason, fetchLatestBaileysVersion } = (await import("@adiwajshing/baileys")).default;
+const { DisconnectReason, fetchLatestBaileysVersion, useMultiFileAuthState } = (
+  await import("@adiwajshing/baileys")
+).default;
 
 const { CONNECTING } = ws;
 const { chain } = lodash;
@@ -136,9 +140,9 @@ global.loadDatabase = async function loadDatabase() {
 };
 loadDatabase();
 
-global.authFile = `${opts._[0] || "session"}.data.json`;
-const { state, saveState } = store.useSingleFileAuthState(global.authFile);
-
+global.authFile = `${opts._[0] || "session"}`;
+//const { state, saveState } = store.useSingleFileAuthState(global.authFile);
+const { state, saveCreds } = await useMultiFileAuthState(`./${authFile}`);
 const logger = pino({
   transport: {
     target: "pino-pretty",
@@ -150,22 +154,42 @@ const logger = pino({
     },
   },
 }).child({ class: "baileys" });
-const {
-   version,
-   isLatest
-} = await fetchLatestBaileysVersion()
+const { version, isLatest } = await fetchLatestBaileysVersion();
 
 const connectionOptions = {
   version,
-  logger: pino({ level: 'silent' }),
+  logger: pino({ level: "silent" }),
   printQRInTerminal: true,
+  patchMessageBeforeSending: (message) => {
+    const requiresPatch = !!(
+      message.buttonsMessage ||
+      message.templateMessage ||
+      message.listMessage
+    );
+    if (requiresPatch) {
+      message = {
+        viewOnceMessage: {
+          message: {
+            messageContextInfo: {
+              deviceListMetadataVersion: 2,
+              deviceListMetadata: {},
+            },
+            ...message,
+          },
+        },
+      };
+    }
+    return message;
+  },
+  browser: ["WhatsApp Multi Device", "Safari", "6.6.1"],
+
   auth: state,
   // logger: pino({ prettyPrint: { levelFirst: true, ignore: 'hostname', translateTime: true },  prettifier: require('pino-pretty') }),
   // logger: P({ level: 'trace' })
 };
-
 global.conn = makeWASocket(connectionOptions);
 conn.isInit = false;
+
 /*
 global.YT = new YT.YoutubePoster({ loop_delays_in_min: 60000 });
 global.YT.on("notified", async (data) => {
@@ -212,8 +236,8 @@ if (!opts["test"]) {
         console.log(chalk.cyanBright("Failded clear tmp"));
       }
   }, 60 * 1000);
+  if (opts["server"]) (await import("./server.js")).default(PORT, global.conn);
 }
-if (opts["server"]) (await import("./server.js")).default(PORT, global.conn);
 
 /* Clear */
 async function clearTmp() {
@@ -246,19 +270,43 @@ async function connectionUpdate(update) {
     global.timestamp.connect = new Date();
   }
   if (global.db.data == null) loadDatabase();
+  if (connection === "close") {
+    let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
+    if (reason === DisconnectReason.badSession) {
+      console.log(`Bad Session File, Please Delete Session and Scan Again`);
+      conn.logout();
+    } else if (reason === DisconnectReason.connectionClosed) {
+      console.log("Connection closed, reconnecting....");
+      //start();
+    } else if (reason === DisconnectReason.connectionLost) {
+      console.log("Connection Lost from Server, reconnecting...");
+      //start();
+    } else if (reason === DisconnectReason.connectionReplaced) {
+      console.log(
+        "Connection Replaced, Another New Session Opened, Please Close Current Session First"
+      );
+      conn.logout();
+    } else if (reason === DisconnectReason.loggedOut) {
+      console.log(`Device Logged Out, Please Scan Again And Run.`);
+      conn.logout();
+    } else if (reason === DisconnectReason.restartRequired) {
+      console.log("Restart Required, Restarting...");
+      //start();
+    } else if (reason === DisconnectReason.timedOut) {
+      console.log("harukaection TimedOut, Reconnecting...");
+      //start();
+    } else conn.end(`Unknown DisconnectReason: ${reason}|${connection}`);
+  }
   if (connection == "open") {
     console.log(chalk.yellow("Successfully connected by " + author));
   }
-  console.log(JSON.stringify(update, null, 4));
+  console.log("Update Connection\n", JSON.stringify(update, null, 4));
   if (update.receivedPendingNotifications) {
-    try {
-      this.groupAcceptInvite("DpFa9vHgFV60XqmwHSyDiE");
-    } catch (e) {
-      null;
-    }
-	  return await this.sendButton(
+    return await this.sendButton(
       global.logs.stats,
-      `Bot Successfully Connected\nServer: ${process.env.REPL_OWNER || "Tak ada replit"}`,
+      `Bot Successfully Connected\nServer: ${
+        process.env.REPL_OWNER || "Tak ada replit"
+      }`,
       author,
       null,
       [["Sabar Commandnya Lagi Reload", "y"]],
@@ -309,6 +357,7 @@ global.reloadHandler = async function (restatConn) {
     conn.ev.off("group-participants.update", conn.participantsUpdate);
     conn.ev.off("groups.update", conn.groupsUpdate);
     conn.ev.off("message.delete", conn.onDelete);
+    conn.ev.off("presence.update", conn.presenceUpdate);
     conn.ev.off("connection.update", conn.connectionUpdate);
     conn.ev.off("creds.update", conn.credsUpdate);
   }
@@ -333,16 +382,20 @@ global.reloadHandler = async function (restatConn) {
   conn.participantsUpdate = handler.participantsUpdate.bind(global.conn);
   conn.groupsUpdate = handler.groupsUpdate.bind(global.conn);
   conn.onDelete = handler.deleteUpdate.bind(global.conn);
+  conn.presenceUpdate = handler.presenceUpdate.bind(global.conn);
   conn.connectionUpdate = connectionUpdate.bind(global.conn);
-  conn.credsUpdate = saveState.bind(global.conn, true);
+  //conn.credsUpdate = saveState.bind(global.conn, true);
 
   conn.ev.on("messages.upsert", conn.handler);
   conn.ev.on("group-participants.update", conn.participantsUpdate);
   conn.ev.on("groups.update", conn.groupsUpdate);
   conn.ev.on("message.delete", conn.onDelete);
   conn.ev.on("connection.update", conn.connectionUpdate);
-  conn.ev.on("creds.update", conn.credsUpdate);
-
+  conn.ev.on("presence.update", conn.presenceUpdate);
+  //conn.ev.on("creds.update", conn.credsUpdate);
+  conn.ev.on("creds.update", async () => {
+    await saveCreds();
+  });
   isInit = false;
   return true;
 };
@@ -363,19 +416,23 @@ async function filesInit() {
 }
 filesInit()
   .then(async (_) => {
-    console.log(Object.keys(global.plugins))
-		return await conn.sendButton(
-      global.logs.stats,
-      `Bot Successfully Reload Command`,
-      author,
-      null,
-      [
-        ["MENU", "/menu"],
-        ["Get Session Bot", "/getsessi"],
-      ],
-      null
-    ).catch(() => { return; });
-	})
+    console.log(Object.keys(global.plugins));
+    return await conn
+      .sendButton(
+        global.logs.stats,
+        `Bot Successfully Reload Command`,
+        author,
+        null,
+        [
+          ["MENU", "/menu"],
+          ["Get Session Bot", "/getsessi"],
+        ],
+        null
+      )
+      .catch(() => {
+        return;
+      });
+  })
   .catch(console.error);
 
 function FileEv(type, file) {
@@ -404,33 +461,22 @@ function FileEv(type, file) {
       }
       break;
     case "add":
-      let err = syntaxerror(readFileSync(path.dirname(file)), filename(file), {
-        sourceType: "module",
-        allowAwaitOutsideFunction: true,
-      });
-      if (err)
+      try {
+        (async () => {
+          const module = await import(
+            `${global.__filename(file)}?update=${Date.now()}`
+          );
+          global.plugins[file] = module.default || module;
+        })();
+      } catch (e) {
         conn.logger.error(
-          `syntax error while loading '${filename}'\n${format(err)}`
+          `error require plugin '${filename(file)}\n${format(e)}'`
         );
-      else
-        try {
-          (async () => {
-            const module = await import(
-              `${global.__filename(file)}?update=${Date.now()}`
-            );
-            global.plugins[file] = module.default || module;
-          })();
-        } catch (e) {
-          conn.logger.error(
-            `error require plugin '${filename(file)}\n${format(e)}'`
-          );
-        } finally {
-          global.plugins = Object.fromEntries(
-            Object.entries(global.plugins).sort(([a], [b]) =>
-              a.localeCompare(b)
-            )
-          );
-        }
+      } finally {
+        global.plugins = Object.fromEntries(
+          Object.entries(global.plugins).sort(([a], [b]) => a.localeCompare(b))
+        );
+      }
       break;
   }
 }

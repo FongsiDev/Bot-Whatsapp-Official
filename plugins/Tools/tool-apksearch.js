@@ -14,6 +14,7 @@ let handler = async (m, { conn, text }) => {
       },
     },
   };
+  await console.log(res);
   res = res.map(
     (v) =>
       `*Title:* ${v.title}\n*Dev:* ${v.developer}\n*Price:* ${v.priceText}\n*Score:* ${v.scoreText}\n*Link:* ${v.url}`

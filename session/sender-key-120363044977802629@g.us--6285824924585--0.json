@@ -1,0 +1,24 @@
+[
+  {
+    "senderKeyId": 723695615,
+    "senderChainKey": {
+      "iteration": 3,
+      "seed": "EX+oliIxOrABsY4Z1AxDdyLJ7RubZDezg9XwV0MUT0k="
+    },
+    "senderSigningKey": {
+      "public": "BZG/mCf/PcQ8LPClRmNbH0Ye38Iuaorm3FvQRWbEKh03"
+    },
+    "senderMessageKeys": []
+  },
+  {
+    "senderKeyId": 723695615,
+    "senderChainKey": {
+      "iteration": 2,
+      "seed": "pyEmmbZornbcYZuuUsBO7/lh4WXJsXllZ8htaL/e/AQ="
+    },
+    "senderSigningKey": {
+      "public": "BZG/mCf/PcQ8LPClRmNbH0Ye38Iuaorm3FvQRWbEKh03"
+    },
+    "senderMessageKeys": []
+  }
+]

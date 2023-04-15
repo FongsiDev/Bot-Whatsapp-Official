@@ -1,0 +1,13 @@
+[
+  {
+    "senderKeyId": 1044366248,
+    "senderChainKey": {
+      "iteration": 28,
+      "seed": "NKHdbIOAkmjwVEYd0PS2nOFmPJPlEx0WlnCaxMq2s1M="
+    },
+    "senderSigningKey": {
+      "public": "BTQN8cQm2cCDRXYEo6G9Inb1ShaZgDKf92Sao/R4gjMd"
+    },
+    "senderMessageKeys": []
+  }
+]

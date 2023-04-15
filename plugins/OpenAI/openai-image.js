@@ -2,7 +2,7 @@ import { Configuration, OpenAIApi } from "openai";
 let handler = async (m, { conn, text }) => {
   if (!text) throw "[!] Masukkan teks.";
   const configuration = new Configuration({
-    apiKey: global.openai,
+    apiKey: global.openai || process.env.openai,
   });
   const openai = new OpenAIApi(configuration);
   let error = 0;
@@ -20,7 +20,6 @@ let handler = async (m, { conn, text }) => {
         console.log(e);
         if (error > 4) {
           throw "Sebentar ada kesalahan pada bot!";
-				  return !0;
         }
         error++;
         return ai();

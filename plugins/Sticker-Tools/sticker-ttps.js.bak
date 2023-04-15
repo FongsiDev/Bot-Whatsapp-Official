@@ -1,0 +1,74 @@
+import Canvas from "canvas";
+import { sticker } from "../../lib/sticker.js";
+import uploadImage from "../../lib/uploadImage.js";
+import fs from "fs";
+let handler = async (m, { conn, args, usedPrefix, command }) => {
+  let text;
+  if (args.length >= 1) {
+    text = args.slice(0).join(" ");
+  } else if (m.quoted && m.quoted.text) {
+    text = m.quoted.text;
+  } else throw "Input Teks";
+  let urut = text.split`|`;
+  let one = urut[0];
+  let two = urut[1];
+  let three = urut[2];
+  let length = two.length;
+
+  var font = 90;
+  if (length > 12) {
+    font = 68;
+  }
+  if (length > 15) {
+    font = 58;
+  }
+  if (length > 18) {
+    font = 55;
+  }
+  if (length > 19) {
+    font = 50;
+  }
+  if (length > 22) {
+    font = 48;
+  }
+  if (length > 24) {
+    font = 38;
+  }
+  if (length > 27) {
+    font = 35;
+  }
+  if (length > 30) {
+    font = 30;
+  }
+  if (length > 35) {
+    font = 26;
+  }
+  if (length > 39) {
+    font = 25;
+  }
+  if (length > 40) {
+    font = 20;
+  }
+  if (length > 49) {
+    font = 10;
+  }
+
+  var ttp = {};
+  ttp.create = Canvas.createCanvas(576, 576);
+  ttp.context = ttp.create.getContext("2d");
+  ttp.context.font = font + "px " + one;
+  ttp.context.strokeStyle = "black";
+  ttp.context.lineWidth = 3;
+  ttp.context.textAlign = "center";
+  ttp.context.strokeText(two, 290, 300);
+  ttp.context.fillStyle = "white";
+  ttp.context.fillText(two, 290, 300);
+  let buff = ttp.create.toBuffer();
+  if (true)
+    await conn.sendFile(m.chat, buff, "sticker.webp", "", m, null, m);
+};
+handler.help = ["ttps"];
+handler.command = ["ttps", "ttpsget"];
+handler.tags = ["sticker"];
+
+export default handler;

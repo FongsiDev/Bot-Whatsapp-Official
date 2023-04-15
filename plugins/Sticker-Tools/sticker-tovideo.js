@@ -10,7 +10,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     throw `Balas stiker/audio yang ingin diubah menjadi video dengan perintah ${
       usedPrefix + command
     }`;
-  let media = await m.quoted.download();
+  let media = await m.quoted.download(true);
   let out = Buffer.alloc(0);
   if (/webp/.test(mime)) {
     out = await webp2mp4(media);
@@ -32,7 +32,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
       "mp4"
     );
   }
-  await conn.sendFile(m.chat, out, "out.mp4", "*DONE*", m, 0, {
+  await conn.sendFile(m.chat, out.result, "out.mp4", "*DONE*", m, 0, {
     thumbnail: out,
   });
 };

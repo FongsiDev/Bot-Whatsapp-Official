@@ -1,0 +1,48 @@
+{
+  "_sessions": {
+    "BU17sxSEEOAeOUFdrlihzml6630mfdimwD+IM7MdK1gw": {
+      "registrationId": 1949336619,
+      "currentRatchet": {
+        "ephemeralKeyPair": {
+          "pubKey": "BRPb7n4xGGL0ADJ+D1ChleCvXtPB2stlRfRVg7YXlgY2",
+          "privKey": "OPptzAtEK8GCIzxJu9e9T+qFymr/JBNLPXqkW99nqE0="
+        },
+        "lastRemoteEphemeralKey": "BZywhg67Nv0OkV3vvsmIUDSJ2yatBMd/n7mo58F4moRJ",
+        "previousCounter": 0,
+        "rootKey": "s4OKKOqsHnoZIrNZBPyF2AiNz0J0S7LQ0OjzORaGLlI="
+      },
+      "indexInfo": {
+        "baseKey": "BU17sxSEEOAeOUFdrlihzml6630mfdimwD+IM7MdK1gw",
+        "baseKeyType": 1,
+        "closed": -1,
+        "used": 1681526547473,
+        "created": 1681455390918,
+        "remoteIdentityKey": "Bdb+VCqySkBA5syRAKw9PPD2AOaRJqfxu9exJulUHHos"
+      },
+      "_chains": {
+        "Bd7BVfn56Jb6JKKLIvXS6f1cuR+brZBRUZqsO4RC1jEQ": {
+          "chainKey": { "counter": 0 },
+          "chainType": 2,
+          "messageKeys": {}
+        },
+        "BZywhg67Nv0OkV3vvsmIUDSJ2yatBMd/n7mo58F4moRJ": {
+          "chainKey": {
+            "counter": 0,
+            "key": "QCFwy3Fv5ujHYrjoGqzpK+hcPofQOzcCuAA4WppgHUA="
+          },
+          "chainType": 2,
+          "messageKeys": {}
+        },
+        "BRPb7n4xGGL0ADJ+D1ChleCvXtPB2stlRfRVg7YXlgY2": {
+          "chainKey": {
+            "counter": 0,
+            "key": "1z0diFFgqLGG/+D6gPUGRvJlFOAC7QjM07IpT1wbyTk="
+          },
+          "chainType": 1,
+          "messageKeys": {}
+        }
+      }
+    }
+  },
+  "version": "v1"
+}

@@ -1026,7 +1026,7 @@ export async function handler(chatUpdate) {
       if (plugin.disabled) continue;
       const __filename = join(___dirname, name);
       if (typeof plugin.all === "function") {
-	      try {
+        try {
           await plugin.all.call(this, m, {
             chatUpdate,
             __dirname: ___dirname,
@@ -1089,7 +1089,7 @@ export async function handler(chatUpdate) {
           : [[[], new RegExp()]]
       ).find((p) => p[1]);
       if (typeof plugin.before === "function") {
-		    if (
+        if (
           await plugin.before.call(this, m, {
             match,
             conn: this,
@@ -1151,8 +1151,11 @@ export async function handler(chatUpdate) {
             return; // Except this
           if (name != "./plugins/Owners/owner-unbanuser.js" && user?.banned)
             return;
-					if (name !="./plugins/Owners/owner-mutebot.js" && global.db.data.settings[conn.user.jid]?.isBotMute) 
-						return;
+          if (
+            name != "./plugins/Owners/owner-mutebot.js" &&
+            global.db.data.settings[conn.user.jid]?.isBotMute
+          )
+            return;
         }
         if (plugin.rowner && plugin.owner && !(isROwner || isOwner)) {
           // Both Owner
@@ -1197,11 +1200,12 @@ export async function handler(chatUpdate) {
           fail("private", m, this);
           continue;
         }
+        /*
         if (plugin.register == true && _user.registered == false) {
           // Butuh daftar?
           fail("unreg", m, this);
           continue;
-        }
+        }*/
         m.isCommand = true;
         let xp = "exp" in plugin ? parseInt(plugin.exp) : 17; // XP Earning per command
         if (xp > 200) m.reply("Ngecit -_-"); // Hehehe
@@ -1275,6 +1279,7 @@ export async function handler(chatUpdate) {
             !m.fromMe &&
             m.isCommand &&
             !extra.isOwner &&
+            !extra.isPrems &&
             !m.chat.endsWith("g.us")
           ) {
             return conn.sendButton(
@@ -1333,8 +1338,10 @@ export async function handler(chatUpdate) {
           console.error(e);
           if (e) {
             let text = format(e);
-            for (let key of Object.values(global.APIKeys))
-              text = text.replace(new RegExp(key, "g"), "#HIDDEN#");
+            for (let key of Object.values(global.APIKeys)) {
+              if (key?.length)
+                text = text.replace(new RegExp(key, "g"), "#HIDDEN#");
+            }
             if (e.name)
               for (let [jid] of global.owner.filter(
                 ([number, _, isDeveloper]) => isDeveloper && number
@@ -1352,6 +1359,7 @@ export async function handler(chatUpdate) {
                     data.jid
                   );
               }
+            //console.log("Error", text);
             m.reply(text);
           }
         } finally {
@@ -1630,6 +1638,51 @@ Untuk menghapus pesan yang dikirim BOT, reply pesan dengan perintah
   } catch (e) {
     console.error(e);
   }
+}
+/*
+ Presence Update 
+*/
+export async function presenceUpdate(x) {
+  let id = x.id;
+  let nouser = Object.keys(x.presences);
+  let status = x.presences[nouser]?.lastKnownPresence;
+  let user = global.db.data.users[nouser[0]];
+  let mentionUser = [nouser[0]];
+  let pp = await conn
+    .profilePictureUrl(nouser[0], "image")
+    .catch((_) => "https://telegra.ph/file/24fa902ead26340f3df2c.png");
+  if (status == "composing" && user.afk > -1) {
+    await console.log("AFK - TICK");
+    await conn.reply(
+      id,
+      `\n${conn.getTag(
+        nouser[0]
+      )} berhenti afk, dia sedang mengetik\n\nAlasan: ${
+        user.afkReason ? user.afkReason : "No Reason"
+      }\nSelama ${(new Date() - user.afk).toTimeString()} Yang Lalu\n`,
+      null,
+      {
+        contextInfo: {
+          mentionedJid: mentionUser,
+          externalAdReply: {
+            showAdAttribution: true,
+            mediaUrl: sig,
+            mediaType: 2,
+            description: sgc,
+            title: `Hallo ${conn.getName(
+              nouser[0]
+            )}, Welcome back from your afk`,
+            body: wm,
+            thumbnail: await (await fetch(pp)).buffer(),
+            sourceUrl: sig,
+          },
+        },
+      }
+    );
+    user.afk = -1;
+    user.afkReason = "";
+  }
+  await conn.sendPresenceUpdate("available");
 }
 
 global.dfail = (type, m, conn) => {
