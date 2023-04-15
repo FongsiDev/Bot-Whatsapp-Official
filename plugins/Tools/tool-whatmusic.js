@@ -1,8 +1,8 @@
 import acrcloud from "acrcloud";
 let acr = new acrcloud({
-  host: "identify-eu-west-1.acrcloud.com",
-  access_key: "f692756eebf6326010ab8694246d80e7",
-  access_secret: "m2KQYmHdBCthmD7sOTtBExB9089TL7hiAazcUEmb",
+  host: "identify-ap-southeast-1.acrcloud.com",
+  access_key: "10634091dc79ac56a964d3f5f3700641",
+  access_secret: "G1lJlzvtKEi8k39mYxLFRbcyYHudBCFAQK7e6tdc",
 });
 
 let handler = async (m, { conn, usedPrefix, command }) => {
@@ -21,20 +21,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
       genres ? `\n*• Genres:* ${genres.map((v) => v.name).join(", ")}` : ""
     }\n`;
     txt += `*• Release Date:* ${release_date}`;
-    conn.sendMessage(
-      m.chat,
-      {
-        text: txt.trim(),
-        buttons: [
-          {
-            buttonText: { displayText: "Play Music" },
-            buttonId: `${usedPrefix}play ${title}`,
-          },
-        ],
-      },
-      { quoted: m }
-    );
-    // m.reply(txt.trim())
+    m.reply(txt.trim())
   } else throw `Reply audio/video with command ${usedPrefix + command}`;
 };
 handler.help = handler.alias = ["whatmusic"];

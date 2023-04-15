@@ -5,7 +5,7 @@ let handler = async (m, { conn }) => {
   let q = m.quoted ? m.quoted : m,
     mime = (q || q.msg).mimetype || q.mediaType || "";
   if (/image/.test(mime)) {
-    let url = await webp2png(await q.download()),
+    let url = await webp2png(await q.download(true)),
       res = await fetch(
         API("https://api.ocr.space", "/parse/imageurl", {
           apikey: "8e65f273cd88957",

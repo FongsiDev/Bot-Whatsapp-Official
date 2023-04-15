@@ -1,13 +1,1 @@
-[
-  {
-    "senderKeyId": 521505775,
-    "senderChainKey": {
-      "iteration": 18,
-      "seed": "1Lj9MdmuGtaFfssSoKUxl8iecyAmPjI3P7i1uHA99YM="
-    },
-    "senderSigningKey": {
-      "public": "BdV6dGGQ7Q9EGuwsE+K0w6aPBFD2eGfJ+8PGlh+T0lRp"
-    },
-    "senderMessageKeys": []
-  }
-]
+[{"senderKeyId":521505775,"senderChainKey":{"iteration":20,"seed":"nUlfZReOcCPp9sjElFbHXbzzWvOkq/ZDrbj6Aa/GObI="},"senderSigningKey":{"public":"BdV6dGGQ7Q9EGuwsE+K0w6aPBFD2eGfJ+8PGlh+T0lRp"},"senderMessageKeys":[]}]
