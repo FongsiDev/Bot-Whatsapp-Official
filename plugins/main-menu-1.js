@@ -38,6 +38,16 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, text, command }) => {
 
   //==============> Menu nya
   let intro = `*BOT* *BKN* _Adalah Progam komputer yang dijalankan di WhatsApp yang khusus dibuat untuk melakukan pekerjaan-pekerjaan otomatis, Bot WhatsApp dirancang sedemikian rupa sehingga dapat di gunakan dengan nyaman dan kemungkinan memiliki sedikit bug, Ada fitur dari bot WhatsApp ini tentu akan membantu anda untuk bersenang senang, DLL_`;
+  await conn.sendButton(
+    m.chat,
+    intro,
+    wm,
+    null,
+    [["Lɪsᴛ Mᴇɴᴜ", `/menu2`]],
+    m
+  );
+        
+  /*
   await conn.relayMessage(
     m.chat,
     {
@@ -64,6 +74,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, text, command }) => {
     },
     {}
   );
+  */
   /*  conn.send3ButtonDoc(
     m.chat,
     `\n\n     *『 INTROCADUTION 』*\n\n`,

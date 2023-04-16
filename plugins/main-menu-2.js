@@ -1151,6 +1151,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command }) => {
       }
     );*/
     //------------------- PAYMENT MENU
+    /*
     await conn.relayMessage(
       m.chat,
       {
@@ -1173,12 +1174,13 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command }) => {
       },
       {}
     );
+    */
 
     //------------------- 2BUTTON LOCATION
-    /*conn.sendButton(m.chat, `${ucapan()}﹗`, text.trim(), `${timeimg()}`, [
+    conn.sendButton(m.chat, `${ucapan()}﹗`, text.trim(), null, [
       ['ᴍᴇɴᴜ', `${_p}menu`],
       ['sᴘᴇᴇᴅᴛᴇsᴛ', `${_p}speedtest`]
-    ], m, {asLocation: true})*/
+    ], m, {asLocation: true})
   } catch (e) {
     conn.reply(m.chat, "Maaf, menu sedang error", m);
     throw e;
