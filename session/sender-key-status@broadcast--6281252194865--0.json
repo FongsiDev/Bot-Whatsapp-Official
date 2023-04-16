@@ -1,1 +1,46 @@
-[{"senderKeyId":591777009,"senderChainKey":{"iteration":148,"seed":"LxZGRKr3I9e6TefCqHnxNIF4wIzduxCrFXTeUJ1gfSw="},"senderSigningKey":{"public":"BZqVSQS9jp3tMu4IqcHYkFpCS3gWOal0j9hvZiAFFL9n"},"senderMessageKeys":[{},{},{}]},{"senderKeyId":591777009,"senderChainKey":{"iteration":141,"seed":"G8J5tH/9zOKdrnnGV3Fnow2lQWc70fIyiPA/FCs8HrA="},"senderSigningKey":{"public":"BZqVSQS9jp3tMu4IqcHYkFpCS3gWOal0j9hvZiAFFL9n"},"senderMessageKeys":[]},{"senderKeyId":624293794,"senderChainKey":{"iteration":19,"seed":"8xmwCDS6tOZAS9u0GVlvqZp4t3cOWPHCAadwe1ShIcY="},"senderSigningKey":{"public":"BSGHe5UGSKOKNcws/pmOTXHqyuIe0Sx6QzjLI9uHk5t0"},"senderMessageKeys":[{},{},{}]},{"senderKeyId":493411479,"senderChainKey":{"iteration":13,"seed":"lBiQoS0OrJjUb6c4gIafw4SaPTv0nJwNyq+XJef/a/E="},"senderSigningKey":{"public":"BQltdGlvnKmq5LM/vzs2KfmobIsTswATzedZe7rjvRhy"},"senderMessageKeys":[]}]
+[
+  {
+    "senderKeyId": 591777009,
+    "senderChainKey": {
+      "iteration": 148,
+      "seed": "LxZGRKr3I9e6TefCqHnxNIF4wIzduxCrFXTeUJ1gfSw="
+    },
+    "senderSigningKey": {
+      "public": "BZqVSQS9jp3tMu4IqcHYkFpCS3gWOal0j9hvZiAFFL9n"
+    },
+    "senderMessageKeys": [{}, {}, {}]
+  },
+  {
+    "senderKeyId": 591777009,
+    "senderChainKey": {
+      "iteration": 141,
+      "seed": "G8J5tH/9zOKdrnnGV3Fnow2lQWc70fIyiPA/FCs8HrA="
+    },
+    "senderSigningKey": {
+      "public": "BZqVSQS9jp3tMu4IqcHYkFpCS3gWOal0j9hvZiAFFL9n"
+    },
+    "senderMessageKeys": []
+  },
+  {
+    "senderKeyId": 624293794,
+    "senderChainKey": {
+      "iteration": 19,
+      "seed": "8xmwCDS6tOZAS9u0GVlvqZp4t3cOWPHCAadwe1ShIcY="
+    },
+    "senderSigningKey": {
+      "public": "BSGHe5UGSKOKNcws/pmOTXHqyuIe0Sx6QzjLI9uHk5t0"
+    },
+    "senderMessageKeys": [{}, {}, {}]
+  },
+  {
+    "senderKeyId": 493411479,
+    "senderChainKey": {
+      "iteration": 13,
+      "seed": "lBiQoS0OrJjUb6c4gIafw4SaPTv0nJwNyq+XJef/a/E="
+    },
+    "senderSigningKey": {
+      "public": "BQltdGlvnKmq5LM/vzs2KfmobIsTswATzedZe7rjvRhy"
+    },
+    "senderMessageKeys": []
+  }
+]

@@ -1652,6 +1652,7 @@ export async function presenceUpdate(x) {
     .profilePictureUrl(nouser[0], "image")
     .catch((_) => "https://telegra.ph/file/24fa902ead26340f3df2c.png");
   if (status == "composing" && user.afk > -1) {
+    //global.PU_Afk = true;
     await console.log("AFK - TICK");
     await conn.reply(
       id,

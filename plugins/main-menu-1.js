@@ -10,7 +10,10 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, text, command }) => {
   let mentionedJid = [m.sender];
   let ucpn = `${ucapan()}`;
   let name = conn.getName(m.sender);
-
+  let pp = await conn
+    .profilePictureUrl(m.sender)
+    .catch((_) => hwaifu.getRandom());
+  let pepe = await conn.resize(pp, 150, 150);
   //tim
   let wib = moment.tz("Asia/Jakarta").format("HH:mm:ss");
   let wibh = moment.tz("Asia/Jakarta").format("HH");
@@ -42,11 +45,31 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, text, command }) => {
     m.chat,
     intro,
     wm,
-    null,
+    Buffer.alloc(0),
     [["Lɪsᴛ Mᴇɴᴜ", `/menu2`]],
-    m
+    m,
+    {
+      mimetype: "text/rtf",
+      fileName: ucapan(),
+      pageCount: 90000,
+      fileLength: 90000,
+      seconds: 90000,
+      jpegThumbnail: pepe,
+      contextInfo: {
+        externalAdReply: {
+          showAdAttribution: true,
+          mediaUrl: sgc,
+          mediaType: 2,
+          description: "WATERMAR",
+          title: "Status Bot Menu",
+          body: name,
+          thumbnail: pepe,
+          sourceUrl: syt,
+        },
+      },
+    }
   );
-        
+
   /*
   await conn.relayMessage(
     m.chat,

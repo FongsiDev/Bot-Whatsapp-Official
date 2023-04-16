@@ -1177,10 +1177,37 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command }) => {
     */
 
     //------------------- 2BUTTON LOCATION
-    conn.sendButton(m.chat, `${ucapan()}﹗`, text.trim(), null, [
-      ['ᴍᴇɴᴜ', `${_p}menu`],
-      ['sᴘᴇᴇᴅᴛᴇsᴛ', `${_p}speedtest`]
-    ], m, {asLocation: true})
+    conn.sendButton(
+      m.chat,
+      "┅────┅─❏ *𝐃𝐀𝐒𝐇𝐁𝐎𝐀𝐑𝐃* ❏─┅────┅",
+      text.trim(),
+      Buffer.alloc(0),
+      [
+        ["ᴍᴇɴᴜ", `${_p}menu`],
+        ["sᴘᴇᴇᴅᴛᴇsᴛ", `${_p}speedtest`],
+      ],
+      m,
+      {
+        mimetype: "text/rtf",
+        fileName: ucapan(),
+        pageCount: 90000,
+        fileLength: 90000,
+        seconds: 90000,
+        jpegThumbnail: await (await fetch(bot)).buffer(),
+        contextInfo: {
+          externalAdReply: {
+            showAdAttribution: true,
+            mediaUrl: sgc,
+            mediaType: 2,
+            description: "WATERMAR",
+            title: "Status Bot Menu",
+            body: name,
+            thumbnail: await (await fetch(bot)).buffer(),
+            sourceUrl: syt,
+          },
+        },
+      }
+    );
   } catch (e) {
     conn.reply(m.chat, "Maaf, menu sedang error", m);
     throw e;

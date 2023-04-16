@@ -21,7 +21,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
       genres ? `\n*• Genres:* ${genres.map((v) => v.name).join(", ")}` : ""
     }\n`;
     txt += `*• Release Date:* ${release_date}`;
-    m.reply(txt.trim())
+    m.reply(txt.trim());
   } else throw `Reply audio/video with command ${usedPrefix + command}`;
 };
 handler.help = handler.alias = ["whatmusic"];
