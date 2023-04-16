@@ -5,5 +5,6 @@
 ## Backlist from git push
 ## node_modules
 ## tmp/*
-session.data.json
+## session.data.json
+## session/*
 .env
