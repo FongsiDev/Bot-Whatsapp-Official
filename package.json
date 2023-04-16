@@ -106,7 +106,6 @@
     "qrcode-terminal": "*",
     "request": "^2.88.2",
     "similarity": "^1.2.1",
-    "simsimi-api": "^1.0.3",
     "syntax-error": "^1.4.0",
     "terminal-image": "*",
     "translate-google-api": "^1.0.4",
