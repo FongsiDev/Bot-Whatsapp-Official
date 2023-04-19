@@ -3,8 +3,8 @@
 ## maka tinggal hapus aja file ini
 
 ## Backlist from git push
-## node_modules
-## tmp/*
-## session.data.json
+node_modules
+tmp/*
+session.data.json
 session
 .env
