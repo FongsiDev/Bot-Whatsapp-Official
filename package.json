@@ -1,6 +1,6 @@
 {
   "name": "botwa",
-  "version": "6.7.6",
+  "version": "6.7.8",
   "description": "Bot WhatsApp",
   "main": "index.js",
   "type": "module",
@@ -10,7 +10,7 @@
     "plugins": "plugins"
   },
   "scripts": {
-    "start": "node index.js --db 'https://json-server.blueckkn.repl.co' --server --autocleartmp --autoread --gconly",
+    "start": "node index.js --server --autocleartmp --autoread --gconly",
     "formatfile": "npx prettier --write .",
     "test": "node test.js",
     "test2": "nodemon index.js"
