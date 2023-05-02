@@ -1195,6 +1195,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command }) => {
         seconds: 90000,
         jpegThumbnail: await (await fetch(bot)).buffer(),
         contextInfo: {
+          mentionedJid: [m.sender],
           externalAdReply: {
             showAdAttribution: true,
             mediaUrl: sgc,
