@@ -1,6 +1,7 @@
 { pkgs }: {
     deps = [
-        pkgs.nodejs
+        pkgs.openssh_with_kerberos
+        pkgs.nodejs-16_x
         pkgs.nodePackages.typescript
         pkgs.ffmpeg
         pkgs.imagemagick

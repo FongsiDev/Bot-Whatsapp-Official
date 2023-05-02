@@ -1436,6 +1436,7 @@ export async function handler(chatUpdate) {
 export async function participantsUpdate({ id, participants, action }) {
   if (opts["self"]) return;
   // if (id in conn.chats) return // First login will spam
+  /*
   if (this.isInit) return;
   if (global.db.data == null) await loadDatabase();
   let chat = global.db.data.chats[id] || {};
@@ -1480,7 +1481,7 @@ export async function participantsUpdate({ id, participants, action }) {
               background: "https://telegra.ph/file/e0e1ee70480759e2d0ac7.jpg",
               groupname: await this.getName(id),
               membercount: groupMetadata.participants.length,
-            });
+            });*/
 
             /* conn.sendButtonDoc(id, wm, text, action == 'add' ? 'ᴡᴇʟᴄᴏᴍᴇ' : 'sᴀʏᴏɴᴀʀᴀᴀ', action === 'add' ? '.intro' : 'Aʟᴅɪ X Aɪsʏᴀʜ', fkontak, { contextInfo: { externalAdReply: { showAdAttribution: true,
     mediaUrl: 'https://instagram/b4c00t4an_s3l3b',
@@ -1491,7 +1492,7 @@ export async function participantsUpdate({ id, participants, action }) {
     thumbnail: await(await fetch(action === 'add' ? wel : lea)).buffer(),
     sourceUrl: sgc
      }}
-  })*/
+  })*//*
             let welcom = "https://telegra.ph/file/aab124271570c51f76aac.jpg";
 
             let godbye = "https://telegra.ph/file/deaf59bc3e5216eaae814.jpg";
@@ -1525,15 +1526,17 @@ export async function participantsUpdate({ id, participants, action }) {
       if (chat.detect)
         this.sendMessage(id, { text, mentions: this.parseMention(text) });
       break;
-  }
+  }*/
 }
 
 /**
  * Handler groups update
  * @param {import('@adiwajshing/baileys').BaileysEventMap<unknown>['groups.update']} groupsUpdate
  */
+
 export async function groupsUpdate(groupsUpdate) {
   if (opts["self"]) return;
+  /*
   for (const groupUpdate of groupsUpdate) {
     const id = groupUpdate.id;
     if (!id) continue;
@@ -1604,7 +1607,7 @@ export async function groupsUpdate(groupsUpdate) {
       fakes,
       adReply
     );
-  }
+  }*/
 }
 
 /**
@@ -1651,7 +1654,7 @@ export async function presenceUpdate(x) {
   let pp = await conn
     .profilePictureUrl(nouser[0], "image")
     .catch((_) => "https://telegra.ph/file/24fa902ead26340f3df2c.png");
-  if (status == "composing" && user.afk > -1) {
+  if (user?.afk && status == "composing" && user.afk > -1) {
     //global.PU_Afk = true;
     await console.log("AFK - TICK");
     await conn.reply(
