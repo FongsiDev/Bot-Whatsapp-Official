@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 3631,
+      "exp": 3713,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -51648,10 +51648,10 @@
       "lastSuccess": 1683107906147
     },
     "./plugins/Owners/owner-exec2.js": {
-      "total": 17,
-      "success": 17,
-      "last": 1683311795366,
-      "lastSuccess": 1683311795366
+      "total": 18,
+      "success": 18,
+      "last": 1683362036277,
+      "lastSuccess": 1683362036277
     },
     "./plugins/main-menu-1.js": {
       "total": 9,
@@ -51690,10 +51690,10 @@
       "lastSuccess": 1683360859714
     },
     "./plugins/Infos/test.js": {
-      "total": 4,
-      "success": 4,
-      "last": 1683360586605,
-      "lastSuccess": 1683360586605
+      "total": 5,
+      "success": 5,
+      "last": 1683361987677,
+      "lastSuccess": 1683361987677
     },
     "./plugins/Infos/info-runtime.js": {
       "total": 2,
@@ -51732,10 +51732,10 @@
       "lastSuccess": 1683358805622
     },
     "./plugins/Infos/speed.js": {
-      "total": 20,
-      "success": 20,
-      "last": 1683360719392,
-      "lastSuccess": 1683360719392
+      "total": 21,
+      "success": 21,
+      "last": 1683361975685,
+      "lastSuccess": 1683361975685
     },
     "./plugins/Exp-Info/exp-daftar.js": {
       "total": 2,
