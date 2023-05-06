@@ -1436,7 +1436,6 @@ export async function handler(chatUpdate) {
 export async function participantsUpdate({ id, participants, action }) {
   if (opts["self"]) return;
   // if (id in conn.chats) return // First login will spam
-  /*
   if (this.isInit) return;
   if (global.db.data == null) await loadDatabase();
   let chat = global.db.data.chats[id] || {};
@@ -1468,31 +1467,57 @@ export async function participantsUpdate({ id, participants, action }) {
                     )
                 : chat.sBye || this.bye || conn.bye || "Bye @user"
             ).replace(/@user/g, "@" + user.split`@`[0]);
-            let wel = API("males", "/welcome2", {
-              profile: pp,
-              username: await this.getName(user),
-              background: "https://telegra.ph/file/e0e1ee70480759e2d0ac7.jpg",
-              groupname: await this.getName(id),
-              membercount: groupMetadata.participants.length,
-            });
-            let lea = API("males", "/goodbye2", {
-              profile: pp,
-              username: await this.getName(user),
-              background: "https://telegra.ph/file/e0e1ee70480759e2d0ac7.jpg",
-              groupname: await this.getName(id),
-              membercount: groupMetadata.participants.length,
-            });*/
+            let wel = API(
+              "https://39f7d1cb-8f2d-4f1f-98f5-6463c6881656.id.repl.co",
+              "/",
+              {
+                username: await this.getName(user),
+                bannerURL: "https://telegra.ph/file/e0e1ee70480759e2d0ac7.jpg",
+                defaultAvatarURL: pp,
+                discriminator: m.sender,
+                createdTimestamp: Date.now(),
+                bot: false,
+                customTag: "Welcome",
+              }
+            );
+            let lea = API(
+              "https://39f7d1cb-8f2d-4f1f-98f5-6463c6881656.id.repl.co",
+              "/",
+              {
+                username: await this.getName(user),
+                bannerURL: "https://telegra.ph/file/e0e1ee70480759e2d0ac7.jpg",
+                defaultAvatarURL: pp,
+                discriminator: m.sender,
+                createdTimestamp: Date.now(),
+                bot: false,
+                customTag: "GoodBye",
+              }
+            );
 
-            /* conn.sendButtonDoc(id, wm, text, action == 'add' ? 'ᴡᴇʟᴄᴏᴍᴇ' : 'sᴀʏᴏɴᴀʀᴀᴀ', action === 'add' ? '.intro' : 'Aʟᴅɪ X Aɪsʏᴀʜ', fkontak, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: 'https://instagram/b4c00t4an_s3l3b',
-    mediaType: 2, 
-    description: sgc,
-    title: 'Hᴀʟᴏ Nɢᴀʙ',
-    body: wm,
-    thumbnail: await(await fetch(action === 'add' ? wel : lea)).buffer(),
-    sourceUrl: sgc
-     }}
-  })*//*
+            conn.sendButtonDoc(
+              id,
+              wm,
+              text,
+              action == "add" ? "ᴡᴇʟᴄᴏᴍᴇ" : "sᴀʏᴏɴᴀʀᴀᴀ",
+              action === "add" ? ".intro" : "Aʟᴅɪ X Aɪsʏᴀʜ",
+              fkontak,
+              {
+                contextInfo: {
+                  externalAdReply: {
+                    showAdAttribution: true,
+                    mediaUrl: "https://instagram/b4c00t4an_s3l3b",
+                    mediaType: 2,
+                    description: sgc,
+                    title: "Hᴀʟᴏ Nɢᴀʙ",
+                    body: wm,
+                    thumbnail: await (
+                      await fetch(action === "add" ? wel : lea)
+                    ).buffer(),
+                    sourceUrl: sgc,
+                  },
+                },
+              }
+            );
             let welcom = "https://telegra.ph/file/aab124271570c51f76aac.jpg";
 
             let godbye = "https://telegra.ph/file/deaf59bc3e5216eaae814.jpg";
@@ -1508,6 +1533,7 @@ export async function participantsUpdate({ id, participants, action }) {
           }
         }
       }
+      /*
       break;
     case "promote":
       text =
@@ -1524,9 +1550,9 @@ export async function participantsUpdate({ id, participants, action }) {
           "@user ```is no longer Admin```";
       text = text.replace("@user", "@" + participants[0].split("@")[0]);
       if (chat.detect)
-        this.sendMessage(id, { text, mentions: this.parseMention(text) });
+        this.sendMessage(id, { text, mentions: this.parseMention(text) });*/
       break;
-  }*/
+  }
 }
 
 /**
