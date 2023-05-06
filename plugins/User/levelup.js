@@ -40,13 +40,8 @@ Kurang *${max - user.exp}* lagi! ✨
     let image = await new knights.Up()
       .setAvatar(hwaifu.getRandom())
       .toAttachment();
-    let data = image.toBuffer();
-    try {
-      let img = await levelup(teks, user.level);
-      conn.sendButton(m.chat, str, botdate, img, [["INVENTORY", ".inv"]], m);
-    } catch (e) {
-      conn.sendButton(m.chat, str, botdate, data, [["INVENTORY", ".inv"]], m);
-    }
+    let data = await image.toBuffer();
+    conn.sendButton(m.chat, str, botdate, data, [["INVENTORY", ".inv"]], m);
   }
 };
 
