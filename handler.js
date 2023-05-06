@@ -1453,7 +1453,7 @@ export async function participantsUpdate({ id, participants, action }) {
           } catch (e) {
           } finally {
             text = (
-              action === "add"
+              action == "add"
                 ? (
                     chat.sWelcome ||
                     this.welcome ||
@@ -1474,7 +1474,7 @@ export async function participantsUpdate({ id, participants, action }) {
                 username: await this.getName(user),
                 bannerURL: "https://telegra.ph/file/e0e1ee70480759e2d0ac7.jpg",
                 defaultAvatarURL: pp,
-                discriminator: m.sender,
+                discriminator: 10,
                 createdTimestamp: Date.now(),
                 bot: false,
                 customTag: "Welcome",
@@ -1487,49 +1487,31 @@ export async function participantsUpdate({ id, participants, action }) {
                 username: await this.getName(user),
                 bannerURL: "https://telegra.ph/file/e0e1ee70480759e2d0ac7.jpg",
                 defaultAvatarURL: pp,
-                discriminator: m.sender,
+                discriminator: 10,
                 createdTimestamp: Date.now(),
                 bot: false,
                 customTag: "GoodBye",
               }
             );
-
-            conn.sendButtonDoc(
-              id,
-              wm,
-              text,
-              action == "add" ? "ᴡᴇʟᴄᴏᴍᴇ" : "sᴀʏᴏɴᴀʀᴀᴀ",
-              action === "add" ? ".intro" : "Aʟᴅɪ X Aɪsʏᴀʜ",
-              fkontak,
-              {
-                contextInfo: {
-                  externalAdReply: {
-                    showAdAttribution: true,
-                    mediaUrl: "https://instagram/b4c00t4an_s3l3b",
-                    mediaType: 2,
-                    description: sgc,
-                    title: "Hᴀʟᴏ Nɢᴀʙ",
-                    body: wm,
-                    thumbnail: await (
-                      await fetch(action === "add" ? wel : lea)
-                    ).buffer(),
-                    sourceUrl: sgc,
-                  },
+            conn.reply(id, text, null, {
+              contextInfo: {
+                mentionedJid: [user],
+                externalAdReply: {
+                  showAdAttribution: true,
+                  renderLargerThumbnail: true,
+                  mediaType: 1,
+                  previewType: 0,
+                  description: sgc,
+                  title: "Hᴀʟᴏ Nɢᴀʙ",
+                  body: wm,
+                  thumbnail: await (
+                    await fetch(action == "add" ? wel : lea)
+                  ).buffer(),
+                  thumbnailUrl: await (action == "add" ? wel : lea),
+                  sourceUrl: sgc,
                 },
-              }
-            );
-            let welcom = "https://telegra.ph/file/aab124271570c51f76aac.jpg";
-
-            let godbye = "https://telegra.ph/file/deaf59bc3e5216eaae814.jpg";
-            conn.sendButtonImg(
-              id,
-              await (await fetch(action === "add" ? wel : lea)).buffer(),
-              "Group Messege",
-              text,
-              action == "add" ? "ᴡᴇʟᴄᴏᴍᴇ" : "sᴀʏᴏɴᴀʀᴀᴀ",
-              action === "add" ? ".intro" : "Bot-BOT",
-              fkontak
-            );
+              },
+            });
           }
         }
       }
@@ -1554,7 +1536,6 @@ export async function participantsUpdate({ id, participants, action }) {
       break;
   }
 }
-
 /**
  * Handler groups update
  * @param {import('@adiwajshing/baileys').BaileysEventMap<unknown>['groups.update']} groupsUpdate
