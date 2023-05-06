@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 6135,
+      "exp": 6269,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -15682,7 +15682,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 4923,
+      "exp": 4949,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -22723,7 +22723,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 2358,
+      "exp": 2388,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -23140,7 +23140,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 414,
+      "exp": 415,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -23372,7 +23372,7 @@
       "rhinoceroslastfeed": 0,
       "rock": 0,
       "roket": 0,
-      "role": "Newbie ㋡",
+      "role": "Bronze I",
       "roti": 0,
       "rtrofi": "perunggu",
       "rubah": 0,
@@ -54977,10 +54977,10 @@
   },
   "stats": {
     "./plugins/Owners/owner-exec.js": {
-      "total": 211,
-      "success": 211,
-      "last": 1683382318059,
-      "lastSuccess": 1683382318059
+      "total": 213,
+      "success": 213,
+      "last": 1683389445868,
+      "lastSuccess": 1683389445868
     },
     "./plugins/Infos/info-banlist.js": {
       "total": 3,
@@ -54989,10 +54989,10 @@
       "lastSuccess": 1683107906147
     },
     "./plugins/Owners/owner-exec2.js": {
-      "total": 29,
-      "success": 29,
-      "last": 1683387998436,
-      "lastSuccess": 1683387998436
+      "total": 32,
+      "success": 32,
+      "last": 1683388621585,
+      "lastSuccess": 1683388621585
     },
     "./plugins/main-menu-1.js": {
       "total": 13,
@@ -55025,10 +55025,10 @@
       "lastSuccess": 1683387091303
     },
     "./plugins/_Function/_autoreact.js": {
-      "total": 124,
-      "success": 124,
-      "last": 1683385175469,
-      "lastSuccess": 1683385175469
+      "total": 125,
+      "success": 125,
+      "last": 1683389463158,
+      "lastSuccess": 1683389463158
     },
     "./plugins/Infos/test.js": {
       "total": 6,

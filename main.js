@@ -140,9 +140,12 @@ global.loadDatabase = async function loadDatabase() {
 };
 loadDatabase();
 
-global.authFile = `${opts._[0] || "session.data.json"}`;
-const { state, saveState } = store.useSingleFileAuthState(global.authFile);
-/*const { state, saveCreds } = await useMultiFileAuthState(`./${authFile}`);*/
+global.authFile = `${
+  opts._[0] || opts["multi"] ? "session" : "session.data.json"
+}`;
+const { state, saveState, saveCreds } = opts["multi"]
+  ? await useMultiFileAuthState(`./${authFile}`)
+  : store.useSingleFileAuthState(global.authFile);
 const logger = pino({
   transport: {
     target: "pino-pretty",
@@ -155,6 +158,10 @@ const logger = pino({
   },
 }).child({ class: "baileys" });
 const { version, isLatest } = await fetchLatestBaileysVersion();
+
+console.log(
+  `Type State: ${opts["multi"] ? "MultiFileAuth" : "SingleFileAuth"}`
+);
 
 const connectionOptions = {
   version,
@@ -359,7 +366,7 @@ global.reloadHandler = async function (restatConn) {
     conn.ev.off("message.delete", conn.onDelete);
     conn.ev.off("presence.update", conn.presenceUpdate);
     conn.ev.off("connection.update", conn.connectionUpdate);
-    conn.ev.off("creds.update", conn.credsUpdate);
+    if (!opts["multi"]) conn.ev.off("creds.update", conn.credsUpdate);
   }
 
   conn.welcome =
@@ -384,7 +391,7 @@ global.reloadHandler = async function (restatConn) {
   conn.onDelete = handler.deleteUpdate.bind(global.conn);
   conn.presenceUpdate = handler.presenceUpdate.bind(global.conn);
   conn.connectionUpdate = connectionUpdate.bind(global.conn);
-  conn.credsUpdate = saveState.bind(global.conn, true);
+  if (!opts["multi"]) conn.credsUpdate = saveState.bind(global.conn, true);
 
   conn.ev.on("messages.upsert", conn.handler);
   conn.ev.on("group-participants.update", conn.participantsUpdate);
@@ -392,10 +399,11 @@ global.reloadHandler = async function (restatConn) {
   conn.ev.on("message.delete", conn.onDelete);
   conn.ev.on("connection.update", conn.connectionUpdate);
   conn.ev.on("presence.update", conn.presenceUpdate);
-  conn.ev.on("creds.update", conn.credsUpdate);
-  /*conn.ev.on("creds.update", async () => {
-    await saveCreds();
-  });*/
+  opts["multi"]
+    ? conn.ev.on("creds.update", async () => {
+        await saveCreds();
+      })
+    : conn.ev.on("creds.update", conn.credsUpdate);
   isInit = false;
   return true;
 };
