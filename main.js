@@ -140,9 +140,9 @@ global.loadDatabase = async function loadDatabase() {
 };
 loadDatabase();
 
-global.authFile = `${opts._[0] || "session"}`;
-//const { state, saveState } = store.useSingleFileAuthState(global.authFile);
-const { state, saveCreds } = await useMultiFileAuthState(`./${authFile}`);
+global.authFile = `${opts._[0] || "session.data.json"}`;
+const { state, saveState } = store.useSingleFileAuthState(global.authFile);
+/*const { state, saveCreds } = await useMultiFileAuthState(`./${authFile}`);*/
 const logger = pino({
   transport: {
     target: "pino-pretty",
@@ -384,7 +384,7 @@ global.reloadHandler = async function (restatConn) {
   conn.onDelete = handler.deleteUpdate.bind(global.conn);
   conn.presenceUpdate = handler.presenceUpdate.bind(global.conn);
   conn.connectionUpdate = connectionUpdate.bind(global.conn);
-  //conn.credsUpdate = saveState.bind(global.conn, true);
+  conn.credsUpdate = saveState.bind(global.conn, true);
 
   conn.ev.on("messages.upsert", conn.handler);
   conn.ev.on("group-participants.update", conn.participantsUpdate);
@@ -392,10 +392,10 @@ global.reloadHandler = async function (restatConn) {
   conn.ev.on("message.delete", conn.onDelete);
   conn.ev.on("connection.update", conn.connectionUpdate);
   conn.ev.on("presence.update", conn.presenceUpdate);
-  //conn.ev.on("creds.update", conn.credsUpdate);
-  conn.ev.on("creds.update", async () => {
+  conn.ev.on("creds.update", conn.credsUpdate);
+  /*conn.ev.on("creds.update", async () => {
     await saveCreds();
-  });
+  });*/
   isInit = false;
   return true;
 };
