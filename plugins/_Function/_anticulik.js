@@ -2,15 +2,32 @@ import fs from "fs";
 import fetch from "node-fetch";
 import moment from "moment-timezone";
 export async function all(m) {
-  if (m.isBlocked) return;
   // ketika ada yang invite/kirim link grup di chat pribadi
+  if (!m.messageStubType || !m.isGroup) {
+    if (m.messageStubType == 20) {
+      let group = m.chat;
+      let edtr = `@${m.sender.split`@`[0]}`;
+      await this.sendMessage(
+        group,
+        {
+          text: `Hey ${edtr}, Anda mencoba untuk menambahkan saya ke group ini tetapi maaf.\nBot akan keluar karena tidak ada izin dari pihak owner!\n\nSilahkan chat owner saya https://wa.me/${nomorown} untuk memberi izin.\n\nNOTE: JANGAN NYOLONG NAPA 🗿`,
+          mentions: [m.sender],
+        },
+        { quoted: fkontak }
+      ).then(async (x) => {
+        await m.reply("Sayonara , , ! (≧ω≦)ゞ", m.chat);
+        await conn.groupLeave(group);
+      });
+    }
+  }
   if (
     (m.mtype === "groupInviteMessage" ||
       m.text.startsWith("Undangan untuk bergabung") ||
       m.text.startsWith("Invitation to join") ||
       m.text.startsWith("Buka tautan ini")) &&
     !m.isBaileys &&
-    !m.isGroup
+    !m.isGroup &&
+    !m.isBlocked
   ) {
     this.sendButton(
       m.chat,
