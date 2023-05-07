@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 12083,
+      "exp": 12206,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -2336,7 +2336,7 @@
       "rhinoceroslastfeed": 0,
       "rock": 0,
       "roket": 0,
-      "role": "Bronze II",
+      "role": "Beginner Grade 4 ⚊⁴",
       "roti": 0,
       "rtrofi": "perunggu",
       "rubah": 0,
@@ -60784,10 +60784,10 @@
       "lastSuccess": 1683107906147
     },
     "./plugins/Owners/owner-exec2.js": {
-      "total": 54,
-      "success": 54,
-      "last": 1683476408914,
-      "lastSuccess": 1683476408914
+      "total": 56,
+      "success": 56,
+      "last": 1683502093528,
+      "lastSuccess": 1683502093528
     },
     "./plugins/main-menu-1.js": {
       "total": 27,
@@ -60802,10 +60802,10 @@
       "lastSuccess": 1683459101521
     },
     "./plugins/Owners/owner-fiturplus.js": {
-      "total": 4,
-      "success": 4,
-      "last": 1683477161079,
-      "lastSuccess": 1683477161079
+      "total": 5,
+      "success": 5,
+      "last": 1683502521376,
+      "lastSuccess": 1683502521376
     },
     "./plugins/User/levelup.js": {
       "total": 13,
@@ -61172,6 +61172,12 @@
       "success": 3,
       "last": 1683501929682,
       "lastSuccess": 1683501929682
+    },
+    "./plugins/Owners/owner-monitoring.js": {
+      "total": 3,
+      "success": 3,
+      "last": 1683502588446,
+      "lastSuccess": 1683502588446
     }
   },
   "msgs": {},
