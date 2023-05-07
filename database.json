@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 11949,
+      "exp": 12083,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -61166,6 +61166,12 @@
       "success": 4,
       "last": 1683477232088,
       "lastSuccess": 1683477232088
+    },
+    "./plugins/Animes/jadi-anime.js": {
+      "total": 6,
+      "success": 3,
+      "last": 1683501929682,
+      "lastSuccess": 1683501929682
     }
   },
   "msgs": {},
