@@ -1,5 +1,4 @@
 import fetch from "node-fetch";
-
 let handler = async (m, { conn, usedPrefix, args }) => {
   let text = `— *S H O R T E D  U R L* —`;
   let caption = "Silahkan Pilih Type Urlnya kak";
@@ -56,6 +55,27 @@ let handler = async (m, { conn, usedPrefix, args }) => {
   text += `\nIS.GD: ${isgd}`;
   //------------
 
+  //CuttLy
+  let cuttly = await (
+    await fetch("https://cutt.ly/scripts/shortenUrl.php", {
+      headers: {
+        accept: "*/*",
+        "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+        "sec-ch-ua": '"Chromium";v="107", "Not=A?Brand";v="24"',
+        "sec-ch-ua-mobile": "?1",
+        "sec-ch-ua-platform": '"Android"',
+        "x-requested-with": "XMLHttpRequest",
+      },
+      referrer: "https://cutt.ly/",
+      referrerPolicy: "same-origin",
+      body: `url=${args[0]}&domain=0`,
+      method: "POST",
+      mode: "cors",
+      credentials: "omit",
+    })
+  ).text();
+  text += `\nCutt.LY: ${cuttly}`;
+  //------------
   m.reply(text);
 };
 handler.help = ["short <url>"];
