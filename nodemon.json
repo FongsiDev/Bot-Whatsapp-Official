@@ -1,0 +1,3 @@
+{
+  "watch": ["lib/*.js", ".env", ".env.*", "main.js", "handler.js"]
+}
