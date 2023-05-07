@@ -55,7 +55,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     console.error(e);
     if (!stiker) stiker = e;
   } finally {
-    if (stiker) conn.sendFile(m.chat, stiker, "sticker.webp", m);
+    if (stiker) m.reply(stiker);
     else throw "Conversion failed";
   }
 };
