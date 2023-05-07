@@ -1493,25 +1493,35 @@ export async function participantsUpdate({ id, participants, action }) {
                 customTag: "GoodBye",
               }
             );
-            conn.reply(id, text, null, {
-              contextInfo: {
-                mentionedJid: [user],
-                externalAdReply: {
-                  showAdAttribution: true,
-                  renderLargerThumbnail: true,
-                  mediaType: 1,
-                  previewType: 0,
-                  description: sgc,
-                  title: "Hᴀʟᴏ Nɢᴀʙ",
-                  body: wm,
-                  thumbnail: await (
-                    await fetch(action == "add" ? wel : lea)
-                  ).buffer(),
-                  thumbnailUrl: await (action == "add" ? wel : lea),
-                  sourceUrl: sgc,
+            conn.sendButton(
+              id,
+              text,
+              botdate,
+              action == "add" ? wel : lea,
+              [["Hello 🤗👋", ".intro"]],
+              null,
+              {
+                contextInfo: {
+                  mentionedJid: [user],
+                  externalAdReply: {
+                    showAdAttribution: true,
+                    renderLargerThumbnail: true,
+                    mediaType: 1,
+                    previewType: 0,
+                    description: sgc,
+                    title: "Hᴀʟᴏ Nɢᴀʙ",
+                    body: wm,
+                    thumbnail: await (
+                      await conn.getFile(
+                        pickRandom(flaaa2) + "Welcome to my group"
+                      )
+                    ).data,
+                    thumbnailUrl: pickRandom(flaaa2) + "Welcome to my group",
+                    sourceUrl: sgc,
+                  },
                 },
-              },
-            });
+              }
+            );
           }
         }
       }
