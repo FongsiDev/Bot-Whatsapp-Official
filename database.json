@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 11788,
+      "exp": 11949,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -2336,7 +2336,7 @@
       "rhinoceroslastfeed": 0,
       "rock": 0,
       "roket": 0,
-      "role": "Beginner Grade 4 ⚊⁴",
+      "role": "Bronze II",
       "roti": 0,
       "rtrofi": "perunggu",
       "rubah": 0,
@@ -15682,7 +15682,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 5312,
+      "exp": 5333,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -15914,7 +15914,7 @@
       "rhinoceroslastfeed": 0,
       "rock": 0,
       "roket": 0,
-      "role": "Newbie ㋡",
+      "role": "Bronze I",
       "roti": 0,
       "rtrofi": "perunggu",
       "rubah": 0,
@@ -60784,16 +60784,16 @@
       "lastSuccess": 1683107906147
     },
     "./plugins/Owners/owner-exec2.js": {
-      "total": 52,
-      "success": 52,
-      "last": 1683474011291,
-      "lastSuccess": 1683474011291
+      "total": 54,
+      "success": 54,
+      "last": 1683476408914,
+      "lastSuccess": 1683476408914
     },
     "./plugins/main-menu-1.js": {
-      "total": 25,
-      "success": 25,
-      "last": 1683469679853,
-      "lastSuccess": 1683469679853
+      "total": 27,
+      "success": 27,
+      "last": 1683477223804,
+      "lastSuccess": 1683477223804
     },
     "./plugins/main-menu-2.js": {
       "total": 8,
@@ -60802,10 +60802,10 @@
       "lastSuccess": 1683459101521
     },
     "./plugins/Owners/owner-fiturplus.js": {
-      "total": 3,
-      "success": 3,
-      "last": 1683044110405,
-      "lastSuccess": 1683044110405
+      "total": 4,
+      "success": 4,
+      "last": 1683477161079,
+      "lastSuccess": 1683477161079
     },
     "./plugins/User/levelup.js": {
       "total": 13,
@@ -61006,10 +61006,10 @@
       "lastSuccess": 1683374491553
     },
     "./plugins/Owners/owner-banuser.js": {
-      "total": 7,
-      "success": 7,
-      "last": 1683458999316,
-      "lastSuccess": 1683458999316
+      "total": 8,
+      "success": 8,
+      "last": 1683476838271,
+      "lastSuccess": 1683476838271
     },
     "./plugins/Owners/owner-listprem.js": {
       "total": 5,
@@ -61154,6 +61154,18 @@
       "success": 2,
       "last": 1683473981875,
       "lastSuccess": 1683473981875
+    },
+    "./plugins/Owners/delete-pesan-orang-lain.js": {
+      "total": 2,
+      "success": 2,
+      "last": 1683476700789,
+      "lastSuccess": 1683476700789
+    },
+    "./plugins/Group-Tools/group-poll.js": {
+      "total": 4,
+      "success": 4,
+      "last": 1683477232088,
+      "lastSuccess": 1683477232088
     }
   },
   "msgs": {},

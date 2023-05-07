@@ -1,31 +1,29 @@
-let handler = async (m, { conn, text, usedPrefix, command }) => {
-  if (!text)
-    throw `Gunakan perintah *${usedPrefix}${command}* <Pertanyaan>|<Opsi1>|<Opsi2>|<Opsi3>...`;
+let handler = async (m, { conn, text, args, usedPrefix, command }) => {
+  if (!args[0])
+    throw `Tidak ada teks untuk survei \n\nExample : \n*${
+      usedPrefix + command
+    }* Pesan  |Hai|Kak`;
+  if (!text.includes("|"))
+    throw `Pisahkan polling dengan tanda *|* \n\nExample : \n*${
+      usedPrefix + command
+    }* survei saya|n  |Apa|kabar|baik`;
 
-  let options = text.split("|");
-  let question = options.shift();
-  if (options.length < 2)
-    throw "Minimal 2 opsi dibutuhkan untuk membuat polling!";
-  if (options.length > 10)
-    throw "Maksimal 10 opsi dibutuhkan untuk membuat polling!";
-
-  let name = conn.getName(m.sender);
-  let pollOptions = options.map((option) => {
-    return { text: option, voter: [] };
-  });
-
-  await conn.sendPoll(
+  let name = await conn.getName(m.sender);
+  let a = [];
+  let b = text.split("|");
+  for (let c = 1 || 0; c < b.length; c++) {
+    a.push([b[c]]);
+  }
+  return conn.sendPoll(
     m.chat,
-    `📊 *POLL* 📊\n\n👤 *Pembuat* : ${name}\n\n🗣️ *Pertanyaan* : ${question}`,
-    pollOptions,
+    `📋 *Survei diminta oleh:* ${name}\n\n*Pesan:* ${text.split("|")[0]}`,
+    a,
     m
   );
 };
-
-handler.help = ["poll <Pertanyaan>|<Opsi1>|<Opsi2>|<Opsi3>..."];
+handler.help = ["poll <halo|apa|kabar>"];
 handler.tags = ["group"];
-handler.command = /^(poll|polling)$/i;
+handler.command = ["poll", "polling"];
 handler.group = true;
-handler.admin = true;
 
 export default handler;
