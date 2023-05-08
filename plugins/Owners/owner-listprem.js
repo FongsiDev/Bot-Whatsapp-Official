@@ -33,6 +33,7 @@ let handler = async (m, { conn, args }) => {
   .slice(0, len)
   .map(
     ({ jid, name, premiumTime, registered }, i) => {
+     if(jid == m.sender) return;
      listuser += `\n┌✦ ${registered ? name : conn.getName(jid)}\n┊• wa.me/${
         jid.split`@`[0]
       }\n${
@@ -48,7 +49,7 @@ let handler = async (m, { conn, args }) => {
 ┊• *Name:* ${conn.getTag(m.sender)}
 ${
   prem
-    ? `${clockString(premiumTime - new Date() * 1)}`
+    ? `${clockString(premTime - new Date() * 1)}`
     : "┊• *PremiumTime:* Expired 🚫"
 }
 ┗━═┅═━––––––๑

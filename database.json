@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 13450,
+      "exp": 13624,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -16937,7 +16937,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 1616,
+      "exp": 1621,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -19000,7 +19000,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 4,
+      "exp": 13,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -19184,7 +19184,7 @@
       "mythic": 0,
       "naga": 0,
       "nagalastclaim": 0,
-      "name": "Cute Cat",
+      "name": "💜🩷🩵Luna🩵🩷💜",
       "net": 0,
       "nila": 0,
       "nilabakar": 0,
@@ -19277,7 +19277,7 @@
       "sworddurability": 0,
       "tigame": 50,
       "tiketcoin": 0,
-      "title": "",
+      "title": 0,
       "tomat": 0,
       "tprem": 0,
       "trash": 0,
@@ -19300,7 +19300,32 @@
       "wolflastfeed": 0,
       "wood": 0,
       "wortel": 0,
-      "limitjoin": 0
+      "limitjoin": 0,
+      "kingdom": true,
+      "jid": "5511997486613@s.whatsapp.net",
+      "premiumDate": -1,
+      "catexp": 0,
+      "enchant": 0,
+      "glimit": 20,
+      "glory": 0,
+      "healthmonster": 0,
+      "kyubiexp": 0,
+      "kyubilastfeed": 0,
+      "lastbansos": 0,
+      "lastcodereg": 0,
+      "lastgift": 0,
+      "lastIstigfar": 0,
+      "lastrampok": 0,
+      "lastsda": 0,
+      "lastwar": 0,
+      "pancing": 0,
+      "pertambangan": 0,
+      "pertanian": 0,
+      "petFood": 0,
+      "psenjata": 0,
+      "psepick": 0,
+      "robo": 0,
+      "roboxp": 0
     },
     "553899639926@s.whatsapp.net": {
       "afk": -1,
@@ -20644,7 +20669,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 1982,
+      "exp": 1991,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -20968,7 +20993,8 @@
       "psenjata": 0,
       "psepick": 0,
       "robo": 0,
-      "roboxp": 0
+      "roboxp": 0,
+      "jid": "6285893472199@s.whatsapp.net"
     },
     "6282216850223@s.whatsapp.net": {
       "afk": -1,
@@ -23146,7 +23172,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 683,
+      "exp": 712,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -23330,7 +23356,7 @@
       "mythic": 0,
       "naga": 0,
       "nagalastclaim": 0,
-      "name": "Raysha Nazneen💖💗",
+      "name": "Raysha N💖💗",
       "net": 0,
       "nila": 0,
       "nilabakar": 0,
@@ -23470,7 +23496,8 @@
       "psenjata": 0,
       "psepick": 0,
       "robo": 0,
-      "roboxp": 0
+      "roboxp": 0,
+      "jid": "6287777386499@s.whatsapp.net"
     },
     "6285771710723@s.whatsapp.net": {
       "afk": -1,
@@ -27293,7 +27320,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 600,
+      "exp": 616,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -27617,7 +27644,8 @@
       "psenjata": 0,
       "psepick": 0,
       "robo": 0,
-      "roboxp": 0
+      "roboxp": 0,
+      "jid": "6281515439064@s.whatsapp.net"
     },
     "628126529646@s.whatsapp.net": {
       "afk": -1,
@@ -35587,7 +35615,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 286,
+      "exp": 322,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -61205,16 +61233,16 @@
       "lastSuccess": 1683107906147
     },
     "./plugins/Owners/owner-exec2.js": {
-      "total": 61,
-      "success": 61,
-      "last": 1683554289088,
-      "lastSuccess": 1683554289088
+      "total": 63,
+      "success": 63,
+      "last": 1683559145118,
+      "lastSuccess": 1683559145118
     },
     "./plugins/main-menu-1.js": {
-      "total": 27,
-      "success": 27,
-      "last": 1683477223804,
-      "lastSuccess": 1683477223804
+      "total": 28,
+      "success": 28,
+      "last": 1683564897740,
+      "lastSuccess": 1683564897740
     },
     "./plugins/main-menu-2.js": {
       "total": 8,
@@ -61241,10 +61269,10 @@
       "lastSuccess": 1683553226280
     },
     "./plugins/_Function/_autoreact.js": {
-      "total": 191,
-      "success": 191,
-      "last": 1683555682493,
-      "lastSuccess": 1683555682493
+      "total": 194,
+      "success": 194,
+      "last": 1683561526852,
+      "lastSuccess": 1683561526852
     },
     "./plugins/Infos/test.js": {
       "total": 6,
@@ -61433,10 +61461,10 @@
       "lastSuccess": 1683476838271
     },
     "./plugins/Owners/owner-listprem.js": {
-      "total": 18,
-      "success": 18,
-      "last": 1683556262925,
-      "lastSuccess": 1683556262925
+      "total": 21,
+      "success": 20,
+      "last": 1683565147137,
+      "lastSuccess": 1683565147137
     },
     "./plugins/RPG_Games/rpg-weekly.js": {
       "total": 2,
@@ -61601,10 +61629,10 @@
       "lastSuccess": 1683502588446
     },
     "./plugins/Owners/owner-listban.js": {
-      "total": 7,
-      "success": 4,
-      "last": 1683554263634,
-      "lastSuccess": 1683554263634
+      "total": 8,
+      "success": 5,
+      "last": 1683564901798,
+      "lastSuccess": 1683564901798
     },
     "./plugins/Funs/fun-apakah2.js": {
       "total": 2,
