@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 12553,
+            "exp": 12793,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -16426,7 +16426,8 @@
             "psenjata": 0,
             "psepick": 0,
             "robo": 0,
-            "roboxp": 0
+            "roboxp": 0,
+            "jid": "6289518887904@s.whatsapp.net"
         },
         "6282138188516@s.whatsapp.net": {
             "afk": -1,
@@ -30116,7 +30117,8 @@
             "psenjata": 0,
             "psepick": 0,
             "robo": 0,
-            "roboxp": 0
+            "roboxp": 0,
+            "jid": "6285754202785@s.whatsapp.net"
         },
         "62895384468000@s.whatsapp.net": {
             "afk": -1,
@@ -33914,7 +33916,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 152,
+            "exp": 220,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -34238,7 +34240,8 @@
             "psenjata": 0,
             "psepick": 0,
             "robo": 0,
-            "roboxp": 0
+            "roboxp": 0,
+            "jid": "62895705352299@s.whatsapp.net"
         },
         "6281293330182@s.whatsapp.net": {
             "afk": -1,
@@ -53811,7 +53814,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 484,
+            "exp": 501,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -54135,7 +54138,8 @@
             "psenjata": 0,
             "psepick": 0,
             "robo": 0,
-            "roboxp": 0
+            "roboxp": 0,
+            "jid": "48732965233@s.whatsapp.net"
         },
         "6281348019500@s.whatsapp.net": {
             "afk": -1,
@@ -60782,10 +60786,10 @@
     },
     "stats": {
         "./plugins/Owners/owner-exec.js": {
-            "total": 259,
-            "success": 259,
-            "last": 1683553545889,
-            "lastSuccess": 1683553545889
+            "total": 265,
+            "success": 265,
+            "last": 1683553849620,
+            "lastSuccess": 1683553849620
         },
         "./plugins/Infos/info-banlist.js": {
             "total": 3,
@@ -60794,10 +60798,10 @@
             "lastSuccess": 1683107906147
         },
         "./plugins/Owners/owner-exec2.js": {
-            "total": 58,
-            "success": 58,
-            "last": 1683502943649,
-            "lastSuccess": 1683502943649
+            "total": 60,
+            "success": 60,
+            "last": 1683554059417,
+            "lastSuccess": 1683554059417
         },
         "./plugins/main-menu-1.js": {
             "total": 27,
@@ -60830,10 +60834,10 @@
             "lastSuccess": 1683553226280
         },
         "./plugins/_Function/_autoreact.js": {
-            "total": 189,
-            "success": 189,
-            "last": 1683474423146,
-            "lastSuccess": 1683474423146
+            "total": 190,
+            "success": 190,
+            "last": 1683553764031,
+            "lastSuccess": 1683553764031
         },
         "./plugins/Infos/test.js": {
             "total": 6,
@@ -60872,10 +60876,10 @@
             "lastSuccess": 1683553247354
         },
         "./plugins/Sticker-Tools/sticker-sticker.js": {
-            "total": 11,
-            "success": 9,
-            "last": 1683474220497,
-            "lastSuccess": 1683474220497
+            "total": 13,
+            "success": 10,
+            "last": 1683554071071,
+            "lastSuccess": 1683554071071
         },
         "./plugins/Infos/speed.js": {
             "total": 24,
@@ -61190,10 +61194,10 @@
             "lastSuccess": 1683502588446
         },
         "./plugins/Owners/owner-listban.js": {
-            "total": 3,
-            "success": 0,
-            "last": 1683553521123,
-            "lastSuccess": 0
+            "total": 6,
+            "success": 3,
+            "last": 1683554154668,
+            "lastSuccess": 1683554154668
         },
         "./plugins/Funs/fun-apakah2.js": {
             "total": 2,
