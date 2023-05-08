@@ -21,17 +21,21 @@
  <a href="#"><img title="BKNBOT-MD" src="https://img.shields.io/badge/Whatshapp BOT-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 <p align="center">
-<a href="https://github.com/FongsiDev"><img title="Author" src="https://img.shields.io/badge/AUTHOR-FongsiDev-green.svg?style=for-the-badge&logo=github"></a>
+ <a href="https://github.com/FongsiDev"><img title="Author" src="https://img.shields.io/badge/AUTHOR-FongsiDev-green.svg?style=for-the-badge&logo=github"></a>
+</p>
 
 ---
 
 ## `Contact Me 💌`
 
- <p align="center">
+<p align="center">
+ <a href="https://youtube.com/@BLUECKKN">
+    <img align="left" alt="BKN | YouTube" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Youtube.svg" />
+  </a>
  <a href="https://wa.me/6289503433262">
     <img align="left" alt="BKN | Whastapp" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Whatsapp.svg" />
   </a>
-  <a href="mailto: fongsiapi@gmail.com">
+ <a href="mailto: fongsiapi@gmail.com">
     <img align="left" alt="BKN | Gmail" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Gmail.svg" />
   </a>
  <a href="https://wa.me/6285280808438">
