@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 12206,
+      "exp": 12262,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -2336,7 +2336,7 @@
       "rhinoceroslastfeed": 0,
       "rock": 0,
       "roket": 0,
-      "role": "Beginner Grade 4 ⚊⁴",
+      "role": "Bronze II",
       "roti": 0,
       "rtrofi": "perunggu",
       "rubah": 0,
@@ -15682,7 +15682,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 5333,
+      "exp": 5375,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -15914,7 +15914,7 @@
       "rhinoceroslastfeed": 0,
       "rock": 0,
       "roket": 0,
-      "role": "Bronze I",
+      "role": "Newbie ㋡",
       "roti": 0,
       "rtrofi": "perunggu",
       "rubah": 0,
@@ -19387,7 +19387,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 102,
+      "exp": 115,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -20221,7 +20221,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 1121,
+      "exp": 1131,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -40141,7 +40141,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 196,
+      "exp": 197,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -43060,7 +43060,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 24,
+      "exp": 33,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -45145,7 +45145,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 28,
+      "exp": 45,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -47647,7 +47647,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 240,
+      "exp": 242,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -48064,7 +48064,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 665,
+      "exp": 674,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -60784,10 +60784,10 @@
       "lastSuccess": 1683107906147
     },
     "./plugins/Owners/owner-exec2.js": {
-      "total": 56,
-      "success": 56,
-      "last": 1683502093528,
-      "lastSuccess": 1683502093528
+      "total": 58,
+      "success": 58,
+      "last": 1683502943649,
+      "lastSuccess": 1683502943649
     },
     "./plugins/main-menu-1.js": {
       "total": 27,
@@ -60802,10 +60802,10 @@
       "lastSuccess": 1683459101521
     },
     "./plugins/Owners/owner-fiturplus.js": {
-      "total": 5,
-      "success": 5,
-      "last": 1683502521376,
-      "lastSuccess": 1683502521376
+      "total": 6,
+      "success": 6,
+      "last": 1683502907102,
+      "lastSuccess": 1683502907102
     },
     "./plugins/User/levelup.js": {
       "total": 13,
@@ -60814,10 +60814,10 @@
       "lastSuccess": 1683474589718
     },
     "./plugins/_Function/tes123.js": {
-      "total": 14,
-      "success": 14,
-      "last": 1683427770758,
-      "lastSuccess": 1683427770758
+      "total": 15,
+      "success": 15,
+      "last": 1683505718822,
+      "lastSuccess": 1683505718822
     },
     "./plugins/_Function/_autoreact.js": {
       "total": 189,
@@ -60958,10 +60958,10 @@
       "lastSuccess": 1683458957375
     },
     "./plugins/Infos/intro.js": {
-      "total": 4,
-      "success": 4,
-      "last": 1683474649044,
-      "lastSuccess": 1683474649044
+      "total": 5,
+      "success": 5,
+      "last": 1683504922189,
+      "lastSuccess": 1683504922189
     },
     "./plugins/OpenAI/openai-new.js": {
       "total": 2,

@@ -1493,12 +1493,16 @@ export async function participantsUpdate({ id, participants, action }) {
                 customTag: "GoodBye",
               }
             );
+            let thm = flaaa2.getRandom() + "Welcome to my group";
+            let thg = flaaa2.getRandom() + "Goodbye from my group";
             conn.sendButton(
               id,
               text,
               botdate,
               action == "add" ? wel : lea,
-              [["Hello 🤗👋", ".intro"]],
+              action == "add"
+                ? [["Hello 🤗👋", ".intro"]]
+                : [["Goodbye 🫂👋", "y"]],
               null,
               {
                 contextInfo: {
@@ -1512,11 +1516,9 @@ export async function participantsUpdate({ id, participants, action }) {
                     title: "Hᴀʟᴏ Nɢᴀʙ",
                     body: wm,
                     thumbnail: await (
-                      await conn.getFile(
-                        pickRandom(flaaa2) + "Welcome to my group"
-                      )
+                      await conn.getFile(action == "add" ? thm : thg)
                     ).data,
-                    thumbnailUrl: pickRandom(flaaa2) + "Welcome to my group",
+                    thumbnailUrl: action == "add" ? thm : thg,
                     sourceUrl: sgc,
                   },
                 },

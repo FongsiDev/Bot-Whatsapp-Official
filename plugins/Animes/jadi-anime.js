@@ -16,7 +16,8 @@ let handler = async (m, { conn }) => {
   m.reply("Tunggu Pastikan Gambarnya Tidak Burik");
   let mediaDown = await qoutes.download(true),
     img = await uploadImage(mediaDown),
-    file = "https://api.ibeng.tech/api/maker/anime?img=" + img + "&apikey=tamvan";
+    file =
+      "https://api.ibeng.tech/api/maker/anime?img=" + img + "&apikey=tamvan";
   console.log(file);
   await conn.sendButton(
     m.chat,
