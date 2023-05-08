@@ -34,6 +34,7 @@ export async function before(
 ) {
   if (m.isBaileys && m.fromMe) return !0;
   if (!m.isGroup) return !1;
+  if (/masuk|lanjutkan|banjir|(per)?panjang/g.exec(m.text)) return !0;
   this.toxic = this.toxic ? this.toxic : {};
   let chat = global.db.data.chats[m.chat];
   let bot = global.db.data.settings[this.user.jid] || {};
