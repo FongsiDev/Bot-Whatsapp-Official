@@ -29,19 +29,16 @@ let handler = async (m, { conn, args }) => {
       ? Math.min(100, Math.max(parseInt(args[0]), 10))
       : Math.min(10, sortedP.length);
   let listuser = "";
-  sortedP
-  .slice(0, len)
-  .map(
-    ({ jid, name, premiumTime, registered }, i) => {
-     if(jid == m.sender) return;
-     listuser += `\n┌✦ ${registered ? name : conn.getName(jid)}\n┊• wa.me/${
-        jid.split`@`[0]
-      }\n${
-        premiumTime > 0
-          ? `${clockString(premiumTime - new Date() * 1)}`
-          : "┊ *EXPIRED 🚫*"
-      }\n┗━═┅═━––––––๑`
-  })  
+  sortedP.slice(0, len).map(({ jid, name, premiumTime, registered }, i) => {
+    if (jid == m.sender) return;
+    listuser += `\n┌✦ ${registered ? name : conn.getName(jid)}\n┊• wa.me/${
+      jid.split`@`[0]
+    }\n${
+      premiumTime > 0
+        ? `${clockString(premiumTime - new Date() * 1)}`
+        : "┊ *EXPIRED 🚫*"
+    }\n┗━═┅═━––––––๑`;
+  });
   await conn.sendButton(
     m.chat,
     `${htki} *PREMIUM* ${htka}
@@ -66,7 +63,7 @@ ${listuser}`.trim(),
     ],
     fkon,
     {
-      mentions: [m.sender]
+      mentions: [m.sender],
     }
   );
   setTimeout(() => {

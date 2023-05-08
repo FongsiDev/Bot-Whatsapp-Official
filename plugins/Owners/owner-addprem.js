@@ -3,7 +3,9 @@ let handler = async (m, { conn, text, usedPrefix, command, args }) => {
     ? m.mentionedJid[0]
     : m.quoted
     ? m.quoted.sender
-    : args[1] ? args[1].replace(/[^0-9]/g, "") + "@s.whatsapp.net" : m.chat;
+    : args[1]
+    ? args[1].replace(/[^0-9]/g, "") + "@s.whatsapp.net"
+    : m.chat;
   let user = db.data.users[who];
   if (!user) user = db.data.users[who] = {};
   if (!who) throw `tag or mention someone!`;

@@ -6,15 +6,8 @@ let handler = async (m, { conn, usedPrefix, __dirname, text, command }) => {
   let tag = `@${m.sender.replace(/@.+/, "")}`;
   let mentionedJid = [m.sender];
   let name = conn.getName(m.sender);
-  await m.reply(`*_Tunggu Sabar Ya @${m.sender.split(`@`)[0]}..._*`);
+  await m.reply("*_Tunggu Sabar Ya..._*");
   let esce = `text nya `;
-  let flaaa2 = [
-    "https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=water-logo&script=water-logo&fontsize=90&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextColor=%23000&shadowGlowColor=%23000&backgroundColor=%23000&text=",
-    "https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=crafts-logo&fontsize=90&doScale=true&scaleWidth=800&scaleHeight=500&text=",
-    "https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=amped-logo&doScale=true&scaleWidth=800&scaleHeight=500&text=",
-    "https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text=",
-    "https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&fillColor1Color=%23f2aa4c&fillColor2Color=%23f2aa4c&fillColor3Color=%23f2aa4c&fillColor4Color=%23f2aa4c&fillColor5Color=%23f2aa4c&fillColor6Color=%23f2aa4c&fillColor7Color=%23f2aa4c&fillColor8Color=%23f2aa4c&fillColor9Color=%23f2aa4c&fillColor10Color=%23f2aa4c&fillOutlineColor=%23f2aa4c&fillOutline2Color=%23f2aa4c&backgroundColor=%23101820&text=",
-  ];
   let rules = `➯ *Tɪᴅᴀᴋ Sᴘᴀᴍ Bᴏᴛ*
  _Kebijakan privasi atau Private without being in public_
 
@@ -63,17 +56,16 @@ _Cara penggunaan ${namebot_1} Agar terhindar dari Suspand_
 └─┈⟅
 ${global.botdate}`;
   let nth = `☰⟥⟝⟞⟝❨ *Rᴜʟᴇs Mʏ Bᴏᴛ* ❩⟞⟝⟞⟤☰`;
-  conn.send3ButtonImg(
+  conn.sendButton(
     m.chat,
-    `${pickRandom(flaaa2)}` + `${ucapan()} ` + `${name}`,
     nth,
     rules,
-    "Menu",
-    ".menu",
-    "Owner",
-    ".owner",
-    "Credit",
-    ".credit",
+    `${pickRandom(flaaa2)}${ucapan()} ${name}`,
+    [
+      ["Menu", ".menu"],
+      ["Owner", ".owner"],
+      ["Credit", ".credit"],
+    ],
     m,
     {
       contextInfo: {
