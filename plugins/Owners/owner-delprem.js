@@ -1,14 +1,10 @@
 let handler = async (m, { usedPrefix, command, text }) => {
-  let who;
-  if (m.isGroup)
-    who = m.mentionedJid[0]
-      ? m.mentionedJid[0]
-      : m.quoted
-      ? m.quoted.sender
-      : text
-      ? text.replace(/[^0-9]/g, "") + "@s.whatsapp.net"
-      : false;
-  else who = text ? text.replace(/[^0-9]/g, "") + "@s.whatsapp.net" : m.chat;
+  let who = m.mentionedJid[0]
+    ? m.mentionedJid[0]
+    : m.quoted
+    ? m.quoted.sender
+    : text.replace(/[^0-9]/g, "") + "@s.whatsapp.net";
+  if (!who) who = m.chat;
   let user = db.data.users[who];
   if (!who)
     return m.reply(
@@ -18,7 +14,7 @@ let handler = async (m, { usedPrefix, command, text }) => {
     );
   user.premium = false;
   user.premiumTime = 0;
-  m.reply(`✔️ successfully removed *${user.name}* from premium user`);
+  m.reply(`✔️ successfully removed *${who}* from premium user`);
 };
 handler.help = ["delprem [@user]"];
 handler.tags = ["owner"];
