@@ -1,4 +1,5 @@
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
+
 <h1 align="center" id="title">BKN-BOT</h1>
 
 <p align="center">
@@ -22,9 +23,9 @@
 <p align="center">
 <a href="https://github.com/FongsiDev"><img title="Author" src="https://img.shields.io/badge/AUTHOR-FongsiDev-green.svg?style=for-the-badge&logo=github"></a>
 
----------
+---
 
-## ```Contact Me 💌``` 
+## `Contact Me 💌`
 
  <p align="center">
  <a href="https://wa.me/6289503433262">
@@ -39,7 +40,7 @@
 </p>
 <br/>
 
----------
+---
 
 ## PENTING
 
@@ -242,9 +243,10 @@ now BKN-BOT already support MD, but of course there are still many **bugs** and 
 
 use this [branch](https://github.com/FongsiDev/Bot-Whatsapp-Official/edit/v6.7.4-beta/README.md#--multi) if you want to use MD!
 
---------
+---
 
 ### 📮 S&K
+
 1. Not For Sale
 2. Don't forget give star this repo
 3. Don't use this repository wrong!
