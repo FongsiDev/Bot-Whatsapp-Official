@@ -1,10 +1,6 @@
 let handler = async (m, { jid, conn, usedPrefix }) => {
-  let chats = Object.entries(global.db.data.chats).filter(
-    (chat) => chat[1].isBanned
-  );
-  let users = Object.entries(global.db.data.users).filter(
-    (user) => user[1].banned
-  );
+  let chats = Object.values(global.db.data.chats).filter((x) => x.isBanned);
+  let users = Object.values(global.db.data.users).filter((x) => x.banned);
 
   m.reply(
     `
@@ -13,12 +9,16 @@ let handler = async (m, { jid, conn, usedPrefix }) => {
       chats
         ? "\n" +
           chats
-            .map(([jid], i) =>
+            .map((ob, i) => {
               `
-│ ${i + 1}. ${conn.getName(jid) == undefined ? "Unknown" : conn.getName(jid)}
-│ ${jid}
-`.trim()
-            )
+│ ${i + 1}. ${
+                conn.getName(ob.jid) == undefined
+                  ? "Unknown"
+                  : conn.getName(ob.jid)
+              }
+│ ${ob.jid}
+`.trim();
+            })
             .join("\n")
         : ""
     }
@@ -29,12 +29,16 @@ let handler = async (m, { jid, conn, usedPrefix }) => {
       users
         ? "\n" +
           users
-            .map(([jid], i) =>
+            .map((ob, i) => {
               `
-│ ${i + 1}. ${conn.getName(jid) == undefined ? "Unknown" : conn.getName(jid)}
-│ ${jid}
-`.trim()
-            )
+│ ${i + 1}. ${
+                conn.getName(ob.jid) == undefined
+                  ? "Unknown"
+                  : conn.getName(ob.jid)
+              }
+│ ${ob.jid}
+`.trim();
+            })
             .join("\n")
         : ""
     }
