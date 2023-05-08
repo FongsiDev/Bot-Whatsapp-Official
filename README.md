@@ -240,7 +240,15 @@ Presence avaible: available, composing, recording, paused
 
 now BKN-BOT already support MD, but of course there are still many **bugs** and there are still many that have not been **implemented**,
 
-use this [branch](https://github.com/FongsiDev/Bot-Whatsapp-Official/tree/multi-device) if you want to use MD!
+use this [branch](https://github.com/FongsiDev/Bot-Whatsapp-Official/edit/v6.7.4-beta/README.md#--multi) if you want to use MD!
+
+--------
+
+### 📮 S&K
+1. Not For Sale
+2. Don't forget give star this repo
+3. Don't use this repository wrong!
+4. If you have problem chat me in owner number
 
 ---
 
