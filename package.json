@@ -1,6 +1,6 @@
 {
   "name": "botwa",
-  "version": "6.7.44",
+  "version": "6.7.45",
   "description": "Bot WhatsApp",
   "main": "index.js",
   "type": "module",
@@ -120,5 +120,8 @@
     "xmldom": "^0.6.0",
     "yargs": "^17.7.1",
     "zs-extract": "^1.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
   }
 }
