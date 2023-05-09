@@ -1,6 +1,6 @@
 {
   "name": "botwa",
-  "version": "6.7.46",
+  "version": "6.7.47",
   "description": "Bot WhatsApp",
   "main": "index.js",
   "type": "module",
@@ -13,7 +13,7 @@
     "start": "npm run bot",
     "start2": "nodemon -x npm run bot",
     "formatfile": "npx prettier --write .",
-    "bot": "npm run formatfile && node index.js --server --autocleartmp --autoread --gconly",
+    "bot": "npm run formatfile && node index.js --server --autocleartmp --autoread --gconly --multi",
     "test": "node test.js",
     "db": "cp database.bak.json database.json",
     "test2": "nodemon index.js"
