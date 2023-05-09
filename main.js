@@ -175,7 +175,7 @@ const connectionOptions = {
   version,
   logger: pino({ level: "silent" }),
   printQRInTerminal: true,
-  patchMessageBeforeSending: (message) => {
+  /*patchMessageBeforeSending: (message) => {
     const requiresPatch = !!(
       message.buttonsMessage ||
       message.templateMessage ||
@@ -195,7 +195,7 @@ const connectionOptions = {
       };
     }
     return message;
-  },
+  },*/
   browser: ["WhatsApp Multi Device", "Safari", "6.6.1"],
 
   auth: state,
@@ -268,7 +268,11 @@ async function clearTmp() {
   );
   return filename.map((file) => {
     const stats = statSync(file);
-    if (file && stats.isFile() && Date.now() - stats.mtimeMs >= 1000 * 60 * 3) {
+    if (
+      filename.length >= 1 &&
+      stats.isFile() &&
+      Date.now() - stats.mtimeMs >= 1000 * 60 * 3
+    ) {
       return unlinkSync(file); // 3 minutes
       console.log(chalk.cyanBright("Successfully clear tmp"));
     }
