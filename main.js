@@ -175,12 +175,15 @@ const connectionOptions = {
   version,
   logger: pino({ level: "silent" }),
   printQRInTerminal: true,
-  /*patchMessageBeforeSending: (message) => {
+  browser: ["WhatsApp Multi Device", "Safari", "6.6.1"],
+  auth: state,
+  patchMessageBeforeSending: (message) => {
     const requiresPatch = !!(
       message.buttonsMessage ||
       message.templateMessage ||
       message.listMessage
     );
+    console.log(requiresPatch);
     if (requiresPatch) {
       message = {
         viewOnceMessage: {
@@ -195,10 +198,16 @@ const connectionOptions = {
       };
     }
     return message;
+  },
+  /*getMessage: async (key) => {
+    if (store) {
+      const msg = await store.loadMessage(key.remoteJid, key.id);
+      return msg.message || undefined;
+    }
+    return {
+      conversation: `hello, i'm ${namebot_1}`,
+    };
   },*/
-  browser: ["WhatsApp Multi Device", "Safari", "6.6.1"],
-
-  auth: state,
   // logger: pino({ prettyPrint: { levelFirst: true, ignore: 'hostname', translateTime: true },  prettifier: require('pino-pretty') }),
   // logger: P({ level: 'trace' })
 };
