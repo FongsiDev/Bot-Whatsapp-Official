@@ -77,4 +77,4 @@ function start(file) {
   // console.log(p)
 }
 
-start("main_test.js");
+start("main.js");
