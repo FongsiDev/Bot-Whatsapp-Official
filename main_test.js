@@ -49,7 +49,7 @@ import pino from "pino";
 import syntaxerror from "syntax-error";
 import { tmpdir } from "os";
 import { format } from "util";
-import { makeWASocket, protoType, serialize } from "./lib/simple.js";
+import { makeWASocket, protoType, serialize } from "./lib/simple_test.js";
 import { Low, JSONFile } from "lowdb";
 import { mongoDB, mongoDBV2 } from "./lib/mongoDB.js";
 import store from "./lib/store.js";
