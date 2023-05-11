@@ -1,6 +1,6 @@
 {
   "name": "botwa",
-  "version": "6.7.47",
+  "version": "6.7.48",
   "description": "Bot WhatsApp",
   "main": "index.js",
   "type": "module",
@@ -13,7 +13,7 @@
     "start": "npm run bot",
     "start2": "nodemon -x npm run bot",
     "formatfile": "npx prettier --write .",
-    "bot": "npm run formatfile && node index.js --server --autocleartmp --autoread --gconly --multi",
+    "bot": "npm run formatfile && node index.js --server --autocleartmp --autoread --gconly",
     "test": "node test.js",
     "db": "cp database.bak.json database.json",
     "test2": "nodemon index.js"
@@ -60,7 +60,7 @@
   },
   "homepage": "https://github.com/FongsiDev/Bot-Whatsapp-Official#readme",
   "dependencies": {
-    "@adiwajshing/baileys": "npm:baileys-md@^5.0.5",
+    "@adiwajshing/baileys": "npm:baileys@^5.0.5",
     "@bochilteam/scraper": "^4.0.22-alpha.0",
     "@ibaraki-douji/pixivts": "^2.4.1",
     "acrcloud": "^1.4.0",
