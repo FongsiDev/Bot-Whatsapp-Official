@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 20575,
+            "exp": 20773,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -2336,7 +2336,7 @@
             "rhinoceroslastfeed": 0,
             "rock": 0,
             "roket": 0,
-            "role": "Beginner Grade 4 ⚊⁴",
+            "role": "Bronze II",
             "roti": 0,
             "rtrofi": "perunggu",
             "rubah": 0,
@@ -15684,7 +15684,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 6503,
+            "exp": 6688,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -16938,7 +16938,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 1696,
+            "exp": 1727,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -18192,7 +18192,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 161,
+            "exp": 231,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -20674,7 +20674,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 2465,
+            "exp": 2484,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -22763,7 +22763,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 4899,
+            "exp": 4964,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -23181,7 +23181,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 1227,
+            "exp": 1235,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -25270,7 +25270,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 574,
+            "exp": 616,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -25688,7 +25688,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 5,
+            "exp": 18,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -25965,7 +25965,7 @@
             "sworddurability": 0,
             "tigame": 50,
             "tiketcoin": 0,
-            "title": "",
+            "title": 0,
             "tomat": 0,
             "tprem": 0,
             "trash": 0,
@@ -25988,7 +25988,32 @@
             "wolflastfeed": 0,
             "wood": 0,
             "wortel": 0,
-            "limitjoin": 0
+            "limitjoin": 0,
+            "kingdom": true,
+            "jid": "60187856648@s.whatsapp.net",
+            "premiumDate": -1,
+            "catexp": 0,
+            "enchant": 0,
+            "glimit": 20,
+            "glory": 0,
+            "healthmonster": 0,
+            "kyubiexp": 0,
+            "kyubilastfeed": 0,
+            "lastbansos": 0,
+            "lastcodereg": 0,
+            "lastgift": 0,
+            "lastIstigfar": 0,
+            "lastrampok": 0,
+            "lastsda": 0,
+            "lastwar": 0,
+            "pancing": 0,
+            "pertambangan": 0,
+            "pertanian": 0,
+            "petFood": 0,
+            "psenjata": 0,
+            "psepick": 0,
+            "robo": 0,
+            "roboxp": 0
         },
         "6288279452393@s.whatsapp.net": {
             "afk": -1,
@@ -26081,7 +26106,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 2247,
+            "exp": 2362,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -27334,7 +27359,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 759,
+            "exp": 761,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -29004,7 +29029,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 90,
+            "exp": 98,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -35634,7 +35659,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 430,
+            "exp": 485,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -36052,7 +36077,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 506,
+            "exp": 516,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -42733,7 +42758,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 752,
+            "exp": 757,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -50196,7 +50221,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 387,
+            "exp": 445,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -50428,7 +50453,7 @@
             "rhinoceroslastfeed": 0,
             "rock": 0,
             "roket": 0,
-            "role": "Newbie ㋡",
+            "role": "Bronze I",
             "roti": 0,
             "rtrofi": "perunggu",
             "rubah": 0,
@@ -68683,10 +68708,10 @@
     },
     "stats": {
         "./plugins/Owners/owner-exec.js": {
-            "total": 364,
-            "success": 364,
-            "last": 1683849446917,
-            "lastSuccess": 1683849446917
+            "total": 371,
+            "success": 371,
+            "last": 1683914455816,
+            "lastSuccess": 1683914455816
         },
         "./plugins/Infos/info-banlist.js": {
             "total": 3,
@@ -68695,10 +68720,10 @@
             "lastSuccess": 1683107906147
         },
         "./plugins/Owners/owner-exec2.js": {
-            "total": 74,
-            "success": 74,
-            "last": 1683890728763,
-            "lastSuccess": 1683890728763
+            "total": 77,
+            "success": 77,
+            "last": 1683914373550,
+            "lastSuccess": 1683914373550
         },
         "./plugins/main-menu-1.js": {
             "total": 62,
@@ -68713,10 +68738,10 @@
             "lastSuccess": 1683858455012
         },
         "./plugins/Owners/owner-fiturplus.js": {
-            "total": 8,
-            "success": 8,
-            "last": 1683674453324,
-            "lastSuccess": 1683674453324
+            "total": 9,
+            "success": 9,
+            "last": 1683893612062,
+            "lastSuccess": 1683893612062
         },
         "./plugins/User/levelup.js": {
             "total": 13,
@@ -68725,16 +68750,16 @@
             "lastSuccess": 1683474589718
         },
         "./plugins/_Function/tes123.js": {
-            "total": 29,
-            "success": 29,
-            "last": 1683887650976,
-            "lastSuccess": 1683887650976
+            "total": 30,
+            "success": 30,
+            "last": 1683916619038,
+            "lastSuccess": 1683916619038
         },
         "./plugins/_Function/_autoreact.js": {
-            "total": 268,
-            "success": 268,
-            "last": 1683890961996,
-            "lastSuccess": 1683890961996
+            "total": 271,
+            "success": 271,
+            "last": 1683897347545,
+            "lastSuccess": 1683897347545
         },
         "./plugins/Infos/test.js": {
             "total": 13,
@@ -68749,10 +68774,10 @@
             "lastSuccess": 1683814446079
         },
         "./plugins/Internets/internet-fetch.js": {
-            "total": 29,
-            "success": 28,
-            "last": 1683891656574,
-            "lastSuccess": 1683891656574
+            "total": 36,
+            "success": 35,
+            "last": 1683917968287,
+            "lastSuccess": 1683917968287
         },
         "./plugins/Exp-Info/xp-profile.js": {
             "total": 6,
@@ -68761,10 +68786,10 @@
             "lastSuccess": 1683585236993
         },
         "./plugins/Tools/tool-tourl.js": {
-            "total": 10,
-            "success": 10,
-            "last": 1683892386079,
-            "lastSuccess": 1683892386079
+            "total": 11,
+            "success": 11,
+            "last": 1683924921632,
+            "lastSuccess": 1683924921632
         },
         "./plugins/OpenAI/openai.js": {
             "total": 11,
@@ -68845,10 +68870,10 @@
             "lastSuccess": 1683289762333
         },
         "./plugins/Owners/owner-sf.js": {
-            "total": 2,
-            "success": 2,
-            "last": 1683285910557,
-            "lastSuccess": 1683285910557
+            "total": 4,
+            "success": 4,
+            "last": 1683914449070,
+            "lastSuccess": 1683914449070
         },
         "./plugins/Group-Tools/enable.js": {
             "total": 24,
@@ -69007,10 +69032,10 @@
             "lastSuccess": 1683451812431
         },
         "./plugins/Internets/internet-ssweb.js": {
-            "total": 3,
-            "success": 3,
-            "last": 1683642720789,
-            "lastSuccess": 1683642720789
+            "total": 4,
+            "success": 4,
+            "last": 1683934207112,
+            "lastSuccess": 1683934207112
         },
         "./plugins/Group-Tools/group-tagme.js": {
             "total": 3,
@@ -69233,6 +69258,18 @@
             "success": 2,
             "last": 1683885374687,
             "lastSuccess": 1683885374687
+        },
+        "./plugins/Funs/fun-apakah2.js": {
+            "total": 3,
+            "success": 3,
+            "last": 1683894294678,
+            "lastSuccess": 1683894294678
+        },
+        "./plugins/Tools/tool-ocr.js": {
+            "total": 2,
+            "success": 2,
+            "last": 1683931898537,
+            "lastSuccess": 1683931898537
         }
     },
     "msgs": {},
