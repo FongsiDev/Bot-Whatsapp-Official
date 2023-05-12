@@ -49,8 +49,30 @@
 ## PENTING
 
 > **Warning**: Jangan Memperjual Belikan Script Ini.
+---------
+### a little about this bot
+- ✔️ | **Simple** 
+- ❌ | **Button Template**
+- ✔️ | **Multi Device** 
+- ❌ | **Button Document(Experiment)**
+---------
+### Some of the features include
+- ✔️ | Menfess
+- ✔️ | AntiCall
+- ✔️ | Game & Rpg Game
+- ✔️ | Nsfw 
+- ✔️ | Sticker 
+- ✔️ | Kerang Ajaib 
+- ✔️ | Quotes
+- ✔️ | Anime 
+- ✔️ | Premium 
+- ✔️ | Tools 
+---------
+ 
+## ```USER RAILWAY```
 
-#### Deploy to Heroku
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app)
+## ```USER HEROKU```
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/FongsiDev/Bot-Whatsapp-Official)
 

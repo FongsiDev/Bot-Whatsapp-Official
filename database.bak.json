@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 20462,
+            "exp": 20575,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -2336,7 +2336,7 @@
             "rhinoceroslastfeed": 0,
             "rock": 0,
             "roket": 0,
-            "role": "Bronze II",
+            "role": "Beginner Grade 4 ⚊⁴",
             "roti": 0,
             "rtrofi": "perunggu",
             "rubah": 0,
@@ -15684,7 +15684,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 6481,
+            "exp": 6503,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -17774,7 +17774,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 26115,
+            "exp": 26167,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -20674,7 +20674,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 2459,
+            "exp": 2465,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -21927,7 +21927,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 1592,
+            "exp": 1608,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -22345,7 +22345,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 1179,
+            "exp": 1206,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -26081,7 +26081,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 2204,
+            "exp": 2247,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -27334,7 +27334,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 753,
+            "exp": 759,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -29004,7 +29004,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 74,
+            "exp": 90,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -60539,7 +60539,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 181,
+            "exp": 187,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -68695,10 +68695,10 @@
             "lastSuccess": 1683107906147
         },
         "./plugins/Owners/owner-exec2.js": {
-            "total": 73,
-            "success": 73,
-            "last": 1683815564983,
-            "lastSuccess": 1683815564983
+            "total": 74,
+            "success": 74,
+            "last": 1683890728763,
+            "lastSuccess": 1683890728763
         },
         "./plugins/main-menu-1.js": {
             "total": 62,
@@ -68731,10 +68731,10 @@
             "lastSuccess": 1683887650976
         },
         "./plugins/_Function/_autoreact.js": {
-            "total": 266,
-            "success": 266,
-            "last": 1683889117824,
-            "lastSuccess": 1683889117824
+            "total": 268,
+            "success": 268,
+            "last": 1683890961996,
+            "lastSuccess": 1683890961996
         },
         "./plugins/Infos/test.js": {
             "total": 13,
@@ -68749,10 +68749,10 @@
             "lastSuccess": 1683814446079
         },
         "./plugins/Internets/internet-fetch.js": {
-            "total": 28,
-            "success": 27,
-            "last": 1683712792724,
-            "lastSuccess": 1683712792724
+            "total": 29,
+            "success": 28,
+            "last": 1683891656574,
+            "lastSuccess": 1683891656574
         },
         "./plugins/Exp-Info/xp-profile.js": {
             "total": 6,
@@ -68761,10 +68761,10 @@
             "lastSuccess": 1683585236993
         },
         "./plugins/Tools/tool-tourl.js": {
-            "total": 9,
-            "success": 9,
-            "last": 1683644452717,
-            "lastSuccess": 1683644452717
+            "total": 10,
+            "success": 10,
+            "last": 1683892386079,
+            "lastSuccess": 1683892386079
         },
         "./plugins/OpenAI/openai.js": {
             "total": 11,
@@ -68827,10 +68827,10 @@
             "lastSuccess": 1683391082821
         },
         "./plugins/RPG_Games/rpg-inventory.js": {
-            "total": 8,
-            "success": 8,
-            "last": 1683638265114,
-            "lastSuccess": 1683638265114
+            "total": 9,
+            "success": 9,
+            "last": 1683890757103,
+            "lastSuccess": 1683890757103
         },
         "./plugins/OpenAI/openai-image.js": {
             "total": 4,
@@ -69025,10 +69025,10 @@
             "lastSuccess": 1683459366235
         },
         "./plugins/Funs/fun-how.js": {
-            "total": 27,
-            "success": 26,
-            "last": 1683887676271,
-            "lastSuccess": 1683887676271
+            "total": 28,
+            "success": 27,
+            "last": 1683890816423,
+            "lastSuccess": 1683890816423
         },
         "./plugins/Games/game-iqtest.js": {
             "total": 35,
