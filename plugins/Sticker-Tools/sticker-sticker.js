@@ -142,7 +142,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
           usedPrefix + command
         }`;
       let out;
-      m.reply("Sedang di proses...");
+      m.reply(global.wait);
       try {
         if (/webp/g.test(mime)) out = (await webp2png(img))?.result;
         else if (/image/g.test(mime)) out = await uploadImage(img);
