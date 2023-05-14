@@ -13,7 +13,7 @@ import ffmpeg from "fluent-ffmpeg";
 /*import ffmpegInstaller from "@ffmpeg-installer/ffmpeg";
 ffmpeg.setFfmpegPath(ffmpegInstaller.path);
 */
-import JSONdb from "./lib/Simple-JSONdb/index.js";
+import JSONdb from "simple-json-db";
 import { Boom } from "@hapi/boom";
 global.__filename = function filename(
   pathURL = import.meta.url,
@@ -57,7 +57,7 @@ import cloudDBAdapter from "./lib/cloudDBAdapter.js";
 const { DisconnectReason, fetchLatestBaileysVersion, useMultiFileAuthState } = (
   await import("@adiwajshing/baileys")
 ).default;
-
+import "./lib/backup.js";
 const { CONNECTING } = ws;
 const { chain } = lodash;
 const PORT = process.env.PORT || process.env.SERVER_PORT || 3000;
