@@ -1,6 +1,6 @@
 {
   "name": "botwa",
-  "version": "6.7.69",
+  "version": "6.7.70",
   "description": "Bot WhatsApp",
   "main": "index.js",
   "type": "module",
@@ -64,7 +64,6 @@
   "dependencies": {
     "@adiwajshing/baileys": "npm:baileys@^5.0.5",
     "@bochilteam/scraper": "^4.0.22-alpha.0",
-    "@figma/nodegit": "^0.28.0-figma.3",
     "@ibaraki-douji/pixivts": "^2.4.1",
     "acrcloud": "^1.4.0",
     "awesome-phonenumber": "^5.3.1",
