@@ -13,7 +13,7 @@ import ffmpeg from "fluent-ffmpeg";
 /*import ffmpegInstaller from "@ffmpeg-installer/ffmpeg";
 ffmpeg.setFfmpegPath(ffmpegInstaller.path);
 */
-import JSONdb from "simple-json-db";
+import JSONdb from "./lib/Simple-JSONdb/index.js";
 import { Boom } from "@hapi/boom";
 global.__filename = function filename(
   pathURL = import.meta.url,

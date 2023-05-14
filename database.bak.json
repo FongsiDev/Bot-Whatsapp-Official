@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 24254,
+            "exp": 25279,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -2336,7 +2336,7 @@
             "rhinoceroslastfeed": 0,
             "rock": 0,
             "roket": 0,
-            "role": "Bronze II",
+            "role": "Beginner Grade 4 ⚊⁴",
             "roti": 0,
             "rtrofi": "perunggu",
             "rubah": 0,
@@ -15684,7 +15684,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 7645,
+            "exp": 7984,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -29029,7 +29029,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 116,
+            "exp": 139,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -29864,7 +29864,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 3011,
+            "exp": 3055,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -55629,7 +55629,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 950,
+            "exp": 954,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -65509,7 +65509,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 944,
+            "exp": 990,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -70474,10 +70474,10 @@
     },
     "stats": {
         "./plugins/Owners/owner-exec.js": {
-            "total": 399,
-            "success": 399,
-            "last": 1684029334937,
-            "lastSuccess": 1684029334937
+            "total": 401,
+            "success": 401,
+            "last": 1684069482332,
+            "lastSuccess": 1684069482332
         },
         "./plugins/Infos/info-banlist.js": {
             "total": 3,
@@ -70486,22 +70486,22 @@
             "lastSuccess": 1683107906147
         },
         "./plugins/Owners/owner-exec2.js": {
-            "total": 101,
-            "success": 101,
-            "last": 1684029640154,
-            "lastSuccess": 1684029640154
+            "total": 119,
+            "success": 119,
+            "last": 1684069880022,
+            "lastSuccess": 1684069880022
         },
         "./plugins/main-menu-1.js": {
-            "total": 70,
-            "success": 69,
-            "last": 1683961525852,
-            "lastSuccess": 1683961525852
+            "total": 71,
+            "success": 70,
+            "last": 1684069933592,
+            "lastSuccess": 1684069933592
         },
         "./plugins/main-menu-2.js": {
-            "total": 18,
-            "success": 18,
-            "last": 1683858455012,
-            "lastSuccess": 1683858455012
+            "total": 19,
+            "success": 19,
+            "last": 1684069949089,
+            "lastSuccess": 1684069949089
         },
         "./plugins/Owners/owner-fiturplus.js": {
             "total": 16,
@@ -70516,22 +70516,22 @@
             "lastSuccess": 1683474589718
         },
         "./plugins/_Function/tes123.js": {
-            "total": 39,
-            "success": 39,
-            "last": 1683974589632,
-            "lastSuccess": 1683974589632
+            "total": 42,
+            "success": 42,
+            "last": 1684068172018,
+            "lastSuccess": 1684068172018
         },
         "./plugins/_Function/_autoreact.js": {
-            "total": 297,
-            "success": 297,
-            "last": 1684027163543,
-            "lastSuccess": 1684027163543
+            "total": 300,
+            "success": 300,
+            "last": 1684070001897,
+            "lastSuccess": 1684070001897
         },
         "./plugins/Infos/test.js": {
-            "total": 13,
-            "success": 13,
-            "last": 1683814202912,
-            "lastSuccess": 1683814202912
+            "total": 20,
+            "success": 20,
+            "last": 1684069941749,
+            "lastSuccess": 1684069941749
         },
         "./plugins/Infos/info-runtime.js": {
             "total": 8,
@@ -70570,10 +70570,10 @@
             "lastSuccess": 1684022014780
         },
         "./plugins/Infos/speed.js": {
-            "total": 38,
-            "success": 38,
-            "last": 1684029487663,
-            "lastSuccess": 1684029487663
+            "total": 47,
+            "success": 47,
+            "last": 1684069942435,
+            "lastSuccess": 1684069942435
         },
         "./plugins/Exp-Info/exp-daftar.js": {
             "total": 3,
@@ -70648,10 +70648,10 @@
             "lastSuccess": 1684020649939
         },
         "./plugins/Owners/owner-unbanchat.js": {
-            "total": 11,
-            "success": 11,
-            "last": 1684027827018,
-            "lastSuccess": 1684027827018
+            "total": 12,
+            "success": 12,
+            "last": 1684069168844,
+            "lastSuccess": 1684069168844
         },
         "./plugins/Owners/owner-banchat.js": {
             "total": 9,
@@ -70798,10 +70798,10 @@
             "lastSuccess": 1683451812431
         },
         "./plugins/Internets/internet-ssweb.js": {
-            "total": 5,
-            "success": 5,
-            "last": 1683986346292,
-            "lastSuccess": 1683986346292
+            "total": 6,
+            "success": 6,
+            "last": 1684069625112,
+            "lastSuccess": 1684069625112
         },
         "./plugins/Group-Tools/group-tagme.js": {
             "total": 3,
@@ -70822,10 +70822,10 @@
             "lastSuccess": 1683968981872
         },
         "./plugins/Games/game-iqtest.js": {
-            "total": 52,
-            "success": 52,
-            "last": 1683984897785,
-            "lastSuccess": 1683984897785
+            "total": 53,
+            "success": 53,
+            "last": 1684067130335,
+            "lastSuccess": 1684067130335
         },
         "./plugins/Funs/fun-kapankah2.js": {
             "total": 4,
@@ -71014,10 +71014,10 @@
             "lastSuccess": 1683731832240
         },
         "./plugins/main-menu-3.js": {
-            "total": 2,
-            "success": 2,
-            "last": 1683814770076,
-            "lastSuccess": 1683814770076
+            "total": 3,
+            "success": 3,
+            "last": 1684069941796,
+            "lastSuccess": 1684069941796
         },
         "./plugins/Funs/fun-generate_nama.js": {
             "total": 2,
