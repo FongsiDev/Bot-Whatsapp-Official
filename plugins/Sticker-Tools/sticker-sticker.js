@@ -144,7 +144,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       let out;
       m.reply("Sedang di proses...");
       try {
-        if (/webp/g.test(mime)) out = await webp2png(img);
+        if (/webp/g.test(mime)) out = (await webp2png(img))?.result;
         else if (/image/g.test(mime)) out = await uploadImage(img);
         else if (/video/g.test(mime)) {
           out = await uploadFile(img);
@@ -153,6 +153,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
           );
         }
         if (typeof out !== "string") out = await uploadImage(img);
+        console.log(out);
         stiker = await sticker(false, out, global.stickpack, global.stickauth);
       } catch (e) {
         console.error(e);
