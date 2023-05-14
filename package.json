@@ -1,6 +1,6 @@
 {
   "name": "botwa",
-  "version": "6.7.71",
+  "version": "6.7.72",
   "description": "Bot WhatsApp",
   "main": "index.js",
   "type": "module",
@@ -62,7 +62,7 @@
   },
   "homepage": "https://github.com/FongsiDev/Bot-Whatsapp-Official#readme",
   "dependencies": {
-    "@adiwajshing/baileys": "npm:baileys@^5.0.5",
+    "@adiwajshing/baileys": "npm:baileys-md@^5.0.5",
     "@bochilteam/scraper": "^4.0.22-alpha.0",
     "@ibaraki-douji/pixivts": "^2.4.1",
     "acrcloud": "^1.4.0",
@@ -105,10 +105,10 @@
     "node-fetch": "^2.6.9",
     "node-gtts": "^2.0.2",
     "node-webpmux": "^3.1.5",
+    "nodemon": "^2.0.22",
     "openai": "^3.2.1",
     "path": "^0.12.7",
     "pino-pretty": "^10.0.0",
-    "prettier": "^2.8.8",
     "qrcode": "^1.5.1",
     "qrcode-terminal": "*",
     "request": "^2.88.2",
@@ -123,8 +123,5 @@
     "xmldom": "^0.6.0",
     "yargs": "^17.7.1",
     "zs-extract": "^1.4.2"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.22"
   }
 }
