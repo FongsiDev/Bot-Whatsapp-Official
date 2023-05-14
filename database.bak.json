@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 24148,
+            "exp": 24254,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -15684,7 +15684,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 7627,
+            "exp": 7645,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -70486,10 +70486,10 @@
             "lastSuccess": 1683107906147
         },
         "./plugins/Owners/owner-exec2.js": {
-            "total": 100,
-            "success": 100,
-            "last": 1684029470505,
-            "lastSuccess": 1684029470505
+            "total": 101,
+            "success": 101,
+            "last": 1684029640154,
+            "lastSuccess": 1684029640154
         },
         "./plugins/main-menu-1.js": {
             "total": 70,
@@ -70504,10 +70504,10 @@
             "lastSuccess": 1683858455012
         },
         "./plugins/Owners/owner-fiturplus.js": {
-            "total": 15,
-            "success": 15,
-            "last": 1684029627105,
-            "lastSuccess": 1684029627105
+            "total": 16,
+            "success": 16,
+            "last": 1684030129581,
+            "lastSuccess": 1684030129581
         },
         "./plugins/User/levelup.js": {
             "total": 13,
@@ -71062,10 +71062,10 @@
             "lastSuccess": 1684024002136
         },
         "./plugins/Tools/tool-hd.js": {
-            "total": 16,
-            "success": 11,
-            "last": 1684029606246,
-            "lastSuccess": 1684029606246
+            "total": 18,
+            "success": 13,
+            "last": 1684029861517,
+            "lastSuccess": 1684029861517
         }
     },
     "msgs": {},
