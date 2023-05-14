@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 25405,
+            "exp": 25520,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -15684,7 +15684,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 8060,
+            "exp": 8084,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -15916,7 +15916,7 @@
             "rhinoceroslastfeed": 0,
             "rock": 0,
             "roket": 0,
-            "role": "Newbie ㋡",
+            "role": "Bronze I",
             "roti": 0,
             "rtrofi": "perunggu",
             "rubah": 0,
@@ -69271,7 +69271,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 78,
+            "exp": 83,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -70904,10 +70904,10 @@
             "lastSuccess": 1683107906147
         },
         "./plugins/Owners/owner-exec2.js": {
-            "total": 124,
-            "success": 124,
-            "last": 1684075726246,
-            "lastSuccess": 1684075726246
+            "total": 131,
+            "success": 131,
+            "last": 1684075837748,
+            "lastSuccess": 1684075837748
         },
         "./plugins/main-menu-1.js": {
             "total": 71,
@@ -70988,10 +70988,10 @@
             "lastSuccess": 1684022014780
         },
         "./plugins/Infos/speed.js": {
-            "total": 49,
-            "success": 49,
-            "last": 1684075344944,
-            "lastSuccess": 1684075344944
+            "total": 50,
+            "success": 50,
+            "last": 1684075795973,
+            "lastSuccess": 1684075795973
         },
         "./plugins/Exp-Info/exp-daftar.js": {
             "total": 3,
