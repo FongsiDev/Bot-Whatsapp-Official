@@ -11,7 +11,9 @@ export declare type BinaryNode = {
     attrs: {
         [key: string]: string;
     };
-    content?: BinaryNode[] | string | Uint8Array;
+    content?: BinaryNode[] | string | Uint8Array | {
+        content: string;
+    };
 };
 export declare type BinaryNodeAttributes = BinaryNode['attrs'];
 export declare type BinaryNodeData = BinaryNode['content'];

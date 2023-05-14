@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 25642,
+      "exp": 25743,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -15266,7 +15266,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 245,
+      "exp": 256,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -15684,7 +15684,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 8139,
+      "exp": 8169,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -69271,7 +69271,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 88,
+      "exp": 95,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -70892,10 +70892,10 @@
   },
   "stats": {
     "./plugins/Owners/owner-exec.js": {
-      "total": 404,
-      "success": 404,
-      "last": 1684075651273,
-      "lastSuccess": 1684075651273
+      "total": 405,
+      "success": 405,
+      "last": 1684076530352,
+      "lastSuccess": 1684076530352
     },
     "./plugins/Infos/info-banlist.js": {
       "total": 3,
@@ -70904,16 +70904,16 @@
       "lastSuccess": 1683107906147
     },
     "./plugins/Owners/owner-exec2.js": {
-      "total": 136,
-      "success": 136,
-      "last": 1684076371888,
-      "lastSuccess": 1684076371888
+      "total": 138,
+      "success": 138,
+      "last": 1684076449917,
+      "lastSuccess": 1684076449917
     },
     "./plugins/main-menu-1.js": {
-      "total": 71,
-      "success": 70,
-      "last": 1684069933592,
-      "lastSuccess": 1684069933592
+      "total": 72,
+      "success": 71,
+      "last": 1684076510343,
+      "lastSuccess": 1684076510343
     },
     "./plugins/main-menu-2.js": {
       "total": 19,
@@ -71000,10 +71000,10 @@
       "lastSuccess": 1683807389172
     },
     "./plugins/User/afk-afk.js": {
-      "total": 15,
-      "success": 15,
-      "last": 1684076393420,
-      "lastSuccess": 1684076393420
+      "total": 16,
+      "success": 16,
+      "last": 1684076477956,
+      "lastSuccess": 1684076477956
     },
     "./plugins/Funs/fun-apakah.js": {
       "total": 2,
