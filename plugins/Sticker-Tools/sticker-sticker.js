@@ -153,7 +153,6 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
           );
         }
         if (typeof out !== "string") out = await uploadImage(img);
-        console.log(out);
         stiker = await sticker(false, out, global.stickpack, global.stickauth);
       } catch (e) {
         console.error(e);
