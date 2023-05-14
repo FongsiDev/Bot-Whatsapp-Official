@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 25520,
+      "exp": 25642,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -2336,7 +2336,7 @@
       "rhinoceroslastfeed": 0,
       "rock": 0,
       "roket": 0,
-      "role": "Bronze II",
+      "role": "Beginner Grade 4 ⚊⁴",
       "roti": 0,
       "rtrofi": "perunggu",
       "rubah": 0,
@@ -15684,7 +15684,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 8084,
+      "exp": 8139,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -15916,7 +15916,7 @@
       "rhinoceroslastfeed": 0,
       "rock": 0,
       "roket": 0,
-      "role": "Bronze I",
+      "role": "Newbie ㋡",
       "roti": 0,
       "rtrofi": "perunggu",
       "rubah": 0,
@@ -69271,7 +69271,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 83,
+      "exp": 88,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -70904,10 +70904,10 @@
       "lastSuccess": 1683107906147
     },
     "./plugins/Owners/owner-exec2.js": {
-      "total": 131,
-      "success": 131,
-      "last": 1684075837748,
-      "lastSuccess": 1684075837748
+      "total": 136,
+      "success": 136,
+      "last": 1684076371888,
+      "lastSuccess": 1684076371888
     },
     "./plugins/main-menu-1.js": {
       "total": 71,
@@ -70940,10 +70940,10 @@
       "lastSuccess": 1684068172018
     },
     "./plugins/_Function/_autoreact.js": {
-      "total": 300,
-      "success": 300,
-      "last": 1684070001897,
-      "lastSuccess": 1684070001897
+      "total": 302,
+      "success": 302,
+      "last": 1684076025973,
+      "lastSuccess": 1684076025973
     },
     "./plugins/Infos/test.js": {
       "total": 20,
@@ -70988,10 +70988,10 @@
       "lastSuccess": 1684022014780
     },
     "./plugins/Infos/speed.js": {
-      "total": 50,
-      "success": 50,
-      "last": 1684075795973,
-      "lastSuccess": 1684075795973
+      "total": 53,
+      "success": 53,
+      "last": 1684076389510,
+      "lastSuccess": 1684076389510
     },
     "./plugins/Exp-Info/exp-daftar.js": {
       "total": 3,
@@ -71000,10 +71000,10 @@
       "lastSuccess": 1683807389172
     },
     "./plugins/User/afk-afk.js": {
-      "total": 11,
-      "success": 11,
-      "last": 1684075687329,
-      "lastSuccess": 1684075687329
+      "total": 15,
+      "success": 15,
+      "last": 1684076393420,
+      "lastSuccess": 1684076393420
     },
     "./plugins/Funs/fun-apakah.js": {
       "total": 2,
