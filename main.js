@@ -141,7 +141,6 @@ global.loadDatabase = async function loadDatabase() {
     exec(
       `cp database.bak.json ${opts._[0] ? opts._[0] + "_" : ""}database.json`
     );
-    (await import("./lib/backup.js")).default();
   } catch (e) {
     null;
   }
@@ -256,6 +255,11 @@ if (!opts["test"]) {
         await db_bc.sync();
       }, 5000);
       await global.db.write().catch(console.error);
+      try {
+        (await import("./lib/backup.js")).default();
+      } catch (e) {
+        null;
+      }
     }
     if (opts["autocleartmp"])
       try {
