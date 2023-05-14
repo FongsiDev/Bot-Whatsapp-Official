@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 25279,
+            "exp": 25326,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -17774,7 +17774,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 26220,
+            "exp": 26231,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -70486,10 +70486,10 @@
             "lastSuccess": 1683107906147
         },
         "./plugins/Owners/owner-exec2.js": {
-            "total": 119,
-            "success": 119,
-            "last": 1684069880022,
-            "lastSuccess": 1684069880022
+            "total": 120,
+            "success": 120,
+            "last": 1684070509431,
+            "lastSuccess": 1684070509431
         },
         "./plugins/main-menu-1.js": {
             "total": 71,
@@ -71056,9 +71056,9 @@
             "lastSuccess": 1683986184610
         },
         "./plugins/Youtubes/youtube-ytv.js": {
-            "total": 4,
+            "total": 5,
             "success": 4,
-            "last": 1684024002136,
+            "last": 1684070863407,
             "lastSuccess": 1684024002136
         },
         "./plugins/Tools/tool-hd.js": {
