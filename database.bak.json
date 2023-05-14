@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 24043,
+            "exp": 24148,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -15684,7 +15684,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 7554,
+            "exp": 7627,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -15916,7 +15916,7 @@
             "rhinoceroslastfeed": 0,
             "rock": 0,
             "roket": 0,
-            "role": "Bronze I",
+            "role": "Newbie ㋡",
             "roti": 0,
             "rtrofi": "perunggu",
             "rubah": 0,
@@ -45682,7 +45682,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 120,
+            "exp": 127,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -70474,10 +70474,10 @@
     },
     "stats": {
         "./plugins/Owners/owner-exec.js": {
-            "total": 396,
-            "success": 396,
-            "last": 1684028502731,
-            "lastSuccess": 1684028502731
+            "total": 399,
+            "success": 399,
+            "last": 1684029334937,
+            "lastSuccess": 1684029334937
         },
         "./plugins/Infos/info-banlist.js": {
             "total": 3,
@@ -70486,10 +70486,10 @@
             "lastSuccess": 1683107906147
         },
         "./plugins/Owners/owner-exec2.js": {
-            "total": 96,
-            "success": 96,
-            "last": 1684028665620,
-            "lastSuccess": 1684028665620
+            "total": 100,
+            "success": 100,
+            "last": 1684029470505,
+            "lastSuccess": 1684029470505
         },
         "./plugins/main-menu-1.js": {
             "total": 70,
@@ -70504,10 +70504,10 @@
             "lastSuccess": 1683858455012
         },
         "./plugins/Owners/owner-fiturplus.js": {
-            "total": 14,
-            "success": 14,
-            "last": 1684027108321,
-            "lastSuccess": 1684027108321
+            "total": 15,
+            "success": 15,
+            "last": 1684029627105,
+            "lastSuccess": 1684029627105
         },
         "./plugins/User/levelup.js": {
             "total": 13,
@@ -70570,10 +70570,10 @@
             "lastSuccess": 1684022014780
         },
         "./plugins/Infos/speed.js": {
-            "total": 36,
-            "success": 36,
-            "last": 1684028590767,
-            "lastSuccess": 1684028590767
+            "total": 38,
+            "success": 38,
+            "last": 1684029487663,
+            "lastSuccess": 1684029487663
         },
         "./plugins/Exp-Info/exp-daftar.js": {
             "total": 3,
@@ -71062,10 +71062,10 @@
             "lastSuccess": 1684024002136
         },
         "./plugins/Tools/tool-hd.js": {
-            "total": 14,
-            "success": 10,
-            "last": 1684028491811,
-            "lastSuccess": 1684028491811
+            "total": 16,
+            "success": 11,
+            "last": 1684029606246,
+            "lastSuccess": 1684029606246
         }
     },
     "msgs": {},
