@@ -141,7 +141,7 @@ global.loadDatabase = async function loadDatabase() {
     exec(
       `cp database.bak.json ${opts._[0] ? opts._[0] + "_" : ""}database.json`
     );
-    import("./lib/backup.js").backup();
+    (await import("./lib/backup.js")).default();
   } catch (e) {
     null;
   }
