@@ -1,6 +1,6 @@
 {
   "name": "botwa",
-  "version": "6.7.84",
+  "version": "6.7.85",
   "description": "Bot WhatsApp",
   "main": "index.js",
   "type": "module",
