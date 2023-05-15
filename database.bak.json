@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 30210,
+            "exp": 30245,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -35660,7 +35660,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 1161,
+            "exp": 1177,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -58922,7 +58922,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 1031,
+            "exp": 1046,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -72796,9 +72796,9 @@
             "lastSuccess": 1684018500180
         },
         "./plugins/Tools/tool-tourl.js": {
-            "total": 22,
+            "total": 23,
             "success": 21,
-            "last": 1684145273265,
+            "last": 1684147675324,
             "lastSuccess": 1684145273265
         },
         "./plugins/OpenAI/openai.js": {
