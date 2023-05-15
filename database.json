@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 30762,
+      "exp": 30794,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -74593,10 +74593,10 @@
       "lastSuccess": 1684024002136
     },
     "./plugins/Tools/tool-hd.js": {
-      "total": 21,
-      "success": 16,
-      "last": 1684144983875,
-      "lastSuccess": 1684144983875
+      "total": 22,
+      "success": 17,
+      "last": 1684193291343,
+      "lastSuccess": 1684193291343
     },
     "./plugins/Internets/lyrics.js": {
       "total": 3,
