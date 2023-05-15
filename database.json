@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 28492,
+      "exp": 28537,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -2336,7 +2336,7 @@
       "rhinoceroslastfeed": 0,
       "rock": 0,
       "roket": 0,
-      "role": "Beginner Grade 4 ⚊⁴",
+      "role": "Bronze II",
       "roti": 0,
       "rtrofi": "perunggu",
       "rubah": 0,
@@ -15266,7 +15266,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 256,
+      "exp": 258,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -71366,14 +71366,44 @@
       "viewOnce": false,
       "viewonce": false,
       "welcome": false
+    },
+    "120363038596890250@g.us": {
+      "isName": "Logs Bot",
+      "jid": "120363038596890250@g.us",
+      "antiDelete": false,
+      "antiLink": false,
+      "antiVirtex": false,
+      "antiSticker": false,
+      "antiToxic": false,
+      "detect": false,
+      "delete": false,
+      "expired": 0,
+      "getmsg": false,
+      "isBanned": false,
+      "lastAnime": false,
+      "latestNews": false,
+      "nsfw": false,
+      "premium": false,
+      "premiumTime": false,
+      "premnsfw": false,
+      "sBye": "",
+      "sDemote": "",
+      "simi": false,
+      "sPromote": "",
+      "stiker": false,
+      "sWelcome": "",
+      "useDocument": false,
+      "viewOnce": false,
+      "viewonce": false,
+      "welcome": false
     }
   },
   "stats": {
     "./plugins/Owners/owner-exec.js": {
-      "total": 526,
-      "success": 526,
-      "last": 1684134502690,
-      "lastSuccess": 1684134502690
+      "total": 527,
+      "success": 527,
+      "last": 1684134696551,
+      "lastSuccess": 1684134696551
     },
     "./plugins/Infos/info-banlist.js": {
       "total": 3,
@@ -71568,10 +71598,10 @@
       "lastSuccess": 1683307039050
     },
     "./plugins/Owners/owner-join.js": {
-      "total": 16,
-      "success": 10,
-      "last": 1684134641131,
-      "lastSuccess": 1684134641131
+      "total": 17,
+      "success": 11,
+      "last": 1684134739478,
+      "lastSuccess": 1684134739478
     },
     "./plugins/RPG_Games/rpg-open.js": {
       "total": 4,
