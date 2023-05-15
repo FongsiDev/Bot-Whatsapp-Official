@@ -15684,7 +15684,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 9615,
+      "exp": 9622,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -41924,7 +41924,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 104,
+      "exp": 113,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -42108,7 +42108,7 @@
       "mythic": 0,
       "naga": 0,
       "nagalastclaim": 0,
-      "name": "+62 851-7160-9229",
+      "name": "SinFik Joy L.Q",
       "net": 0,
       "nila": 0,
       "nilabakar": 0,
@@ -69272,7 +69272,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 807,
+      "exp": 829,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -73159,10 +73159,10 @@
       "lastSuccess": 1684086633211
     },
     "./plugins/_Function/_autoreact.js": {
-      "total": 321,
-      "success": 321,
-      "last": 1684148594841,
-      "lastSuccess": 1684148594841
+      "total": 322,
+      "success": 322,
+      "last": 1684150715193,
+      "lastSuccess": 1684150715193
     },
     "./plugins/Infos/test.js": {
       "total": 23,
