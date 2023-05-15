@@ -7,8 +7,8 @@ let handler = async (m, { conn }) => {
   await conn.sendFile(m.chat, await msg, "", await media.caption, m);
 };
 
-handler.help = ["readviewonce"];
+handler.help = ["readviewonce", "viewonce"];
 handler.tags = ["tools"];
-handler.command = /^readviewonce/i;
+handler.command = /^readviewonce|viewonce/i;
 
 export default handler;
