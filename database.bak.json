@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 28630,
+            "exp": 28675,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -71496,10 +71496,10 @@
             "lastSuccess": 1683814446079
         },
         "./plugins/Internets/internet-fetch.js": {
-            "total": 39,
-            "success": 38,
-            "last": 1684134936857,
-            "lastSuccess": 1684134936857
+            "total": 41,
+            "success": 40,
+            "last": 1684134960060,
+            "lastSuccess": 1684134960060
         },
         "./plugins/Exp-Info/xp-profile.js": {
             "total": 9,
