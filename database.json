@@ -2014,8 +2014,8 @@
       "limitjoin": 0
     },
     "6289503433262@s.whatsapp.net": {
-      "afk": -1,
-      "afkReason": "",
+      "afk": 1684152184421,
+      "afkReason": "Lagi Ngecas",
       "age": -1,
       "agility": 16,
       "anakanjing": 0,
@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 30705,
+      "exp": 30734,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -69182,8 +69182,8 @@
       "roboxp": 0
     },
     "62857263192057@s.whatsapp.net": {
-      "afk": -1,
-      "afkReason": "",
+      "afk": 1684152223069,
+      "afkReason": "frustasi berat ama wa :)",
       "age": 19,
       "agility": 16,
       "anakanjing": 0,
@@ -69272,7 +69272,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 909,
+      "exp": 927,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -73219,10 +73219,10 @@
       "lastSuccess": 1684081377208
     },
     "./plugins/User/afk-afk.js": {
-      "total": 23,
-      "success": 23,
-      "last": 1684148295603,
-      "lastSuccess": 1684148295603
+      "total": 25,
+      "success": 25,
+      "last": 1684152223073,
+      "lastSuccess": 1684152223073
     },
     "./plugins/Funs/fun-apakah.js": {
       "total": 2,
