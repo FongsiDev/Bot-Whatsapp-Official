@@ -15684,7 +15684,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 9491,
+            "exp": 9493,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -71877,10 +71877,10 @@
     },
     "stats": {
         "./plugins/Owners/owner-exec.js": {
-            "total": 539,
-            "success": 539,
-            "last": 1684140818794,
-            "lastSuccess": 1684140818794
+            "total": 540,
+            "success": 540,
+            "last": 1684141047208,
+            "lastSuccess": 1684141047208
         },
         "./plugins/Infos/info-banlist.js": {
             "total": 3,
