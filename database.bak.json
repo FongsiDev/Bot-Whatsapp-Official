@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 28926,
+      "exp": 29007,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -35660,7 +35660,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 1083,
+      "exp": 1086,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -71877,10 +71877,10 @@
   },
   "stats": {
     "./plugins/Owners/owner-exec.js": {
-      "total": 532,
-      "success": 532,
-      "last": 1684138120494,
-      "lastSuccess": 1684138120494
+      "total": 535,
+      "success": 535,
+      "last": 1684138879857,
+      "lastSuccess": 1684138879857
     },
     "./plugins/Infos/info-banlist.js": {
       "total": 3,
