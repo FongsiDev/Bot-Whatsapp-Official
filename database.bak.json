@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 29245,
+            "exp": 29274,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -2336,7 +2336,7 @@
             "rhinoceroslastfeed": 0,
             "rock": 0,
             "roket": 0,
-            "role": "Bronze II",
+            "role": "Beginner Grade 4 ⚊⁴",
             "roti": 0,
             "rtrofi": "perunggu",
             "rubah": 0,
@@ -72324,10 +72324,10 @@
     },
     "stats": {
         "./plugins/Owners/owner-exec.js": {
-            "total": 547,
-            "success": 547,
-            "last": 1684142820295,
-            "lastSuccess": 1684142820295
+            "total": 548,
+            "success": 548,
+            "last": 1684142857091,
+            "lastSuccess": 1684142857091
         },
         "./plugins/Infos/info-banlist.js": {
             "total": 3,
