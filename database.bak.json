@@ -15684,7 +15684,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 9913,
+            "exp": 9914,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -46517,7 +46517,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 70,
+            "exp": 93,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -74053,10 +74053,10 @@
             "lastSuccess": 1684166097568
         },
         "./plugins/_Function/_autoreact.js": {
-            "total": 324,
-            "success": 324,
-            "last": 1684165945516,
-            "lastSuccess": 1684165945516
+            "total": 325,
+            "success": 325,
+            "last": 1684194085430,
+            "lastSuccess": 1684194085430
         },
         "./plugins/Infos/test.js": {
             "total": 23,
