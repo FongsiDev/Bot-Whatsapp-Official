@@ -2014,7 +2014,7 @@
       "limitjoin": 0
     },
     "6289503433262@s.whatsapp.net": {
-      "afk": -1,
+      "afk": 1684137678011,
       "afkReason": "",
       "age": -1,
       "agility": 16,
@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 28853,
+      "exp": 28879,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -71985,10 +71985,10 @@
       "lastSuccess": 1684081377208
     },
     "./plugins/User/afk-afk.js": {
-      "total": 21,
-      "success": 21,
-      "last": 1684103794203,
-      "lastSuccess": 1684103794203
+      "total": 22,
+      "success": 22,
+      "last": 1684137678016,
+      "lastSuccess": 1684137678016
     },
     "./plugins/Funs/fun-apakah.js": {
       "total": 2,
