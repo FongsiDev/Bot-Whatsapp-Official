@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 28561,
+      "exp": 28603,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -41924,7 +41924,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 96,
+      "exp": 104,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -42108,7 +42108,7 @@
       "mythic": 0,
       "naga": 0,
       "nagalastclaim": 0,
-      "name": "SinFik Joy L.Q",
+      "name": "+62 851-7160-9229",
       "net": 0,
       "nila": 0,
       "nilabakar": 0,
@@ -71396,6 +71396,36 @@
       "viewOnce": false,
       "viewonce": false,
       "welcome": false
+    },
+    "120363148578643667@g.us": {
+      "isName": "Giftfing Art",
+      "jid": "120363148578643667@g.us",
+      "antiDelete": false,
+      "antiLink": false,
+      "antiVirtex": false,
+      "antiSticker": false,
+      "antiToxic": false,
+      "detect": false,
+      "delete": false,
+      "expired": 0,
+      "getmsg": false,
+      "isBanned": false,
+      "lastAnime": false,
+      "latestNews": false,
+      "nsfw": false,
+      "premium": false,
+      "premiumTime": false,
+      "premnsfw": false,
+      "sBye": "",
+      "sDemote": "",
+      "simi": false,
+      "sPromote": "",
+      "stiker": false,
+      "sWelcome": "",
+      "useDocument": false,
+      "viewOnce": false,
+      "viewonce": false,
+      "welcome": false
     }
   },
   "stats": {
@@ -71418,10 +71448,10 @@
       "lastSuccess": 1684134584404
     },
     "./plugins/main-menu-1.js": {
-      "total": 77,
-      "success": 76,
-      "last": 1684127146188,
-      "lastSuccess": 1684127146188
+      "total": 78,
+      "success": 77,
+      "last": 1684134865869,
+      "lastSuccess": 1684134865869
     },
     "./plugins/main-menu-2.js": {
       "total": 21,
@@ -71598,10 +71628,10 @@
       "lastSuccess": 1683307039050
     },
     "./plugins/Owners/owner-join.js": {
-      "total": 17,
-      "success": 11,
-      "last": 1684134739478,
-      "lastSuccess": 1684134739478
+      "total": 18,
+      "success": 12,
+      "last": 1684134822684,
+      "lastSuccess": 1684134822684
     },
     "./plugins/RPG_Games/rpg-open.js": {
       "total": 4,
