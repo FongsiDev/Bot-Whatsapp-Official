@@ -8,7 +8,7 @@ let handler = async (m, { conn, text, isOwner }) => {
     isJoin = true;
     res = await conn.groupAcceptInvite(code);
   } catch (e) {
-    m.reply(e?.message ? e.message : e)
+    return m.reply(e?.message ? e.message : e)
   }
   if (isOwner) {
     if (expired) {
