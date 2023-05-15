@@ -15684,7 +15684,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 9797,
+      "exp": 9809,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -73642,10 +73642,10 @@
       "lastSuccess": 1684145273265
     },
     "./plugins/OpenAI/openai.js": {
-      "total": 12,
-      "success": 12,
-      "last": 1684165964007,
-      "lastSuccess": 1684165964007
+      "total": 13,
+      "success": 13,
+      "last": 1684166180494,
+      "lastSuccess": 1684166180494
     },
     "./plugins/Sticker-Tools/sticker-sticker.js": {
       "total": 45,
@@ -73780,10 +73780,10 @@
       "lastSuccess": 1683370199219
     },
     "./plugins/Owners/owner-addprem.js": {
-      "total": 9,
-      "success": 9,
-      "last": 1683374540049,
-      "lastSuccess": 1683374540049
+      "total": 10,
+      "success": 10,
+      "last": 1684166175562,
+      "lastSuccess": 1684166175562
     },
     "./plugins/Owners/owner-delprem.js": {
       "total": 6,
