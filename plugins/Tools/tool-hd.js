@@ -1,5 +1,5 @@
 // Credits By https://github.com/FongsiDev
-import { processing } from '../../lib/scrape.js';
+import { processing } from "../../lib/scrape.js";
 import uploadImage from "../../lib/uploadImage.js";
 let handler = async (m) => {
   let q = m.quoted ? m.quoted : m;

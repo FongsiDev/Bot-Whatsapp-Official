@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 29941,
+      "exp": 30031,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -2336,7 +2336,7 @@
       "rhinoceroslastfeed": 0,
       "rock": 0,
       "roket": 0,
-      "role": "Beginner Grade 4 ⚊⁴",
+      "role": "Bronze II",
       "roti": 0,
       "rtrofi": "perunggu",
       "rubah": 0,
@@ -15266,7 +15266,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 258,
+      "exp": 259,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -72624,10 +72624,10 @@
       "lastSuccess": 1683674403168
     },
     "./plugins/Owners/owner-leavegc.js": {
-      "total": 8,
-      "success": 8,
-      "last": 1684027840687,
-      "lastSuccess": 1684027840687
+      "total": 9,
+      "success": 9,
+      "last": 1684145104415,
+      "lastSuccess": 1684145104415
     },
     "./plugins/Anonymous/anonymous_chat.js": {
       "total": 2,
@@ -72912,10 +72912,10 @@
       "lastSuccess": 1684024002136
     },
     "./plugins/Tools/tool-hd.js": {
-      "total": 20,
-      "success": 15,
-      "last": 1684144743995,
-      "lastSuccess": 1684144743995
+      "total": 21,
+      "success": 16,
+      "last": 1684144983875,
+      "lastSuccess": 1684144983875
     },
     "./plugins/Internets/lyrics.js": {
       "total": 3,
@@ -72948,10 +72948,10 @@
       "lastSuccess": 1684082109911
     },
     "./plugins/Tools/tool-delete.js": {
-      "total": 2,
-      "success": 0,
-      "last": 1684100173493,
-      "lastSuccess": 0
+      "total": 3,
+      "success": 1,
+      "last": 1684145097293,
+      "lastSuccess": 1684145097293
     },
     "./plugins/Tools/tool-readviewonce.js": {
       "total": 2,
