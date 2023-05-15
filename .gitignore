@@ -8,4 +8,4 @@ tmp/*
 session.data.json
 session
 .env
-/lib/backup.js
+./lib/backup.js
