@@ -2014,7 +2014,7 @@
             "limitjoin": 0
         },
         "6289503433262@s.whatsapp.net": {
-            "afk": 1684137678011,
+            "afk": -1,
             "afkReason": "",
             "age": -1,
             "agility": 16,
@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 28879,
+            "exp": 28900,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -2336,7 +2336,7 @@
             "rhinoceroslastfeed": 0,
             "rock": 0,
             "roket": 0,
-            "role": "Beginner Grade 4 ⚊⁴",
+            "role": "Bronze II",
             "roti": 0,
             "rtrofi": "perunggu",
             "rubah": 0,
@@ -20674,7 +20674,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 2674,
+            "exp": 2677,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -35660,7 +35660,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 1058,
+            "exp": 1083,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -71889,10 +71889,10 @@
             "lastSuccess": 1683107906147
         },
         "./plugins/Owners/owner-exec2.js": {
-            "total": 185,
-            "success": 185,
-            "last": 1684137556553,
-            "lastSuccess": 1684137556553
+            "total": 186,
+            "success": 186,
+            "last": 1684137779975,
+            "lastSuccess": 1684137779975
         },
         "./plugins/main-menu-1.js": {
             "total": 78,
