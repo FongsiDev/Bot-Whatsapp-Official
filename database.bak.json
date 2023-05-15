@@ -15684,7 +15684,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 9762,
+            "exp": 9779,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -15916,7 +15916,7 @@
             "rhinoceroslastfeed": 0,
             "rock": 0,
             "roket": 0,
-            "role": "Newbie ㋡",
+            "role": "Bronze I",
             "roti": 0,
             "rtrofi": "perunggu",
             "rubah": 0,
@@ -69297,7 +69297,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 943,
+            "exp": 945,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -73600,16 +73600,16 @@
             "lastSuccess": 1683474589718
         },
         "./plugins/_Function/tes123.js": {
-            "total": 48,
-            "success": 48,
-            "last": 1684151429974,
-            "lastSuccess": 1684151429974
+            "total": 49,
+            "success": 49,
+            "last": 1684165950091,
+            "lastSuccess": 1684165950091
         },
         "./plugins/_Function/_autoreact.js": {
-            "total": 323,
-            "success": 323,
-            "last": 1684157140717,
-            "lastSuccess": 1684157140717
+            "total": 324,
+            "success": 324,
+            "last": 1684165945516,
+            "lastSuccess": 1684165945516
         },
         "./plugins/Infos/test.js": {
             "total": 23,
@@ -73642,10 +73642,10 @@
             "lastSuccess": 1684145273265
         },
         "./plugins/OpenAI/openai.js": {
-            "total": 11,
-            "success": 11,
-            "last": 1683693530952,
-            "lastSuccess": 1683693530952
+            "total": 12,
+            "success": 12,
+            "last": 1684165964007,
+            "lastSuccess": 1684165964007
         },
         "./plugins/Sticker-Tools/sticker-sticker.js": {
             "total": 45,
@@ -73654,10 +73654,10 @@
             "lastSuccess": 1684126242326
         },
         "./plugins/Infos/speed.js": {
-            "total": 81,
-            "success": 81,
-            "last": 1684140563488,
-            "lastSuccess": 1684140563488
+            "total": 82,
+            "success": 82,
+            "last": 1684165954618,
+            "lastSuccess": 1684165954618
         },
         "./plugins/Exp-Info/exp-daftar.js": {
             "total": 4,
