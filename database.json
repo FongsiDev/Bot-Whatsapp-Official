@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 27859,
+      "exp": 27928,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -2336,7 +2336,7 @@
       "rhinoceroslastfeed": 0,
       "rock": 0,
       "roket": 0,
-      "role": "Beginner Grade 4 ⚊⁴",
+      "role": "Bronze II",
       "roti": 0,
       "rtrofi": "perunggu",
       "rubah": 0,
@@ -71340,10 +71340,10 @@
   },
   "stats": {
     "./plugins/Owners/owner-exec.js": {
-      "total": 504,
-      "success": 504,
-      "last": 1684108355433,
-      "lastSuccess": 1684108355433
+      "total": 505,
+      "success": 505,
+      "last": 1684126263578,
+      "lastSuccess": 1684126263578
     },
     "./plugins/Infos/info-banlist.js": {
       "total": 3,
@@ -71418,10 +71418,10 @@
       "lastSuccess": 1684018500180
     },
     "./plugins/Tools/tool-tourl.js": {
-      "total": 20,
-      "success": 19,
-      "last": 1684082134355,
-      "lastSuccess": 1684082134355
+      "total": 21,
+      "success": 20,
+      "last": 1684126241450,
+      "lastSuccess": 1684126241450
     },
     "./plugins/OpenAI/openai.js": {
       "total": 11,
@@ -71430,10 +71430,10 @@
       "lastSuccess": 1683693530952
     },
     "./plugins/Sticker-Tools/sticker-sticker.js": {
-      "total": 44,
-      "success": 40,
-      "last": 1684082136967,
-      "lastSuccess": 1684082136967
+      "total": 45,
+      "success": 41,
+      "last": 1684126242326,
+      "lastSuccess": 1684126242326
     },
     "./plugins/Infos/speed.js": {
       "total": 80,
