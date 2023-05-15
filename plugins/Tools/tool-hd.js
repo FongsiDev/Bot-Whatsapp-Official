@@ -1,8 +1,5 @@
-// Credits By https://github.com/Xnuvers007
-import fs from "fs";
-import fetch from "node-fetch";
-import FormData from "form-data";
-
+// Credits By https://github.com/FongsiDev
+import { processing } from '../../lib/scrape.js';
 let handler = async (m) => {
   let q = m.quoted ? m.quoted : m;
   let mime = (q.msg || q).mimetype || "";
@@ -10,19 +7,10 @@ let handler = async (m) => {
   let media = await q.download(true);
   await m.reply(global.wait);
   if (!/image\/(jpe?g|png)/.test(mime)) throw `Mime ${mime} tidak support`;
-  let form = new FormData();
-  form.append("image", fs.createReadStream(media));
-  let resp = await fetch("https://api.deepai.org/api/torch-srgan", {
-    method: "POST",
-    headers: {
-      "api-key": "quickstart-QUdJIGlzIGNvbWluZy4uLi4K",
-    },
-    body: form,
-  });
-  let data = await resp.json();
+  let data = await processing(media, "enhance");
   await conn.sendFile(
     m.chat,
-    data.output_url,
+    data,
     "hd.jpg",
     "ɪɴɪ ᴋᴀᴋ ʜᴀꜱɪʟɴʏᴀヾ(≧▽≦*)ᴏ",
     m
