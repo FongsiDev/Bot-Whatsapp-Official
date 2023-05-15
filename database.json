@@ -2014,8 +2014,8 @@
       "limitjoin": 0
     },
     "6289503433262@s.whatsapp.net": {
-      "afk": -1,
-      "afkReason": "",
+      "afk": 1684148295598,
+      "afkReason": "Mau mau mau aja",
       "age": -1,
       "agility": 16,
       "anakanjing": 0,
@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 30446,
+      "exp": 30491,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -22763,7 +22763,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 5465,
+      "exp": 5478,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -58922,7 +58922,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 1193,
+      "exp": 1210,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -72826,10 +72826,10 @@
       "lastSuccess": 1684081377208
     },
     "./plugins/User/afk-afk.js": {
-      "total": 22,
-      "success": 22,
-      "last": 1684137678016,
-      "lastSuccess": 1684137678016
+      "total": 23,
+      "success": 23,
+      "last": 1684148295603,
+      "lastSuccess": 1684148295603
     },
     "./plugins/Funs/fun-apakah.js": {
       "total": 2,
