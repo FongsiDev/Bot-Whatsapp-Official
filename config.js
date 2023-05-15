@@ -689,6 +689,7 @@ global.hbeach = [
 /*============== TEXT ==============*/
 global.wait = "```「▰▰▰▱▱▱▱▱▱▱」Loading...```";
 global.eror = "```404 error```";
+global.done = "ɪɴɪ ᴋᴀᴋ ʜᴀꜱɪʟɴʏᴀヾ(≧▽≦*)ᴏ";
 
 /*=========== TYPE DOCUMENT ===========*/
 global.dpptx =
