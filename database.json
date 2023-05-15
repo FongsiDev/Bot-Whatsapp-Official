@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 30853,
+      "exp": 30897,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -29864,7 +29864,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 3136,
+      "exp": 3140,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -74593,10 +74593,10 @@
       "lastSuccess": 1684024002136
     },
     "./plugins/Tools/tool-hd.js": {
-      "total": 24,
-      "success": 19,
-      "last": 1684193664100,
-      "lastSuccess": 1684193664100
+      "total": 25,
+      "success": 20,
+      "last": 1684193915354,
+      "lastSuccess": 1684193915354
     },
     "./plugins/Internets/lyrics.js": {
       "total": 3,
@@ -74645,6 +74645,18 @@
       "success": 2,
       "last": 1684143608453,
       "lastSuccess": 1684143608453
+    },
+    "./plugins/Tools/tool-recolor.js": {
+      "total": 2,
+      "success": 2,
+      "last": 1684193918636,
+      "lastSuccess": 1684193918636
+    },
+    "./plugins/Tools/tool-dehaze.js": {
+      "total": 2,
+      "success": 2,
+      "last": 1684193945152,
+      "lastSuccess": 1684193945152
     }
   },
   "msgs": {},
