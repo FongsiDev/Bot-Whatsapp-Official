@@ -1,6 +1,6 @@
 {
   "name": "botwa",
-  "version": "6.7.24",
+  "version": "6.7.539",
   "description": "Bot WhatsApp",
   "main": "index.js",
   "type": "module",
@@ -10,9 +10,14 @@
     "plugins": "plugins"
   },
   "scripts": {
-    "start": "node index.js --server --autocleartmp --autoread --gconly",
+    "start": "npm run bot",
+    "start2": "nodemon -x npm run bot",
+    "start3": "nodemon -x npm run bot2",
     "formatfile": "npx prettier --write .",
+    "bot": "node index.js --server --autocleartmp --autoread --gconly",
+    "bot2": "npm run formatfile && node index.js --server --autocleartmp --autoread --gconly",
     "test": "node test.js",
+    "db": "cp database.bak.json database.json",
     "test2": "nodemon index.js"
   },
   "keywords": [
@@ -100,6 +105,7 @@
     "node-fetch": "^2.6.9",
     "node-gtts": "^2.0.2",
     "node-webpmux": "^3.1.5",
+    "nodemon": "^2.0.22",
     "openai": "^3.2.1",
     "path": "^0.12.7",
     "pino-pretty": "^10.0.0",
@@ -107,6 +113,7 @@
     "qrcode-terminal": "*",
     "request": "^2.88.2",
     "similarity": "^1.2.1",
+    "simple-json-db": "^2.0.0",
     "syntax-error": "^1.4.0",
     "terminal-image": "*",
     "translate-google-api": "^1.0.4",
