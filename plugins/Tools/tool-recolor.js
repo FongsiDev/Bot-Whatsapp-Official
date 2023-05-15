@@ -8,7 +8,7 @@ let handler = async (m) => {
   let media = await q.download(true);
   await m.reply(global.wait);
   if (!/image\/(jpe?g|png)/.test(mime)) throw `Mime ${mime} tidak support`;
-  let data = await processing(media, "enhance");
+  let data = await processing(media, "recolor");
   let url = await uploadImage((await conn.getFile(data, true)).filename);
   await conn.sendFile(
     m.chat,
@@ -19,8 +19,8 @@ let handler = async (m) => {
   );
 };
 
-handler.help = ["hd <caption|reply media>"];
+handler.help = ["recolor <caption|reply media>"];
 handler.tags = ["tools"];
-handler.command = /^(hd|jernih)$/i;
+handler.command = /^(recolor)$/i;
 
 export default handler;
