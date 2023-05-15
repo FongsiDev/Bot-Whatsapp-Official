@@ -3,12 +3,13 @@ let linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})( [0-9]{1,3})?/i;
 let handler = async (m, { conn, text, isOwner }) => {
   let [_, code, expired] = text.match(linkRegex) || [];
   if (!code) throw "Link invalid";
-  let res, isJoin = false;
+  let res,
+    isJoin = false;
   try {
     isJoin = true;
     res = await conn.groupAcceptInvite(code);
   } catch (e) {
-    return m.reply(e?.message ? e.message : e)
+    return m.reply(e?.message ? e.message : e);
   }
   if (isOwner) {
     if (expired) {
@@ -19,7 +20,7 @@ let handler = async (m, { conn, text, isOwner }) => {
       expired = false;
     }
   }
-  if(isJoin) {
+  if (isJoin) {
     conn.JoinLst = +new Date() + 30 * 1000;
   }
   m.reply(

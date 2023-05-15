@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 28675,
+            "exp": 28699,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -55212,7 +55212,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 533,
+            "exp": 543,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -55396,7 +55396,7 @@
             "mythic": 0,
             "naga": 0,
             "nagalastclaim": 0,
-            "name": "zahrakeren/chippiexd",
+            "name": "zahra",
             "net": 0,
             "nila": 0,
             "nilabakar": 0,
@@ -71430,10 +71430,10 @@
     },
     "stats": {
         "./plugins/Owners/owner-exec.js": {
-            "total": 528,
-            "success": 528,
-            "last": 1684134771259,
-            "lastSuccess": 1684134771259
+            "total": 529,
+            "success": 529,
+            "last": 1684135585387,
+            "lastSuccess": 1684135585387
         },
         "./plugins/Infos/info-banlist.js": {
             "total": 3,
