@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 30942,
+      "exp": 30994,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -15684,7 +15684,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 9898,
+      "exp": 9913,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -29864,7 +29864,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 3142,
+      "exp": 3150,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -74647,16 +74647,16 @@
       "lastSuccess": 1684143608453
     },
     "./plugins/Tools/tool-recolor.js": {
-      "total": 2,
-      "success": 2,
-      "last": 1684193918636,
-      "lastSuccess": 1684193918636
+      "total": 3,
+      "success": 3,
+      "last": 1684194049143,
+      "lastSuccess": 1684194049143
     },
     "./plugins/Tools/tool-dehaze.js": {
-      "total": 2,
-      "success": 2,
-      "last": 1684193945152,
-      "lastSuccess": 1684193945152
+      "total": 3,
+      "success": 3,
+      "last": 1684194015519,
+      "lastSuccess": 1684194015519
     }
   },
   "msgs": {},
