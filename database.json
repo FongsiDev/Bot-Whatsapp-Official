@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 31037,
+      "exp": 31061,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -74131,10 +74131,10 @@
       "lastSuccess": 1684126242326
     },
     "./plugins/Infos/speed.js": {
-      "total": 83,
-      "success": 83,
-      "last": 1684179765968,
-      "lastSuccess": 1684179765968
+      "total": 84,
+      "success": 84,
+      "last": 1684194339366,
+      "lastSuccess": 1684194339366
     },
     "./plugins/Exp-Info/exp-daftar.js": {
       "total": 4,

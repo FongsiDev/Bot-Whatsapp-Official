@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 30999,
+            "exp": 31041,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -58922,7 +58922,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 1263,
+            "exp": 1264,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -59106,7 +59106,7 @@
             "mythic": 0,
             "naga": 0,
             "nagalastclaim": 0,
-            "name": "~ Niko_sharkdemon1🗿☕",
+            "name": "+62 813-5084-2059",
             "net": 0,
             "nila": 0,
             "nilabakar": 0,
@@ -74001,6 +74001,36 @@
             "viewOnce": false,
             "viewonce": false,
             "welcome": false
+        },
+        "120363135995781184@g.us": {
+            "isName": "💜🤍grup furry🤍💜",
+            "jid": "120363135995781184@g.us",
+            "antiDelete": false,
+            "antiLink": false,
+            "antiVirtex": false,
+            "antiSticker": false,
+            "antiToxic": false,
+            "detect": false,
+            "delete": false,
+            "expired": 0,
+            "getmsg": false,
+            "isBanned": false,
+            "lastAnime": false,
+            "latestNews": false,
+            "nsfw": false,
+            "premium": false,
+            "premiumTime": false,
+            "premnsfw": false,
+            "sBye": "",
+            "sDemote": "",
+            "simi": false,
+            "sPromote": "",
+            "stiker": false,
+            "sWelcome": "",
+            "useDocument": false,
+            "viewOnce": false,
+            "viewonce": false,
+            "welcome": false
         }
     },
     "stats": {
@@ -74047,10 +74077,10 @@
             "lastSuccess": 1683474589718
         },
         "./plugins/_Function/tes123.js": {
-            "total": 50,
-            "success": 50,
-            "last": 1684166097568,
-            "lastSuccess": 1684166097568
+            "total": 51,
+            "success": 51,
+            "last": 1684194309877,
+            "lastSuccess": 1684194309877
         },
         "./plugins/_Function/_autoreact.js": {
             "total": 325,
@@ -74203,10 +74233,10 @@
             "lastSuccess": 1683307039050
         },
         "./plugins/Owners/owner-join.js": {
-            "total": 19,
-            "success": 13,
-            "last": 1684147394233,
-            "lastSuccess": 1684147394233
+            "total": 20,
+            "success": 14,
+            "last": 1684194293814,
+            "lastSuccess": 1684194293814
         },
         "./plugins/RPG_Games/rpg-open.js": {
             "total": 4,
