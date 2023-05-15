@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 30031,
+      "exp": 30055,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -2336,7 +2336,7 @@
       "rhinoceroslastfeed": 0,
       "rock": 0,
       "roket": 0,
-      "role": "Bronze II",
+      "role": "Beginner Grade 4 ⚊⁴",
       "roti": 0,
       "rtrofi": "perunggu",
       "rubah": 0,
@@ -72402,10 +72402,10 @@
       "lastSuccess": 1684018500180
     },
     "./plugins/Tools/tool-tourl.js": {
-      "total": 21,
-      "success": 20,
-      "last": 1684126241450,
-      "lastSuccess": 1684126241450
+      "total": 22,
+      "success": 21,
+      "last": 1684145273265,
+      "lastSuccess": 1684145273265
     },
     "./plugins/OpenAI/openai.js": {
       "total": 11,
