@@ -2014,8 +2014,8 @@
       "limitjoin": 0
     },
     "6289503433262@s.whatsapp.net": {
-      "afk": 1684152184421,
-      "afkReason": "Lagi Ngecas",
+      "afk": -1,
+      "afkReason": "",
       "age": -1,
       "agility": 16,
       "anakanjing": 0,
@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 30734,
+      "exp": 30762,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -73159,10 +73159,10 @@
       "lastSuccess": 1684151429974
     },
     "./plugins/_Function/_autoreact.js": {
-      "total": 322,
-      "success": 322,
-      "last": 1684150715193,
-      "lastSuccess": 1684150715193
+      "total": 323,
+      "success": 323,
+      "last": 1684157140717,
+      "lastSuccess": 1684157140717
     },
     "./plugins/Infos/test.js": {
       "total": 23,
