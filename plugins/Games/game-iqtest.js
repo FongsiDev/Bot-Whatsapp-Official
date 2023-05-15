@@ -1,9 +1,25 @@
 let handler = async (m, { conn }) => {
-  conn.reply(m.chat, `${pickRandom(global.iq)}`, m);
+  const isOwner = [
+    conn.decodeJid(conn.user.id),
+    ...global.owner.map(([number]) => number),
+  ]
+    .map((v) => v?.replace(/[^0-9]/g, "") + "@s.whatsapp.net")
+    .includes(m.mentionedJid[0]);
+  const isOwner_ = [
+    conn.decodeJid(conn.user.id),
+    ...global.owner.map(([number]) => number),
+  ]
+    .map((v) => v?.replace(/[^0-9]/g, "") + "@s.whatsapp.net")
+    .includes(m.sender);
+  conn.reply(
+    m.chat,
+    `${isOwner_ ? pickRandom(global.iqfake) : pickRandom(global.iq)}`,
+    m
+  );
 };
-handler.help = ["iqtest"];
+handler.help = ["iqtest", "testiq"];
 handler.tags = ["game"];
-handler.command = /^(iqtest)$/i;
+handler.command = /^(iqtest|testiq)$/i;
 handler.owner = false;
 handler.mods = false;
 handler.premium = false;
@@ -45,4 +61,15 @@ global.iq = [
   "IQ Anda Sebesar : 5000",
   "IQ Anda Sebesar : 7500",
   "IQ Anda Sebesar : 10000",
+];
+global.iqfake = [
+  "IQ Anda Sebesar : 60706",
+  "IQ Anda Sebesar : 70800",
+  "IQ Anda Sebesar : 81002",
+  "IQ Anda Sebesar : 94500",
+  "IQ Anda Sebesar : 20000",
+  "IQ Anda Sebesar : Tidak Terbatas!",
+  "IQ Anda Sebesar : 50000",
+  "IQ Anda Sebesar : 75000",
+  "IQ Anda Sebesar : 90000",
 ];

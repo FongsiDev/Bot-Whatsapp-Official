@@ -13,6 +13,7 @@ import ffmpeg from "fluent-ffmpeg";
 /*import ffmpegInstaller from "@ffmpeg-installer/ffmpeg";
 ffmpeg.setFfmpegPath(ffmpegInstaller.path);
 */
+import JSONdb from "simple-json-db";
 import { Boom } from "@hapi/boom";
 global.__filename = function filename(
   pathURL = import.meta.url,
@@ -41,14 +42,14 @@ import {
   watchFile,
 } from "fs";
 import yargs from "yargs";
-import { spawn } from "child_process";
+import { spawn, exec } from "child_process";
 import lodash from "lodash";
 import chalk from "chalk";
 import pino from "pino";
 import syntaxerror from "syntax-error";
 import { tmpdir } from "os";
 import { format } from "util";
-import { makeWASocket, protoType, serialize } from "./lib/simple.js";
+import { makeWASocket, protoType, serialize } from "./lib/simple_test.js";
 import { Low, JSONFile } from "lowdb";
 import { mongoDB, mongoDBV2 } from "./lib/mongoDB.js";
 import store from "./lib/store.js";
@@ -56,7 +57,6 @@ import cloudDBAdapter from "./lib/cloudDBAdapter.js";
 const { DisconnectReason, fetchLatestBaileysVersion, useMultiFileAuthState } = (
   await import("@adiwajshing/baileys")
 ).default;
-
 const { CONNECTING } = ws;
 const { chain } = lodash;
 const PORT = process.env.PORT || process.env.SERVER_PORT || 3000;
@@ -109,7 +109,7 @@ global.db = new Low(
       : new mongoDB(opts["db"])
     : new JSONFile(`${opts._[0] ? opts._[0] + "_" : ""}database.json`)
 );
-
+global.db_bc = new JSONdb(`./database.bak.json`);
 global.DATABASE = global.db; // Backwards Compatibility
 global.loadDatabase = async function loadDatabase() {
   if (global.db.READ)
@@ -137,6 +137,13 @@ global.loadDatabase = async function loadDatabase() {
     ...(global.db.data || {}),
   };
   global.db.chain = chain(global.db.data);
+  try {
+    exec(
+      `cp database.bak.json ${opts._[0] ? opts._[0] + "_" : ""}database.json`
+    );
+  } catch (e) {
+    null;
+  }
 };
 loadDatabase();
 
@@ -162,7 +169,7 @@ const { version, isLatest } = await fetchLatestBaileysVersion();
 console.log(
   `Type State: ${opts["multi"] ? "MultiFileAuth" : "SingleFileAuth"}`
 );
-
+console.log(`using WA v${version.join(".")}, isLatest: ${isLatest}`);
 const connectionOptions = {
   version,
   logger: pino({ level: "silent" }),
@@ -188,12 +195,21 @@ const connectionOptions = {
     }
     return message;
   },
+  getMessage: async (key) => {
+    if (store) {
+      const msg = await store.loadMessage(key.remoteJid, key.id);
+      return msg.message || undefined;
+    }
+    return {
+      conversation: `hello, i'm ${namebot_1}`,
+    };
+  },
   browser: ["WhatsApp Multi Device", "Safari", "6.6.1"],
-
   auth: state,
   // logger: pino({ prettyPrint: { levelFirst: true, ignore: 'hostname', translateTime: true },  prettifier: require('pino-pretty') }),
   // logger: P({ level: 'trace' })
 };
+
 global.conn = makeWASocket(connectionOptions);
 conn.isInit = false;
 
@@ -233,11 +249,21 @@ ${htjava} *Title:* ${data.video.title}
 */
 if (!opts["test"]) {
   setInterval(async () => {
-    if (global.db.data) await global.db.write().catch(console.error);
+    if (global.db.data) {
+      await db_bc.JSON(global.db.data);
+      setTimeout(async () => {
+        await db_bc.sync();
+      }, 5000);
+      await global.db.write().catch(console.error);
+      try {
+        (await import("./lib/backup.js")).default();
+      } catch (e) {
+        null;
+      }
+    }
     if (opts["autocleartmp"])
       try {
         await clearTmp();
-        console.log(chalk.cyanBright("Successfully clear tmp"));
       } catch (e) {
         console.error(e);
         console.log(chalk.cyanBright("Failded clear tmp"));
@@ -255,8 +281,14 @@ async function clearTmp() {
   );
   return filename.map((file) => {
     const stats = statSync(file);
-    if (stats.isFile() && Date.now() - stats.mtimeMs >= 1000 * 60 * 3)
+    if (
+      filename.length >= 1 &&
+      stats.isFile() &&
+      Date.now() - stats.mtimeMs >= 1000 * 60 * 3
+    ) {
       return unlinkSync(file); // 3 minutes
+      console.log(chalk.cyanBright("Successfully clear tmp"));
+    }
     return false;
   });
 }

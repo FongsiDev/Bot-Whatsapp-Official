@@ -77,7 +77,7 @@ let handler = async (m, { conn, isRowner }) => {
   *🛑 RAM:* ${format(totalmem() - freemem())} / ${format(totalmem())}
   *🔵 FreeRAM:* ${format(freemem())}
   
-  *💻 Platform:* ${os.platform()}
+  *💻 Platform:* ${os.platform() == "android" ? "VPS-NASA-C982" : os.platform()}
   *🧿 Server:* ${os.hostname()}
   ${readMore}
   *${htjava} NodeJS Memory Usage*

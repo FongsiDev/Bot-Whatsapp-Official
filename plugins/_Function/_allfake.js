@@ -48,11 +48,11 @@ handler.all = async function (g) {
           showAdAttribution: true,
           title: global.ucapan,
           body: "Hallo " + t,
-          mediaUrl: sgc,
+          mediaUrl: syt,
           description: "simple bot esm",
           previewType: "PHOTO",
           thumbnail: await (await A(p)).buffer(),
-          sourceUrl: sgh,
+          sourceUrl: syt,
         },
       },
     };
@@ -66,7 +66,7 @@ handler.all = async function (g) {
           title: "★BKN BOT BY BLUECKKN★",
           body: wm,
           thumbnailUrl: p,
-          sourceUrl: sgc,
+          sourceUrl: sig,
         },
       },
     };

@@ -1,4 +1,4 @@
-import { smsg } from "./lib/simple.js";
+import { smsg } from "./lib/simple_test.js";
 import { format } from "util";
 import { fileURLToPath } from "url";
 import path, { join } from "path";
@@ -60,7 +60,12 @@ export async function handler(chatUpdate) {
         if (!("skill" in user)) user.skill = "";
         if (!("title" in user)) user.title = "";
 
-        if (!("name" in user)) user.name = m.name;
+        if (!("name" in user)) {
+          user.name = m.name;
+        } else {
+          user.name = m.name;
+        }
+        if (!("jid" in user)) user.jid = m.sender;
         if (!isNumber(user.age)) user.age = -1;
         if (!isNumber(user.anggur)) user.anggur = 0;
         if (!isNumber(user.apel)) user.apel = 0;
@@ -870,13 +875,22 @@ export async function handler(chatUpdate) {
       let chat = global.db.data.chats[m.chat];
       if (typeof chat !== "object") global.db.data.chats[m.chat] = {};
       if (chat) {
-        if (!("isName" in chat))
+        if (!("isName" in chat)) {
           chat.isName = (
             (m.isGroup
               ? (conn.chats[m.chat] || {}).metadata ||
                 (await this.groupMetadata(m.chat).catch((_) => null))
               : {}) || {}
           )?.subject;
+        } else {
+          chat.isName = (
+            (m.isGroup
+              ? (conn.chats[m.chat] || {}).metadata ||
+                (await this.groupMetadata(m.chat).catch((_) => null))
+              : {}) || {}
+          )?.subject;
+        }
+        if (!("jid" in chat)) chat.jid = m.chat;
         if (!("antiDelete" in chat)) chat.antiDelete = false;
         if (!("antiLink" in chat)) chat.antiLink = false;
         if (!("antiVirtex" in chat)) chat.antiVirtex = false;
@@ -911,6 +925,7 @@ export async function handler(chatUpdate) {
                 (await this.groupMetadata(m.chat).catch((_) => null))
               : {}) || {}
           )?.subject,
+          jid: m.chat,
           antiDelete: false,
           antiLink: false,
           antiVirtex: false,
@@ -1493,12 +1508,16 @@ export async function participantsUpdate({ id, participants, action }) {
                 customTag: "GoodBye",
               }
             );
+            let thm = flaaa2.getRandom() + "Welcome to my group";
+            let thg = flaaa2.getRandom() + "Goodbye from my group";
             conn.sendButton(
               id,
               text,
               botdate,
               action == "add" ? wel : lea,
-              [["Hello 🤗👋", ".intro"]],
+              action == "add"
+                ? [["Hello 🤗👋", ".intro"]]
+                : [["Goodbye 🫂👋", "y"]],
               null,
               {
                 contextInfo: {
@@ -1512,11 +1531,9 @@ export async function participantsUpdate({ id, participants, action }) {
                     title: "Hᴀʟᴏ Nɢᴀʙ",
                     body: wm,
                     thumbnail: await (
-                      await conn.getFile(
-                        pickRandom(flaaa2) + "Welcome to my group"
-                      )
+                      await conn.getFile(action == "add" ? thm : thg)
                     ).data,
-                    thumbnailUrl: pickRandom(flaaa2) + "Welcome to my group",
+                    thumbnailUrl: action == "add" ? thm : thg,
                     sourceUrl: sgc,
                   },
                 },

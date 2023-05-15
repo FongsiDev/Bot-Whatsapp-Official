@@ -1,5 +1,9 @@
-# BKN-BOT
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
 
+<h1 align="center" id="title">BKN-BOT</h1>
+
+<p align="center">
+<img src="https://socialify.git.ci/FongsiDev/Bot-Whatsapp-Official/image?description=1&amp;font=Rokkitt&amp;forks=1&amp;issues=1&amp;language=1&amp;name=1&amp;pattern=Circuit%20Board&amp;pulls=1&amp;stargazers=1&amp;theme=Auto" alt="project-image">
 <a href="https://github.com/FongsiDev/Bot-Whatsapp-Official/network/members"><img title="Forks" src="https://img.shields.io/github/forks/FongsiDev/Bot-Whatsapp-Official?label=Forks&color=blue&style=flat-square"></a>
 <a href="https://github.com/FongsiDev/Bot-Whatsapp-Official/watchers"><img title="Watchers" src="https://img.shields.io/github/watchers/FongsiDev/Bot-Whatsapp-Official?label=Watchers&color=green&style=flat-square"></a>
 <a href="https://github.com/FongsiDev/Bot-Whatsapp-Official/stargazers"><img title="Stars" src="https://img.shields.io/github/stars/FongsiDev/Bot-Whatsapp-Official?label=Stars&color=yellow&style=flat-square"></a>
@@ -8,8 +12,75 @@
 <a href="https://github.com/FongsiDev/Bot-Whatsapp-Official/issues?q=is%3Aissue+is%3Aclosed"><img title="Issues" src="https://img.shields.io/github/issues-closed/FongsiDev/Bot-Whatsapp-Official?label=Issues&color=red&style=flat-square"></a>
 <a href="https://github.com/FongsiDev/Bot-Whatsapp-Official/pulls"><img title="Pull Request" src="https://img.shields.io/github/issues-pr/FongsiDev/Bot-Whatsapp-Official?label=PullRequest&color=success&style=flat-square"></a>
 <a href="https://github.com/FongsiDev/Bot-Whatsapp-Official/pulls?q=is%3Apr+is%3Aclosed"><img title="Pull Request" src="https://img.shields.io/github/issues-pr-closed/FongsiDev/Bot-Whatsapp-Official?label=PullRequest&color=red&style=flat-square"></a>
+</p>
+<p align="center">
+  <a href="https://github.com/FongsiDev"><img src="http://readme-typing-svg.herokuapp.com?color=FFFFFF&center=true&vCenter=true&multiline=false&lines=Bot+WhatsApp+Multi+Device;Base+ori+by+FongsiDev;Give+star+and+forks+this+Repo+:D" alt="ʘᴗʘ">
+</p>
 
-#### Deploy to Heroku
+<p align="center">
+ <a href="#"><img title="BKNBOT-MD" src="https://img.shields.io/badge/Whatshapp BOT-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
+</p>
+<p align="center">
+ <a href="https://github.com/FongsiDev"><img title="Author" src="https://img.shields.io/badge/AUTHOR-FongsiDev-green.svg?style=for-the-badge&logo=github"></a>
+</p>
+
+---
+
+## `Contact Me 💌`
+
+<p align="center">
+ <a href="https://youtube.com/@BLUECKKN">
+    <img align="left" alt="BKN | YouTube" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Youtube.svg" />
+  </a>
+ <a href="https://wa.me/6289503433262">
+    <img align="left" alt="BKN | Whastapp" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Whatsapp.svg" />
+  </a>
+ <a href="mailto: fongsiapi@gmail.com">
+    <img align="left" alt="BKN | Gmail" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Gmail.svg" />
+  </a>
+ <a href="https://wa.me/6285280808438">
+    <img align="left" alt="Demo Bot | Whastapp" src="https://img.shields.io/badge/WhatsApp%20BOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+ </a>
+</p>
+<br/>
+
+---
+
+## PENTING
+
+> **Warning**: Jangan Memperjual Belikan Script Ini.
+
+---
+
+### a little about this bot
+
+- ✔️ | **Simple**
+- ❌ | **Button Template**
+- ✔️ | **Multi Device**
+- ❌ | **Button Document(Experiment)**
+
+---
+
+### Some of the features include
+
+- ✔️ | Menfess
+- ✔️ | AntiCall
+- ✔️ | Game & Rpg Game
+- ✔️ | Nsfw
+- ✔️ | Sticker
+- ✔️ | Kerang Ajaib
+- ✔️ | Quotes
+- ✔️ | Anime
+- ✔️ | Premium
+- ✔️ | Tools
+
+---
+
+## `USER RAILWAY`
+
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app)
+
+## `USER HEROKU`
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/FongsiDev/Bot-Whatsapp-Official)
 
@@ -20,7 +91,7 @@
 | **FFMPEG**      | [here](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest) |
 | **IMAGEMAGICK** | [here](https://github.com/DuckyTeam/heroku-buildpack-imagemagick)     |
 
-### FOR TERMUX USER
+#### FOR TERMUX USER
 
 ```bash
 pkg update && pkg upgrade
@@ -30,7 +101,7 @@ wget -O - https://gist.githubusercontent.com/FongsiDev/cd320219bd007e3d4488e2061
 
 ---
 
-## INSTALL ON TERMUX WITH UBUNTU
+#### INSTALL ON TERMUX WITH UBUNTU
 
 [ INSTALLING UBUNTU ]
 
@@ -68,7 +139,7 @@ npm update
 
 ---
 
-## FOR WINDOWS/VPS/RDP USER
+#### FOR WINDOWS/VPS/RDP USER
 
 - Download And Install Git [`Click Here`](https://git-scm.com/downloads)
 - Download And Install NodeJS [`Click Here`](https://nodejs.org/en/download)
@@ -118,6 +189,10 @@ node .
 ### `--self`
 
 Activate self mode (Ignores other)
+
+### `--multi`
+
+Multiple Sessions
 
 ### `--pconly`
 
@@ -200,7 +275,16 @@ Presence avaible: available, composing, recording, paused
 
 now BKN-BOT already support MD, but of course there are still many **bugs** and there are still many that have not been **implemented**,
 
-use this [branch](https://github.com/FongsiDev/Bot-Whatsapp-Official/tree/multi-device) if you want to use MD!
+use this [branch](https://github.com/FongsiDev/Bot-Whatsapp-Official/edit/v6.7.4-beta/README.md#--multi) if you want to use MD!
+
+---
+
+### 📮 S&K
+
+1. Not For Sale
+2. Don't forget give star this repo
+3. Don't use this repository wrong!
+4. If you have problem chat me in owner number
 
 ---
 

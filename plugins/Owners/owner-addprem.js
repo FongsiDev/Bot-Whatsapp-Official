@@ -3,16 +3,17 @@ let handler = async (m, { conn, text, usedPrefix, command, args }) => {
     ? m.mentionedJid[0]
     : m.quoted
     ? m.quoted.sender
-    : args[0].replace(/[^0-9]/g, "") + "@s.whatsapp.net";
-  if (!who) who = m.chat;
+    : args[1]
+    ? args[1].replace(/[^0-9]/g, "") + "@s.whatsapp.net"
+    : m.chat;
   let user = db.data.users[who];
   if (!user) user = db.data.users[who] = {};
   if (!who) throw `tag or mention someone!`;
-  let txt = args[1];
+  let txt = args[0];
   if (!txt) throw `where the number of days?`;
   if (isNaN(txt))
     return m.reply(
-      `only number!\n\nexample:\n${usedPrefix + command} [user] <days>`
+      `only number!\n\nexample:\n${usedPrefix + command} <days> [user]`
     );
   var jumlahHari = 86400000 * txt;
   var now = new Date() * 1;
@@ -20,11 +21,11 @@ let handler = async (m, { conn, text, usedPrefix, command, args }) => {
   else user.premiumTime = now + jumlahHari;
   user.premium = true;
   m.reply(`✔️ Success
-📛 Name: ${user.name || conn.getName(who)}
+📛 Name: ${user.name || conn.getTag(who)}
 📆 Days: ${txt} days
 📉 Countdown: ${user.premiumTime - now}`);
 };
-handler.help = ["addprem [user] <days>"];
+handler.help = ["addprem <days> [user]"];
 handler.tags = ["owner"];
 handler.command = /^(add|tambah|\+)p(rem)?$/i;
 handler.rowner = true;
