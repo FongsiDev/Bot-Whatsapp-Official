@@ -19,7 +19,9 @@ let handler = async (m, { conn, text, isOwner }) => {
       expired = false;
     }
   }
-  
+  if(isJoin) {
+    conn.JoinLst = +new Date() + 30 * 1000;
+  }
   m.reply(
     `Berhasil join grup ${res}${expired ? ` selama ${expired} hari` : ""}`
   );
