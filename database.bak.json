@@ -15684,7 +15684,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 10421,
+            "exp": 10463,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -15916,7 +15916,7 @@
             "rhinoceroslastfeed": 0,
             "rock": 0,
             "roket": 0,
-            "role": "Bronze I",
+            "role": "Newbie ㋡",
             "roti": 0,
             "rtrofi": "perunggu",
             "rubah": 0,
@@ -75335,10 +75335,10 @@
             "lastSuccess": 1683474589718
         },
         "./plugins/_Function/tes123.js": {
-            "total": 52,
-            "success": 52,
-            "last": 1684230152395,
-            "lastSuccess": 1684230152395
+            "total": 53,
+            "success": 53,
+            "last": 1684233887649,
+            "lastSuccess": 1684233887649
         },
         "./plugins/_Function/_autoreact.js": {
             "total": 330,
@@ -75389,10 +75389,10 @@
             "lastSuccess": 1684229192968
         },
         "./plugins/Infos/speed.js": {
-            "total": 94,
-            "success": 94,
-            "last": 1684233683792,
-            "lastSuccess": 1684233683792
+            "total": 95,
+            "success": 95,
+            "last": 1684233876924,
+            "lastSuccess": 1684233876924
         },
         "./plugins/Exp-Info/exp-daftar.js": {
             "total": 4,
@@ -75467,16 +75467,16 @@
             "lastSuccess": 1684020649939
         },
         "./plugins/Owners/owner-unbanchat.js": {
-            "total": 17,
-            "success": 17,
-            "last": 1684230129994,
-            "lastSuccess": 1684230129994
+            "total": 18,
+            "success": 18,
+            "last": 1684233881776,
+            "lastSuccess": 1684233881776
         },
         "./plugins/Owners/owner-banchat.js": {
-            "total": 16,
-            "success": 16,
-            "last": 1684233679609,
-            "lastSuccess": 1684233679609
+            "total": 17,
+            "success": 17,
+            "last": 1684233891953,
+            "lastSuccess": 1684233891953
         },
         "./plugins/Infos/intro.js": {
             "total": 6,
