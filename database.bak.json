@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 34417,
+            "exp": 34426,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -15684,7 +15684,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 11455,
+            "exp": 11485,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -20674,7 +20674,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 2857,
+            "exp": 2858,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -76227,10 +76227,10 @@
     },
     "stats": {
         "./plugins/Owners/owner-exec.js": {
-            "total": 613,
-            "success": 613,
-            "last": 1684244945343,
-            "lastSuccess": 1684244945343
+            "total": 614,
+            "success": 614,
+            "last": 1684245044850,
+            "lastSuccess": 1684245044850
         },
         "./plugins/Infos/info-banlist.js": {
             "total": 3,
@@ -76269,10 +76269,10 @@
             "lastSuccess": 1683474589718
         },
         "./plugins/_Function/tes123.js": {
-            "total": 55,
-            "success": 55,
-            "last": 1684241179913,
-            "lastSuccess": 1684241179913
+            "total": 56,
+            "success": 56,
+            "last": 1684245027985,
+            "lastSuccess": 1684245027985
         },
         "./plugins/_Function/_autoreact.js": {
             "total": 344,
