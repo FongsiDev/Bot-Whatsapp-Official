@@ -1,12 +1,14 @@
 import fs from "fs";
 import fetch from "node-fetch";
 import moment from "moment-timezone";
+import { WAMessageStubType } from "@adiwajshing/baileys";
+
 export async function all(m) {
   // ketika ada yang invite/kirim link grup di chat pribadi
   if (m.messageStubType || m.isGroup) {
     let chats = global.db.data.chats[m.chat];
     if (!chats) chats = global.db.data.chats[m.chat] = {};
-    if (+Date.now() > chats.JoinLst && m.messageStubType == 20) {
+    if (+Date.now() > chats.JoinLst && WAMessageStubType[m.messageStubType][0] == "GROUP_CREATE") {
       let group = m.chat;
       let edtr = `@${m.sender.split`@`[0]}`;
       await this.sendMessage(
