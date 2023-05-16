@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 34461,
+      "exp": 34500,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -15684,7 +15684,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 11577,
+      "exp": 11582,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -72960,7 +72960,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 686,
+      "exp": 692,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -73192,7 +73192,7 @@
       "rhinoceroslastfeed": 0,
       "rock": 0,
       "roket": 0,
-      "role": "Bronze I",
+      "role": "Newbie ㋡",
       "roti": 0,
       "rtrofi": "perunggu",
       "rubah": 0,
@@ -76257,10 +76257,10 @@
       "lastSuccess": 1684245493957
     },
     "./plugins/Owners/owner-fiturplus.js": {
-      "total": 18,
-      "success": 18,
-      "last": 1684230494175,
-      "lastSuccess": 1684230494175
+      "total": 19,
+      "success": 19,
+      "last": 1684245585838,
+      "lastSuccess": 1684245585838
     },
     "./plugins/User/levelup.js": {
       "total": 13,
