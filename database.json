@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 34451,
+      "exp": 34461,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -15684,7 +15684,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 11557,
+      "exp": 11577,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -72960,7 +72960,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 615,
+      "exp": 686,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -76725,10 +76725,10 @@
       "lastSuccess": 1684239459369
     },
     "./plugins/RPG_Games/rpg-leaderboard.js": {
-      "total": 10,
-      "success": 10,
-      "last": 1683691720498,
-      "lastSuccess": 1683691720498
+      "total": 12,
+      "success": 12,
+      "last": 1684245548940,
+      "lastSuccess": 1684245548940
     },
     "./plugins/RPG_Games/rpg-casino.js": {
       "total": 10,
