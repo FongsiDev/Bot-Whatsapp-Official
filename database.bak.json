@@ -29864,7 +29864,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 3379,
+            "exp": 3384,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -73377,7 +73377,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 186,
+            "exp": 198,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -76412,10 +76412,10 @@
             "lastSuccess": 1684230258245
         },
         "./plugins/Owners/cmd-del.js": {
-            "total": 4,
-            "success": 4,
-            "last": 1684232384733,
-            "lastSuccess": 1684232384733
+            "total": 5,
+            "success": 5,
+            "last": 1684235413424,
+            "lastSuccess": 1684235413424
         },
         "./plugins/Sticker-Tools/sticker-attp.js": {
             "total": 3,
