@@ -69297,7 +69297,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 1150,
+            "exp": 1162,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -72959,7 +72959,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 115,
+            "exp": 151,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -73377,7 +73377,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 57,
+            "exp": 64,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -75260,6 +75260,35 @@
             "viewOnce": false,
             "viewonce": false,
             "welcome": false
+        },
+        "6283164342679@s.whatsapp.net": {
+            "jid": "6283164342679@s.whatsapp.net",
+            "antiDelete": false,
+            "antiLink": false,
+            "antiVirtex": false,
+            "antiSticker": false,
+            "antiToxic": false,
+            "detect": false,
+            "delete": false,
+            "expired": 0,
+            "getmsg": false,
+            "isBanned": false,
+            "lastAnime": false,
+            "latestNews": false,
+            "nsfw": false,
+            "premium": false,
+            "premiumTime": false,
+            "premnsfw": false,
+            "sBye": "",
+            "sDemote": "",
+            "simi": false,
+            "sPromote": "",
+            "stiker": false,
+            "sWelcome": "",
+            "useDocument": false,
+            "viewOnce": false,
+            "viewonce": false,
+            "welcome": false
         }
     },
     "stats": {
@@ -75282,10 +75311,10 @@
             "lastSuccess": 1684230313778
         },
         "./plugins/main-menu-1.js": {
-            "total": 87,
-            "success": 86,
-            "last": 1684232061744,
-            "lastSuccess": 1684232061744
+            "total": 89,
+            "success": 88,
+            "last": 1684232228805,
+            "lastSuccess": 1684232228805
         },
         "./plugins/main-menu-2.js": {
             "total": 25,
