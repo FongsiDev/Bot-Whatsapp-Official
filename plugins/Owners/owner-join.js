@@ -17,11 +17,10 @@ let handler = async (m, { conn, text, isOwner }) => {
       expired = false;
     }
   }
-  if (isJoin) {
-    chats.JoinLst = +new Date() + 24 * 60 * 60 * 1000;
+  chats.JoinLst = +new Date() + 24 * 60 * 60 * 1000;
   if (expired) {
       chats.expired = +new Date() + expired * 1000 * 60 * 60 * 24;
-      }
+   }
  return await m.reply(
     `Berhasil join grup ${res.subject}${
       expired ? ` selama ${expired} hari` : ""
