@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 31110,
+      "exp": 31134,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -74693,6 +74693,12 @@
       "success": 2,
       "last": 1684218491358,
       "lastSuccess": 1684218491358
+    },
+    "./plugins/Sticker-Tools/sticker-toimg.js": {
+      "total": 2,
+      "success": 2,
+      "last": 1684218516300,
+      "lastSuccess": 1684218516300
     }
   },
   "msgs": {},

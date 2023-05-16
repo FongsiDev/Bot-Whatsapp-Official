@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 31088,
+            "exp": 31110,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -74687,6 +74687,12 @@
             "success": 3,
             "last": 1684194015519,
             "lastSuccess": 1684194015519
+        },
+        "./plugins/Sticker-Tools/sticker-qouted.js": {
+            "total": 2,
+            "success": 2,
+            "last": 1684218491358,
+            "lastSuccess": 1684218491358
         }
     },
     "msgs": {},
