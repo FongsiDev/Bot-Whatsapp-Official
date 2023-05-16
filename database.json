@@ -37747,7 +37747,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 228,
+      "exp": 254,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -76357,9 +76357,9 @@
       "lastSuccess": 1684195196418
     },
     "./plugins/Tools/tool-hd.js": {
-      "total": 33,
+      "total": 34,
       "success": 28,
-      "last": 1684238021375,
+      "last": 1684241493493,
       "lastSuccess": 1684238021375
     },
     "./plugins/Internets/lyrics.js": {
