@@ -15684,7 +15684,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 11617,
+            "exp": 11635,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -15916,7 +15916,7 @@
             "rhinoceroslastfeed": 0,
             "rock": 0,
             "roket": 0,
-            "role": "Bronze I",
+            "role": "Newbie ㋡",
             "roti": 0,
             "rtrofi": "perunggu",
             "rubah": 0,
@@ -17774,7 +17774,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 26245,
+            "exp": 26263,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -76276,10 +76276,10 @@
             "lastSuccess": 1684245027985
         },
         "./plugins/_Function/_autoreact.js": {
-            "total": 346,
-            "success": 346,
-            "last": 1684245466889,
-            "lastSuccess": 1684245466889
+            "total": 347,
+            "success": 347,
+            "last": 1684247419655,
+            "lastSuccess": 1684247419655
         },
         "./plugins/Infos/test.js": {
             "total": 24,
