@@ -69297,7 +69297,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 962,
+      "exp": 997,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -74518,10 +74518,10 @@
       "lastSuccess": 1684181098156
     },
     "./plugins/Sticker-Tools/sticker-sticker.js": {
-      "total": 45,
-      "success": 41,
-      "last": 1684126242326,
-      "lastSuccess": 1684126242326
+      "total": 46,
+      "success": 42,
+      "last": 1684229192968,
+      "lastSuccess": 1684229192968
     },
     "./plugins/Infos/speed.js": {
       "total": 86,
