@@ -8,6 +8,7 @@ let handler = async (m, { conn, text, isOwner }) => {
   try {
     isJoin = true;
     res = await conn.groupAcceptInvite(code);
+    res = await conn.groupQueryInvite(code);
   } catch (e) {
     return m.reply(e?.message ? e.message : e);
   }
