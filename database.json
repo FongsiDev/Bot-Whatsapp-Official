@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 31862,
+      "exp": 31966,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -2336,7 +2336,7 @@
       "rhinoceroslastfeed": 0,
       "rock": 0,
       "roket": 0,
-      "role": "Beginner Grade 4 ⚊⁴",
+      "role": "Bronze II",
       "roti": 0,
       "rtrofi": "perunggu",
       "rubah": 0,
@@ -15684,7 +15684,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 10106,
+      "exp": 10113,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -15916,7 +15916,7 @@
       "rhinoceroslastfeed": 0,
       "rock": 0,
       "roket": 0,
-      "role": "Newbie ㋡",
+      "role": "Bronze I",
       "roti": 0,
       "rtrofi": "perunggu",
       "rubah": 0,
@@ -29864,7 +29864,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 3209,
+      "exp": 3211,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -74428,10 +74428,10 @@
   },
   "stats": {
     "./plugins/Owners/owner-exec.js": {
-      "total": 572,
-      "success": 572,
-      "last": 1684229648562,
-      "lastSuccess": 1684229648562
+      "total": 574,
+      "success": 574,
+      "last": 1684230133567,
+      "lastSuccess": 1684230133567
     },
     "./plugins/Infos/info-banlist.js": {
       "total": 3,
@@ -74602,16 +74602,16 @@
       "lastSuccess": 1684020649939
     },
     "./plugins/Owners/owner-unbanchat.js": {
-      "total": 16,
-      "success": 16,
-      "last": 1684194006116,
-      "lastSuccess": 1684194006116
+      "total": 17,
+      "success": 17,
+      "last": 1684230129994,
+      "lastSuccess": 1684230129994
     },
     "./plugins/Owners/owner-banchat.js": {
-      "total": 10,
-      "success": 10,
-      "last": 1684179762940,
-      "lastSuccess": 1684179762940
+      "total": 11,
+      "success": 11,
+      "last": 1684230114480,
+      "lastSuccess": 1684230114480
     },
     "./plugins/Infos/intro.js": {
       "total": 6,
@@ -75082,10 +75082,10 @@
       "lastSuccess": 1684194015519
     },
     "./plugins/Sticker-Tools/sticker-qouted.js": {
-      "total": 2,
-      "success": 2,
-      "last": 1684218491358,
-      "lastSuccess": 1684218491358
+      "total": 3,
+      "success": 3,
+      "last": 1684230085845,
+      "lastSuccess": 1684230085845
     },
     "./plugins/Sticker-Tools/sticker-toimg.js": {
       "total": 2,
@@ -75094,14 +75094,22 @@
       "lastSuccess": 1684218516300
     },
     "./plugins/Owners/cmd-set.js": {
-      "total": 3,
-      "success": 2,
-      "last": 1684230040227,
-      "lastSuccess": 1684230008168
+      "total": 4,
+      "success": 3,
+      "last": 1684230098926,
+      "lastSuccess": 1684230098926
     }
   },
   "msgs": {},
-  "sticker": {},
+  "sticker": {
+    "zfFpb6KoK678oywEJku4xPQLnXoxgzquTbHFgWV/uR0=": {
+      "text": ".banchat",
+      "mentionedJid": [],
+      "creator": "6289503433262@s.whatsapp.net",
+      "at": 1684230098923,
+      "locked": false
+    }
+  },
   "settings": {
     "6281574952091@s.whatsapp.net": {
       "self": false,
