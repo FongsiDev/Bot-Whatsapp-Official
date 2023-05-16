@@ -5,7 +5,7 @@ let handler = async (m, { conn, text, isOwner }) => {
   if (!code) throw "Link invalid";
   try {
     let res = await conn.groupQueryInvite(code);
-    await conn.groupAcceptInvite(code);
+    //await conn.groupAcceptInvite(code);
     let chats = global.db.data.chats[res.id];
     if (!chats) chats = global.db.data.chats[res.id] = {};
     if (isOwner) {
