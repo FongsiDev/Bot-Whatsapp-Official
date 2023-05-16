@@ -2014,8 +2014,8 @@
       "limitjoin": 0
     },
     "6289503433262@s.whatsapp.net": {
-      "afk": -1,
-      "afkReason": "",
+      "afk": 1684240391937,
+      "afkReason": "turu",
       "age": -1,
       "agility": 16,
       "anakanjing": 0,
@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 33394,
+      "exp": 33419,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -15684,7 +15684,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 11192,
+      "exp": 11203,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -29864,7 +29864,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 3751,
+      "exp": 3777,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -75877,10 +75877,10 @@
       "lastSuccess": 1684081377208
     },
     "./plugins/User/afk-afk.js": {
-      "total": 27,
-      "success": 27,
-      "last": 1684240127309,
-      "lastSuccess": 1684240127309
+      "total": 28,
+      "success": 28,
+      "last": 1684240391940,
+      "lastSuccess": 1684240391940
     },
     "./plugins/Funs/fun-apakah.js": {
       "total": 2,
