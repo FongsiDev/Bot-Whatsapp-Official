@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 33363,
+      "exp": 33386,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -29864,7 +29864,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 3714,
+      "exp": 3744,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -75877,10 +75877,10 @@
       "lastSuccess": 1684081377208
     },
     "./plugins/User/afk-afk.js": {
-      "total": 26,
-      "success": 26,
-      "last": 1684238499358,
-      "lastSuccess": 1684238499358
+      "total": 27,
+      "success": 27,
+      "last": 1684240127309,
+      "lastSuccess": 1684240127309
     },
     "./plugins/Funs/fun-apakah.js": {
       "total": 2,
