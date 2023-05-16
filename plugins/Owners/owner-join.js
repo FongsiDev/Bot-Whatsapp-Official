@@ -12,6 +12,9 @@ let handler = async (m, { conn, text, isOwner }) => {
   } catch (e) {
     return m.reply(e?.message ? e.message : e);
   }
+  let chats = global.db.data.chats[res.id];
+  if (!chats) 
+      chats = global.db.data.chats[res.id] = {};
   if (isOwner) {
     if (expired) {
       expired = Math.floor(
@@ -22,13 +25,11 @@ let handler = async (m, { conn, text, isOwner }) => {
     }
   }
   if (isJoin) {
-    conn.JoinLst = +new Date() + 30 * 1000;
+    chats.JoinLst = +new Date() + 24 * 60 * 60 * 1000;
   }
   m.reply(
-    `Berhasil join grup ${res}${expired ? ` selama ${expired} hari` : ""}`
+    `Berhasil join grup ${res.subject}${expired ? ` selama ${expired} hari` : ""}`
   );
-  let chats = global.db.data.chats[res];
-  if (!chats) chats = global.db.data.chats[res] = {};
   if (expired) chats.expired = +new Date() + expired * 1000 * 60 * 60 * 24;
 };
 handler.help = ["join <chat.whatsapp.com>"];
