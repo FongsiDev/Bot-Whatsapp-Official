@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 32954,
+            "exp": 33036,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -69297,7 +69297,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 1409,
+            "exp": 1417,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -73377,7 +73377,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 948,
+            "exp": 966,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -73609,7 +73609,7 @@
             "rhinoceroslastfeed": 0,
             "rock": 0,
             "roket": 0,
-            "role": "Newbie ㋡",
+            "role": "Bronze I",
             "roti": 0,
             "rtrofi": "perunggu",
             "rubah": 0,
@@ -75793,10 +75793,10 @@
             "lastSuccess": 1684237048694
         },
         "./plugins/main-menu-2.js": {
-            "total": 26,
-            "success": 26,
-            "last": 1684237058967,
-            "lastSuccess": 1684237058967
+            "total": 29,
+            "success": 29,
+            "last": 1684238373764,
+            "lastSuccess": 1684238373764
         },
         "./plugins/Owners/owner-fiturplus.js": {
             "total": 18,
@@ -76309,10 +76309,10 @@
             "lastSuccess": 1683731832240
         },
         "./plugins/main-menu-3.js": {
-            "total": 5,
-            "success": 5,
-            "last": 1684229475423,
-            "lastSuccess": 1684229475423
+            "total": 6,
+            "success": 6,
+            "last": 1684238344564,
+            "lastSuccess": 1684238344564
         },
         "./plugins/Funs/fun-generate_nama.js": {
             "total": 2,
