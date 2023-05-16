@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 33090,
+      "exp": 33099,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -15684,7 +15684,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 11152,
+      "exp": 11154,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -69207,8 +69207,8 @@
       "roboxp": 0
     },
     "62857263192057@s.whatsapp.net": {
-      "afk": -1,
-      "afkReason": "",
+      "afk": 1684238499355,
+      "afkReason": "turu sementara",
       "age": 19,
       "agility": 16,
       "anakanjing": 0,
@@ -69297,7 +69297,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 1419,
+      "exp": 1442,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -73377,7 +73377,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 1003,
+      "exp": 1029,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -75877,10 +75877,10 @@
       "lastSuccess": 1684081377208
     },
     "./plugins/User/afk-afk.js": {
-      "total": 25,
-      "success": 25,
-      "last": 1684152223073,
-      "lastSuccess": 1684152223073
+      "total": 26,
+      "success": 26,
+      "last": 1684238499358,
+      "lastSuccess": 1684238499358
     },
     "./plugins/Funs/fun-apakah.js": {
       "total": 2,
