@@ -296,11 +296,20 @@ async function clearTmp() {
 /* Update */
 
 async function connectionUpdate(update) {
-    const { receivedPendingNotifications, connection, lastDisconnect, isOnline, isNewLogin } = update
-  if (isNewLogin) conn.isInit = true
-  if (connection == 'connecting') console.log(chalk.redBright('⚡ Mengaktifkan Bot, Mohon tunggu sebentar...'))
-  if (connection == 'open') {
-    await console.log(chalk.green('✅ Tersambung'))
+  const {
+    receivedPendingNotifications,
+    connection,
+    lastDisconnect,
+    isOnline,
+    isNewLogin,
+  } = update;
+  if (isNewLogin) conn.isInit = true;
+  if (connection == "connecting")
+    console.log(
+      chalk.redBright("⚡ Mengaktifkan Bot, Mohon tunggu sebentar...")
+    );
+  if (connection == "open") {
+    await console.log(chalk.green("✅ Tersambung"));
     return await this.sendButton(
       global.logs.stats,
       `Bot Successfully Connected\nServer: ${
@@ -311,17 +320,24 @@ async function connectionUpdate(update) {
       [["Sabar Commandnya Lagi Reload", "y"]],
       null
     );
-  
-      }
-  if (isOnline == true) console.log(chalk.green('Status Aktif'))
-  if (isOnline == false) console.log(chalk.red('Status Mati'))
-  if (receivedPendingNotifications) console.log(chalk.yellow('Menunggu Pesan Baru'))
-  if (connection == 'close') console.log(chalk.red('⏱️ koneksi terputus & mencoba menyambung ulang...'))
-  global.timestamp.connect = new Date
-  if (lastDisconnect && lastDisconnect.error && lastDisconnect.error.output && lastDisconnect.error.output.statusCode !== DisconnectReason.loggedOut && conn.ws.readyState !== CONNECTING) {
-    console.log(global.reloadHandler(true))
-  } 
-  if (global.db.data == null) await global.loadDatabase()
+  }
+  if (isOnline == true) console.log(chalk.green("Status Aktif"));
+  if (isOnline == false) console.log(chalk.red("Status Mati"));
+  if (receivedPendingNotifications)
+    console.log(chalk.yellow("Menunggu Pesan Baru"));
+  if (connection == "close")
+    console.log(chalk.red("⏱️ koneksi terputus & mencoba menyambung ulang..."));
+  global.timestamp.connect = new Date();
+  if (
+    lastDisconnect &&
+    lastDisconnect.error &&
+    lastDisconnect.error.output &&
+    lastDisconnect.error.output.statusCode !== DisconnectReason.loggedOut &&
+    conn.ws.readyState !== CONNECTING
+  ) {
+    console.log(global.reloadHandler(true));
+  }
+  if (global.db.data == null) await global.loadDatabase();
 }
 /*
 async function connectionUpdate(update) {
