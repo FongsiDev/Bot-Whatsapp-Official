@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 32492,
+            "exp": 32539,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -15684,7 +15684,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 10990,
+            "exp": 11005,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -69297,7 +69297,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 1307,
+            "exp": 1324,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -72959,7 +72959,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 472,
+            "exp": 503,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -73377,7 +73377,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 670,
+            "exp": 682,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -75914,10 +75914,10 @@
             "lastSuccess": 1684020649939
         },
         "./plugins/Owners/owner-unbanchat.js": {
-            "total": 19,
-            "success": 19,
-            "last": 1684233962201,
-            "lastSuccess": 1684233962201
+            "total": 20,
+            "success": 20,
+            "last": 1684237602705,
+            "lastSuccess": 1684237602705
         },
         "./plugins/Owners/owner-banchat.js": {
             "total": 18,
@@ -76328,10 +76328,10 @@
             "lastSuccess": 1684195196418
         },
         "./plugins/Tools/tool-hd.js": {
-            "total": 30,
-            "success": 25,
-            "last": 1684237563774,
-            "lastSuccess": 1684237563774
+            "total": 31,
+            "success": 26,
+            "last": 1684237635006,
+            "lastSuccess": 1684237635006
         },
         "./plugins/Internets/lyrics.js": {
             "total": 3,
@@ -76382,10 +76382,10 @@
             "lastSuccess": 1684143608453
         },
         "./plugins/Tools/tool-recolor.js": {
-            "total": 4,
-            "success": 4,
-            "last": 1684229999024,
-            "lastSuccess": 1684229999024
+            "total": 5,
+            "success": 5,
+            "last": 1684237622819,
+            "lastSuccess": 1684237622819
         },
         "./plugins/Tools/tool-dehaze.js": {
             "total": 3,
