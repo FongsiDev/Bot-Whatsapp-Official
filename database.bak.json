@@ -17774,7 +17774,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 26241,
+            "exp": 26245,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -17933,7 +17933,7 @@
             "lelebakar": 0,
             "leleg": 0,
             "level": 0,
-            "limit": 98,
+            "limit": 97,
             "limitjoinfree": 1,
             "lion": 0,
             "lionexp": 0,
@@ -74617,10 +74617,10 @@
             "lastSuccess": 1683986184610
         },
         "./plugins/Youtubes/youtube-ytv.js": {
-            "total": 5,
-            "success": 4,
-            "last": 1684070863407,
-            "lastSuccess": 1684024002136
+            "total": 6,
+            "success": 5,
+            "last": 1684195196418,
+            "lastSuccess": 1684195196418
         },
         "./plugins/Tools/tool-hd.js": {
             "total": 27,
