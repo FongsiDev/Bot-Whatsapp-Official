@@ -72959,7 +72959,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 103,
+            "exp": 108,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -73377,7 +73377,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 9,
+            "exp": 47,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -73654,7 +73654,7 @@
             "sworddurability": 0,
             "tigame": 50,
             "tiketcoin": 0,
-            "title": "",
+            "title": 0,
             "tomat": 0,
             "tprem": 0,
             "trash": 0,
@@ -73677,7 +73677,32 @@
             "wolflastfeed": 0,
             "wood": 0,
             "wortel": 0,
-            "limitjoin": 0
+            "limitjoin": 0,
+            "kingdom": true,
+            "jid": "6289530671760@s.whatsapp.net",
+            "premiumDate": -1,
+            "catexp": 0,
+            "enchant": 0,
+            "glimit": 20,
+            "glory": 0,
+            "healthmonster": 0,
+            "kyubiexp": 0,
+            "kyubilastfeed": 0,
+            "lastbansos": 0,
+            "lastcodereg": 0,
+            "lastgift": 0,
+            "lastIstigfar": 0,
+            "lastrampok": 0,
+            "lastsda": 0,
+            "lastwar": 0,
+            "pancing": 0,
+            "pertambangan": 0,
+            "pertanian": 0,
+            "petFood": 0,
+            "psenjata": 0,
+            "psepick": 0,
+            "robo": 0,
+            "roboxp": 0
         }
     },
     "chats": {
@@ -75263,10 +75288,10 @@
             "lastSuccess": 1684232061744
         },
         "./plugins/main-menu-2.js": {
-            "total": 24,
-            "success": 24,
-            "last": 1684229501702,
-            "lastSuccess": 1684229501702
+            "total": 25,
+            "success": 25,
+            "last": 1684232080618,
+            "lastSuccess": 1684232080618
         },
         "./plugins/Owners/owner-fiturplus.js": {
             "total": 18,
@@ -75323,10 +75348,10 @@
             "lastSuccess": 1684145273265
         },
         "./plugins/OpenAI/openai.js": {
-            "total": 14,
-            "success": 14,
-            "last": 1684181098156,
-            "lastSuccess": 1684181098156
+            "total": 15,
+            "success": 15,
+            "last": 1684232114412,
+            "lastSuccess": 1684232114412
         },
         "./plugins/Sticker-Tools/sticker-sticker.js": {
             "total": 46,
@@ -75431,10 +75456,10 @@
             "lastSuccess": 1683585284482
         },
         "./plugins/OpenAI/openai-new.js": {
-            "total": 2,
-            "success": 2,
-            "last": 1683307039050,
-            "lastSuccess": 1683307039050
+            "total": 3,
+            "success": 3,
+            "last": 1684232108969,
+            "lastSuccess": 1684232108969
         },
         "./plugins/Owners/owner-join.js": {
             "total": 20,
