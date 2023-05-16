@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 31174,
+            "exp": 31202,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -74716,10 +74716,10 @@
             "lastSuccess": 1683458496038
         },
         "./plugins/Tools/nulis-nulis.js": {
-            "total": 2,
-            "success": 2,
-            "last": 1683431360612,
-            "lastSuccess": 1683431360612
+            "total": 3,
+            "success": 3,
+            "last": 1684228857629,
+            "lastSuccess": 1684228857629
         },
         "./plugins/Tools/nulis-nulis2.js": {
             "total": 5,
