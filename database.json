@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 33727,
+      "exp": 33752,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -75782,10 +75782,10 @@
       "lastSuccess": 1683107906147
     },
     "./plugins/Owners/owner-exec2.js": {
-      "total": 198,
-      "success": 198,
-      "last": 1684243252933,
-      "lastSuccess": 1684243252933
+      "total": 199,
+      "success": 199,
+      "last": 1684243289334,
+      "lastSuccess": 1684243289334
     },
     "./plugins/main-menu-1.js": {
       "total": 96,
