@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 32692,
+            "exp": 32709,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -15684,7 +15684,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 11048,
+            "exp": 11076,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -29864,7 +29864,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 3646,
+            "exp": 3654,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -73377,7 +73377,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 758,
+            "exp": 807,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -75788,10 +75788,10 @@
             "lastSuccess": 1684233887649
         },
         "./plugins/_Function/_autoreact.js": {
-            "total": 339,
-            "success": 339,
-            "last": 1684237753921,
-            "lastSuccess": 1684237753921
+            "total": 340,
+            "success": 340,
+            "last": 1684237911526,
+            "lastSuccess": 1684237911526
         },
         "./plugins/Infos/test.js": {
             "total": 24,
@@ -76010,10 +76010,10 @@
             "lastSuccess": 1683390402527
         },
         "./plugins/Infos/info-totalfitur.js": {
-            "total": 4,
-            "success": 4,
-            "last": 1684080773497,
-            "lastSuccess": 1684080773497
+            "total": 5,
+            "success": 5,
+            "last": 1684237911724,
+            "lastSuccess": 1684237911724
         },
         "./plugins/Tools/tool-shorturl.js": {
             "total": 33,
