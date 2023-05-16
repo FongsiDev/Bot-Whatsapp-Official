@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 32275,
+            "exp": 32298,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -74950,10 +74950,10 @@
             "lastSuccess": 1683693830112
         },
         "./plugins/Infos/donasi.js": {
-            "total": 2,
-            "success": 2,
-            "last": 1683693613890,
-            "lastSuccess": 1683693613890
+            "total": 3,
+            "success": 3,
+            "last": 1684230586724,
+            "lastSuccess": 1684230586724
         },
         "./plugins/Games/game-war.js": {
             "total": 2,
