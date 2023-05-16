@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 32253,
+            "exp": 32275,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -75028,10 +75028,10 @@
             "lastSuccess": 1684078393682
         },
         "./plugins/Infos/info-script.js": {
-            "total": 4,
-            "success": 4,
-            "last": 1684230366988,
-            "lastSuccess": 1684230366988
+            "total": 5,
+            "success": 5,
+            "last": 1684230511276,
+            "lastSuccess": 1684230511276
         },
         "./plugins/Group-Tools/group-pengumuman.js": {
             "total": 3,
