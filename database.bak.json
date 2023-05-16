@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 33811,
+            "exp": 33854,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -15266,7 +15266,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 266,
+            "exp": 272,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -75782,10 +75782,10 @@
             "lastSuccess": 1683107906147
         },
         "./plugins/Owners/owner-exec2.js": {
-            "total": 199,
-            "success": 199,
-            "last": 1684243289334,
-            "lastSuccess": 1684243289334
+            "total": 200,
+            "success": 200,
+            "last": 1684243588027,
+            "lastSuccess": 1684243588027
         },
         "./plugins/main-menu-1.js": {
             "total": 96,
@@ -76070,10 +76070,10 @@
             "lastSuccess": 1683674403168
         },
         "./plugins/Owners/owner-leavegc.js": {
-            "total": 10,
-            "success": 10,
-            "last": 1684242929168,
-            "lastSuccess": 1684242929168
+            "total": 11,
+            "success": 11,
+            "last": 1684243616218,
+            "lastSuccess": 1684243616218
         },
         "./plugins/Anonymous/anonymous_chat.js": {
             "total": 2,

@@ -7,7 +7,7 @@ let handler = async (m, { conn, text, isOwner }) => {
     isJoin = false;
   try {
     isJoin = true;
-    res = await conn.groupAcceptInvite(code);
+    await conn.groupAcceptInvite(code);
     res = await conn.groupQueryInvite(code);
   } catch (e) {
     return m.reply(e?.message ? e.message : e);
@@ -26,12 +26,14 @@ let handler = async (m, { conn, text, isOwner }) => {
   if (isJoin) {
     chats.JoinLst = +new Date() + 24 * 60 * 60 * 1000;
   }
-  m.reply(
+  if (isJoin && expired) {
+      chats.expired = +new Date() + expired * 1000 * 60 * 60 * 24;
+      }
+ return await m.reply(
     `Berhasil join grup ${res.subject}${
       expired ? ` selama ${expired} hari` : ""
     }`
   );
-  if (expired) chats.expired = +new Date() + expired * 1000 * 60 * 60 * 24;
 };
 handler.help = ["join <chat.whatsapp.com>"];
 handler.tags = ["owner"];
