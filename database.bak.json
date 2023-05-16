@@ -15684,7 +15684,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 10839,
+            "exp": 10855,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -65535,7 +65535,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 990,
+            "exp": 997,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -69297,7 +69297,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 1273,
+            "exp": 1277,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -72959,7 +72959,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 267,
+            "exp": 303,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -73191,7 +73191,7 @@
             "rhinoceroslastfeed": 0,
             "rock": 0,
             "roket": 0,
-            "role": "Newbie ㋡",
+            "role": "Bronze I",
             "roti": 0,
             "rtrofi": "perunggu",
             "rubah": 0,
@@ -73377,7 +73377,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 534,
+            "exp": 541,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -75758,16 +75758,16 @@
             "lastSuccess": 1684233852237
         },
         "./plugins/main-menu-1.js": {
-            "total": 90,
-            "success": 89,
-            "last": 1684237009333,
-            "lastSuccess": 1684237009333
+            "total": 91,
+            "success": 90,
+            "last": 1684237048694,
+            "lastSuccess": 1684237048694
         },
         "./plugins/main-menu-2.js": {
-            "total": 25,
-            "success": 25,
-            "last": 1684232080618,
-            "lastSuccess": 1684232080618
+            "total": 26,
+            "success": 26,
+            "last": 1684237058967,
+            "lastSuccess": 1684237058967
         },
         "./plugins/Owners/owner-fiturplus.js": {
             "total": 18,
