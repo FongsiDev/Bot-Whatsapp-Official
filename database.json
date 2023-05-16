@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 33294,
+      "exp": 33363,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -29864,7 +29864,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 3711,
+      "exp": 3714,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -75787,10 +75787,10 @@
       "lastSuccess": 1684233852237
     },
     "./plugins/main-menu-1.js": {
-      "total": 91,
-      "success": 90,
-      "last": 1684237048694,
-      "lastSuccess": 1684237048694
+      "total": 92,
+      "success": 91,
+      "last": 1684240083179,
+      "lastSuccess": 1684240083179
     },
     "./plugins/main-menu-2.js": {
       "total": 29,
@@ -76213,10 +76213,10 @@
       "lastSuccess": 1683634120324
     },
     "./plugins/Owners/bugverify.js": {
-      "total": 28,
-      "success": 25,
-      "last": 1684237246961,
-      "lastSuccess": 1684237246961
+      "total": 29,
+      "success": 26,
+      "last": 1684240066927,
+      "lastSuccess": 1684240066927
     },
     "./plugins/Owners/owner-listban.js": {
       "total": 11,
