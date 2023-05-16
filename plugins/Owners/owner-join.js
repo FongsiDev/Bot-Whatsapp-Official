@@ -27,6 +27,7 @@ let handler = async (m, { conn, text, isOwner }) => {
       }`
     );
   } catch (e) {
+    console.log(e)
     return m.reply(e?.message ? e.message : e);
   }
 };
