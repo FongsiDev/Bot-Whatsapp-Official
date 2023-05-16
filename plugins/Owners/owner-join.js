@@ -3,15 +3,9 @@ let linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})( [0-9]{1,3})?/i;
 let handler = async (m, { conn, text, isOwner }) => {
   let [_, code, expired] = text.match(linkRegex) || [];
   if (!code) throw "Link invalid";
-  let res,
-    isJoin = false;
   try {
-    isJoin = true;
-    res = await conn.groupQueryInvite(code);
-    await conn.groupAcceptInvite(code);
-  } catch (e) {
-    return m.reply(e?.message ? e.message : e);
-  }
+  let res = await conn.groupQueryInvite(code);
+  await conn.groupAcceptInvite(code);
   let chats = global.db.data.chats[res.id];
   if (!chats) chats = global.db.data.chats[res.id] = {};
   if (isOwner) {
@@ -33,7 +27,10 @@ let handler = async (m, { conn, text, isOwner }) => {
       expired ? ` selama ${expired} hari` : ""
     }`
   ); }
- 
+   } catch (e) {
+    return m.reply(e?.message ? e.message : e);
+  }
+
 };
 handler.help = ["join <chat.whatsapp.com>"];
 handler.tags = ["owner"];
