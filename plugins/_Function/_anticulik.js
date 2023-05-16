@@ -8,7 +8,10 @@ export async function all(m) {
   if (m.messageStubType || m.isGroup) {
     let chats = global.db.data.chats[m.chat];
     if (!chats) chats = global.db.data.chats[m.chat] = {};
-    if (+Date.now() > chats.JoinLst && WAMessageStubType[m.messageStubType][0] == "GROUP_CREATE") {
+    if (
+      +Date.now() > chats.JoinLst &&
+      WAMessageStubType[m.messageStubType][0] == "GROUP_CREATE"
+    ) {
       let group = m.chat;
       let edtr = `@${m.sender.split`@`[0]}`;
       await this.sendMessage(
@@ -22,7 +25,7 @@ export async function all(m) {
         await conn.groupLeave(group);
       });
     } else {
-        chats.JoinLst = null
+      chats.JoinLst = null;
       await this.sendMessage(
         m.chat,
         {
