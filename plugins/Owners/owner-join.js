@@ -5,7 +5,6 @@ let handler = async (m, { conn, text, isOwner }) => {
   if (!code) throw "Link invalid";
   try {
     let res = await conn.groupQueryInvite(code);
-    //await conn.groupAcceptInvite(code);
     let chats = global.db.data.chats[res.id];
     if (!chats) chats = global.db.data.chats[res.id] = {};
     if (isOwner) {
@@ -21,6 +20,7 @@ let handler = async (m, { conn, text, isOwner }) => {
     if (expired) {
       chats.expired = +new Date() + expired * 1000 * 60 * 60 * 24;
     }
+    await conn.groupAcceptInvite(code);  
     return await m.reply(
       `Berhasil join grup ${res.subject} [${res.id}]${
         expired ? ` selama ${expired} hari` : ""
