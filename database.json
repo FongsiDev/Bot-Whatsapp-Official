@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 34855,
+      "exp": 34895,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -72985,7 +72985,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 839,
+      "exp": 881,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -76254,10 +76254,10 @@
   },
   "stats": {
     "./plugins/Owners/owner-exec.js": {
-      "total": 634,
-      "success": 634,
-      "last": 1684254741649,
-      "lastSuccess": 1684254741649
+      "total": 635,
+      "success": 635,
+      "last": 1684279351819,
+      "lastSuccess": 1684279351819
     },
     "./plugins/Infos/info-banlist.js": {
       "total": 3,
@@ -76272,16 +76272,16 @@
       "lastSuccess": 1684279027410
     },
     "./plugins/main-menu-1.js": {
-      "total": 98,
-      "success": 97,
-      "last": 1684247878233,
-      "lastSuccess": 1684247878233
+      "total": 99,
+      "success": 98,
+      "last": 1684279353731,
+      "lastSuccess": 1684279353731
     },
     "./plugins/main-menu-2.js": {
-      "total": 31,
-      "success": 31,
-      "last": 1684249582755,
-      "lastSuccess": 1684249582755
+      "total": 32,
+      "success": 32,
+      "last": 1684279322237,
+      "lastSuccess": 1684279322237
     },
     "./plugins/Owners/owner-fiturplus.js": {
       "total": 20,
