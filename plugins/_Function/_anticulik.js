@@ -22,6 +22,7 @@ export async function all(m) {
         await conn.groupLeave(group);
       });
     } else {
+        chats.JoinLst = null
       await this.sendMessage(
         m.chat,
         {
