@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 31743,
+            "exp": 31819,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -15684,7 +15684,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 10082,
+            "exp": 10102,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -29864,7 +29864,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 3180,
+            "exp": 3204,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -69297,7 +69297,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 1067,
+            "exp": 1074,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -74920,10 +74920,10 @@
             "lastSuccess": 1683645785796
         },
         "./plugins/Group-Tools/group-kick.js": {
-            "total": 6,
-            "success": 6,
-            "last": 1684082073218,
-            "lastSuccess": 1684082073218
+            "total": 7,
+            "success": 7,
+            "last": 1684229969442,
+            "lastSuccess": 1684229969442
         },
         "./plugins/RPG_Games/rpg-leaderboard.js": {
             "total": 10,
@@ -75016,10 +75016,10 @@
             "lastSuccess": 1684195196418
         },
         "./plugins/Tools/tool-hd.js": {
-            "total": 28,
-            "success": 23,
-            "last": 1684228938731,
-            "lastSuccess": 1684228938731
+            "total": 29,
+            "success": 24,
+            "last": 1684230004998,
+            "lastSuccess": 1684230004998
         },
         "./plugins/Internets/lyrics.js": {
             "total": 3,
@@ -75070,10 +75070,10 @@
             "lastSuccess": 1684143608453
         },
         "./plugins/Tools/tool-recolor.js": {
-            "total": 3,
-            "success": 3,
-            "last": 1684194049143,
-            "lastSuccess": 1684194049143
+            "total": 4,
+            "success": 4,
+            "last": 1684229999024,
+            "lastSuccess": 1684229999024
         },
         "./plugins/Tools/tool-dehaze.js": {
             "total": 3,
@@ -75092,6 +75092,12 @@
             "success": 2,
             "last": 1684218516300,
             "lastSuccess": 1684218516300
+        },
+        "./plugins/Owners/cmd-set.js": {
+            "total": 2,
+            "success": 2,
+            "last": 1684230008168,
+            "lastSuccess": 1684230008168
         }
     },
     "msgs": {},

@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 31819,
+      "exp": 31862,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -15684,7 +15684,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 10102,
+      "exp": 10106,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -29864,7 +29864,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 3204,
+      "exp": 3209,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -69297,7 +69297,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 1074,
+      "exp": 1075,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -75094,9 +75094,9 @@
       "lastSuccess": 1684218516300
     },
     "./plugins/Owners/cmd-set.js": {
-      "total": 2,
+      "total": 3,
       "success": 2,
-      "last": 1684230008168,
+      "last": 1684230040227,
       "lastSuccess": 1684230008168
     }
   },
