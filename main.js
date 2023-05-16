@@ -178,6 +178,7 @@ const connectionOptions = {
   keepAliveIntervalMs: 1000,  
   defaultQueryTimeoutMs: 0,  
   syncFullHistory: true,  
+  markOnlineOnConnect: true,  
   generateHighQualityLinkPreview: true,  
   patchMessageBeforeSending: (message) => {
     const requiresPatch = !!(

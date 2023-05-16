@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 34895,
+      "exp": 34953,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -72985,7 +72985,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 881,
+      "exp": 905,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -76272,10 +76272,10 @@
       "lastSuccess": 1684279027410
     },
     "./plugins/main-menu-1.js": {
-      "total": 99,
-      "success": 98,
-      "last": 1684279353731,
-      "lastSuccess": 1684279353731
+      "total": 100,
+      "success": 99,
+      "last": 1684279499864,
+      "lastSuccess": 1684279499864
     },
     "./plugins/main-menu-2.js": {
       "total": 32,
@@ -76296,10 +76296,10 @@
       "lastSuccess": 1683474589718
     },
     "./plugins/_Function/tes123.js": {
-      "total": 64,
-      "success": 64,
-      "last": 1684251173608,
-      "lastSuccess": 1684251173608
+      "total": 65,
+      "success": 65,
+      "last": 1684279523025,
+      "lastSuccess": 1684279523025
     },
     "./plugins/_Function/_autoreact.js": {
       "total": 350,
