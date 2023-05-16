@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 34373,
+            "exp": 34397,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -15684,7 +15684,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 11393,
+            "exp": 11415,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -75834,10 +75834,10 @@
     },
     "stats": {
         "./plugins/Owners/owner-exec.js": {
-            "total": 607,
-            "success": 607,
-            "last": 1684244802443,
-            "lastSuccess": 1684244802443
+            "total": 611,
+            "success": 611,
+            "last": 1684244889205,
+            "lastSuccess": 1684244889205
         },
         "./plugins/Infos/info-banlist.js": {
             "total": 3,
@@ -76008,10 +76008,10 @@
             "lastSuccess": 1684020649939
         },
         "./plugins/Owners/owner-unbanchat.js": {
-            "total": 20,
-            "success": 20,
-            "last": 1684237602705,
-            "lastSuccess": 1684237602705
+            "total": 21,
+            "success": 21,
+            "last": 1684244841296,
+            "lastSuccess": 1684244841296
         },
         "./plugins/Owners/owner-banchat.js": {
             "total": 19,
