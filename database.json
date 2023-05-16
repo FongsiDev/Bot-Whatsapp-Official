@@ -15684,7 +15684,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 10243,
+      "exp": 10283,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -15916,7 +15916,7 @@
       "rhinoceroslastfeed": 0,
       "rock": 0,
       "roket": 0,
-      "role": "Newbie ㋡",
+      "role": "Bronze I",
       "roti": 0,
       "rtrofi": "perunggu",
       "rubah": 0,
@@ -69297,7 +69297,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 1162,
+      "exp": 1172,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -73377,7 +73377,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 80,
+      "exp": 97,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -75293,10 +75293,10 @@
   },
   "stats": {
     "./plugins/Owners/owner-exec.js": {
-      "total": 574,
-      "success": 574,
-      "last": 1684230133567,
-      "lastSuccess": 1684230133567
+      "total": 577,
+      "success": 577,
+      "last": 1684232415383,
+      "lastSuccess": 1684232415383
     },
     "./plugins/Infos/info-banlist.js": {
       "total": 3,
@@ -75965,10 +75965,10 @@
       "lastSuccess": 1684230258245
     },
     "./plugins/Owners/cmd-del.js": {
-      "total": 3,
-      "success": 3,
-      "last": 1684230207921,
-      "lastSuccess": 1684230207921
+      "total": 4,
+      "success": 4,
+      "last": 1684232384733,
+      "lastSuccess": 1684232384733
     },
     "./plugins/Sticker-Tools/sticker-attp.js": {
       "total": 3,
