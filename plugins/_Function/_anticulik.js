@@ -26,14 +26,6 @@ export async function all(m) {
       });
     } else {
       chats.JoinLst = null;
-      await this.sendMessage(
-        m.chat,
-        {
-          text: `Halo, Saya adalah bot.\nDi sini saya membantu anda melakukan kegiatan sehari hari.\nMisalnya downloader Video Dari yt, Tiktok atau membuat Sticker atau atau bermain dengan bot pakai cmd yg seru.\nKetik !menu untuk menampilkan cmd bot.`,
-          mentions: [m.sender],
-        },
-        { quoted: fkontak }
-      );
     }
   }
   if (
