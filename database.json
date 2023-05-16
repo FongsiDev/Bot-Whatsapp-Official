@@ -15684,7 +15684,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 10296,
+      "exp": 10311,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -69297,7 +69297,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 1172,
+      "exp": 1177,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -75305,10 +75305,10 @@
       "lastSuccess": 1683107906147
     },
     "./plugins/Owners/owner-exec2.js": {
-      "total": 190,
-      "success": 190,
-      "last": 1684230313778,
-      "lastSuccess": 1684230313778
+      "total": 191,
+      "success": 191,
+      "last": 1684233348947,
+      "lastSuccess": 1684233348947
     },
     "./plugins/main-menu-1.js": {
       "total": 89,
@@ -75389,10 +75389,10 @@
       "lastSuccess": 1684229192968
     },
     "./plugins/Infos/speed.js": {
-      "total": 86,
-      "success": 86,
-      "last": 1684229005657,
-      "lastSuccess": 1684229005657
+      "total": 87,
+      "success": 87,
+      "last": 1684233373380,
+      "lastSuccess": 1684233373380
     },
     "./plugins/Exp-Info/exp-daftar.js": {
       "total": 4,
@@ -75473,10 +75473,10 @@
       "lastSuccess": 1684230129994
     },
     "./plugins/Owners/owner-banchat.js": {
-      "total": 12,
-      "success": 12,
-      "last": 1684233247999,
-      "lastSuccess": 1684233247999
+      "total": 13,
+      "success": 13,
+      "last": 1684233368628,
+      "lastSuccess": 1684233368628
     },
     "./plugins/Infos/intro.js": {
       "total": 6,
