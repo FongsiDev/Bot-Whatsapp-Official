@@ -15684,7 +15684,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 11869,
+      "exp": 11883,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -15916,7 +15916,7 @@
       "rhinoceroslastfeed": 0,
       "rock": 0,
       "roket": 0,
-      "role": "Newbie ㋡",
+      "role": "Bronze I",
       "roti": 0,
       "rtrofi": "perunggu",
       "rubah": 0,
@@ -76270,10 +76270,10 @@
       "lastSuccess": 1683474589718
     },
     "./plugins/_Function/tes123.js": {
-      "total": 62,
-      "success": 62,
-      "last": 1684249504159,
-      "lastSuccess": 1684249504159
+      "total": 63,
+      "success": 63,
+      "last": 1684250054831,
+      "lastSuccess": 1684250054831
     },
     "./plugins/_Function/_autoreact.js": {
       "total": 348,
@@ -76942,10 +76942,10 @@
       "lastSuccess": 1684245632142
     },
     "./plugins/Owners/jadibot.js": {
-      "total": 8,
-      "success": 8,
-      "last": 1684249569315,
-      "lastSuccess": 1684249569315
+      "total": 9,
+      "success": 9,
+      "last": 1684250051137,
+      "lastSuccess": 1684250051137
     }
   },
   "msgs": {},
