@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 34576,
+      "exp": 34600,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -2336,7 +2336,7 @@
       "rhinoceroslastfeed": 0,
       "rock": 0,
       "roket": 0,
-      "role": "Beginner Grade 4 ⚊⁴",
+      "role": "Bronze II",
       "roti": 0,
       "rtrofi": "perunggu",
       "rubah": 0,
@@ -76941,10 +76941,10 @@
       "lastSuccess": 1684245632142
     },
     "./plugins/Owners/jadibot.js": {
-      "total": 2,
-      "success": 2,
-      "last": 1684245854040,
-      "lastSuccess": 1684245854040
+      "total": 3,
+      "success": 3,
+      "last": 1684245878004,
+      "lastSuccess": 1684245878004
     }
   },
   "msgs": {},
