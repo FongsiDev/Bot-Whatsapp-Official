@@ -2014,8 +2014,8 @@
       "limitjoin": 0
     },
     "6289503433262@s.whatsapp.net": {
-      "afk": 1684240391937,
-      "afkReason": "turu",
+      "afk": -1,
+      "afkReason": "",
       "age": -1,
       "agility": 16,
       "anakanjing": 0,
@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 33419,
+      "exp": 33443,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -2336,7 +2336,7 @@
       "rhinoceroslastfeed": 0,
       "rock": 0,
       "roket": 0,
-      "role": "Beginner Grade 4 ⚊⁴",
+      "role": "Bronze II",
       "roti": 0,
       "rtrofi": "perunggu",
       "rubah": 0,
@@ -75787,10 +75787,10 @@
       "lastSuccess": 1684233852237
     },
     "./plugins/main-menu-1.js": {
-      "total": 92,
-      "success": 91,
-      "last": 1684240083179,
-      "lastSuccess": 1684240083179
+      "total": 93,
+      "success": 92,
+      "last": 1684240725317,
+      "lastSuccess": 1684240725317
     },
     "./plugins/main-menu-2.js": {
       "total": 29,
