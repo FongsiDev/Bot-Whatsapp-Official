@@ -15684,7 +15684,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 11749,
+            "exp": 11753,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -16102,7 +16102,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 47,
+            "exp": 50,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -76720,10 +76720,10 @@
             "lastSuccess": 1683645785796
         },
         "./plugins/Group-Tools/group-kick.js": {
-            "total": 8,
-            "success": 8,
-            "last": 1684239459369,
-            "lastSuccess": 1684239459369
+            "total": 9,
+            "success": 9,
+            "last": 1684248761389,
+            "lastSuccess": 1684248761389
         },
         "./plugins/RPG_Games/rpg-leaderboard.js": {
             "total": 12,
