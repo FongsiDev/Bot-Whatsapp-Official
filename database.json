@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 34256,
+      "exp": 34259,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -15684,7 +15684,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 11316,
+      "exp": 11326,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -73288,8 +73288,8 @@
       "roboxp": 0
     },
     "6289530671760@s.whatsapp.net": {
-      "afk": 1684244427728,
-      "afkReason": "Kebingungan Dengan Hosting Panel",
+      "afk": -1,
+      "afkReason": "",
       "age": -1,
       "agility": 16,
       "anakanjing": 0,
@@ -73378,7 +73378,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 1276,
+      "exp": 1283,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -75846,10 +75846,10 @@
       "lastSuccess": 1683107906147
     },
     "./plugins/Owners/owner-exec2.js": {
-      "total": 200,
-      "success": 200,
-      "last": 1684243588027,
-      "lastSuccess": 1684243588027
+      "total": 201,
+      "success": 201,
+      "last": 1684244527940,
+      "lastSuccess": 1684244527940
     },
     "./plugins/main-menu-1.js": {
       "total": 96,
