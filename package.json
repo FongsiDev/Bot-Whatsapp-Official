@@ -62,7 +62,7 @@
   },
   "homepage": "https://github.com/FongsiDev/Bot-Whatsapp-Official#readme",
   "dependencies": {
-    "@adiwajshing/baileys": "npm:baileys-md@^5.0.5",
+    "@adiwajshing/baileys": "npm:baileysv2@^9.0.5",
     "@bochilteam/scraper": "^4.0.22-alpha.0",
     "@ibaraki-douji/pixivts": "^2.4.1",
     "acrcloud": "^1.4.0",

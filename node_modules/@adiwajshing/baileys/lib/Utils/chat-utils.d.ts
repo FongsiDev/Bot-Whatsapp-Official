@@ -17,7 +17,7 @@ export declare const decodeSyncdMutations: (msgMutations: (proto.ISyncdMutation 
     hash: Buffer;
     indexValueMap: {
         [indexMacBase64: string]: {
-            valueMac: Buffer | Uint8Array;
+            valueMac: Uint8Array | Buffer;
         };
     };
 }>;
@@ -25,7 +25,7 @@ export declare const decodeSyncdPatch: (msg: proto.ISyncdPatch, name: WAPatchNam
     hash: Buffer;
     indexValueMap: {
         [indexMacBase64: string]: {
-            valueMac: Buffer | Uint8Array;
+            valueMac: Uint8Array | Buffer;
         };
     };
 }>;

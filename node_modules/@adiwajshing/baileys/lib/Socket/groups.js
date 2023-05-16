@@ -174,6 +174,22 @@ const makeGroupsSocket = (config) => {
         groupSettingUpdate: async (jid, setting) => {
             await groupQuery(jid, 'set', [{ tag: setting, attrs: {} }]);
         },
+        groupToggleMembershipApprovalMode: async (jid, value) => {
+            await groupQuery(jid, 'set', [
+                {
+                    tag: 'membership_approval_mode',
+                    attrs: {},
+                    content: [
+                        {
+                            tag: 'group_join',
+                            attrs: {
+                                'state': value
+                            }
+                        }
+                    ]
+                }
+            ]);
+        },
         groupFetchAllParticipating: async () => {
             const result = await query({
                 tag: 'iq',
@@ -212,7 +228,7 @@ const makeGroupsSocket = (config) => {
 };
 exports.makeGroupsSocket = makeGroupsSocket;
 const extractGroupMetadata = (result) => {
-    var _a;
+    var _a, _b, _c;
     const group = (0, WABinary_1.getBinaryNodeChild)(result, 'group');
     const descChild = (0, WABinary_1.getBinaryNodeChild)(group, 'description');
     let desc;
@@ -221,8 +237,9 @@ const extractGroupMetadata = (result) => {
         desc = (0, WABinary_1.getBinaryNodeChildString)(descChild, 'body');
         descId = descChild.attrs.id;
     }
+    const approvalMode = (_b = (_a = (0, WABinary_1.getBinaryNodeChild)((0, WABinary_1.getBinaryNodeChild)(group, 'membership_approval_mode'), 'group_join')) === null || _a === void 0 ? void 0 : _a.attrs) === null || _b === void 0 ? void 0 : _b.state;
     const groupId = group.attrs.id.includes('@') ? group.attrs.id : (0, WABinary_1.jidEncode)(group.attrs.id, 'g.us');
-    const eph = (_a = (0, WABinary_1.getBinaryNodeChild)(group, 'ephemeral')) === null || _a === void 0 ? void 0 : _a.attrs.expiration;
+    const eph = (_c = (0, WABinary_1.getBinaryNodeChild)(group, 'ephemeral')) === null || _c === void 0 ? void 0 : _c.attrs.expiration;
     const metadata = {
         id: groupId,
         subject: group.attrs.subject,
@@ -235,10 +252,11 @@ const extractGroupMetadata = (result) => {
         descId,
         restrict: !!(0, WABinary_1.getBinaryNodeChild)(group, 'locked'),
         announce: !!(0, WABinary_1.getBinaryNodeChild)(group, 'announcement'),
+        membershipApprovalMode: approvalMode === 'on',
         participants: (0, WABinary_1.getBinaryNodeChildren)(group, 'participant').map(({ attrs }) => {
             return {
                 id: attrs.jid,
-                admin: attrs.type || null,
+                admin: (attrs.type || null),
             };
         }),
         ephemeralDuration: eph ? +eph : undefined
