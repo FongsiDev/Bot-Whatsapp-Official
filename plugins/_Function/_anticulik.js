@@ -4,7 +4,10 @@ import moment from "moment-timezone";
 export async function all(m) {
   // ketika ada yang invite/kirim link grup di chat pribadi
   if (m.messageStubType || m.isGroup) {
-    if (+Date.now() > this.JoinLst && m.messageStubType == 20) {
+     let chats = global.db.data.chats[m.chat];
+  if (!chats) 
+      chats = global.db.data.chats[m.chat] = {};  
+    if (+Date.now() > chats.JoinLst && m.messageStubType == 20) {
       let group = m.chat;
       let edtr = `@${m.sender.split`@`[0]}`;
       await this.sendMessage(
