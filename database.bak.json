@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 32800,
+            "exp": 32851,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -2336,7 +2336,7 @@
             "rhinoceroslastfeed": 0,
             "rock": 0,
             "roket": 0,
-            "role": "Beginner Grade 4 ⚊⁴",
+            "role": "Bronze II",
             "roti": 0,
             "rtrofi": "perunggu",
             "rubah": 0,
@@ -15684,7 +15684,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 11110,
+            "exp": 11113,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -69297,7 +69297,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 1368,
+            "exp": 1383,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -73377,7 +73377,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 858,
+            "exp": 911,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -73609,7 +73609,7 @@
             "rhinoceroslastfeed": 0,
             "rock": 0,
             "roket": 0,
-            "role": "Newbie ㋡",
+            "role": "Bronze I",
             "roti": 0,
             "rtrofi": "perunggu",
             "rubah": 0,
@@ -76190,10 +76190,10 @@
             "lastSuccess": 1684237246961
         },
         "./plugins/Owners/owner-listban.js": {
-            "total": 10,
-            "success": 10,
-            "last": 1683864063796,
-            "lastSuccess": 1683864063796
+            "total": 11,
+            "success": 11,
+            "last": 1684238193330,
+            "lastSuccess": 1684238193330
         },
         "./plugins/Tools/tool-nobg.js": {
             "total": 2,
@@ -76434,6 +76434,12 @@
             "success": 2,
             "last": 1684237114483,
             "lastSuccess": 1684237114483
+        },
+        "./plugins/Internets/google.js": {
+            "total": 2,
+            "success": 2,
+            "last": 1684238187429,
+            "lastSuccess": 1684238187429
         }
     },
     "msgs": {},
