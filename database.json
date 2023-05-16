@@ -19420,7 +19420,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 406,
+      "exp": 412,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -20674,7 +20674,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 2870,
+      "exp": 2872,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -75040,7 +75040,8 @@
       "viewOnce": false,
       "viewonce": false,
       "welcome": true,
-      "jid": "120363044977802629@g.us"
+      "jid": "120363044977802629@g.us",
+      "JoinLst": null
     },
     "status@broadcast": {
       "antiDelete": false,
