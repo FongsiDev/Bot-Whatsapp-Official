@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 32539,
+            "exp": 32626,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -15684,7 +15684,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 11005,
+            "exp": 11016,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -69297,7 +69297,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 1324,
+            "exp": 1339,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -72959,7 +72959,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 503,
+            "exp": 542,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -73377,7 +73377,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 682,
+            "exp": 725,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -75788,10 +75788,10 @@
             "lastSuccess": 1684233887649
         },
         "./plugins/_Function/_autoreact.js": {
-            "total": 337,
-            "success": 337,
-            "last": 1684237505561,
-            "lastSuccess": 1684237505561
+            "total": 339,
+            "success": 339,
+            "last": 1684237753921,
+            "lastSuccess": 1684237753921
         },
         "./plugins/Infos/test.js": {
             "total": 24,
@@ -76328,10 +76328,10 @@
             "lastSuccess": 1684195196418
         },
         "./plugins/Tools/tool-hd.js": {
-            "total": 31,
-            "success": 26,
-            "last": 1684237635006,
-            "lastSuccess": 1684237635006
+            "total": 32,
+            "success": 27,
+            "last": 1684237707621,
+            "lastSuccess": 1684237707621
         },
         "./plugins/Internets/lyrics.js": {
             "total": 3,
@@ -76382,10 +76382,10 @@
             "lastSuccess": 1684143608453
         },
         "./plugins/Tools/tool-recolor.js": {
-            "total": 5,
-            "success": 5,
-            "last": 1684237622819,
-            "lastSuccess": 1684237622819
+            "total": 6,
+            "success": 6,
+            "last": 1684237663079,
+            "lastSuccess": 1684237663079
         },
         "./plugins/Tools/tool-dehaze.js": {
             "total": 3,
