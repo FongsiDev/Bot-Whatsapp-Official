@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 32851,
+            "exp": 32876,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -2336,7 +2336,7 @@
             "rhinoceroslastfeed": 0,
             "rock": 0,
             "roket": 0,
-            "role": "Bronze II",
+            "role": "Beginner Grade 4 ⚊⁴",
             "roti": 0,
             "rtrofi": "perunggu",
             "rubah": 0,
@@ -15684,7 +15684,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 11113,
+            "exp": 11137,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -15916,7 +15916,7 @@
             "rhinoceroslastfeed": 0,
             "rock": 0,
             "roket": 0,
-            "role": "Newbie ㋡",
+            "role": "Bronze I",
             "roti": 0,
             "rtrofi": "perunggu",
             "rubah": 0,
@@ -69297,7 +69297,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 1383,
+            "exp": 1388,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -73377,7 +73377,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 911,
+            "exp": 944,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -73609,7 +73609,7 @@
             "rhinoceroslastfeed": 0,
             "rock": 0,
             "roket": 0,
-            "role": "Bronze I",
+            "role": "Newbie ㋡",
             "roti": 0,
             "rtrofi": "perunggu",
             "rubah": 0,
@@ -75962,10 +75962,10 @@
             "lastSuccess": 1683370199219
         },
         "./plugins/Owners/owner-addprem.js": {
-            "total": 10,
-            "success": 10,
-            "last": 1684166175562,
-            "lastSuccess": 1684166175562
+            "total": 11,
+            "success": 11,
+            "last": 1684238244041,
+            "lastSuccess": 1684238244041
         },
         "./plugins/Owners/owner-delprem.js": {
             "total": 6,
@@ -76160,10 +76160,10 @@
             "lastSuccess": 1683814452393
         },
         "./plugins/RPG_Games/rpg-use.js": {
-            "total": 3,
-            "success": 3,
-            "last": 1683643060724,
-            "lastSuccess": 1683643060724
+            "total": 4,
+            "success": 4,
+            "last": 1684238200108,
+            "lastSuccess": 1684238200108
         },
         "./plugins/Downloaders/downloader-tiktok.js": {
             "total": 5,
