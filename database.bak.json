@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 34054,
+            "exp": 34088,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -15266,7 +15266,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 272,
+            "exp": 274,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -75502,7 +75502,7 @@
             "viewOnce": false,
             "viewonce": false,
             "welcome": false,
-            "JoinLst": 1684330558416
+            "JoinLst": null
         },
         "120363148578643667@g.us": {
             "isName": "Giftfing Art",
@@ -76070,10 +76070,10 @@
             "lastSuccess": 1683674403168
         },
         "./plugins/Owners/owner-leavegc.js": {
-            "total": 11,
-            "success": 11,
-            "last": 1684243616218,
-            "lastSuccess": 1684243616218
+            "total": 12,
+            "success": 12,
+            "last": 1684244217538,
+            "lastSuccess": 1684244217538
         },
         "./plugins/Anonymous/anonymous_chat.js": {
             "total": 2,
