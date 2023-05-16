@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 32012,
+      "exp": 32136,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -15684,7 +15684,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 10129,
+      "exp": 10135,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -29864,7 +29864,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 3220,
+      "exp": 3229,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -52706,7 +52706,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 164,
+      "exp": 173,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -69297,7 +69297,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 1084,
+      "exp": 1091,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -75094,26 +75094,31 @@
       "lastSuccess": 1684218516300
     },
     "./plugins/Owners/cmd-set.js": {
-      "total": 5,
-      "success": 4,
-      "last": 1684230169990,
-      "lastSuccess": 1684230169990
+      "total": 6,
+      "success": 5,
+      "last": 1684230252714,
+      "lastSuccess": 1684230252714
+    },
+    "./plugins/Owners/cmd-del.js": {
+      "total": 3,
+      "success": 3,
+      "last": 1684230207921,
+      "lastSuccess": 1684230207921
+    },
+    "./plugins/Sticker-Tools/sticker-attp.js": {
+      "total": 3,
+      "success": 3,
+      "last": 1684230244353,
+      "lastSuccess": 1684230244353
     }
   },
   "msgs": {},
   "sticker": {
-    "zfFpb6KoK678oywEJku4xPQLnXoxgzquTbHFgWV/uR0=": {
+    "y+EDWpOAbatSHp6JLBjJ895s+DzQTClFSkAUbcNDXe0=": {
       "text": ".banchat",
       "mentionedJid": [],
       "creator": "6289503433262@s.whatsapp.net",
-      "at": 1684230098923,
-      "locked": false
-    },
-    "snq8NeF0qZ4XMaEk6PieFyMWuu+Ku3mTu3lkFskyVeg=": {
-      "text": ".unbanchat",
-      "mentionedJid": [],
-      "creator": "6289503433262@s.whatsapp.net",
-      "at": 1684230169987,
+      "at": 1684230252711,
       "locked": false
     }
   },

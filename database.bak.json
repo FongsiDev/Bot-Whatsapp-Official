@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 31966,
+            "exp": 32032,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -15684,7 +15684,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 10113,
+            "exp": 10129,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -15916,7 +15916,7 @@
             "rhinoceroslastfeed": 0,
             "rock": 0,
             "roket": 0,
-            "role": "Bronze I",
+            "role": "Newbie ㋡",
             "roti": 0,
             "rtrofi": "perunggu",
             "rubah": 0,
@@ -29864,7 +29864,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 3211,
+            "exp": 3220,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -69297,7 +69297,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 1075,
+            "exp": 1084,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -74470,10 +74470,10 @@
             "lastSuccess": 1683474589718
         },
         "./plugins/_Function/tes123.js": {
-            "total": 51,
-            "success": 51,
-            "last": 1684194309877,
-            "lastSuccess": 1684194309877
+            "total": 52,
+            "success": 52,
+            "last": 1684230152395,
+            "lastSuccess": 1684230152395
         },
         "./plugins/_Function/_autoreact.js": {
             "total": 330,
@@ -75082,10 +75082,10 @@
             "lastSuccess": 1684194015519
         },
         "./plugins/Sticker-Tools/sticker-qouted.js": {
-            "total": 3,
-            "success": 3,
-            "last": 1684230085845,
-            "lastSuccess": 1684230085845
+            "total": 4,
+            "success": 4,
+            "last": 1684230152870,
+            "lastSuccess": 1684230152870
         },
         "./plugins/Sticker-Tools/sticker-toimg.js": {
             "total": 2,
@@ -75094,10 +75094,16 @@
             "lastSuccess": 1684218516300
         },
         "./plugins/Owners/cmd-set.js": {
-            "total": 4,
-            "success": 3,
-            "last": 1684230098926,
-            "lastSuccess": 1684230098926
+            "total": 5,
+            "success": 4,
+            "last": 1684230169990,
+            "lastSuccess": 1684230169990
+        },
+        "./plugins/Owners/cmd-del.js": {
+            "total": 2,
+            "success": 2,
+            "last": 1684230201266,
+            "lastSuccess": 1684230201266
         }
     },
     "msgs": {},
