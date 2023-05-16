@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 35003,
+      "exp": 35031,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -2336,7 +2336,7 @@
       "rhinoceroslastfeed": 0,
       "rock": 0,
       "roket": 0,
-      "role": "Bronze II",
+      "role": "Beginner Grade 4 ⚊⁴",
       "roti": 0,
       "rtrofi": "perunggu",
       "rubah": 0,
@@ -72985,7 +72985,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 957,
+      "exp": 1015,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -76842,10 +76842,10 @@
       "lastSuccess": 1684195196418
     },
     "./plugins/Tools/tool-hd.js": {
-      "total": 40,
-      "success": 34,
-      "last": 1684279558088,
-      "lastSuccess": 1684279558088
+      "total": 41,
+      "success": 35,
+      "last": 1684279610952,
+      "lastSuccess": 1684279610952
     },
     "./plugins/Internets/lyrics.js": {
       "total": 3,
@@ -76896,10 +76896,10 @@
       "lastSuccess": 1684143608453
     },
     "./plugins/Tools/tool-recolor.js": {
-      "total": 7,
-      "success": 7,
-      "last": 1684244374844,
-      "lastSuccess": 1684244374844
+      "total": 9,
+      "success": 9,
+      "last": 1684279634006,
+      "lastSuccess": 1684279634006
     },
     "./plugins/Tools/tool-dehaze.js": {
       "total": 3,
