@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 32136,
+      "exp": 32180,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -29864,7 +29864,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 3229,
+      "exp": 3238,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -69297,7 +69297,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 1091,
+      "exp": 1099,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -74440,10 +74440,10 @@
       "lastSuccess": 1683107906147
     },
     "./plugins/Owners/owner-exec2.js": {
-      "total": 189,
-      "success": 189,
-      "last": 1684142255244,
-      "lastSuccess": 1684142255244
+      "total": 190,
+      "success": 190,
+      "last": 1684230313778,
+      "lastSuccess": 1684230313778
     },
     "./plugins/main-menu-1.js": {
       "total": 86,
@@ -75094,10 +75094,10 @@
       "lastSuccess": 1684218516300
     },
     "./plugins/Owners/cmd-set.js": {
-      "total": 6,
-      "success": 5,
-      "last": 1684230252714,
-      "lastSuccess": 1684230252714
+      "total": 7,
+      "success": 6,
+      "last": 1684230258245,
+      "lastSuccess": 1684230258245
     },
     "./plugins/Owners/cmd-del.js": {
       "total": 3,
@@ -75119,6 +75119,13 @@
       "mentionedJid": [],
       "creator": "6289503433262@s.whatsapp.net",
       "at": 1684230252711,
+      "locked": false
+    },
+    "ji4+HD8TKaVwj4AKV9hcwJnUCJDaVGCAE0zFcKApdZ4=": {
+      "text": ".unbanchat",
+      "mentionedJid": [],
+      "creator": "6289503433262@s.whatsapp.net",
+      "at": 1684230258243,
       "locked": false
     }
   },

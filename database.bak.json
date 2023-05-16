@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 32032,
+            "exp": 32155,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -15684,7 +15684,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 10129,
+            "exp": 10135,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -29864,7 +29864,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 3220,
+            "exp": 3232,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -52706,7 +52706,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 164,
+            "exp": 173,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -69297,7 +69297,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 1084,
+            "exp": 1091,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -75094,25 +75094,38 @@
             "lastSuccess": 1684218516300
         },
         "./plugins/Owners/cmd-set.js": {
-            "total": 5,
-            "success": 4,
-            "last": 1684230169990,
-            "lastSuccess": 1684230169990
+            "total": 7,
+            "success": 6,
+            "last": 1684230258245,
+            "lastSuccess": 1684230258245
         },
         "./plugins/Owners/cmd-del.js": {
-            "total": 2,
-            "success": 2,
-            "last": 1684230201266,
-            "lastSuccess": 1684230201266
+            "total": 3,
+            "success": 3,
+            "last": 1684230207921,
+            "lastSuccess": 1684230207921
+        },
+        "./plugins/Sticker-Tools/sticker-attp.js": {
+            "total": 3,
+            "success": 3,
+            "last": 1684230244353,
+            "lastSuccess": 1684230244353
         }
     },
     "msgs": {},
     "sticker": {
-        "zfFpb6KoK678oywEJku4xPQLnXoxgzquTbHFgWV/uR0=": {
+        "y+EDWpOAbatSHp6JLBjJ895s+DzQTClFSkAUbcNDXe0=": {
             "text": ".banchat",
             "mentionedJid": [],
             "creator": "6289503433262@s.whatsapp.net",
-            "at": 1684230098923,
+            "at": 1684230252711,
+            "locked": false
+        },
+        "ji4+HD8TKaVwj4AKV9hcwJnUCJDaVGCAE0zFcKApdZ4=": {
+            "text": ".unbanchat",
+            "mentionedJid": [],
+            "creator": "6289503433262@s.whatsapp.net",
+            "at": 1684230258243,
             "locked": false
         }
     },
