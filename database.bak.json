@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 34142,
+            "exp": 34216,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -15684,7 +15684,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 11300,
+            "exp": 11308,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -73378,7 +73378,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 1239,
+            "exp": 1249,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -74587,7 +74587,8 @@
             "viewOnce": false,
             "viewonce": false,
             "welcome": true,
-            "jid": "120363036301701509@g.us"
+            "jid": "120363036301701509@g.us",
+            "JoinLst": null
         },
         "6285280808438@s.whatsapp.net": {
             "antiDelete": false,
@@ -76421,10 +76422,10 @@
             "lastSuccess": 1684195196418
         },
         "./plugins/Tools/tool-hd.js": {
-            "total": 35,
-            "success": 29,
-            "last": 1684244340867,
-            "lastSuccess": 1684244340867
+            "total": 37,
+            "success": 31,
+            "last": 1684244407193,
+            "lastSuccess": 1684244407193
         },
         "./plugins/Internets/lyrics.js": {
             "total": 3,
@@ -76475,10 +76476,10 @@
             "lastSuccess": 1684143608453
         },
         "./plugins/Tools/tool-recolor.js": {
-            "total": 6,
-            "success": 6,
-            "last": 1684237663079,
-            "lastSuccess": 1684237663079
+            "total": 7,
+            "success": 7,
+            "last": 1684244374844,
+            "lastSuccess": 1684244374844
         },
         "./plugins/Tools/tool-dehaze.js": {
             "total": 3,

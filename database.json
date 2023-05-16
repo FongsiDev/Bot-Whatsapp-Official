@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 34216,
+      "exp": 34256,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -15684,7 +15684,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 11308,
+      "exp": 11316,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -15916,7 +15916,7 @@
       "rhinoceroslastfeed": 0,
       "rock": 0,
       "roket": 0,
-      "role": "Newbie ㋡",
+      "role": "Bronze I",
       "roti": 0,
       "rtrofi": "perunggu",
       "rubah": 0,
@@ -29864,7 +29864,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 3784,
+      "exp": 3789,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -73288,8 +73288,8 @@
       "roboxp": 0
     },
     "6289530671760@s.whatsapp.net": {
-      "afk": -1,
-      "afkReason": "",
+      "afk": 1684244427728,
+      "afkReason": "Kebingungan Dengan Hosting Panel",
       "age": -1,
       "agility": 16,
       "anakanjing": 0,
@@ -73378,7 +73378,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 1249,
+      "exp": 1276,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -75918,10 +75918,10 @@
       "lastSuccess": 1684145273265
     },
     "./plugins/OpenAI/openai.js": {
-      "total": 16,
-      "success": 16,
-      "last": 1684232536378,
-      "lastSuccess": 1684232536378
+      "total": 18,
+      "success": 18,
+      "last": 1684244467637,
+      "lastSuccess": 1684244467637
     },
     "./plugins/Sticker-Tools/sticker-sticker.js": {
       "total": 46,
@@ -75942,10 +75942,10 @@
       "lastSuccess": 1684081377208
     },
     "./plugins/User/afk-afk.js": {
-      "total": 28,
-      "success": 28,
-      "last": 1684240391940,
-      "lastSuccess": 1684240391940
+      "total": 29,
+      "success": 29,
+      "last": 1684244427730,
+      "lastSuccess": 1684244427730
     },
     "./plugins/Funs/fun-apakah.js": {
       "total": 2,
@@ -76422,10 +76422,10 @@
       "lastSuccess": 1684195196418
     },
     "./plugins/Tools/tool-hd.js": {
-      "total": 37,
-      "success": 31,
-      "last": 1684244407193,
-      "lastSuccess": 1684244407193
+      "total": 38,
+      "success": 32,
+      "last": 1684244429926,
+      "lastSuccess": 1684244429926
     },
     "./plugins/Internets/lyrics.js": {
       "total": 3,
