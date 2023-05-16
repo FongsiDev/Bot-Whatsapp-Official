@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 32180,
+            "exp": 32227,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -74458,10 +74458,10 @@
             "lastSuccess": 1684229501702
         },
         "./plugins/Owners/owner-fiturplus.js": {
-            "total": 16,
-            "success": 16,
-            "last": 1684030129581,
-            "lastSuccess": 1684030129581
+            "total": 17,
+            "success": 17,
+            "last": 1684230352386,
+            "lastSuccess": 1684230352386
         },
         "./plugins/User/levelup.js": {
             "total": 13,
@@ -75028,10 +75028,10 @@
             "lastSuccess": 1684078393682
         },
         "./plugins/Infos/info-script.js": {
-            "total": 3,
-            "success": 3,
-            "last": 1684080846244,
-            "lastSuccess": 1684080846244
+            "total": 4,
+            "success": 4,
+            "last": 1684230366988,
+            "lastSuccess": 1684230366988
         },
         "./plugins/Group-Tools/group-pengumuman.js": {
             "total": 3,
