@@ -15684,7 +15684,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 10817,
+      "exp": 10839,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -69297,7 +69297,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 1232,
+      "exp": 1273,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -72959,7 +72959,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 260,
+      "exp": 267,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -73377,7 +73377,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 487,
+      "exp": 527,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -75758,10 +75758,10 @@
       "lastSuccess": 1684233852237
     },
     "./plugins/main-menu-1.js": {
-      "total": 89,
-      "success": 88,
-      "last": 1684232228805,
-      "lastSuccess": 1684232228805
+      "total": 90,
+      "success": 89,
+      "last": 1684237009333,
+      "lastSuccess": 1684237009333
     },
     "./plugins/main-menu-2.js": {
       "total": 25,
@@ -75836,10 +75836,10 @@
       "lastSuccess": 1684229192968
     },
     "./plugins/Infos/speed.js": {
-      "total": 95,
-      "success": 95,
-      "last": 1684233876924,
-      "lastSuccess": 1684233876924
+      "total": 97,
+      "success": 97,
+      "last": 1684236994250,
+      "lastSuccess": 1684236994250
     },
     "./plugins/Exp-Info/exp-daftar.js": {
       "total": 4,
