@@ -4,9 +4,8 @@ import moment from "moment-timezone";
 export async function all(m) {
   // ketika ada yang invite/kirim link grup di chat pribadi
   if (m.messageStubType || m.isGroup) {
-     let chats = global.db.data.chats[m.chat];
-  if (!chats) 
-      chats = global.db.data.chats[m.chat] = {};  
+    let chats = global.db.data.chats[m.chat];
+    if (!chats) chats = global.db.data.chats[m.chat] = {};
     if (+Date.now() > chats.JoinLst && m.messageStubType == 20) {
       let group = m.chat;
       let edtr = `@${m.sender.split`@`[0]}`;
@@ -20,6 +19,15 @@ export async function all(m) {
       ).then(async (x) => {
         await conn.groupLeave(group);
       });
+    } else {
+      await this.sendMessage(
+        m.chat,
+        {
+          text: `Halo, Saya adalah bot.\nDi sini saya membantu anda melakukan kegiatan sehari hari.\nMisalnya downloader Video Dari yt, Tiktok atau membuat Sticker atau atau bermain dengan bot pakai cmd yg seru.\nKetik !menu untuk menampilkan cmd bot.`,
+          mentions: [m.sender],
+        },
+        { quoted: fkontak }
+      );
     }
   }
   if (
