@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 35031,
+            "exp": 35040,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -72985,7 +72985,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 1015,
+            "exp": 1064,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -76842,10 +76842,10 @@
             "lastSuccess": 1684195196418
         },
         "./plugins/Tools/tool-hd.js": {
-            "total": 41,
-            "success": 35,
-            "last": 1684279610952,
-            "lastSuccess": 1684279610952
+            "total": 42,
+            "success": 36,
+            "last": 1684279663150,
+            "lastSuccess": 1684279663150
         },
         "./plugins/Internets/lyrics.js": {
             "total": 3,
@@ -76914,10 +76914,10 @@
             "lastSuccess": 1684230152870
         },
         "./plugins/Sticker-Tools/sticker-toimg.js": {
-            "total": 3,
-            "success": 3,
-            "last": 1684279540680,
-            "lastSuccess": 1684279540680
+            "total": 4,
+            "success": 4,
+            "last": 1684279661427,
+            "lastSuccess": 1684279661427
         },
         "./plugins/Owners/cmd-set.js": {
             "total": 8,
