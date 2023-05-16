@@ -41924,7 +41924,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 125,
+            "exp": 133,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -72959,7 +72959,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 108,
+            "exp": 115,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -73377,7 +73377,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 47,
+            "exp": 57,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -75456,10 +75456,10 @@
             "lastSuccess": 1683585284482
         },
         "./plugins/OpenAI/openai-new.js": {
-            "total": 3,
-            "success": 3,
-            "last": 1684232108969,
-            "lastSuccess": 1684232108969
+            "total": 4,
+            "success": 4,
+            "last": 1684232153226,
+            "lastSuccess": 1684232153226
         },
         "./plugins/Owners/owner-join.js": {
             "total": 20,
