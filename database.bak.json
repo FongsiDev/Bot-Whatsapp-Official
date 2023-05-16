@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 32319,
+            "exp": 32338,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -2336,7 +2336,7 @@
             "rhinoceroslastfeed": 0,
             "rock": 0,
             "roket": 0,
-            "role": "Beginner Grade 4 ⚊⁴",
+            "role": "Bronze II",
             "roti": 0,
             "rtrofi": "perunggu",
             "rubah": 0,
@@ -15684,7 +15684,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 10855,
+            "exp": 10884,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -69297,7 +69297,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 1277,
+            "exp": 1287,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -72959,7 +72959,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 303,
+            "exp": 356,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -73191,7 +73191,7 @@
             "rhinoceroslastfeed": 0,
             "rock": 0,
             "roket": 0,
-            "role": "Bronze I",
+            "role": "Newbie ㋡",
             "roti": 0,
             "rtrofi": "perunggu",
             "rubah": 0,
@@ -73377,7 +73377,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 541,
+            "exp": 574,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -75860,9 +75860,9 @@
             "lastSuccess": 1683114803582
         },
         "./plugins/Youtubes/youtube-play.js": {
-            "total": 9,
+            "total": 10,
             "success": 2,
-            "last": 1683823771622,
+            "last": 1684237131809,
             "lastSuccess": 1683823771622
         },
         "./plugins/Youtubes/youtube-yta.js": {
@@ -76184,10 +76184,10 @@
             "lastSuccess": 1683634120324
         },
         "./plugins/Owners/bugverify.js": {
-            "total": 26,
-            "success": 23,
-            "last": 1684236711527,
-            "lastSuccess": 1684236711527
+            "total": 27,
+            "success": 24,
+            "last": 1684237134440,
+            "lastSuccess": 1684237134440
         },
         "./plugins/Owners/owner-listban.js": {
             "total": 10,
@@ -76340,10 +76340,10 @@
             "lastSuccess": 1684078393682
         },
         "./plugins/Infos/info-script.js": {
-            "total": 5,
-            "success": 5,
-            "last": 1684230511276,
-            "lastSuccess": 1684230511276
+            "total": 6,
+            "success": 6,
+            "last": 1684237142520,
+            "lastSuccess": 1684237142520
         },
         "./plugins/Group-Tools/group-pengumuman.js": {
             "total": 3,
@@ -76428,6 +76428,12 @@
             "success": 2,
             "last": 1684236349340,
             "lastSuccess": 1684236349340
+        },
+        "./plugins/Logo/maker-ephoto360-part2.js": {
+            "total": 2,
+            "success": 2,
+            "last": 1684237114483,
+            "lastSuccess": 1684237114483
         }
     },
     "msgs": {},
