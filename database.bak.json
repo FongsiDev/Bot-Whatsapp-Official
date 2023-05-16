@@ -73377,7 +73377,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 97,
+            "exp": 119,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -75377,10 +75377,10 @@
             "lastSuccess": 1684145273265
         },
         "./plugins/OpenAI/openai.js": {
-            "total": 15,
-            "success": 15,
-            "last": 1684232114412,
-            "lastSuccess": 1684232114412
+            "total": 16,
+            "success": 16,
+            "last": 1684232536378,
+            "lastSuccess": 1684232536378
         },
         "./plugins/Sticker-Tools/sticker-sticker.js": {
             "total": 46,
