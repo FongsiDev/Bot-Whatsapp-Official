@@ -15684,7 +15684,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 12133,
+      "exp": 12137,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -15916,7 +15916,7 @@
       "rhinoceroslastfeed": 0,
       "rock": 0,
       "roket": 0,
-      "role": "Newbie ㋡",
+      "role": "Bronze I",
       "roti": 0,
       "rtrofi": "perunggu",
       "rubah": 0,
@@ -76972,6 +76972,12 @@
       "success": 12,
       "last": 1684251331331,
       "lastSuccess": 1684251331331
+    },
+    "./plugins/Owners/owner-getplugins.js": {
+      "total": 2,
+      "success": 2,
+      "last": 1684254650440,
+      "lastSuccess": 1684254650440
     }
   },
   "msgs": {},
