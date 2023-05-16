@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 33652,
+      "exp": 33676,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -2336,7 +2336,7 @@
       "rhinoceroslastfeed": 0,
       "rock": 0,
       "roket": 0,
-      "role": "Beginner Grade 4 ⚊⁴",
+      "role": "Bronze II",
       "roti": 0,
       "rtrofi": "perunggu",
       "rubah": 0,
@@ -15266,7 +15266,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 259,
+      "exp": 266,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -76070,10 +76070,10 @@
       "lastSuccess": 1683674403168
     },
     "./plugins/Owners/owner-leavegc.js": {
-      "total": 9,
-      "success": 9,
-      "last": 1684145104415,
-      "lastSuccess": 1684145104415
+      "total": 10,
+      "success": 10,
+      "last": 1684242929168,
+      "lastSuccess": 1684242929168
     },
     "./plugins/Anonymous/anonymous_chat.js": {
       "total": 2,
