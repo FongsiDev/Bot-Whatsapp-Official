@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 32742,
+            "exp": 32769,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -15684,7 +15684,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 11090,
+            "exp": 11098,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -69297,7 +69297,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 1350,
+            "exp": 1368,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -73377,7 +73377,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 821,
+            "exp": 843,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -76328,10 +76328,10 @@
             "lastSuccess": 1684195196418
         },
         "./plugins/Tools/tool-hd.js": {
-            "total": 32,
-            "success": 27,
-            "last": 1684237707621,
-            "lastSuccess": 1684237707621
+            "total": 33,
+            "success": 28,
+            "last": 1684238021375,
+            "lastSuccess": 1684238021375
         },
         "./plugins/Internets/lyrics.js": {
             "total": 3,
