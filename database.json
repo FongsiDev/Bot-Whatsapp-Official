@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 34953,
+      "exp": 35003,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -72985,7 +72985,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 905,
+      "exp": 957,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -76272,10 +76272,10 @@
       "lastSuccess": 1684279027410
     },
     "./plugins/main-menu-1.js": {
-      "total": 100,
-      "success": 99,
-      "last": 1684279499864,
-      "lastSuccess": 1684279499864
+      "total": 101,
+      "success": 100,
+      "last": 1684279534210,
+      "lastSuccess": 1684279534210
     },
     "./plugins/main-menu-2.js": {
       "total": 32,
@@ -76842,10 +76842,10 @@
       "lastSuccess": 1684195196418
     },
     "./plugins/Tools/tool-hd.js": {
-      "total": 39,
-      "success": 33,
-      "last": 1684247757198,
-      "lastSuccess": 1684247757198
+      "total": 40,
+      "success": 34,
+      "last": 1684279558088,
+      "lastSuccess": 1684279558088
     },
     "./plugins/Internets/lyrics.js": {
       "total": 3,
@@ -76914,10 +76914,10 @@
       "lastSuccess": 1684230152870
     },
     "./plugins/Sticker-Tools/sticker-toimg.js": {
-      "total": 2,
-      "success": 2,
-      "last": 1684218516300,
-      "lastSuccess": 1684218516300
+      "total": 3,
+      "success": 3,
+      "last": 1684279540680,
+      "lastSuccess": 1684279540680
     },
     "./plugins/Owners/cmd-set.js": {
       "total": 8,
