@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 32876,
+            "exp": 32954,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -2336,7 +2336,7 @@
             "rhinoceroslastfeed": 0,
             "rock": 0,
             "roket": 0,
-            "role": "Beginner Grade 4 ⚊⁴",
+            "role": "Bronze II",
             "roti": 0,
             "rtrofi": "perunggu",
             "rubah": 0,
@@ -15684,7 +15684,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 11137,
+            "exp": 11146,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -15916,7 +15916,7 @@
             "rhinoceroslastfeed": 0,
             "rock": 0,
             "roket": 0,
-            "role": "Bronze I",
+            "role": "Newbie ㋡",
             "roti": 0,
             "rtrofi": "perunggu",
             "rubah": 0,
@@ -69297,7 +69297,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 1388,
+            "exp": 1409,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -73377,7 +73377,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 944,
+            "exp": 948,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -75736,6 +75736,35 @@
             "viewOnce": false,
             "viewonce": false,
             "welcome": false
+        },
+        "62857263192057@s.whatsapp.net": {
+            "jid": "62857263192057@s.whatsapp.net",
+            "antiDelete": false,
+            "antiLink": false,
+            "antiVirtex": false,
+            "antiSticker": false,
+            "antiToxic": false,
+            "detect": false,
+            "delete": false,
+            "expired": 0,
+            "getmsg": false,
+            "isBanned": false,
+            "lastAnime": false,
+            "latestNews": false,
+            "nsfw": false,
+            "premium": false,
+            "premiumTime": false,
+            "premnsfw": false,
+            "sBye": "",
+            "sDemote": "",
+            "simi": false,
+            "sPromote": "",
+            "stiker": false,
+            "sWelcome": "",
+            "useDocument": false,
+            "viewOnce": false,
+            "viewonce": false,
+            "welcome": false
         }
     },
     "stats": {
@@ -75974,10 +76003,10 @@
             "lastSuccess": 1683374491553
         },
         "./plugins/Owners/owner-banuser.js": {
-            "total": 13,
-            "success": 13,
-            "last": 1684081419423,
-            "lastSuccess": 1684081419423
+            "total": 14,
+            "success": 14,
+            "last": 1684238266921,
+            "lastSuccess": 1684238266921
         },
         "./plugins/Owners/owner-listprem.js": {
             "total": 8,
@@ -76118,10 +76147,10 @@
             "lastSuccess": 1683463028926
         },
         "./plugins/Owners/owner-unbanuser.js": {
-            "total": 5,
-            "success": 5,
-            "last": 1684193966850,
-            "lastSuccess": 1684193966850
+            "total": 7,
+            "success": 6,
+            "last": 1684238292087,
+            "lastSuccess": 1684238292087
         },
         "./plugins/Owners/delete-pesan-orang-lain.js": {
             "total": 2,
@@ -76406,10 +76435,10 @@
             "lastSuccess": 1684218516300
         },
         "./plugins/Owners/cmd-set.js": {
-            "total": 7,
-            "success": 6,
-            "last": 1684230258245,
-            "lastSuccess": 1684230258245
+            "total": 8,
+            "success": 7,
+            "last": 1684238295977,
+            "lastSuccess": 1684238295977
         },
         "./plugins/Owners/cmd-del.js": {
             "total": 5,
