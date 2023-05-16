@@ -15684,7 +15684,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 11921,
+      "exp": 11934,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -76240,10 +76240,10 @@
       "lastSuccess": 1683107906147
     },
     "./plugins/Owners/owner-exec2.js": {
-      "total": 205,
-      "success": 205,
-      "last": 1684249774376,
-      "lastSuccess": 1684249774376
+      "total": 207,
+      "success": 207,
+      "last": 1684250557352,
+      "lastSuccess": 1684250557352
     },
     "./plugins/main-menu-1.js": {
       "total": 98,
@@ -76942,10 +76942,10 @@
       "lastSuccess": 1684245632142
     },
     "./plugins/Owners/jadibot.js": {
-      "total": 9,
-      "success": 9,
-      "last": 1684250051137,
-      "lastSuccess": 1684250051137
+      "total": 10,
+      "success": 10,
+      "last": 1684250567222,
+      "lastSuccess": 1684250567222
     }
   },
   "msgs": {},
