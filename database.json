@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 32227,
+      "exp": 32253,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -74458,10 +74458,10 @@
       "lastSuccess": 1684229501702
     },
     "./plugins/Owners/owner-fiturplus.js": {
-      "total": 17,
-      "success": 17,
-      "last": 1684230352386,
-      "lastSuccess": 1684230352386
+      "total": 18,
+      "success": 18,
+      "last": 1684230494175,
+      "lastSuccess": 1684230494175
     },
     "./plugins/User/levelup.js": {
       "total": 13,
