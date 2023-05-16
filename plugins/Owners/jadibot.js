@@ -2,7 +2,7 @@ import pkg from '@adiwajshing/baileys'
 const { DisconnectReason, MessageRetryMap, useSingleFileAuthState, fetchLatestBaileysVersion, toBuffer } = pkg 
 import WebSocket from 'ws'
 import qrcode from 'qrcode'
-import { makeWASocket, protoType, serialize } from '../lib/simple_test.js'
+import { makeWASocket, protoType, serialize } from '../../lib/simple_test.js'
 import fs from 'fs'
 import { createRequire } from 'module'
 const { groupsUpdate } = await(await import('../../handler.js'))
