@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 33949,
+            "exp": 33968,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -75502,7 +75502,7 @@
             "viewOnce": false,
             "viewonce": false,
             "welcome": false,
-            "JoinLst": 1684330418674
+            "JoinLst": 1684330479394
         },
         "120363148578643667@g.us": {
             "isName": "Giftfing Art",
@@ -75968,10 +75968,10 @@
             "lastSuccess": 1684232153226
         },
         "./plugins/Owners/owner-join.js": {
-            "total": 27,
-            "success": 21,
-            "last": 1684244022031,
-            "lastSuccess": 1684244022031
+            "total": 28,
+            "success": 22,
+            "last": 1684244079533,
+            "lastSuccess": 1684244079533
         },
         "./plugins/RPG_Games/rpg-open.js": {
             "total": 4,
