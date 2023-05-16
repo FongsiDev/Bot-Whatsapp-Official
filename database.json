@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 35040,
+      "exp": 35119,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -76842,10 +76842,10 @@
       "lastSuccess": 1684195196418
     },
     "./plugins/Tools/tool-hd.js": {
-      "total": 42,
-      "success": 36,
-      "last": 1684279663150,
-      "lastSuccess": 1684279663150
+      "total": 43,
+      "success": 37,
+      "last": 1684279808620,
+      "lastSuccess": 1684279808620
     },
     "./plugins/Internets/lyrics.js": {
       "total": 3,
@@ -76896,10 +76896,10 @@
       "lastSuccess": 1684143608453
     },
     "./plugins/Tools/tool-recolor.js": {
-      "total": 9,
-      "success": 9,
-      "last": 1684279634006,
-      "lastSuccess": 1684279634006
+      "total": 10,
+      "success": 10,
+      "last": 1684279794972,
+      "lastSuccess": 1684279794972
     },
     "./plugins/Tools/tool-dehaze.js": {
       "total": 3,
@@ -76914,10 +76914,10 @@
       "lastSuccess": 1684230152870
     },
     "./plugins/Sticker-Tools/sticker-toimg.js": {
-      "total": 4,
-      "success": 4,
-      "last": 1684279661427,
-      "lastSuccess": 1684279661427
+      "total": 5,
+      "success": 5,
+      "last": 1684279774537,
+      "lastSuccess": 1684279774537
     },
     "./plugins/Owners/cmd-set.js": {
       "total": 8,
