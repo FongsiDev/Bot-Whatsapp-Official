@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 34500,
+      "exp": 34521,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -2336,7 +2336,7 @@
       "rhinoceroslastfeed": 0,
       "rock": 0,
       "roket": 0,
-      "role": "Beginner Grade 4 ⚊⁴",
+      "role": "Bronze II",
       "roti": 0,
       "rtrofi": "perunggu",
       "rubah": 0,
@@ -15684,7 +15684,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 11582,
+      "exp": 11599,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -72960,7 +72960,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 692,
+      "exp": 696,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -76933,6 +76933,12 @@
       "success": 0,
       "last": 1684238446290,
       "lastSuccess": 0
+    },
+    "./plugins/Internets/internet-manga.js": {
+      "total": 3,
+      "success": 1,
+      "last": 1684245632142,
+      "lastSuccess": 1684245632142
     }
   },
   "msgs": {},
