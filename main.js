@@ -372,7 +372,7 @@ process.on("multipleResolves", () => {
 // let strQuot = /(["'])(?:(?=(\\?))\2.)*?\1/
 
 let isInit = true;
-let handler = await import("./handler.js");
+let handler = await import("./handlers2.js");
 global.reloadHandler = async function (restatConn) {
   try {
     const Handler = await import(`./handler.js?update=${Date.now()}`).catch(
