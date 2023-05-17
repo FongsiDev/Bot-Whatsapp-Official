@@ -1128,6 +1128,7 @@ export async function handler(chatUpdate) {
         )
           continue;
       }
+      console.log("Ok 4")
       if (typeof plugin !== "function") continue;
       if ((usedPrefix = (match[0] || "")[0])) {
         let noPrefix = m.text.replace(usedPrefix, "");
