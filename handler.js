@@ -97,8 +97,36 @@ export async function handler(chatUpdate) {
       let plugin = global.plugins[name];
       if (!plugin) continue;
       if (plugin.disabled) continue;
-      const __filename = join(___dirname, name);
-      if (typeof plugin.all === "function") {
+      let __filename = join(___dirname, name);
+    }
+       const str2Regex = (str) => str.replace(/[|\\{}()[\]^$+*?.]/g, "\\$&");
+      let _prefix = plugin.customPrefix
+        ? plugin.customPrefix
+        : conn.prefix
+        ? conn.prefix
+        : global.prefix;
+      let match = (
+        _prefix instanceof RegExp // RegExp Mode?
+          ? [[_prefix.exec(m.text), _prefix]]
+          : Array.isArray(_prefix) // Array?
+          ? _prefix.map((p) => {
+              let re =
+                p instanceof RegExp // RegExp in Array?
+                  ? p
+                  : new RegExp(str2Regex(p));
+              return [re.exec(m.text), re];
+            })
+          : typeof _prefix === "string" // String?
+          ? [
+              [
+                new RegExp(str2Regex(_prefix)).exec(m.text),
+                new RegExp(str2Regex(_prefix)),
+              ],
+            ]
+          : [[[], new RegExp()]]
+      ).find((p) => p[1]);
+
+   if (typeof plugin.all === "function") {
         try {
           await plugin.all.call(this, m, {
             chatUpdate,
@@ -151,40 +179,13 @@ export async function handler(chatUpdate) {
             continue;
         }
         if (typeof plugin !== "function") continue;
-      }
+      
 
       if (!opts["restrict"])
         if (plugin.tags && plugin.tags.includes("admin")) {
           // global.dfail('restrict', m, this)
           continue;
         }
-      const str2Regex = (str) => str.replace(/[|\\{}()[\]^$+*?.]/g, "\\$&");
-      let _prefix = plugin.customPrefix
-        ? plugin.customPrefix
-        : conn.prefix
-        ? conn.prefix
-        : global.prefix;
-      let match = (
-        _prefix instanceof RegExp // RegExp Mode?
-          ? [[_prefix.exec(m.text), _prefix]]
-          : Array.isArray(_prefix) // Array?
-          ? _prefix.map((p) => {
-              let re =
-                p instanceof RegExp // RegExp in Array?
-                  ? p
-                  : new RegExp(str2Regex(p));
-              return [re.exec(m.text), re];
-            })
-          : typeof _prefix === "string" // String?
-          ? [
-              [
-                new RegExp(str2Regex(_prefix)).exec(m.text),
-                new RegExp(str2Regex(_prefix)),
-              ],
-            ]
-          : [[[], new RegExp()]]
-      ).find((p) => p[1]);
-
       if ((usedPrefix = (match[0] || "")[0])) {
         let noPrefix = m.text.replace(usedPrefix, "");
         let args_v2 = m.text.slice(usedPrefix.length).trim().split(/ +/);
