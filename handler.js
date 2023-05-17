@@ -122,7 +122,10 @@ export async function handler(chatUpdate) {
         : [[[], new RegExp()]]
     ).find((p) => p[1]);
     if ((usedPrefix = (match[0] || "")[0])) {
-         let isAccept =
+        let [command, ...args] = noPrefix.trim().split` `.filter((v) => v);
+      command = (command || "").toLowerCase();
+
+       let isAccept =
         plugin.command instanceof RegExp // RegExp Mode?
           ? plugin.command.test(command)
           : Array.isArray(plugin.command) // Array?
