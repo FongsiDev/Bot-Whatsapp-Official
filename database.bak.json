@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 36483,
+            "exp": 36509,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -29864,7 +29864,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 3848,
+            "exp": 3856,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -76285,10 +76285,10 @@
             "lastSuccess": 1684310707035
         },
         "./plugins/Owners/owner-fiturplus.js": {
-            "total": 21,
-            "success": 21,
-            "last": 1684306851950,
-            "lastSuccess": 1684306851950
+            "total": 22,
+            "success": 22,
+            "last": 1684315898014,
+            "lastSuccess": 1684315898014
         },
         "./plugins/User/levelup.js": {
             "total": 13,
