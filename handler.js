@@ -92,20 +92,16 @@ export async function handler(chatUpdate) {
       path.dirname(fileURLToPath(import.meta.url)),
       "./plugins"
     );
-    let plugin;
+    const str2Regex = (str) => str.replace(/[|\\{}()[\]^$+*?.]/g, "\\$&");
+    let plugin, _prefix, match;
     for (let name in global.plugins) {
       plugin = global.plugins[name];
-    }
-    if (!plugin) return;
-    if (plugin.disabled) return;
-    let __filename = join(___dirname);
-    const str2Regex = (str) => str.replace(/[|\\{}()[\]^$+*?.]/g, "\\$&");
-    let _prefix = plugin.customPrefix
+      _prefix = plugin.customPrefix
       ? plugin.customPrefix
       : conn.prefix
       ? conn.prefix
       : global.prefix;
-    let match = (
+          let match = (
       _prefix instanceof RegExp // RegExp Mode?
         ? [[_prefix.exec(m.text), _prefix]]
         : Array.isArray(_prefix) // Array?
@@ -125,6 +121,11 @@ export async function handler(chatUpdate) {
           ]
         : [[[], new RegExp()]]
     ).find((p) => p[1]);
+  
+    }
+    if (!plugin) return;
+    if (plugin.disabled) return;
+    let __filename = join(___dirname);
 
     if (typeof plugin.all === "function") {
       try {
