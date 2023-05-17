@@ -15684,7 +15684,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 12472,
+            "exp": 12492,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -22763,7 +22763,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 5576,
+            "exp": 5586,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -76431,10 +76431,10 @@
             "lastSuccess": 1684020649939
         },
         "./plugins/Owners/owner-unbanchat.js": {
-            "total": 21,
-            "success": 21,
-            "last": 1684244841296,
-            "lastSuccess": 1684244841296
+            "total": 22,
+            "success": 22,
+            "last": 1684341305035,
+            "lastSuccess": 1684341305035
         },
         "./plugins/Owners/owner-banchat.js": {
             "total": 19,
