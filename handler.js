@@ -1033,7 +1033,7 @@ export async function handler(chatUpdate) {
     const ___dirname = path.join(
       path.dirname(fileURLToPath(import.meta.url)),
       "./plugins"
-    );
+    );console.log(m)
 
     for (let name in global.plugins) {
       let plugin = global.plugins[name];
