@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 37244,
+      "exp": 37277,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -76898,10 +76898,10 @@
       "lastSuccess": 1684143608453
     },
     "./plugins/Tools/tool-recolor.js": {
-      "total": 13,
-      "success": 13,
-      "last": 1684317080899,
-      "lastSuccess": 1684317080899
+      "total": 14,
+      "success": 14,
+      "last": 1684334630465,
+      "lastSuccess": 1684334630465
     },
     "./plugins/Tools/tool-dehaze.js": {
       "total": 3,
