@@ -15684,7 +15684,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 12550,
+      "exp": 12569,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -15916,7 +15916,7 @@
       "rhinoceroslastfeed": 0,
       "rock": 0,
       "roket": 0,
-      "role": "Newbie ㋡",
+      "role": "Bronze I",
       "roti": 0,
       "rtrofi": "perunggu",
       "rubah": 0,
@@ -76675,10 +76675,10 @@
   },
   "stats": {
     "./plugins/Owners/owner-exec.js": {
-      "total": 667,
-      "success": 667,
-      "last": 1684349696015,
-      "lastSuccess": 1684349696015
+      "total": 669,
+      "success": 669,
+      "last": 1684349748184,
+      "lastSuccess": 1684349748184
     },
     "./plugins/Infos/info-banlist.js": {
       "total": 3,
@@ -76837,10 +76837,10 @@
       "lastSuccess": 1683289762333
     },
     "./plugins/Owners/owner-sf.js": {
-      "total": 5,
-      "success": 5,
-      "last": 1684141033763,
-      "lastSuccess": 1684141033763
+      "total": 6,
+      "success": 6,
+      "last": 1684349729532,
+      "lastSuccess": 1684349729532
     },
     "./plugins/Group-Tools/enable.js": {
       "total": 31,
