@@ -63,24 +63,19 @@ export async function handler(chatUpdate) {
         await delay(time);
       }, time);
     }
-      if (opts["nyimak"]) return;
-          if (!m.fromMe && opts["self"]) return;
-          if (
-            opts["pconly"] &&
-            !m.fromMe &&
-            m.chat.endsWith("g.us")
-          )
-            return;
-          if (
-            opts["gconly"] &&
-            !m.fromMe &&
-            !isOwner &&
-            !isPrems &&
-            !m.chat.endsWith("g.us")
-          ) {
-            return conn.sendButton(
-              m.chat,
-              `${wm}
+    if (opts["nyimak"]) return;
+    if (!m.fromMe && opts["self"]) return;
+    if (opts["pconly"] && !m.fromMe && m.chat.endsWith("g.us")) return;
+    if (
+      opts["gconly"] &&
+      !m.fromMe &&
+      !isOwner &&
+      !isPrems &&
+      !m.chat.endsWith("g.us")
+    ) {
+      return conn.sendButton(
+        m.chat,
+        `${wm}
         Mau Pake Bot
         Atau Masuk in Bot Ke Grub Kalian
         ╭━━━━「 SEWA 」
@@ -113,19 +108,14 @@ export async function handler(chatUpdate) {
         
         #blueckkn
         `.trim(),
-              wm,
-              "Pemilik Bot",
-              ".owner",
-              m
-            );
-          }
-          if (
-            opts["swonly"] &&
-            !m.fromMe &&
-            m.chat !== "status@broadcast"
-          )
-            return;
-    
+        wm,
+        "Pemilik Bot",
+        ".owner",
+        m
+      );
+    }
+    if (opts["swonly"] && !m.fromMe && m.chat !== "status@broadcast") return;
+
     if (m.isBaileys) return;
     m.exp += Math.ceil(Math.random() * 10);
 

@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 36509,
+      "exp": 36532,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -39418,7 +39418,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 50,
+      "exp": 61,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -39602,7 +39602,7 @@
       "mythic": 0,
       "naga": 0,
       "nagalastclaim": 0,
-      "name": "+62 882-1294-6529",
+      "name": "Ghozzan Alfallah",
       "net": 0,
       "nila": 0,
       "nilabakar": 0,
@@ -42945,7 +42945,7 @@
       "mythic": 0,
       "naga": 0,
       "nagalastclaim": 0,
-      "name": ".• 腐敗 •.",
+      "name": "|.腐敗.|",
       "net": 0,
       "nila": 0,
       "nilabakar": 0,
@@ -76267,10 +76267,10 @@
       "lastSuccess": 1683107906147
     },
     "./plugins/Owners/owner-exec2.js": {
-      "total": 214,
-      "success": 214,
-      "last": 1684315012962,
-      "lastSuccess": 1684315012962
+      "total": 215,
+      "success": 215,
+      "last": 1684316426300,
+      "lastSuccess": 1684316426300
     },
     "./plugins/main-menu-1.js": {
       "total": 116,
