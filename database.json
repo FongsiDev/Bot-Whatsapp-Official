@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 37052,
+      "exp": 37072,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -22763,7 +22763,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 5516,
+      "exp": 5549,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -22995,7 +22995,7 @@
       "rhinoceroslastfeed": 0,
       "rock": 0,
       "roket": 0,
-      "role": "Newbie ㋡",
+      "role": "Bronze I",
       "roti": 0,
       "rtrofi": "perunggu",
       "rubah": 0,
@@ -29864,7 +29864,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 3983,
+      "exp": 3988,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -76423,9 +76423,9 @@
       "lastSuccess": 1684141033763
     },
     "./plugins/Group-Tools/enable.js": {
-      "total": 30,
+      "total": 31,
       "success": 18,
-      "last": 1684295301131,
+      "last": 1684321545772,
       "lastSuccess": 1684020649939
     },
     "./plugins/Owners/owner-unbanchat.js": {
