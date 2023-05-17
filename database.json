@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 35598,
+      "exp": 35634,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -15266,7 +15266,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": null,
+      "exp": 0,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -15425,7 +15425,7 @@
       "lelebakar": 0,
       "leleg": 0,
       "level": 0,
-      "limit": null,
+      "limit": 100,
       "limitjoinfree": 1,
       "lion": 0,
       "lionexp": 0,
@@ -72985,7 +72985,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 1064,
+      "exp": 1101,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -76272,10 +76272,10 @@
       "lastSuccess": 1684309507839
     },
     "./plugins/main-menu-1.js": {
-      "total": 107,
-      "success": 106,
-      "last": 1684309401815,
-      "lastSuccess": 1684309401815
+      "total": 109,
+      "success": 108,
+      "last": 1684310441766,
+      "lastSuccess": 1684310441766
     },
     "./plugins/main-menu-2.js": {
       "total": 32,
