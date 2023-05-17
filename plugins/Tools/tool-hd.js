@@ -21,6 +21,6 @@ let handler = async (m) => {
 
 handler.help = ["hd <caption|reply media>"];
 handler.tags = ["tools"];
-handler.command = /^(hd|jernih)$/i;
+handler.command = /^(hd|jernih|hdr)$/i;
 
 export default handler;
