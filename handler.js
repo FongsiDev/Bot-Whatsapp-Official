@@ -1035,13 +1035,11 @@ export async function handler(chatUpdate) {
       "./plugins"
     );
 
-    console.log("Ok 1")
     for (let name in global.plugins) {
       let plugin = global.plugins[name];
       if (!plugin) continue;
       if (plugin.disabled) continue;
       const __filename = join(___dirname, name);
-      console.log("Ok 2")
       if (typeof plugin.all === "function") {
         try {
           await plugin.all.call(this, m, {
@@ -1073,6 +1071,10 @@ export async function handler(chatUpdate) {
           }*/
         }
       }
+    for (let name in global.plugins) {
+      let plugin = global.plugins[name];
+      if (!plugin) continue;
+      if (plugin.disabled) continue;
 
       if (!opts["restrict"])
         if (plugin.tags && plugin.tags.includes("admin")) {
@@ -1105,7 +1107,6 @@ export async function handler(chatUpdate) {
             ]
           : [[[], new RegExp()]]
       ).find((p) => p[1]);
-      console.log("Ok 3")  
       if (typeof plugin.before === "function") {
         if (
           await plugin.before.call(this, m, {
@@ -1128,9 +1129,12 @@ export async function handler(chatUpdate) {
         )
           continue;
       }
-      console.log("Ok 4")
-      if (typeof plugin !== "function") continue;
-      if ((usedPrefix = (match[0] || "")[0])) {
+}
+            for (let name in global.plugins) {
+      let plugin = global.plugins[name];
+      if (!plugin) continue;
+      if (plugin.disabled) continue;
+if (typeof plugin !== "function") continue;      if ((usedPrefix = (match[0] || "")[0])) {
         let noPrefix = m.text.replace(usedPrefix, "");
         let args_v2 = m.text.slice(usedPrefix.length).trim().split(/ +/);
         let [command, ...args] = noPrefix.trim().split` `.filter((v) => v);
