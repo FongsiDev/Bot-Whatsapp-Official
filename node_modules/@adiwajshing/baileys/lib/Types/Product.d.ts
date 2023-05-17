@@ -12,7 +12,7 @@ export declare type CatalogResult = {
 };
 export declare type ProductCreateResult = {
     data: {
-        product: {};
+        product: any;
     };
 };
 export declare type CatalogStatus = {

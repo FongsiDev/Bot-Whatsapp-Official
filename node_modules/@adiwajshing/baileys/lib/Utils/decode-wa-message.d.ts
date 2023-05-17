@@ -1,6 +1,5 @@
-import { Logger } from 'pino';
 import { proto } from '../../WAProto';
-import { SignalRepository } from '../Types';
+import { AuthenticationState } from '../Types';
 import { BinaryNode } from '../WABinary';
 /**
  * Decode the received node as a message.
@@ -11,7 +10,7 @@ export declare function decodeMessageNode(stanza: BinaryNode, meId: string): {
     author: string;
     sender: string;
 };
-export declare const decryptMessageNode: (stanza: BinaryNode, meId: string, repository: SignalRepository, logger: Logger) => {
+export declare const decryptMessageNode: (stanza: BinaryNode, auth: AuthenticationState) => {
     fullMessage: proto.IWebMessageInfo;
     category: string;
     author: string;

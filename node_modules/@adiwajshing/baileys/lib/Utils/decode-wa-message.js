@@ -5,6 +5,7 @@ const boom_1 = require("@hapi/boom");
 const WAProto_1 = require("../../WAProto");
 const WABinary_1 = require("../WABinary");
 const generics_1 = require("./generics");
+const signal_1 = require("./signal");
 const NO_MESSAGE_FOUND_ERROR_TEXT = 'Message absent from node';
 /**
  * Decode the received node as a message.
@@ -81,8 +82,8 @@ function decodeMessageNode(stanza, meId) {
     };
 }
 exports.decodeMessageNode = decodeMessageNode;
-const decryptMessageNode = (stanza, meId, repository, logger) => {
-    const { fullMessage, author, sender } = decodeMessageNode(stanza, meId);
+const decryptMessageNode = (stanza, auth) => {
+    const { fullMessage, author, sender } = decodeMessageNode(stanza, auth.creds.me.id);
     return {
         fullMessage,
         category: stanza.attrs.category,
@@ -109,20 +110,12 @@ const decryptMessageNode = (stanza, meId, repository, logger) => {
                         const e2eType = attrs.type;
                         switch (e2eType) {
                             case 'skmsg':
-                                msgBuffer = await repository.decryptGroupMessage({
-                                    group: sender,
-                                    authorJid: author,
-                                    msg: content
-                                });
+                                msgBuffer = await (0, signal_1.decryptGroupSignalProto)(sender, author, content, auth);
                                 break;
                             case 'pkmsg':
                             case 'msg':
                                 const user = (0, WABinary_1.isJidUser)(sender) ? sender : author;
-                                msgBuffer = await repository.decryptMessage({
-                                    jid: user,
-                                    type: e2eType,
-                                    ciphertext: content
-                                });
+                                msgBuffer = await (0, signal_1.decryptSignalProto)(user, e2eType, content, auth);
                                 break;
                             default:
                                 throw new Error(`Unknown e2e type: ${e2eType}`);
@@ -130,10 +123,7 @@ const decryptMessageNode = (stanza, meId, repository, logger) => {
                         let msg = WAProto_1.proto.Message.decode((0, generics_1.unpadRandomMax16)(msgBuffer));
                         msg = ((_a = msg.deviceSentMessage) === null || _a === void 0 ? void 0 : _a.message) || msg;
                         if (msg.senderKeyDistributionMessage) {
-                            await repository.processSenderKeyDistributionMessage({
-                                authorJid: author,
-                                item: msg.senderKeyDistributionMessage
-                            });
+                            await (0, signal_1.processSenderKeyMessage)(author, msg.senderKeyDistributionMessage, auth);
                         }
                         if (fullMessage.message) {
                             Object.assign(fullMessage.message, msg);
@@ -142,10 +132,9 @@ const decryptMessageNode = (stanza, meId, repository, logger) => {
                             fullMessage.message = msg;
                         }
                     }
-                    catch (err) {
-                        logger.error({ key: fullMessage.key, err }, 'failed to decrypt message');
+                    catch (error) {
                         fullMessage.messageStubType = WAProto_1.proto.WebMessageInfo.StubType.CIPHERTEXT;
-                        fullMessage.messageStubParameters = [err.message];
+                        fullMessage.messageStubParameters = [error.message];
                     }
                 }
             }
