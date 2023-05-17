@@ -15684,7 +15684,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 12332,
+      "exp": 12342,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -40673,7 +40673,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 295,
+      "exp": 323,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -72986,7 +72986,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 1453,
+      "exp": 1455,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -76353,10 +76353,10 @@
       "lastSuccess": 1684229192968
     },
     "./plugins/Infos/speed.js": {
-      "total": 99,
-      "success": 99,
-      "last": 1684333434621,
-      "lastSuccess": 1684333434621
+      "total": 100,
+      "success": 100,
+      "last": 1684338629086,
+      "lastSuccess": 1684338629086
     },
     "./plugins/Exp-Info/exp-daftar.js": {
       "total": 4,
