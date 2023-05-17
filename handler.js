@@ -1105,6 +1105,7 @@ export async function handler(chatUpdate) {
             ]
           : [[[], new RegExp()]]
       ).find((p) => p[1]);
+      console.log("Ok 3")  
       if (typeof plugin.before === "function") {
         if (
           await plugin.before.call(this, m, {
