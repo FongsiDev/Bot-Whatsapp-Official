@@ -5,6 +5,7 @@ import cfonts from "cfonts";
 import { fileURLToPath } from "url";
 import { join, dirname } from "path";
 import { createRequire } from "module";
+import { spawn } from "child_process";
 import { createInterface } from "readline";
 import { setupMaster, fork } from "cluster";
 import { watchFile, unwatchFile } from "fs";
@@ -34,25 +35,50 @@ var isRunning = false;
  * @param {String} file `path/to/file`
  */
 function start(file) {
- let args = [join(__dirname, file), ...process.argv.slice(2)];
-   say([process.argv[0], ...args].join(" "), {
+  let args = [join(__dirname, file), ...process.argv.slice(2)];
+  say([process.argv[0], ...args].join(" "), {
     font: "console",
     align: "center",
     gradient: ["red", "magenta"],
   });
-	let p = spawn(process.argv[0], args, { stdio: ['inherit', 'inherit', 'inherit', 'ipc'] })
-	.on('message', data => {
-		if (data == 'reset') {
-			console.log('Restarting...')
-			p.kill()
-			delete p
-		}
-	})
-	.on('exit', code => {
-		console.error('Exited with code:', code)
-		start.apply(this, arguments);
-	})
+  let p = spawn(process.argv[0], args, {
+    stdio: ["inherit", "inherit", "inherit", "ipc"],
+  })
+    .on("message", (data) => {
+      console.log("[✅RECEIVED]", data);
+      switch (data) {
+        case "reset":
+          console.log("Restarting...");
+          p.kill();
+          // delete p
+          break;
+        case "uptime":
+          p.send(process.uptime());
+          break;
+      }
+    })
+    .on("exit", (code) => {
+      console.error("[❗]Exited with code:", code);
+      if (code !== 0) return start(file);
+      start.apply(this, arguments);
+      watchFile(args[0], () => {
+        unwatchFile(args[0]);
+        start(file);
+      });
+    });
+
+  let opts = new Object(
+    yargs(process.argv.slice(2)).exitProcess(false).parse()
+  );
+  if (!opts["test"])
+    if (!rl.listenerCount())
+      rl.on("line", (line) => {
+        p.emit("message", line.trim());
+      });
+  // console.log(p)
 }
+
+/*
 function start(file) {
   if (isRunning) return;
   isRunning = true;
@@ -86,6 +112,7 @@ function start(file) {
       start(file);
     });
   });
+
   let opts = new Object(
     yargs(process.argv.slice(2)).exitProcess(false).parse()
   );
@@ -96,5 +123,6 @@ function start(file) {
       });
   // console.log(p)
 }
+*/
 
 start("main.js");

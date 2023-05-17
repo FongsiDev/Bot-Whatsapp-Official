@@ -174,12 +174,12 @@ const connectionOptions = {
   version,
   logger: pino({ level: "silent" }),
   printQRInTerminal: true,
-  connectTimeoutMs: 60_000,  
-  keepAliveIntervalMs: 1000,  
-  defaultQueryTimeoutMs: 0,  
-  syncFullHistory: true,  
-  markOnlineOnConnect: true,  
-  generateHighQualityLinkPreview: true,  
+  connectTimeoutMs: 60_000,
+  keepAliveIntervalMs: 1000,
+  defaultQueryTimeoutMs: 0,
+  syncFullHistory: true,
+  markOnlineOnConnect: true,
+  generateHighQualityLinkPreview: true,
   patchMessageBeforeSending: (message) => {
     const requiresPatch = !!(
       message.buttonsMessage ||
