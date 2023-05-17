@@ -121,7 +121,7 @@ export async function handler(chatUpdate) {
           ]
         : [[[], new RegExp()]]
     ).find((p) => p[1]);
-  
+  console.log(match)
     }
     if (!plugin) return;
     if (plugin.disabled) return;
