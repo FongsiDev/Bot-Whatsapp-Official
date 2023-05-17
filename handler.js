@@ -96,6 +96,8 @@ export async function handler(chatUpdate) {
     let plugin, name, match;
     for (let name_ in global.plugins) {
      var pluginFind = global.plugins[name_];
+    if (!pluginFind) return;
+    if (pluginFind.disabled) return;
      const _prefix = pluginFind.customPrefix
       ? pluginFind.customPrefix
       : conn.prefix
@@ -149,8 +151,6 @@ export async function handler(chatUpdate) {
 }
   }
     }
-    if (!plugin) return;
-    if (plugin.disabled) return;
     let __filename = join(___dirname);
 
     if (typeof plugin.all === "function") {
