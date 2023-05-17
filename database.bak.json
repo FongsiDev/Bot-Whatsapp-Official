@@ -15684,7 +15684,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 12148,
+            "exp": 12155,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -29864,7 +29864,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 3789,
+            "exp": 3800,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -72985,7 +72985,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 1101,
+            "exp": 1170,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -76272,16 +76272,16 @@
             "lastSuccess": 1684309507839
         },
         "./plugins/main-menu-1.js": {
-            "total": 109,
-            "success": 108,
-            "last": 1684310441766,
-            "lastSuccess": 1684310441766
+            "total": 110,
+            "success": 109,
+            "last": 1684310509210,
+            "lastSuccess": 1684310509210
         },
         "./plugins/main-menu-2.js": {
-            "total": 32,
-            "success": 32,
-            "last": 1684279322237,
-            "lastSuccess": 1684279322237
+            "total": 33,
+            "success": 33,
+            "last": 1684310509317,
+            "lastSuccess": 1684310509317
         },
         "./plugins/Owners/owner-fiturplus.js": {
             "total": 21,
@@ -76302,10 +76302,10 @@
             "lastSuccess": 1684279523025
         },
         "./plugins/_Function/_autoreact.js": {
-            "total": 352,
-            "success": 352,
-            "last": 1684300785920,
-            "lastSuccess": 1684300785920
+            "total": 353,
+            "success": 353,
+            "last": 1684310489414,
+            "lastSuccess": 1684310489414
         },
         "./plugins/Infos/test.js": {
             "total": 25,
@@ -76978,6 +76978,12 @@
             "success": 2,
             "last": 1684254650440,
             "lastSuccess": 1684254650440
+        },
+        "./plugins/Tools/tool-react.js": {
+            "total": 2,
+            "success": 0,
+            "last": 1684310535790,
+            "lastSuccess": 0
         }
     },
     "msgs": {},
