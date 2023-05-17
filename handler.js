@@ -92,13 +92,13 @@ export async function handler(chatUpdate) {
       path.dirname(fileURLToPath(import.meta.url)),
       "./plugins"
     );
-
+    let plugin;
     for (let name in global.plugins) {
-      let plugin = global.plugins[name];
-      if (!plugin) continue;
-      if (plugin.disabled) continue;
-      let __filename = join(___dirname, name);
+      plugin = global.plugins[name];
     }
+    if (!plugin) continue;
+    if (plugin.disabled) continue;
+    let __filename = join(___dirname, name);
     const str2Regex = (str) => str.replace(/[|\\{}()[\]^$+*?.]/g, "\\$&");
     let _prefix = plugin.customPrefix
       ? plugin.customPrefix
