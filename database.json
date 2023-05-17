@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 35145,
+      "exp": 35198,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -76662,16 +76662,16 @@
       "lastSuccess": 1683502588446
     },
     "./plugins/Infos/info-runtime1.js": {
-      "total": 4,
-      "success": 4,
-      "last": 1683814449303,
-      "lastSuccess": 1683814449303
+      "total": 5,
+      "success": 5,
+      "last": 1684296984370,
+      "lastSuccess": 1684296984370
     },
     "./plugins/Infos/info-runtime2.js": {
-      "total": 6,
-      "success": 6,
-      "last": 1684238426110,
-      "lastSuccess": 1684238426110
+      "total": 7,
+      "success": 7,
+      "last": 1684296988119,
+      "lastSuccess": 1684296988119
     },
     "./plugins/RPG_Games/rpg-use.js": {
       "total": 4,
