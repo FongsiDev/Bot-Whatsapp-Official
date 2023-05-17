@@ -310,10 +310,12 @@ async function connectionUpdate(update) {
     isNewLogin,
   } = update;
   if (isNewLogin) conn.isInit = true;
-  if (connection == "connecting") {
+  if (connection == "connecting")
     console.log(
       chalk.redBright("⚡ Mengaktifkan Bot, Mohon tunggu sebentar...")
     );
+  if (connection == "open") {
+    await console.log(chalk.green("✅ Tersambung"));
     return await this.sendButton(
       global.logs.stats,
       `Bot Successfully Connected\nServer: ${
@@ -325,7 +327,6 @@ async function connectionUpdate(update) {
       null
     );
   }
-  if (connection == "open") await console.log(chalk.green("✅ Tersambung"));
   if (isOnline == true) console.log(chalk.green("Status Aktif"));
   if (isOnline == false) console.log(chalk.red("Status Mati"));
   if (receivedPendingNotifications)
