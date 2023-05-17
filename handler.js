@@ -980,6 +980,7 @@ export async function handler(chatUpdate) {
     } catch (e) {
       console.error(e);
     }
+    
     if (typeof m.text !== "string") m.text = "";
     const isROwner = [
       conn.decodeJid(global.conn.user.id),
@@ -1070,17 +1071,36 @@ export async function handler(chatUpdate) {
               );
           }*/
         }
-      }}
-    for (let name in global.plugins) {
-      let plugin = global.plugins[name];
-      if (!plugin) continue;
-      if (plugin.disabled) continue;
+        if (typeof plugin.before === "function") {
+        if (
+          await plugin.before.call(this, m, {
+            match,
+            conn: this,
+            participants,
+            groupMetadata,
+            user,
+            bot,
+            isROwner,
+            isOwner,
+            isRAdmin,
+            isAdmin,
+            isBotAdmin,
+            isPrems,
+            chatUpdate,
+            __dirname: ___dirname,
+            __filename,
+          })
+        )
+          continue;
+      }
+      if (typeof plugin !== "function") continue;
+      }
 
       if (!opts["restrict"])
         if (plugin.tags && plugin.tags.includes("admin")) {
           // global.dfail('restrict', m, this)
           continue;
-        }
+      }
       const str2Regex = (str) => str.replace(/[|\\{}()[\]^$+*?.]/g, "\\$&");
       let _prefix = plugin.customPrefix
         ? plugin.customPrefix
@@ -1107,34 +1127,7 @@ export async function handler(chatUpdate) {
             ]
           : [[[], new RegExp()]]
       ).find((p) => p[1]);
-      if (typeof plugin.before === "function") {
-        if (
-          await plugin.before.call(this, m, {
-            match,
-            conn: this,
-            participants,
-            groupMetadata,
-            user,
-            bot,
-            isROwner,
-            isOwner,
-            isRAdmin,
-            isAdmin,
-            isBotAdmin,
-            isPrems,
-            chatUpdate,
-            __dirname: ___dirname,
-            __filename,
-          })
-        )
-          continue;
-      }
-}
-    for (let name in global.plugins) {
-      let plugin = global.plugins[name];
-      if (!plugin) continue;
-      if (plugin.disabled) continue;
-      if (typeof plugin !== "function") continue; 
+      
       if ((usedPrefix = (match[0] || "")[0])) {
         let noPrefix = m.text.replace(usedPrefix, "");
         let args_v2 = m.text.slice(usedPrefix.length).trim().split(/ +/);
@@ -1399,7 +1392,10 @@ export async function handler(chatUpdate) {
         }
         break;
       }
-  }  
+    }
+  } catch (e) {
+    console.error(e);
+  } finally {
     if (opts["queque"] && m.text) {
       const quequeIndex = this.msgqueque.indexOf(m.id || m.key.id);
       if (quequeIndex !== -1) this.msgqueque.splice(quequeIndex, 1);
