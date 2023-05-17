@@ -101,7 +101,7 @@ export async function handler(chatUpdate) {
       : conn.prefix
       ? conn.prefix
       : global.prefix;
-          let match = (
+       match = (
       _prefix instanceof RegExp // RegExp Mode?
         ? [[_prefix.exec(m.text), _prefix]]
         : Array.isArray(_prefix) // Array?
