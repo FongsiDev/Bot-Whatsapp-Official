@@ -95,7 +95,6 @@ export async function handler(chatUpdate) {
     let plugin;
     for (let name in global.plugins) {
       plugin = global.plugins[name];
-    }
     if (!plugin) return;
     if (plugin.disabled) return;
     let __filename = join(___dirname);
@@ -179,7 +178,7 @@ export async function handler(chatUpdate) {
           return;
       }
       if (typeof plugin !== "function") return;
-    }
+    }}
 
     if (!opts["restrict"])
       if (plugin.tags && plugin.tags.includes("admin")) {
