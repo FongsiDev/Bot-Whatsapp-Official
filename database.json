@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 37130,
+      "exp": 37154,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -15684,7 +15684,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 12281,
+      "exp": 12291,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -40672,7 +40672,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 265,
+      "exp": 293,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -40904,7 +40904,7 @@
       "rhinoceroslastfeed": 0,
       "rock": 0,
       "roket": 0,
-      "role": "Bronze I",
+      "role": "Newbie ㋡",
       "roti": 0,
       "rtrofi": "perunggu",
       "rubah": 0,
@@ -76352,10 +76352,10 @@
       "lastSuccess": 1684229192968
     },
     "./plugins/Infos/speed.js": {
-      "total": 98,
-      "success": 98,
-      "last": 1684278775841,
-      "lastSuccess": 1684278775841
+      "total": 99,
+      "success": 99,
+      "last": 1684333434621,
+      "lastSuccess": 1684333434621
     },
     "./plugins/Exp-Info/exp-daftar.js": {
       "total": 4,

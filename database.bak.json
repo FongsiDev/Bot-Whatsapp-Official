@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 37124,
+            "exp": 37154,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -2336,7 +2336,7 @@
             "rhinoceroslastfeed": 0,
             "rock": 0,
             "roket": 0,
-            "role": "Bronze II",
+            "role": "Beginner Grade 4 ⚊⁴",
             "roti": 0,
             "rtrofi": "perunggu",
             "rubah": 0,
@@ -74685,7 +74685,8 @@
             "viewOnce": false,
             "viewonce": false,
             "welcome": false,
-            "jid": "6289503433262@s.whatsapp.net"
+            "jid": "6289503433262@s.whatsapp.net",
+            "JoinLst": null
         },
         "120363023147920045@g.us": {
             "isName": "ISIAN BY STVN",
@@ -76351,10 +76352,10 @@
             "lastSuccess": 1684229192968
         },
         "./plugins/Infos/speed.js": {
-            "total": 98,
-            "success": 98,
-            "last": 1684278775841,
-            "lastSuccess": 1684278775841
+            "total": 99,
+            "success": 99,
+            "last": 1684333434621,
+            "lastSuccess": 1684333434621
         },
         "./plugins/Exp-Info/exp-daftar.js": {
             "total": 4,
