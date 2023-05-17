@@ -17774,7 +17774,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 26303,
+            "exp": 26321,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -76405,10 +76405,10 @@
             "lastSuccess": 1683890757103
         },
         "./plugins/OpenAI/openai-image.js": {
-            "total": 5,
-            "success": 4,
-            "last": 1684322014008,
-            "lastSuccess": 1683311420838
+            "total": 6,
+            "success": 5,
+            "last": 1684322049902,
+            "lastSuccess": 1684322049902
         },
         "./plugins/OpenAI/openai-old.js": {
             "total": 3,
