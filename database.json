@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 35778,
+      "exp": 35800,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -2336,7 +2336,7 @@
       "rhinoceroslastfeed": 0,
       "rock": 0,
       "roket": 0,
-      "role": "Beginner Grade 4 ⚊⁴",
+      "role": "Bronze II",
       "roti": 0,
       "rtrofi": "perunggu",
       "rubah": 0,
@@ -76272,10 +76272,10 @@
       "lastSuccess": 1684309507839
     },
     "./plugins/main-menu-1.js": {
-      "total": 111,
-      "success": 110,
-      "last": 1684313376021,
-      "lastSuccess": 1684313376021
+      "total": 112,
+      "success": 111,
+      "last": 1684313773293,
+      "lastSuccess": 1684313773293
     },
     "./plugins/main-menu-2.js": {
       "total": 34,
