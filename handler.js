@@ -140,8 +140,7 @@ export async function handler(chatUpdate) {
           : false;
 
       if (!isAccept) {
-          console.log("Yss")
-          return;
+          continue ;
 
 } else {
     plugin = pluginFind;
