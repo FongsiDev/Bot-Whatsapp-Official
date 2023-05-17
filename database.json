@@ -17774,7 +17774,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 26278,
+      "exp": 26303,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -18006,7 +18006,7 @@
       "rhinoceroslastfeed": 0,
       "rock": 0,
       "roket": 0,
-      "role": "Newbie ㋡",
+      "role": "Bronze I",
       "roti": 0,
       "rtrofi": "perunggu",
       "rubah": 0,
@@ -29864,7 +29864,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 3990,
+      "exp": 4014,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -76405,9 +76405,9 @@
       "lastSuccess": 1683890757103
     },
     "./plugins/OpenAI/openai-image.js": {
-      "total": 4,
+      "total": 5,
       "success": 4,
-      "last": 1683311420838,
+      "last": 1684322014008,
       "lastSuccess": 1683311420838
     },
     "./plugins/OpenAI/openai-old.js": {
