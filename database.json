@@ -15684,7 +15684,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 12310,
+      "exp": 12320,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -72986,7 +72986,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 1371,
+      "exp": 1411,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -73404,7 +73404,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 1484,
+      "exp": 1494,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -76683,9 +76683,9 @@
       "lastSuccess": 1684238200108
     },
     "./plugins/Downloaders/downloader-tiktok.js": {
-      "total": 5,
+      "total": 7,
       "success": 0,
-      "last": 1683955147356,
+      "last": 1684338353243,
       "lastSuccess": 0
     },
     "./plugins/RPG_Games/rpg-daily.js": {
