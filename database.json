@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 36401,
+      "exp": 36483,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -2336,7 +2336,7 @@
       "rhinoceroslastfeed": 0,
       "rock": 0,
       "roket": 0,
-      "role": "Beginner Grade 4 ⚊⁴",
+      "role": "Bronze II",
       "roti": 0,
       "rtrofi": "perunggu",
       "rubah": 0,
@@ -76272,10 +76272,10 @@
       "lastSuccess": 1684315012962
     },
     "./plugins/main-menu-1.js": {
-      "total": 115,
-      "success": 114,
-      "last": 1684314804705,
-      "lastSuccess": 1684314804705
+      "total": 116,
+      "success": 115,
+      "last": 1684315267199,
+      "lastSuccess": 1684315267199
     },
     "./plugins/main-menu-2.js": {
       "total": 34,
@@ -76302,10 +76302,10 @@
       "lastSuccess": 1684279523025
     },
     "./plugins/_Function/_autoreact.js": {
-      "total": 354,
-      "success": 354,
-      "last": 1684315239147,
-      "lastSuccess": 1684315239147
+      "total": 355,
+      "success": 355,
+      "last": 1684315256535,
+      "lastSuccess": 1684315256535
     },
     "./plugins/Infos/test.js": {
       "total": 25,
@@ -76524,10 +76524,10 @@
       "lastSuccess": 1683390402527
     },
     "./plugins/Infos/info-totalfitur.js": {
-      "total": 5,
-      "success": 5,
-      "last": 1684237911724,
-      "lastSuccess": 1684237911724
+      "total": 6,
+      "success": 6,
+      "last": 1684315296813,
+      "lastSuccess": 1684315296813
     },
     "./plugins/Tools/tool-shorturl.js": {
       "total": 33,
