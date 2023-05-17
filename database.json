@@ -15684,7 +15684,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 12569,
+      "exp": 12576,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -76897,10 +76897,10 @@
       "lastSuccess": 1683370199219
     },
     "./plugins/Owners/owner-addprem.js": {
-      "total": 11,
-      "success": 11,
-      "last": 1684238244041,
-      "lastSuccess": 1684238244041
+      "total": 12,
+      "success": 12,
+      "last": 1684352921024,
+      "lastSuccess": 1684352921024
     },
     "./plugins/Owners/owner-delprem.js": {
       "total": 6,
