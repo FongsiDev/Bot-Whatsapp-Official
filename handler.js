@@ -122,20 +122,21 @@ export async function handler(chatUpdate) {
         : [[[], new RegExp()]]
     ).find((p) => p[1]);
     if ((usedPrefix = (match[0] || "")[0])) {
+      let noPrefix = m.text.replace(usedPrefix, "");
         let [command, ...args] = noPrefix.trim().split` `.filter((v) => v);
       command = (command || "").toLowerCase();
 
        let isAccept =
-        plugin.command instanceof RegExp // RegExp Mode?
-          ? plugin.command.test(command)
-          : Array.isArray(plugin.command) // Array?
-          ? plugin.command.some((cmd) =>
+        pluginFind.command instanceof RegExp // RegExp Mode?
+          ? pluginFind.command.test(command)
+          : Array.isArray(pluginFind.command) // Array?
+          ? pluginFind.command.some((cmd) =>
               cmd instanceof RegExp // RegExp in Array?
                 ? cmd.test(command)
                 : cmd === command
             )
-          : typeof plugin.command === "string" // String?
-          ? plugin.command === command
+          : typeof pluginFind.command === "string" // String?
+          ? pluginFind.command === command
           : false;
 
       if (!isAccept) {
