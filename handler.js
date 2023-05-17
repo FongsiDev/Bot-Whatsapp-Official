@@ -1035,11 +1035,13 @@ export async function handler(chatUpdate) {
       "./plugins"
     );
 
+    console.log("Ok 1")
     for (let name in global.plugins) {
       let plugin = global.plugins[name];
       if (!plugin) continue;
       if (plugin.disabled) continue;
       const __filename = join(___dirname, name);
+      console.log("Ok 2")
       if (typeof plugin.all === "function") {
         try {
           await plugin.all.call(this, m, {
