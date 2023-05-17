@@ -1037,7 +1037,6 @@ export async function handler(chatUpdate) {
 
     for (let name in global.plugins) {
       let plugin = global.plugins[name];
-      console.log(plugin)
       if (!plugin) continue;
       if (plugin.disabled) continue;
       const __filename = join(___dirname, name);
