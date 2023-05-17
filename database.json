@@ -2104,7 +2104,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 36223,
+      "exp": 36326,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -2336,7 +2336,7 @@
       "rhinoceroslastfeed": 0,
       "rock": 0,
       "roket": 0,
-      "role": "Bronze II",
+      "role": "Beginner Grade 4 ⚊⁴",
       "roti": 0,
       "rtrofi": "perunggu",
       "rubah": 0,
@@ -76272,10 +76272,10 @@
       "lastSuccess": 1684309507839
     },
     "./plugins/main-menu-1.js": {
-      "total": 112,
-      "success": 111,
-      "last": 1684313773293,
-      "lastSuccess": 1684313773293
+      "total": 115,
+      "success": 114,
+      "last": 1684314804705,
+      "lastSuccess": 1684314804705
     },
     "./plugins/main-menu-2.js": {
       "total": 34,
@@ -76668,10 +76668,10 @@
       "lastSuccess": 1684296984370
     },
     "./plugins/Infos/info-runtime2.js": {
-      "total": 7,
-      "success": 7,
-      "last": 1684296988119,
-      "lastSuccess": 1684296988119
+      "total": 8,
+      "success": 8,
+      "last": 1684314819139,
+      "lastSuccess": 1684314819139
     },
     "./plugins/RPG_Games/rpg-use.js": {
       "total": 4,
