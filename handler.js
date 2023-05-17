@@ -93,9 +93,9 @@ export async function handler(chatUpdate) {
       "./plugins"
     );
     const str2Regex = (str) => str.replace(/[|\\{}()[\]^$+*?.]/g, "\\$&");
-    let plugin;
-    for (let name in global.plugins) {
-     var pluginFind = global.plugins[name];
+    let plugin, name;
+    for (let name_ in global.plugins) {
+     var pluginFind = global.plugins[name_];
      const _prefix = pluginFind.customPrefix
       ? pluginFind.customPrefix
       : conn.prefix
@@ -138,7 +138,8 @@ export async function handler(chatUpdate) {
           return
 
 } else {
-    plugin = pluginFind
+    plugin = pluginFind;
+    name = name_
 }
   
     }
