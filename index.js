@@ -34,6 +34,26 @@ var isRunning = false;
  * @param {String} file `path/to/file`
  */
 function start(file) {
+ let args = [join(__dirname, file), ...process.argv.slice(2)];
+   say([process.argv[0], ...args].join(" "), {
+    font: "console",
+    align: "center",
+    gradient: ["red", "magenta"],
+  });
+	let p = spawn(process.argv[0], args, { stdio: ['inherit', 'inherit', 'inherit', 'ipc'] })
+	.on('message', data => {
+		if (data == 'reset') {
+			console.log('Restarting...')
+			p.kill()
+			delete p
+		}
+	})
+	.on('exit', code => {
+		console.error('Exited with code:', code)
+		start.apply(this, arguments);
+	})
+}
+function start(file) {
   if (isRunning) return;
   isRunning = true;
   let args = [join(__dirname, file), ...process.argv.slice(2)];
