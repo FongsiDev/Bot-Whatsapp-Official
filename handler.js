@@ -1130,11 +1130,12 @@ export async function handler(chatUpdate) {
           continue;
       }
 }
-            for (let name in global.plugins) {
+    for (let name in global.plugins) {
       let plugin = global.plugins[name];
       if (!plugin) continue;
       if (plugin.disabled) continue;
-if (typeof plugin !== "function") continue;      if ((usedPrefix = (match[0] || "")[0])) {
+      if (typeof plugin !== "function") continue; 
+      if ((usedPrefix = (match[0] || "")[0])) {
         let noPrefix = m.text.replace(usedPrefix, "");
         let args_v2 = m.text.slice(usedPrefix.length).trim().split(/ +/);
         let [command, ...args] = noPrefix.trim().split` `.filter((v) => v);
@@ -1398,7 +1399,7 @@ if (typeof plugin !== "function") continue;      if ((usedPrefix = (match[0] || 
         }
         break;
       }
-    }
+    
   } catch (e) {
     console.error(e);
   } finally {
