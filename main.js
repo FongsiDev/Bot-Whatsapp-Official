@@ -444,6 +444,7 @@ global.reloadHandler = async function (restatConn) {
     isInit = true;
   }
   if (!isInit) {
+    conn.ev.off("messages.upsert", conn.Database);
     conn.ev.off("messages.upsert", conn.handler);
     conn.ev.off("group-participants.update", conn.participantsUpdate);
     conn.ev.off("groups.update", conn.groupsUpdate);
@@ -470,6 +471,7 @@ global.reloadHandler = async function (restatConn) {
   conn.sRestrictOff = "Edit Info Grup di ubah ke semua peserta!";
 
   conn.handler = handler.handler.bind(global.conn);
+  conn.Database = handler.Database.bind(global.conn);
   conn.participantsUpdate = handler.participantsUpdate.bind(global.conn);
   conn.groupsUpdate = handler.groupsUpdate.bind(global.conn);
   conn.onDelete = handler.deleteUpdate.bind(global.conn);
@@ -477,6 +479,7 @@ global.reloadHandler = async function (restatConn) {
   conn.connectionUpdate = connectionUpdate.bind(global.conn);
   if (!opts["multi"]) conn.credsUpdate = saveState.bind(global.conn, true);
 
+  conn.ev.on("messages.upsert", conn.Database);
   conn.ev.on("messages.upsert", conn.handler);
   conn.ev.on("group-participants.update", conn.participantsUpdate);
   conn.ev.on("groups.update", conn.groupsUpdate);
