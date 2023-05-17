@@ -121,6 +121,7 @@ export async function handler(chatUpdate) {
           ]
         : [[[], new RegExp()]]
     ).find((p) => p[1]);
+    if ((usedPrefix = (match[0] || "")[0])) {
          let isAccept =
         plugin.command instanceof RegExp // RegExp Mode?
           ? plugin.command.test(command)
@@ -141,7 +142,7 @@ export async function handler(chatUpdate) {
     plugin = pluginFind;
     name = name_
 }
-  
+  }
     }
     if (!plugin) return;
     if (plugin.disabled) return;
@@ -207,7 +208,6 @@ export async function handler(chatUpdate) {
         // global.dfail('restrict', m, this)
         return;
       }
-    if ((usedPrefix = (match[0] || "")[0])) {
       let noPrefix = m.text.replace(usedPrefix, "");
       let args_v2 = m.text.slice(usedPrefix.length).trim().split(/ +/);
       let [command, ...args] = noPrefix.trim().split` `.filter((v) => v);
@@ -452,7 +452,7 @@ export async function handler(chatUpdate) {
         }
         if (m.limit) m.reply(+m.limit + " ʟɪᴍɪᴛ ᴋᴀᴍᴜ ᴛᴇʀᴘᴀᴋᴀɪ ✔️");
       }
-    }
+    
   } catch (e) {
     console.error(e);
   } finally {
