@@ -9,7 +9,9 @@ let handler = async (m) => {
   await m.reply(global.wait);
   if (!/image\/(jpe?g|png)/.test(mime)) throw `Mime ${mime} tidak support`;
   let data = await processing(media, "enhance");
+ async function ap() {
   let url = await uploadImage((await conn.getFile(data, true)).filename);
+  if (typeof url !== "string") return ap();
   await conn.sendFile(
     m.chat,
     data,
@@ -17,6 +19,8 @@ let handler = async (m) => {
     `ɪɴɪ ᴋᴀᴋ ʜᴀꜱɪʟɴʏᴀヾ(≧▽≦*)ᴏ\nLink: ${url}`,
     m
   );
+   }
+  return ap()
 };
 
 handler.help = ["hd", "jernih", "hdr"].map((v) => `${v} <caption|reply media>`);
