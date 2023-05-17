@@ -93,15 +93,15 @@ export async function handler(chatUpdate) {
       "./plugins"
     );
     const str2Regex = (str) => str.replace(/[|\\{}()[\]^$+*?.]/g, "\\$&");
-    let plugin, _prefix, match;
+    let plugin;
     for (let name in global.plugins) {
-      plugin = global.plugins[name];
-      _prefix = plugin.customPrefix
-      ? plugin.customPrefix
+     var pluginFind = global.plugins[name];
+     const _prefix = pluginFind.customPrefix
+      ? pluginFind.customPrefix
       : conn.prefix
       ? conn.prefix
       : global.prefix;
-       match = (
+     const  match = (
       _prefix instanceof RegExp // RegExp Mode?
         ? [[_prefix.exec(m.text), _prefix]]
         : Array.isArray(_prefix) // Array?
@@ -121,7 +121,26 @@ export async function handler(chatUpdate) {
           ]
         : [[[], new RegExp()]]
     ).find((p) => p[1]);
-  console.log(match)
+         let isAccept =
+        plugin.command instanceof RegExp // RegExp Mode?
+          ? plugin.command.test(command)
+          : Array.isArray(plugin.command) // Array?
+          ? plugin.command.some((cmd) =>
+              cmd instanceof RegExp // RegExp in Array?
+                ? cmd.test(command)
+                : cmd === command
+            )
+          : typeof plugin.command === "string" // String?
+          ? plugin.command === command
+          : false;
+
+      if (!isAccept) {
+          return
+
+} else {
+    plugin = pluginFind
+}
+  
     }
     if (!plugin) return;
     if (plugin.disabled) return;
@@ -196,20 +215,6 @@ export async function handler(chatUpdate) {
       let text = _args.join` `;
       command = (command || "").toLowerCase();
       let fail = plugin.fail || global.dfail; // When failed
-      let isAccept =
-        plugin.command instanceof RegExp // RegExp Mode?
-          ? plugin.command.test(command)
-          : Array.isArray(plugin.command) // Array?
-          ? plugin.command.some((cmd) =>
-              cmd instanceof RegExp // RegExp in Array?
-                ? cmd.test(command)
-                : cmd === command
-            )
-          : typeof plugin.command === "string" // String?
-          ? plugin.command === command
-          : false;
-
-      if (!isAccept) return;
       m.plugin = name;
       if (m.chat in global.db.data.chats || m.sender in global.db.data.users) {
         let chat = global.db.data.chats[m.chat];
