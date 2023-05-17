@@ -15684,7 +15684,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 12459,
+      "exp": 12472,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -73404,7 +73404,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 1526,
+      "exp": 1591,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -76275,10 +76275,10 @@
       "lastSuccess": 1684333779145
     },
     "./plugins/main-menu-1.js": {
-      "total": 119,
-      "success": 118,
-      "last": 1684340918420,
-      "lastSuccess": 1684340918420
+      "total": 120,
+      "success": 119,
+      "last": 1684341253411,
+      "lastSuccess": 1684341253411
     },
     "./plugins/main-menu-2.js": {
       "total": 35,
@@ -76299,10 +76299,10 @@
       "lastSuccess": 1683474589718
     },
     "./plugins/_Function/tes123.js": {
-      "total": 67,
-      "success": 67,
-      "last": 1684339611414,
-      "lastSuccess": 1684339611414
+      "total": 69,
+      "success": 69,
+      "last": 1684341236912,
+      "lastSuccess": 1684341236912
     },
     "./plugins/_Function/_autoreact.js": {
       "total": 359,
@@ -76635,10 +76635,10 @@
       "lastSuccess": 1683463028926
     },
     "./plugins/Owners/owner-unbanuser.js": {
-      "total": 7,
-      "success": 6,
-      "last": 1684238292087,
-      "lastSuccess": 1684238292087
+      "total": 8,
+      "success": 7,
+      "last": 1684341214561,
+      "lastSuccess": 1684341214561
     },
     "./plugins/Owners/delete-pesan-orang-lain.js": {
       "total": 2,
