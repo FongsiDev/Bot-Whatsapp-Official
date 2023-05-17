@@ -15684,7 +15684,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 12198,
+            "exp": 12209,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -17774,7 +17774,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 26265,
+            "exp": 26267,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -75125,7 +75125,8 @@
             "viewOnce": false,
             "viewonce": false,
             "welcome": true,
-            "jid": "120363127969669508@g.us"
+            "jid": "120363127969669508@g.us",
+            "JoinLst": null
         },
         "120363146913659096@g.us": {
             "isName": "_⚜️World animator🗺️_",
