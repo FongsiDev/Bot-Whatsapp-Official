@@ -19,7 +19,7 @@ let handler = async (m) => {
   );
 };
 
-handler.help = ["hd", "jernih", "hdr"].map(v => `${v} <caption|reply media>`);
+handler.help = ["hd", "jernih", "hdr"].map((v) => `${v} <caption|reply media>`);
 handler.tags = ["tools"];
 handler.command = /^(hd|jernih|hdr)$/i;
 

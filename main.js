@@ -314,7 +314,7 @@ async function connectionUpdate(update) {
     console.log(
       chalk.redBright("⚡ Mengaktifkan Bot, Mohon tunggu sebentar...")
     );
-       return await this.sendButton(
+    return await this.sendButton(
       global.logs.stats,
       `Bot Successfully Connected\nServer: ${
         process.env.REPL_OWNER || "Tak ada replit"
@@ -324,10 +324,8 @@ async function connectionUpdate(update) {
       [["Sabar Commandnya Lagi Reload", "y"]],
       null
     );
-   
   }
-  if (connection == "open") 
-    await console.log(chalk.green("✅ Tersambung"));
+  if (connection == "open") await console.log(chalk.green("✅ Tersambung"));
   if (isOnline == true) console.log(chalk.green("Status Aktif"));
   if (isOnline == false) console.log(chalk.red("Status Mati"));
   if (receivedPendingNotifications)
