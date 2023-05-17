@@ -1070,7 +1070,7 @@ export async function handler(chatUpdate) {
               );
           }*/
         }
-      }
+      }}
     for (let name in global.plugins) {
       let plugin = global.plugins[name];
       if (!plugin) continue;
@@ -1399,10 +1399,7 @@ export async function handler(chatUpdate) {
         }
         break;
       }
-    
-  } catch (e) {
-    console.error(e);
-  } finally {
+  }  
     if (opts["queque"] && m.text) {
       const quequeIndex = this.msgqueque.indexOf(m.id || m.key.id);
       if (quequeIndex !== -1) this.msgqueque.splice(quequeIndex, 1);
