@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 37312,
+            "exp": 37359,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -22763,7 +22763,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 5568,
+            "exp": 5576,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -76844,10 +76844,10 @@
             "lastSuccess": 1684195196418
         },
         "./plugins/Tools/tool-hd.js": {
-            "total": 55,
-            "success": 48,
-            "last": 1684334523456,
-            "lastSuccess": 1684334523456
+            "total": 56,
+            "success": 49,
+            "last": 1684334823789,
+            "lastSuccess": 1684334823789
         },
         "./plugins/Internets/lyrics.js": {
             "total": 3,
@@ -76904,10 +76904,10 @@
             "lastSuccess": 1684334630465
         },
         "./plugins/Tools/tool-dehaze.js": {
-            "total": 3,
-            "success": 3,
-            "last": 1684194015519,
-            "lastSuccess": 1684194015519
+            "total": 4,
+            "success": 4,
+            "last": 1684334780555,
+            "lastSuccess": 1684334780555
         },
         "./plugins/Sticker-Tools/sticker-qouted.js": {
             "total": 4,
