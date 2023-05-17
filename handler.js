@@ -993,6 +993,8 @@ export async function handler(chatUpdate) {
   try {
     m = smsg(this, m) || m;
     if (!m) return;
+    m.exp = 0;
+    m.limit = false;  
     if (typeof m.text !== "string") m.text = "";
     const isROwner = [
       conn.decodeJid(global.conn.user.id),
