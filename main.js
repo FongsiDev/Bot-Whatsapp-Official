@@ -444,8 +444,8 @@ global.reloadHandler = async function (restatConn) {
     isInit = true;
   }
   if (!isInit) {
-    conn.ev.off("messages.upsert", conn.Database);
     conn.ev.off("messages.upsert", conn.handler);
+    conn.ev.off("messages.upsert", conn.Database);
     conn.ev.off("group-participants.update", conn.participantsUpdate);
     conn.ev.off("groups.update", conn.groupsUpdate);
     conn.ev.off("message.delete", conn.onDelete);
@@ -479,8 +479,8 @@ global.reloadHandler = async function (restatConn) {
   conn.connectionUpdate = connectionUpdate.bind(global.conn);
   if (!opts["multi"]) conn.credsUpdate = saveState.bind(global.conn, true);
 
-  conn.ev.on("messages.upsert", conn.Database);
   conn.ev.on("messages.upsert", conn.handler);
+  conn.ev.on("messages.upsert", conn.Database);
   conn.ev.on("group-participants.update", conn.participantsUpdate);
   conn.ev.on("groups.update", conn.groupsUpdate);
   conn.ev.on("message.delete", conn.onDelete);
