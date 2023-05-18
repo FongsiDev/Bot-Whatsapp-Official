@@ -275,6 +275,12 @@ if (!opts["test"]) {
         console.log(chalk.cyanBright("Failded clear tmp"));
       }
   }, 60 * 1000);
+  if (opts["multi"])
+    setInterval(async () => {
+      var b = await clearSessions(authFile);
+      console.log(chalk.cyanBright(`successfully clear session`));
+    }, 3600000);
+
   if (opts["server"]) (await import("./server.js")).default(PORT, global.conn);
 }
 
@@ -294,6 +300,19 @@ async function clearTmp() {
     ) {
       return unlinkSync(file); // 3 minutes
       console.log(chalk.cyanBright("Successfully clear tmp"));
+    }
+    return false;
+  });
+}
+function clearSessions(folder = "sessions") {
+  let filename = [];
+  readdirSync(folder).forEach((file) => filename.push(join(folder, file)));
+  return filename.map((file) => {
+    let stats = statSync(file);
+    if (stats.isFile() && Date.now() - stats.mtimeMs >= 1000 * 60 * 120) {
+      // 1 hours
+      console.log("Deleted sessions", file);
+      return unlinkSync(file);
     }
     return false;
   });
