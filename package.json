@@ -14,8 +14,8 @@
     "start2": "nodemon -x npm run bot",
     "start3": "nodemon -x npm run bot2",
     "formatfile": "npx prettier --write .",
-    "bot": "node index.js --server --autocleartmp --autoread --gconly",
-    "bot2": "npm run formatfile && node index.js --server --autocleartmp --autoread --gconly",
+    "bot": "node index.js --server --autocleartmp --autoread --gconly --multi",
+    "bot2": "npm run formatfile && node index.js --server --autocleartmp --autoread --gconly --multi",
     "test": "node test.js",
     "db": "cp database.bak.json database.json",
     "test2": "nodemon index.js"
