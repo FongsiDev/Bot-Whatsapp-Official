@@ -2104,7 +2104,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 37571,
+            "exp": 37624,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -2336,7 +2336,7 @@
             "rhinoceroslastfeed": 0,
             "rock": 0,
             "roket": 0,
-            "role": "Bronze II",
+            "role": "Beginner Grade 4 ⚊⁴",
             "roti": 0,
             "rtrofi": "perunggu",
             "rubah": 0,
@@ -29864,7 +29864,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 4067,
+            "exp": 4074,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -77086,9 +77086,9 @@
             "lastSuccess": 1684333779145
         },
         "./plugins/main-menu-1.js": {
-            "total": 123,
+            "total": 124,
             "success": 122,
-            "last": 1684369728935,
+            "last": 1684370609249,
             "lastSuccess": 1684369728935
         },
         "./plugins/main-menu-2.js": {
@@ -77158,10 +77158,10 @@
             "lastSuccess": 1684250516774
         },
         "./plugins/Sticker-Tools/sticker-sticker.js": {
-            "total": 46,
-            "success": 42,
-            "last": 1684229192968,
-            "lastSuccess": 1684229192968
+            "total": 47,
+            "success": 43,
+            "last": 1684370640348,
+            "lastSuccess": 1684370640348
         },
         "./plugins/Infos/speed.js": {
             "total": 100,
