@@ -2181,7 +2181,7 @@
             "emas": 0,
             "emerald": 0,
             "esteh": 0,
-            "exp": 32,
+            "exp": 53,
             "expg": 0,
             "exphero": 0,
             "expired": 0,
@@ -3449,6 +3449,12 @@
             "success": 2,
             "last": 1684372666142,
             "lastSuccess": 1684372666142
+        },
+        "./plugins/_Function/_autoreact.js": {
+            "total": 2,
+            "success": 2,
+            "last": 1684372690914,
+            "lastSuccess": 1684372690914
         }
     },
     "msgs": {},
