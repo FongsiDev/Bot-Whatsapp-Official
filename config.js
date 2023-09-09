@@ -70,8 +70,8 @@ global.ppulsa2 = "6281378163495 ( 20% Bonus )"; // kalau ada kartu lain isi aja
 global.psaweria = "-";
 
 /*============== NOMOR ==============*/
-global.nomorbot = "6282172622047";
-global.nomorown = "6289503433262";
+global.nomorbot = "6282117984903";
+global.nomorown = "6283154565106";
 global.ageowner = "2011-01-13";
 global.namebot = "「 BLUECKKN BOT ⁩㊣ 」";
 global.namebot_1 = "BKN-MD";
