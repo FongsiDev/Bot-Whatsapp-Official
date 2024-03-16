@@ -30,13 +30,13 @@
 
 <p align="center">
  <a href="https://youtube.com/@BLUECKKN">
-    <img align="left" alt="BKN | YouTube" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Youtube.svg" />
+    <img align="left" alt="BKN | YouTube" width="26px" src="https://www.svgrepo.com/show/13671/youtube.svg" />
   </a>
  <a href="https://wa.me/6289503433262">
-    <img align="left" alt="BKN | Whastapp" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Whatsapp.svg" />
+    <img align="left" alt="BKN | Whastapp" width="26px" src="https://www.svgrepo.com/show/475692/whatsapp-color.svg" />
   </a>
  <a href="mailto: fongsiapi@gmail.com">
-    <img align="left" alt="BKN | Gmail" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Gmail.svg" />
+    <img align="left" alt="BKN | Gmail" width="26px" src="https://www.svgrepo.com/show/349378/gmail.svg" />
   </a>
  <a href="https://wa.me/6285280808438">
     <img align="left" alt="Demo Bot | Whastapp" src="https://img.shields.io/badge/WhatsApp%20BOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
@@ -304,13 +304,13 @@ use this [branch](https://github.com/FongsiDev/Bot-Whatsapp-Official/edit/v6.7.4
 
 [![idhamthoriqbot](https://github.com/idhamthoriqbot.png?size=100)](https://github.com/idhamthoriqbot)
 [![Adiixyz](https://github.com/Adiixyz.png?size=100)](https://github.com/Adiixyz)
-<a href="https://github.com/zatu22"><img src="https://github.com/zatu22.png" width="100" height="100" alt="zatu22"/></a>
+<a href="https://github.com/zatu22"><img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" width="100" height="100" alt="zatu22"/></a>
 [![arisawali2014](https://github.com/arisawali2014.png?size=100)](https://github.com/arisawali2014)
 [![Nobuyaki](https://github.com/Nobuyaki.png?size=100)](https://github.com/Nobuyaki)
 [![unx21](https://github.com/unx21.png?size=100)](https://github.com/unx21)
 [![botstylee](https://github.com/botstylee.png?size=100)](https://github.com/botstylee)
-[![qisyana](https://github.com/qisyana.png?size=100)](https://github.com/qisyana)
+<a href="https://github.com/qisyana"><img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" width="100" height="100" alt="qisyana"/></a>
 [![ryznxx](https://github.com/ryznxx.png?size=100)](https://github.com/ryznxx)
 <a href="https://github.com/apps/dependabot"><img src="https://avatars.githubusercontent.com/in/29110?v=4" width="100" height="100" alt="@dependabot[bot]"/></a>
-[![itsmeR1F4I](https://github.com/itsmeR1F4I.png?size=100)](https://github.com/itsmeR1F4I)
+<a href="https://github.com/itsmeR1F4I"><img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" width="100" height="100" alt="itsmeR1F4I"/></a>
 [![ZeroChanBot](https://github.com/ZeroChanBot.png?size=100)](https://github.com/ZeroChanBot)
