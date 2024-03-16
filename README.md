@@ -49,10 +49,10 @@
 ## PENTING
 
 > **Warning**: Jangan Memperjual Belikan Script Ini.
-
+> **Info**: Sarankan Edit File [config.js](/blob/-/config.js#L89) untuk merubah owner lama dengan owner baru!
 ---
 
-### a little about this bot
+### A little about this bot
 
 - ✔️ | **Simple**
 - ❌ | **Button Template**
@@ -273,9 +273,9 @@ Presence avaible: available, composing, recording, paused
 
 ### want to use multi-device (md)?
 
-now BKN-BOT already support MD, but of course there are still many **bugs** and there are still many that have not been **implemented**,
+Now BKN-BOT already support MD, but of course there are still many **bugs** and there are still many that have not been **implemented**,
 
-use this [branch](https://github.com/FongsiDev/Bot-Whatsapp-Official/edit/v6.7.4-beta/README.md#--multi) if you want to use MD!
+Use this [branch](/edit/-/README.md#--multi) if you want to use MD!
 
 ---
 
