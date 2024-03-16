@@ -49,7 +49,7 @@
 ## PENTING
 
 > **Warning**: Jangan Memperjual Belikan Script Ini.
-> **Info**: Sarankan Edit File [config.js](/blob/-/config.js#L89) untuk merubah owner lama dengan owner baru!
+> **Info**: Sarankan Edit File [config.js](/config.js#L89) untuk merubah owner lama dengan owner baru!
 ---
 
 ### A little about this bot
@@ -275,7 +275,7 @@ Presence avaible: available, composing, recording, paused
 
 Now BKN-BOT already support MD, but of course there are still many **bugs** and there are still many that have not been **implemented**,
 
-Use this [branch](/edit/-/README.md#--multi) if you want to use MD!
+Use this [branch](/README.md#--multi) if you want to use MD!
 
 ---
 
