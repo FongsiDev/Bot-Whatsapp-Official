@@ -48,7 +48,7 @@
 
 ## PENTING
 
-> **Warning**: Jangan Memperjual Belikan Script Ini.
+> **Warning**: Jangan Memperjual Belikan Script Ini.<br/>
 > **Info**: Sarankan Edit File [config.js](/config.js#L89) untuk merubah owner lama dengan owner baru!
 ---
 
